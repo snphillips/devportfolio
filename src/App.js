@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
+import Navigation from './Navigation';
+import Statement from './Statement';
+import Skills from './Skills';
+import SoTrashy from './SoTrashy';
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
-      <div className="App">
-
-          <h1 className="App-title">Sarah N. Phillips</h1>
-
+      <div>
+        <Navigation />
+        <Header />
+        <Statement />
+        <Skills />
       </div>
     );
   }
 }
-
-export default App;
