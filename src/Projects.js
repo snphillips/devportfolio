@@ -8,10 +8,15 @@ export default class Projects extends Component {
     return (
 
       <div id="projects">
+        <h2>Projects</h2>
 
-        <AboutABlueBike />
-        <SoTrashy />
-        <TwoHue />
+        <div class="card-columns">
+
+          <AboutABlueBike />
+          <SoTrashy />
+          <TwoHue />
+
+        </div>
 
       </div>
     );

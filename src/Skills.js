@@ -11,7 +11,7 @@ export default function Skills(props) {
       <hr className="header-hr"/>
 
         <div className="row">
-          <h3 className="section-header">Skills</h3>
+          <h2 className="section-header">Skills</h2>
         </div>
 
         <div className="row">
