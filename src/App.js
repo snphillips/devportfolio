@@ -3,7 +3,9 @@ import './App.css';
 import Header from './Header';
 import Navigation from './Navigation';
 import Statement from './Statement';
+import Projects from './Projects';
 import Skills from './Skills';
+import About from './About';
 import SoTrashy from './SoTrashy';
 
 export default class App extends Component {
@@ -13,7 +15,9 @@ export default class App extends Component {
         <Navigation />
         <Header />
         <Statement />
+        <Projects />
         <Skills />
+        <About />
       </div>
     );
   }

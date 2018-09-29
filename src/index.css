@@ -21,7 +21,7 @@ font-family: 'Habibi', serif;
 
 
 body {
-  color: rgba(255,255,255,1);
+  color: rgba(255,255,255,.7);
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -29,9 +29,12 @@ body {
   /*orange*/
   background-color: rgba(255, 55, 5, .9);
  /*navy blue*/
- background-color: rgba(5, 11, 56, 1);
+  background-color: rgba(5, 11, 56, 1);
+  /*purple*/
+  /*background-color: rgba(51, 0, 51, 1);*/
 }
 
+/*SARAH PHILLIPS*/
 h1 {
   font-family: 'Oswald', sans-serif;
   color: rgba(255,255,255,.7);
@@ -46,8 +49,16 @@ h1 {
   text-align: right;
 }
 
+/*navigation*/
+.nav ul {
+  list-style: none;
+  position: fixed;
+  right: 5%;
+  top: 5%;
+}
 
-ul {
+/*skills*/
+.skills ul {
   list-style: none;
 }
 

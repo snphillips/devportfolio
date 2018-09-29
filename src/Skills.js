@@ -6,12 +6,12 @@ export default function Skills(props) {
 
     return (
 
-    <div className="contentblock" className="container">
+    <div className="contentblock" className="container" className="skills">
 
       <hr className="header-hr"/>
 
-        <div className="row" id="skills">
-          <h2 className="section-header">Skills</h2>
+        <div className="row">
+          <h3 className="section-header">Skills</h3>
         </div>
 
         <div className="row">
