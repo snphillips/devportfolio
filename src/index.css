@@ -21,7 +21,7 @@ font-family: 'Habibi', serif;
 
 
 body {
-  max-width: 900px;
+  max-width: 800px;
   color: rgba(255,255,255,.7);
   margin: 0 auto;
   padding: 0;
@@ -46,7 +46,7 @@ h1 {
   letter-spacing: -1vw;
   text-transform: uppercase;
   /*text-transform: lowercase;*/
-  line-height: 75%;
+  line-height: 70%;
   text-align: right;
 }
 
@@ -59,13 +59,15 @@ h2 {
  letter-spacing: -.3vw;
 }
 
-/*project titles*/
+/*project card titles*/
 h3 {
  font-family: 'Oswald', sans-serif;
  color: rgba(255,255,255,.7);
+ color: rgba(5, 11, 56, .8);
  text-transform: uppercase;
- font-size: 4vw;
- letter-spacing: -.3vw;
+ font-size: 3vw;
+ letter-spacing: -.2vw;
+ font-weight: 700;
 }
 
 #header-statement {
@@ -87,12 +89,6 @@ h3 {
   font-family: 'Crimson Text', serif;
 }
 
-
-.card-title  {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
-  color: rgba(5, 11, 56, .8);
-}
 
 /*navigation*/
 .nav ul {
