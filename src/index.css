@@ -21,9 +21,9 @@ font-family: 'Habibi', serif;
 
 
 body {
-  /*max-width: 900px;*/
+  max-width: 900px;
   color: rgba(255,255,255,.7);
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: sans-serif;
   background-color: #fb2b2b;
@@ -50,8 +50,48 @@ h1 {
   text-align: right;
 }
 
-.card-title h2 {
+/*section headers*/
+h2 {
+ font-family: 'Oswald', sans-serif;
+ color: rgba(255,255,255,.7);
+ text-transform: uppercase;
+ font-size: 5vw;
+ letter-spacing: -.3vw;
+}
+
+/*project titles*/
+h3 {
+ font-family: 'Oswald', sans-serif;
+ color: rgba(255,255,255,.7);
+ text-transform: uppercase;
+ font-size: 4vw;
+ letter-spacing: -.3vw;
+}
+
+#header-statement {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+#statement {
+  font-size: 2.1vw;
+  margin-left: 2vw;
+  width: 70%;
+  /*dark*/
+  color: rgba(0,0,0,.9);
+   /*light*/
+  color: rgba(255,255,255,.8);
+  font-family: 'Cardo', serif;
+  font-family: 'IM Fell DW Pica', serif;
+  font-family: 'Habibi', serif;
+  font-family: 'Crimson Text', serif;
+}
+
+
+.card-title  {
   font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: rgba(5, 11, 56, .8);
 }
 
 /*navigation*/
@@ -67,20 +107,8 @@ h1 {
   list-style: none;
 }
 
-#statement {
-  font-size: 2.5vw;
-  width: 30%;
-  /*dark*/
-  color: rgba(0,0,0,1);
-   /*light*/
-  color: rgba(255,255,255,.9);
-  font-family: 'Habibi', serif;
-  font-family: 'Crimson Text', serif;
-  font-family: 'IM Fell DW Pica', serif;
-  font-family: 'Cardo', serif;
-}
 
 
-.card-text, .project-tech, .visit-site, .github-logo, .card-title{
-  color: rgba(5, 11, 56, 1);
+.card-text, .project-tech, .visit-site, .github-logo {
+  color: rgba(5, 11, 56, .8);
 }

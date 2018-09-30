@@ -10,7 +10,7 @@ export default class SoTrashy extends Component {
 
         <div className="card-body">
 
-          <h2 className="card-title">So Trashy</h2>
+          <h3 className="card-title">So Trashy</h3>
           <p className="card-text">So Trashy uses data visualization to represent New York City's Department of Sanitation's (DSNY) yearly collection of refuse and recycling from 2014 to 2018. Created with the D3.js library.</p>
           <p className="project-tech">D3.js</p>
           <button className="visit-site"><a href="http://sotrashy.surge.sh/">visit site</a></button>
