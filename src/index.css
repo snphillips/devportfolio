@@ -14,25 +14,36 @@ font-family: 'Habibi', serif;
 
 */
 
-
 /*Colors I like*/
 
-/*#ff3705*/
-
-
+/*=================================
+General Styling
+=================================*/
 body {
   max-width: 800px;
   color: rgba(255,255,255,.7);
   margin: 0 auto;
   padding: 0;
   font-family: sans-serif;
-  background-color: #fb2b2b;
-  /*orange*/
-  background-color: rgba(255, 55, 5, .9);
- /*navy blue*/
-  background-color: rgba(5, 11, 56, 1);
-  /*purple*/
-  /*background-color: rgba(51, 0, 51, 1);*/
+  background-color: rgba(255, 55, 5, 1); /*orange*/
+  background-color: rgba(5, 11, 56, 1);  /*navy blue*/
+  /*background-color: rgba(51, 0, 51, 1); /*purple*/
+}
+
+/*=================================
+Header, Statement & Navigation
+=================================*/
+/*navigation*/
+.nav ul {
+  list-style: none;
+  position: fixed;
+  right: 5%;
+  top: 5%;
+}
+
+#header-statement {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 /*SARAH PHILLIPS*/
@@ -50,31 +61,6 @@ h1 {
   text-align: right;
 }
 
-/*section headers*/
-h2 {
- font-family: 'Oswald', sans-serif;
- color: rgba(255,255,255,.7);
- text-transform: uppercase;
- font-size: 5vw;
- letter-spacing: -.3vw;
-}
-
-/*project card titles*/
-h3 {
- font-family: 'Oswald', sans-serif;
- color: rgba(255,255,255,.7);
- color: rgba(5, 11, 56, .8);
- text-transform: uppercase;
- font-size: 3vw;
- letter-spacing: -.2vw;
- font-weight: 700;
-}
-
-#header-statement {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
 #statement {
   font-size: 2.1vw;
   margin-left: 2vw;
@@ -89,22 +75,35 @@ h3 {
   font-family: 'Crimson Text', serif;
 }
 
-
-/*navigation*/
-.nav ul {
-  list-style: none;
-  position: fixed;
-  right: 5%;
-  top: 5%;
+/*=================================
+Projects (cards)
+=================================*/
+/*project card titles*/
+h3 {
+ font-family: 'Oswald', sans-serif;
+ color: rgba(255,255,255,.7);
+ color: rgba(5, 11, 56, .8);
+ text-transform: uppercase;
+ font-size: 3vw;
+ letter-spacing: -.2vw;
+ font-weight: 700;
+}
+.card-text, .project-tech, .visit-site, .github-logo {
+  color: rgba(5, 11, 56, .8);
 }
 
-/*skills*/
+/*=================================
+Sections
+=================================*/
+h2 {
+ font-family: 'Oswald', sans-serif;
+ color: rgba(255,255,255,.7);
+ text-transform: uppercase;
+ font-size: 5vw;
+ letter-spacing: -.3vw;
+}
+
 .skills ul {
   list-style: none;
 }
 
-
-
-.card-text, .project-tech, .visit-site, .github-logo {
-  color: rgba(5, 11, 56, .8);
-}
