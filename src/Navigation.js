@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 export default function Navigation(props) {
     return (
 
-      <div className="nav">
+      <div id="nav">
         <ul>
           <li><a className="nav-item" href="#projects">projects</a></li>
           <li><a className="nav-item" href="#about">about</a></li>

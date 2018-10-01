@@ -7,7 +7,7 @@ export default function Skills(props) {
     return (
 
     <div className="contentblock skills">
-
+        <hr />
         <h2 className="section-header">Skills</h2>
 
 

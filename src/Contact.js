@@ -7,7 +7,7 @@ export default function Contact(props) {
     return (
 
     <div className="contentblock" id="contact">
-
+      <hr />
       <h2>Contact</h2>
       <ul>
         <li>snphillips@gmail.com</li>

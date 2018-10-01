@@ -8,6 +8,7 @@ export default class Projects extends Component {
     return (
 
       <div id="projects" className="contentblock">
+        <hr />
         <h2>Projects</h2>
 
         <div class="card-columns">

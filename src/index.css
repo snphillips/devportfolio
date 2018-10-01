@@ -35,7 +35,8 @@ body {
 
 h2 {
  font-family: 'Oswald', sans-serif;
- color: rgba(255,255,255,.7);
+ color: rgba(255,255,255,.7); /* white text*/
+ color: rgba(245, 208, 200,.7); /*dusty pink text*/
  text-transform: uppercase;
  font-size: 5vw;
  letter-spacing: -.3vw;
@@ -45,13 +46,29 @@ h2 {
   padding-top: 3.5em;
 }
 
+hr {
+  display: block;
+  background-color: rgba(213, 11, 84, .9); /*bright pink*/
+  background-color: rgba(245, 208, 200,.5); /*dusty pink*/
+  height: 1px;
+  border: 0;
+  /*border-top: 1px solid #ccc;*/
+  /*margin: 1em 0;*/
+  margin-bottom: -7px;
+}
+
 /*=================================
-Header, Statement & Navigation
+Navigation
 =================================*/
-/*navigation*/
-.nav ul {
-  /*font-family: 'Crimson Text', serif;*/
+/*#nav {
+  margin: 1px solid rgba(245, 208, 200,.8);
+}*/
+
+#nav ul {
+  font-family: 'Crimson Text', serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 1.1em;
+  font-size: 1.3em;
   font-weight: 100;
   list-style: none;
   position: fixed;
@@ -59,13 +76,21 @@ Header, Statement & Navigation
   top: 5%;
 }
 
-.nav a {
+#nav a {
   color: rgba(216, 63, 30, .8); /*red*/
   color: rgba(241, 216, 9, .8); /*yellow*/
-  color: rgba(213, 11, 84, .9); /*pink*/
+  color: rgba(213, 11, 84, .9); /*bright pink*/
   color: rgba(255,255,255,.7); /*white*/
 }
 
+#nav a:hover {
+  color: rgba(213, 11, 84, .9); /*bright pink*/
+  text-decoration: none;
+}
+
+/*=================================
+Header & Statement
+=================================*/
 #header-statement {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -91,11 +116,9 @@ h1 {
   font-size: 1.5em;
   margin-left: .5em;
   /*width: 70%;*/
-  /*dark*/
-  color: rgba(0,0,0,.9);
-   /*light*/
-  color: rgba(255,255,255,.8);
-  color: rgba(245, 208, 200,.8);
+  color: rgba(0,0,0,.9); /*dark font*/
+  color: rgba(255,255,255,.8); /*light font*/
+  color: rgba(245, 208, 200,.8); /*dusty pink font*/
   font-family: 'Cardo', serif;
   font-family: 'IM Fell DW Pica', serif;
   font-family: 'Habibi', serif;
@@ -128,6 +151,10 @@ button {
  border-radius: 6px;
 }
 
+.visit-site :hover {
+  background-color: rgba(213, 11, 84, .9);
+}
+
 button a {
  /*background-color: rgba(5, 11, 56, .8);*/
  /*color: rgba(5, 11, 56, .8);*/
@@ -135,10 +162,15 @@ button a {
  margin: 7px;
 }
 
+
 .github-logo a {
   color: rgba(5, 11, 56, .8);
   padding-left: 5px;
   font-size: 2em;
+}
+
+.github-logo a:hover {
+  color: rgba(213, 11, 84, .9);
 }
 /*=================================
 ABOUT
@@ -174,6 +206,11 @@ CONTACT
 
 #contact a {
   color: rgba(255,255,255,.7);
+}
+
+#contact a:hover {
+  color: rgba(213, 11, 84, .9); /*bright pink*/
+  text-decoration: none;
 }
 
 
