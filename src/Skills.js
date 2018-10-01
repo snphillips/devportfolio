@@ -27,27 +27,28 @@ export default function Skills(props) {
             <div className="col-sm">
               <ul>
                 <li>Git</li>
+                <li>Sublime</li>
                 <li>JQuery</li>
                 <li>D3</li>
                 <li>Heroku</li>
-                <li>Photoshop</li>
 
               </ul>
             </div>
 
             <div className="col-sm">
               <ul>
+                <li>Photoshop</li>
                 <li>Indesign</li>
                 <li>Illustrator</li>
                 <li>Acrobat</li>
                 <li>Microsoft Office Suite</li>
-                <li>ACT! & Filemaker Pro</li>
 
               </ul>
             </div>
 
            <div className="col-sm">
               <ul>
+                <li>ACT! & Filemaker Pro</li>
                 <li>Wordpress</li>
                 <li>Teamsite (nyc.gov)</li>
                 <li>Constant Contact</li>

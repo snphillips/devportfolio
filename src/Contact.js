@@ -6,7 +6,7 @@ export default function Contact(props) {
 
     return (
 
-    <div id="contact" className="contentblock">
+    <div className="contentblock" id="contact">
 
       <h2>Contact</h2>
       <ul>
