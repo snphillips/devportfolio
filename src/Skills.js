@@ -20,7 +20,6 @@ export default function Skills(props) {
                 <li>Node/Express</li>
                 <li>React</li>
                 <li>Ruby on Rails</li>
-
               </ul>
             </div>
 
@@ -31,7 +30,6 @@ export default function Skills(props) {
                 <li>JQuery</li>
                 <li>D3</li>
                 <li>Heroku</li>
-
               </ul>
             </div>
 
@@ -42,7 +40,6 @@ export default function Skills(props) {
                 <li>Illustrator</li>
                 <li>Acrobat</li>
                 <li>Microsoft Office Suite</li>
-
               </ul>
             </div>
 
