@@ -11,10 +11,13 @@ font-family: 'Crimson Text', serif;
 font-family: 'Cardo', serif;
 font-family: 'IM Fell DW Pica', serif;
 font-family: 'Habibi', serif;
-
 */
 
-/*Colors I like*/
+
+
+.col, .row, .col-1, .col-sm-5, .col-md-5, .col-lg-5, .col-xl-5, .col-sm-6, .col-md-6, .col-lg-6, .col-xl-6{
+  /*border:2px solid #333;*/
+}
 
 /*=================================
 General Styling
@@ -30,6 +33,14 @@ body {
   /*background-color: rgba(51, 0, 51, 1); /*purple*/
 }
 
+h2 {
+ font-family: 'Oswald', sans-serif;
+ color: rgba(255,255,255,.7);
+ text-transform: uppercase;
+ font-size: 5vw;
+ letter-spacing: -.3vw;
+}
+
 /*=================================
 Header, Statement & Navigation
 =================================*/
@@ -39,6 +50,12 @@ Header, Statement & Navigation
   position: fixed;
   right: 5%;
   top: 5%;
+}
+
+.nav a {
+  color: rgba(216, 63, 30, .8); /*red*/
+  color: rgba(241, 216, 9, .8); /*yellow*/
+  color: rgba(213, 11, 84, .8); /*pink*/
 }
 
 #header-statement {
@@ -51,24 +68,26 @@ h1 {
   font-family: 'Oswald', sans-serif;
   color: rgba(255,255,255,.7);
   font-style: italic;
-  font-size: 14vw;
+  font-size: 7.5em;
   font-weight: 700;
   /*letter-spacing: -25px;*/
-  letter-spacing: -1vw;
+  letter-spacing: -.07em;
   text-transform: uppercase;
   /*text-transform: lowercase;*/
   line-height: 70%;
-  text-align: right;
+  text-align: right; /*not working*/
+
 }
 
 #statement {
-  font-size: 2.1vw;
-  margin-left: 2vw;
-  width: 70%;
+  font-size: 1.5em;
+  margin-left: .5em;
+  /*width: 70%;*/
   /*dark*/
   color: rgba(0,0,0,.9);
    /*light*/
   color: rgba(255,255,255,.8);
+  color: rgba(245, 208, 200,.8);
   font-family: 'Cardo', serif;
   font-family: 'IM Fell DW Pica', serif;
   font-family: 'Habibi', serif;
@@ -76,13 +95,14 @@ h1 {
 }
 
 /*=================================
-Projects (cards)
+PROJECTS (cards)
 =================================*/
 /*project card titles*/
 h3 {
  font-family: 'Oswald', sans-serif;
  color: rgba(255,255,255,.7);
  color: rgba(5, 11, 56, .8);
+ color: rgba(5, 11, 56, .9);
  text-transform: uppercase;
  font-size: 3vw;
  letter-spacing: -.2vw;
@@ -95,15 +115,29 @@ h3 {
 /*=================================
 Sections
 =================================*/
-h2 {
- font-family: 'Oswald', sans-serif;
- color: rgba(255,255,255,.7);
- text-transform: uppercase;
- font-size: 5vw;
- letter-spacing: -.3vw;
-}
+
 
 .skills ul {
   list-style: none;
+  padding-left: 0;
 }
+
+/*=================================
+ABOUT
+=================================*/
+.two-columns{
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+}
+
+
+/*=================================
+===================================
+Media Queries
+===================================
+=================================*/
 

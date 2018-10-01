@@ -16,40 +16,34 @@ export default function Skills(props) {
             <div className="col-sm">
               <ul>
                 <li>Javascript</li>
-                <li>HTML/CSS</li>
-                <li>Node/Express</li>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>Node</li>
+                <li>Express</li>
                 <li>React</li>
                 <li>Ruby on Rails</li>
-
               </ul>
             </div>
 
-            <div className="col-sm">
-              <ul>
+
+          <div className="col-sm">
+            <ul>
                 <li>Git</li>
                 <li>JQuery</li>
                 <li>D3</li>
-                <li>Heroku</li>
                 <li>Photoshop</li>
-
-              </ul>
-            </div>
-
-            <div className="col-sm">
-              <ul>
                 <li>Indesign</li>
                 <li>Illustrator</li>
                 <li>Acrobat</li>
+            </ul>
+          </div>
+
+            <div className="col-sm">
+            <ul>
                 <li>Microsoft Office Suite</li>
                 <li>ACT! & Filemaker Pro</li>
-
-              </ul>
-            </div>
-
-           <div className="col-sm">
-              <ul>
                 <li>Wordpress</li>
-                <li>Teamsite (nyc.gov)</li>
+                <li>Teamsite (nyc.gov website)</li>
                 <li>Constant Contact</li>
                 <li>Mailchimp</li>
               </ul>
