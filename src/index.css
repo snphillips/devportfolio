@@ -66,9 +66,9 @@ Navigation
 
 #nav ul {
   font-family: 'Crimson Text', serif;
-  font-family: 'Oswald', sans-serif;
   font-size: 1.1em;
-  font-size: 1.3em;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
   font-weight: 100;
   list-style: none;
   position: fixed;
@@ -146,31 +146,36 @@ h3 {
 }
 
 button {
- background-color: rgba(5, 11, 56, .9);
- margin-right: 5px;
+ background-color: rgba(5, 11, 56, .9); /*dark blue*/
+ color: white;
+ margin-right: 10px;
  border-radius: 6px;
-}
-
-.visit-site :hover {
-  background-color: rgba(213, 11, 84, .9);
+ padding: 5px 15px;
 }
 
 button a {
- /*background-color: rgba(5, 11, 56, .8);*/
- /*color: rgba(5, 11, 56, .8);*/
- color: rgba(255,255,255, .9);
- margin: 7px;
+ color: rgba(255,255,255, .9); /*white*/
 }
 
 
+button :hover{
+  background-color: rgba(213, 11, 84, .9); /*bright pink*/
+  color: white;
+  text-decoration: none;
+}
+
+.visit-site :hover {
+  background-color: rgba(213, 11, 84, .9); /*bright pink*/
+}
+
 .github-logo a {
+  /*margin-top: 5px;*/
   color: rgba(5, 11, 56, .8);
-  padding-left: 5px;
   font-size: 2em;
 }
 
 .github-logo a:hover {
-  color: rgba(213, 11, 84, .9);
+  color: rgba(213, 11, 84, .9); /*bright pink*/
 }
 /*=================================
 ABOUT
