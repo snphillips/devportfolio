@@ -7,7 +7,7 @@ export default class Projects extends Component {
   render() {
     return (
 
-      <div id="projects">
+      <div id="projects" className="contentblock">
         <h2>Projects</h2>
 
         <div class="card-columns">

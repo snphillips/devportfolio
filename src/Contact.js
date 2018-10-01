@@ -6,29 +6,15 @@ export default function Contact(props) {
 
     return (
 
-    <div className="contentblock" className="container" className="col-sm">
+    <div id="contact" className="contentblock">
 
-      <hr className="header-hr"/>
-
-      <p id="contact">
-
-        <div className="row">
-          <h2 className="section-header">Contact</h2>
-        </div>
-
-        <div className="row">
-          snphillips@gmail.com
-          <br />
-          <br />
-        </div>
-
-        <div className="row">
-          <a href="https://resume.creddle.io/resume/41xrld5p268" target="_blank">View my resume here.</a>
-        </div>
-
-      </p>
-
-
+      <h2>Contact</h2>
+      <ul>
+        <li>snphillips@gmail.com</li>
+        <li><a href="https://www.linkedin.com/in/sarah-n-phillips/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/snphillips" target="_blank">Github</a></li>
+        <li><a href="https://resume.creddle.io/resume/41xrld5p268" target="_blank">View my resume here.</a></li>
+      </ul>
 
     </div>
 

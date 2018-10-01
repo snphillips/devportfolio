@@ -6,10 +6,10 @@ export default function Skills(props) {
 
     return (
 
-    <div className="contentblock" className="container" className="skills">
-      <div className="row">
+    <div className="contentblock skills">
+
         <h2 className="section-header">Skills</h2>
-      </div>
+
 
         <div className="row">
 

@@ -41,11 +41,16 @@ h2 {
  letter-spacing: -.3vw;
 }
 
+.contentblock {
+  padding-top: 3.5em;
+}
+
 /*=================================
 Header, Statement & Navigation
 =================================*/
 /*navigation*/
 .nav ul {
+  font-family: 'Crimson Text', serif;
   list-style: none;
   position: fixed;
   right: 5%;
@@ -53,9 +58,12 @@ Header, Statement & Navigation
 }
 
 .nav a {
+  font-size: 1.2em;
+  font-weight: 100;
   color: rgba(216, 63, 30, .8); /*red*/
   color: rgba(241, 216, 9, .8); /*yellow*/
-  color: rgba(213, 11, 84, .8); /*pink*/
+  color: rgba(213, 11, 84, .9); /*pink*/
+  color: rgba(255,255,255,.7); /*white*/
 }
 
 #header-statement {
@@ -104,22 +112,14 @@ h3 {
  color: rgba(5, 11, 56, .8);
  color: rgba(5, 11, 56, .9);
  text-transform: uppercase;
- font-size: 3vw;
- letter-spacing: -.2vw;
+ font-size: 1.4em;
+ /*letter-spacing: -.2em;*/
  font-weight: 700;
 }
+
 .card-text, .project-tech, .visit-site, .github-logo {
   color: rgba(5, 11, 56, .8);
-}
-
-/*=================================
-Sections
-=================================*/
-
-
-.skills ul {
-  list-style: none;
-  padding-left: 0;
+  font-size: .9em;
 }
 
 /*=================================
@@ -133,6 +133,31 @@ ABOUT
        -moz-column-count: 2;
             column-count: 2;
 }
+
+/*=================================
+SKILLS
+=================================*/
+.skills ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/*=================================
+CONTACT
+=================================*/
+#contact {
+  padding-bottom: 3em;
+}
+
+#contact ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#contact a {
+  color: rgba(255,255,255,.7);
+}
+
 
 
 /*=================================
