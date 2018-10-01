@@ -54,7 +54,7 @@ hr {
   border: 0;
   /*border-top: 1px solid #ccc;*/
   /*margin: 1em 0;*/
-  margin-bottom: -7px;
+  margin-bottom: -4px;
 }
 
 /*=================================
@@ -129,6 +129,11 @@ h1 {
 PROJECTS (cards)
 =================================*/
 /*project card titles*/
+.card {
+border: none;
+}
+
+
 h3 {
  font-family: 'Oswald', sans-serif;
  color: rgba(255,255,255,.7);
@@ -144,24 +149,6 @@ h3 {
   color: rgba(5, 11, 56, .8);
   font-size: .9em;
 }
-
--button {
- color: white;
- border-radius: 6px;
- padding: 5px 15px;
- color: rgba(255,255,255, .9); /*white*/
-}
-
--button a {
-}
-
-
--button :hover{
-  color: white;
-  text-decoration: none;
-}
-
-
 
 .button {
   /*background-color: #1c98e5;*/
@@ -240,9 +227,40 @@ CONTACT
 
 
 
-/*=================================
-===================================
-Media Queries
-===================================
-=================================*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*Small & Medium devices (768px and smaller) media query*/
+@media (max-width: 768px) {
+
+  /*=================================
+  General Styling
+  =================================*/
+  body {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  h2 {
+   font-size: 8vw;
+  }
+
+  .contentblock {
+    padding-top: 1.5em;
+  }
+
+  hr {
+    margin-bottom: 5px;
+  }
+
+
+
+
+
+
+}
+
 
