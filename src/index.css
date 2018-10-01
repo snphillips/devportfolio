@@ -145,27 +145,47 @@ h3 {
   font-size: .9em;
 }
 
-button {
- background-color: rgba(5, 11, 56, .9); /*dark blue*/
+-button {
  color: white;
- margin-right: 10px;
  border-radius: 6px;
  padding: 5px 15px;
-}
-
-button a {
  color: rgba(255,255,255, .9); /*white*/
 }
 
+-button a {
+}
 
-button :hover{
-  background-color: rgba(213, 11, 84, .9); /*bright pink*/
+
+-button :hover{
   color: white;
   text-decoration: none;
 }
 
-.visit-site :hover {
+
+
+.button {
+  /*background-color: #1c98e5;*/
+  background-color: rgba(5, 11, 56, .9); /*dark blue*/
+  border: none;
+  border-radius: 6px;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /*font-size: 20px;*/
+  /*margin: 10px 0px 20px 0px;*/
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.button a {
+  color: white;
+  text-decoration: none;
+}
+
+.button:hover, .visit-site:hover {
   background-color: rgba(213, 11, 84, .9); /*bright pink*/
+  text-decoration: none;
 }
 
 .github-logo a {
