@@ -88,13 +88,30 @@ h1 {
   color: rgba(255,255,255,.7);
   -webkit-text-fill-color: rgba(255,255,255,.7); /*so transparency works on safari*/
   font-style: italic;
-  /*letter-spacing: -25px;*/
   letter-spacing: -.07em;
   text-transform: uppercase;
   line-height: 70%;
   text-align: right;
   position: sticky;
   top: 15px;
+  -webkit-transition: all 0.4s ease-in; /*for a smooth mouse away effect*/
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+
+}
+
+h1:hover {
+  cursor: pointer;
+  color: rgba(255,255,255,.1);
+  line-height: 64%;
+  opacity: .8;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .sticky {
@@ -224,6 +241,11 @@ CONTACT
 #contact a:hover {
   color: rgba(213, 11, 84, .9); /*bright pink*/
   text-decoration: none;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 
@@ -273,7 +295,6 @@ CONTACT
     margin-bottom: 5px;
   }
 
-
   #nav a {
     display: none;
   }
@@ -292,6 +313,7 @@ CONTACT
     font-size: 5em;
     line-height: 70%;
     text-align: left;
+    /*letter-spacing: -.15em;*/
   }
 
   #statement {

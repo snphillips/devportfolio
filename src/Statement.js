@@ -7,7 +7,7 @@ export default class Statement extends Component {
     return (
 
     <div>
-        <p id="statement">I am a web developer who creates solutions that are welcoming, intuitive and delightful to interact with.</p>
+      <p id="statement">Web Developer: I create solutions that are welcoming, intuitive and delightful to interact with.</p>
     </div>
 
     );
