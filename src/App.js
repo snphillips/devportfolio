@@ -8,6 +8,8 @@ import Skills from './Skills';
 import About from './About';
 import Contact from './Contact';
 
+
+
 export default class App extends Component {
   render() {
     return (

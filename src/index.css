@@ -27,38 +27,32 @@ h2 {
 
 hr {
   display: block;
-  background-color: rgba(213, 11, 84, .9); /*bright pink*/
   background-color: rgba(245, 208, 200,.5); /*dusty pink*/
   height: 1px;
   border: 0;
-  /*border-top: 1px solid #ccc;*/
-  /*margin: 1em 0;*/
   margin-bottom: -4px;
 }
 
 /*=================================
 Navigation
 =================================*/
-/*#nav {
-  margin: 1px solid rgba(245, 208, 200,.8);
-}*/
+.nav-item {
+  font-weight: 300; /*not working...why?*/
+}
 
 #nav ul {
   font-family: 'Crimson Text', serif;
   font-size: 1.1em;
   font-family: 'Oswald', sans-serif;
   font-size: 1.2em;
-  font-weight: 100;
+  font-weight: 300; /*not working...why?*/
   list-style: none;
   position: fixed;
-  right: 5%;
+  right: 3%;
   top: 5%;
 }
 
 #nav a {
-  color: rgba(216, 63, 30, .8); /*red*/
-  color: rgba(241, 216, 9, .8); /*yellow*/
-  color: rgba(213, 11, 84, .9); /*bright pink*/
   color: rgba(255,255,255,.7); /*white*/
 }
 
@@ -91,16 +85,22 @@ h1 {
   /*letter-spacing: -25px;*/
   letter-spacing: -.07em;
   text-transform: uppercase;
-  /*text-transform: lowercase;*/
   line-height: 70%;
-  text-align: right; /*not working*/
-  visibility: visible;
+  text-align: right;
+  position: sticky;
+  top: 15px;
+}
 
+.sticky {
+  /*Trying to get the header to be sticky*/
+  position: sticky;
+  top: 15px;
 }
 
 #statement {
   font-size: 1.5em;
-  margin-left: .5em;
+  margin-left: 1em;
+  /*margin-right: 1em;*/
   /*width: 70%;*/
   color: rgba(0,0,0,.9); /*dark font*/
   color: rgba(255,255,255,.8); /*light font*/
@@ -113,7 +113,7 @@ PROJECTS (cards)
 =================================*/
 /*project card titles*/
 .card {
-border: none;
+  border: none;
 }
 
 
@@ -296,10 +296,20 @@ CONTACT
          -moz-column-count: 1;
               column-count: 1;
   }
-
-
-
-
 }
+
+/*Large devices (900px and smaller) media query*/
+@media (max-width: 900px) {
+/*=================================
+Navigation
+=================================*/
+  #nav ul {
+    position: static; /*so the navigation doesn't interfere with content*/
+  }
+}
+
+
+
+
 
 
