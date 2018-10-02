@@ -4,7 +4,7 @@ General Styling
 =================================*/
 body {
   max-width: 800px;
-  color: rgba(255,255,255,.7);
+  color: rgba(255,255,255,.7); /*white*/
   margin: 0 auto;
   padding: 0;
   font-family: sans-serif;
@@ -16,7 +16,6 @@ body {
 h2 {
  font-family: 'Oswald', sans-serif;
  font-weight: 400;
- /*color: rgba(255,255,255,.7); /* white text*/
  color: rgba(245, 208, 200,.6); /*dusty pink text*/
  text-transform: uppercase;
  font-size: 3em;
@@ -41,8 +40,6 @@ hr {
 Navigation
 =================================*/
 #nav ul {
-  /*font-family: 'Crimson Text', serif;*/
-  /*font-size: 1.1em;*/
   font-family: 'Oswald', sans-serif;
   font-size: 1.2em;
   font-weight: 300;
@@ -50,16 +47,15 @@ Navigation
   position: fixed;
   right: 3%;
   top: 5%;
-
 }
 
 #nav a {
   color: rgba(255,255,255,.7); /*white*/
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 #nav a:hover {
@@ -67,7 +63,7 @@ Navigation
   text-decoration: none;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
+/* Hide the link that opens & closes the nav on small screens */
 #hamburger-icon {
     display: none;
 }
@@ -92,13 +88,15 @@ h1 {
   text-transform: uppercase;
   line-height: 70%;
   text-align: right;
+
   position: sticky;
   top: 15px;
-  -webkit-transition: all 0.4s ease-in; /*for a smooth mouse away effect*/
-  -moz-transition: all 0.4s ease-in;
-  -ms-transition: all 0.4s ease-in;
-  -o-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
+
+    -webkit-transition: all 0.4s ease-in; /*for a smooth mouse away effect*/
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
 
 }
 
@@ -126,11 +124,7 @@ h1:hover {
   font-weight: 400;
   font-style: italic;
   margin-left: 2em;
-  /*margin-right: 1em;*/
-  /*width: 70%;*/
-  color: rgba(0,0,0,.9); /*dark font*/
-  color: rgba(255,255,255,.8); /*light font*/
-  color: rgba(245, 208, 200,.8); /*dusty pink font*/
+  color: rgba(245, 208, 200,.8); /*dusty pink*/
 }
 
 /*=================================
@@ -141,16 +135,12 @@ PROJECTS (cards)
   border: none;
 }
 
-
 h3 {
  font-family: 'Oswald', sans-serif;
- color: rgba(255,255,255,.7);
- color: rgba(5, 11, 56, .8);
- color: rgba(5, 11, 56, .9);
+ color: rgba(5, 11, 56, .9); /*navy blue*/
  text-transform: uppercase;
  font-size: 1.4em;
- /*letter-spacing: -.2em;*/
- font-weight: 700;
+ font-weight: 500;
 }
 
 .card-text, .project-tech {
@@ -159,18 +149,13 @@ h3 {
 }
 
 .button {
-  /*background-color: #1c98e5;*/
-  background-color: rgba(5, 11, 56, .9); /*dark blue*/
-  border: none;
+  background-color: rgba(5, 11, 56, .9); /*navy blue*/
   border-radius: 6px;
   padding: 5px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  /*font-size: 20px;*/
-  /*margin: 10px 0px 20px 0px;*/
   margin-right: 10px;
-  cursor: pointer;
 }
 
 .button a {
@@ -180,38 +165,37 @@ h3 {
 
 .button:hover, .visit-site:hover {
   background-color: rgba(213, 11, 84, .9); /*bright pink*/
-  text-decoration: none;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
+/*TODO: drop it down a few px*/
 .github-logo a {
-  /*margin-top: 5px;*/
-  color: rgba(5, 11, 56, .9);
-  font-size: 2em;
+  color: rgba(5, 11, 56, .9); /*navy blue*/
+  font-size: 1.9em;
 }
 
 .github-logo a:hover {
   color: rgba(213, 11, 84, .9); /*bright pink*/
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 /*=================================
 ABOUT
 =================================*/
-.about-columns{
-    -webkit-column-gap: 20px;
-       -moz-column-gap: 20px;
-            column-gap: 20px;
-    -webkit-column-count: 2;
-       -moz-column-count: 2;
-            column-count: 2;
+.about-columns {
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
 }
 
 /*=================================
@@ -241,11 +225,11 @@ CONTACT
 #contact a:hover {
   color: rgba(213, 11, 84, .9); /*bright pink*/
   text-decoration: none;
-  -webkit-transition: all 0.4s ease-out;
-  -moz-transition: all 0.4s ease-out;
-  -ms-transition: all 0.4s ease-out;
-  -o-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 
