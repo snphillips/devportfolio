@@ -36,20 +36,23 @@ hr {
   margin-bottom: -4px;
 }
 
+
+
+
 /*=================================
 Navigation
 =================================*/
-#nav ul {
+#navbarNav ul {
   font-family: 'Oswald', sans-serif;
   font-size: 1.2em;
   font-weight: 300;
   list-style: none;
-  position: fixed;
-  right: 3%;
-  top: 5%;
+  /*position: fixed;*/
+  /*right: 3%;*/
+  /*top: 5%;*/
 }
 
-#nav a {
+#navbarNav a {
   color: rgba(255,255,255,.7); /*white*/
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
@@ -58,14 +61,16 @@ Navigation
     transition: all 0.3s ease-out;
 }
 
-#nav a:hover {
+#navbarNav a:hover {
   color: rgba(213, 11, 84, .9); /*bright pink*/
   text-decoration: none;
 }
 
-/* Hide the link that opens & closes the nav on small screens */
-#hamburger-icon {
-    display: none;
+.navbar-toggler {
+  margin-left: -10px;
+  margin-top: 12px;
+  color: rgba(245, 208, 200, 1);
+  border: 3px solid white;
 }
 
 /*=================================
@@ -279,12 +284,6 @@ CONTACT
     margin-bottom: 5px;
   }
 
-  #nav a {
-    display: none;
-  }
-
-
-
   /*=================================
   Header & Statement
   =================================*/
@@ -328,7 +327,7 @@ CONTACT
 /*=================================
 Navigation
 =================================*/
-  #nav ul {
+  #navbarNav ul {
     position: static; /*so the navigation doesn't interfere with content*/
   }
 }
