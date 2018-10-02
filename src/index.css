@@ -50,10 +50,16 @@ Navigation
   position: fixed;
   right: 3%;
   top: 5%;
+
 }
 
 #nav a {
   color: rgba(255,255,255,.7); /*white*/
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 #nav a:hover {
@@ -158,16 +164,26 @@ h3 {
 .button:hover, .visit-site:hover {
   background-color: rgba(213, 11, 84, .9); /*bright pink*/
   text-decoration: none;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .github-logo a {
   /*margin-top: 5px;*/
-  color: rgba(5, 11, 56, .8);
+  color: rgba(5, 11, 56, .9);
   font-size: 2em;
 }
 
 .github-logo a:hover {
   color: rgba(213, 11, 84, .9); /*bright pink*/
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 /*=================================
 ABOUT
