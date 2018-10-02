@@ -24,7 +24,7 @@ h2 {
 
 /*All sections get some breathing room on top*/
 .contentblock {
-  padding-top: 3.5em;
+  padding-top: 3.4em;
 }
 
 /*All section headers have a line on top*/
@@ -78,7 +78,7 @@ Header & Statement
 =================================*/
 #header-statement {
   margin-top: 3em;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 
 /*SARAH PHILLIPS*/
@@ -206,7 +206,7 @@ ABOUT
 /*=================================
 SKILLS
 =================================*/
-.skills ul {
+#skills ul {
   list-style: none;
   padding-left: 0;
 }
@@ -288,7 +288,7 @@ CONTACT
   Header & Statement
   =================================*/
   #header-statement {
-    margin-bottom: 0em;
+    margin-bottom: -2em;
   }
 
   /*SARAH PHILLIPS*/
