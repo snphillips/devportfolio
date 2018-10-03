@@ -9,9 +9,8 @@ About a Blue Bike is a tool to look up statistics on individual bicycles in New 
 
 Every Citibike has a unique identification number that is prominently printed on every bike. Users of About a Blue Bike input a bike id into a field and are presented with a narrative that includes the length of time that bike has been on the road, how many miles the bike had travelled and which docking stations it has visited.
 
-- View the website here: https://aboutabluebike.herokuapp.com/
+- View the website here: https://aboutabluebike.surge.sh/
 - View the project repo here: https://github.com/snphillips/aboutabluebike
-- View a video about this project here: https://www.youtube.com/watch?v=4u7z32ZBcHQ&feature=youtu.be
 ***
 
 
