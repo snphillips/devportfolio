@@ -16,7 +16,7 @@ body {
 h2 {
  font-family: 'Oswald', sans-serif;
  font-weight: 400;
- color: rgba(245, 208, 200,.6); /*dusty pink text*/
+ color: rgba(245, 208, 200,.8); /*dusty pink text*/
  text-transform: uppercase;
  font-size: 3em;
  letter-spacing: -.3vw;
@@ -36,9 +36,6 @@ hr {
   margin-bottom: -4px;
 }
 
-
-
-
 /*=================================
 Navigation
 =================================*/
@@ -47,9 +44,9 @@ Navigation
   font-size: 1.2em;
   font-weight: 300;
   list-style: none;
-  /*position: fixed;*/
-  /*right: 3%;*/
-  /*top: 5%;*/
+  position: fixed;
+  right: 3%;
+  top: 5%;
 }
 
 #navbarNav a {
@@ -93,16 +90,14 @@ h1 {
   text-transform: uppercase;
   line-height: 70%;
   text-align: right;
-
-  position: sticky;
-  top: 15px;
-
     -webkit-transition: all 0.4s ease-in; /*for a smooth mouse away effect*/
     -moz-transition: all 0.4s ease-in;
     -ms-transition: all 0.4s ease-in;
     -o-transition: all 0.4s ease-in;
     transition: all 0.4s ease-in;
-
+  position: sticky;
+  top: 15px;
+  color: hsla(0, 0%, 0%, 0.75);
 }
 
 h1:hover {
@@ -119,6 +114,7 @@ h1:hover {
 
 .sticky {
   /*Trying to get the header to be sticky*/
+  /* Not currenly using */
   position: sticky;
   top: 15px;
 }
@@ -135,11 +131,11 @@ h1:hover {
 /*=================================
 PROJECTS (cards)
 =================================*/
-/*project card titles*/
 .card {
   border: none;
 }
 
+/* project card titles */
 h3 {
  font-family: 'Oswald', sans-serif;
  color: rgba(5, 11, 56, .9); /*navy blue*/
@@ -153,6 +149,7 @@ h3 {
   font-size: .9em;
 }
 
+/* visit site button*/
 .button {
   background-color: rgba(5, 11, 56, .9); /*navy blue*/
   border-radius: 6px;
@@ -194,6 +191,7 @@ h3 {
 /*=================================
 ABOUT
 =================================*/
+/* 2 columns with big screens, 1 with small (see media query)*/
 .about-columns {
   -webkit-column-gap: 20px;
   -moz-column-gap: 20px;
@@ -207,8 +205,8 @@ ABOUT
 SKILLS
 =================================*/
 #skills ul {
-  list-style: none;
-  padding-left: 0;
+  list-style: none; /* removes bullet points */
+  padding-left: 0; /* removes space where bullet points used to be */
 }
 
 /*=================================
@@ -224,11 +222,11 @@ CONTACT
 }
 
 #contact a {
-  color: rgba(255,255,255,.7);
+  color: rgba(255,255,255,.7); /* white */
 }
 
 #contact a:hover {
-  color: rgba(213, 11, 84, .9); /*bright pink*/
+  color: rgba(213, 11, 84, .9); /* bright pink */
   text-decoration: none;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
@@ -256,20 +254,26 @@ CONTACT
     font-size: 5em;
     line-height: 70%;
     text-align: left;
+    opacity: .7; /*to make header transluscent on mobile*/
   }
 }
 
 /*Small & Medium devices (768px and smaller) media query*/
 @media (max-width: 768px) {
 
-  /*=================================
-  General Styling
-  =================================*/
   body {
     width: 95%;
     margin: 0 auto;
     padding: 0;
     font-size: 120%;
+  }
+
+  /*SARAH PHILLIPS*/
+  h1 {
+    font-size: 5em;
+    line-height: 70%;
+    text-align: left;
+    opacity: .7; /*to make header transluscent on mobile*/
   }
 
   h2 {
@@ -284,19 +288,9 @@ CONTACT
     margin-bottom: 5px;
   }
 
-  /*=================================
-  Header & Statement
-  =================================*/
+
   #header-statement {
     margin-bottom: -2em;
-  }
-
-  /*SARAH PHILLIPS*/
-  h1 {
-    font-size: 5em;
-    line-height: 70%;
-    text-align: left;
-    /*letter-spacing: -.15em;*/
   }
 
   #statement {
@@ -304,13 +298,9 @@ CONTACT
     margin-bottom: 0em;
     font-size: 1.3em;
     margin-left: .2em;
-    /*margin-right: .1em;*/
     line-height: 1.1em;
   }
 
-  /*=================================
-  ABOUT
-  =================================*/
   /*Getting rid of two columns for small screens*/
   .about-columns{
       -webkit-column-gap: 0px;
@@ -320,6 +310,7 @@ CONTACT
          -moz-column-count: 1;
               column-count: 1;
   }
+
 }
 
 /*Large devices (900px and smaller) media query*/
