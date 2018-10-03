@@ -7,7 +7,7 @@ This is a portfolio website to display the web development work of Sarah Phillip
 ### About a Blue Bike
 About a Blue Bike is a tool to look up statistics on individual bicycles in New York City's Citibike bike share system.
 
-Every Citibike has a unique identification number that is prominently printed on every bike. Users of About a Blue Bike input a bike id into a field and are presented with a narrative that includes the length of time that bike has been on the road, how many miles the bike had travelled and which docking stations it has visited.
+Statistics about every Citi Bike ride is tracked and recorded. Users of About a Blue Bike input a bike id into a field and are presented with a narrative that includes the length of time that bike has been on the road, how many miles the bike had travelled and which docking stations it has visited.
 
 - View the website here: https://aboutabluebike.surge.sh/
 - View the project repo here: https://github.com/snphillips/aboutabluebike
