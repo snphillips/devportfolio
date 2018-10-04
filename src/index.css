@@ -26,7 +26,7 @@ h2 {
   padding-top: 3.4em;
 }
 
-/*All section headers have a line on top*/
+/*All section headers have a pink line on top*/
 hr {
   display: block;
   background-color: rgba(245, 208, 200,.5); /*dusty pink*/
@@ -34,6 +34,49 @@ hr {
   border: 0;
   margin-bottom: -4px;
 }
+
+/*=================================
+Links
+=================================*/
+a {
+  position: relative;
+  text-decoration: none; /* This removes the default underline */
+  color: rgba(255,255,255,.7); /* This changes the default color */
+}
+
+/* if you want to syle the nav items on hover, do it here */
+a:hover {
+  text-decoration: none; /* This removes the default underline */
+  color: rgba(255,255,255,.7); /* This changes the default color */
+}
+
+/* The underline animation */
+/* READ MORE: https://css-tricks.com/almanac/selectors/a/after-and-before/ */
+a:before {
+  content: ""; /* If you put a string here, it will show up */
+  position: absolute;
+  left: 0; /* the position of the line */
+  width: 100%; /* width of the line */
+  height: 2px;  /* thickness of the line */
+  bottom: -5px;  /* the space between the text and the line */
+  background-color: rgba(213, 11, 84, .9); /*color:pink underline*/
+  visibility: hidden; /* by default the underline is hidden*/
+
+/*   The scaleX() CSS function defines a transformation that resizes an element along the x-axis (horizontally).
+  Its result is a <transform-function> data type. */
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s; /*how fast the animation is*/
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1); /* width of the line. 1 = 100% */
+  transform: scaleX(1); /* width of the line. 1 = 100% */
+}
+
+
 
 /*=================================
 Navigation
@@ -48,22 +91,6 @@ Navigation
   top: 5%;
 }
 
-#navbarNav a {
-  color: rgba(255,255,255,.7); /*white*/
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-
-#navbarNav a:hover {
-  color: rgba(213, 11, 84, .9); /*bright pink*/
-  text-decoration: none;
-
-
-}
-
 .navbar-toggler {
   margin-left: -10px;
   margin-top: 12px;
@@ -72,7 +99,7 @@ Navigation
 }
 
 /*=================================
-Header & Statement
+Header
 =================================*/
 #header-statement {
   margin-top: 3em;
@@ -91,22 +118,19 @@ h1 {
   text-transform: uppercase;
   line-height: 70%;
   text-align: right;
-
-    -webkit-transition: all 0.4s ease-in; /*for a smooth mouse away effect*/
-    -moz-transition: all 0.4s ease-in;
-    -ms-transition: all 0.4s ease-in;
-    -o-transition: all 0.4s ease-in;
-    transition: all 0.4s ease-in;
-
+  -webkit-transition: all 0.4s ease-in; /*for a smooth mouse away effect*/
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
   position: sticky;
   top: 15px;
-
 }
 
 h1:hover {
   cursor: pointer;
   color: rgba(255,255,255,.1);
-  line-height: 64%;
+  /*line-height: 64%;*/
   opacity: .8;
   -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
@@ -122,6 +146,9 @@ h1:hover {
   top: 15px;
 }
 
+/*=================================
+Statement
+=================================*/
 #statement {
   font-family: 'Crimson Text', serif;
   font-size: 1.5em;
@@ -129,6 +156,25 @@ h1:hover {
   font-style: italic;
   margin-left: 2em;
   color: rgba(245, 208, 200,.8); /*dusty pink*/
+}
+
+#highlight {
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+#highlight:hover {
+  cursor: pointer;
+  color: rgba(213, 11, 84, .9);
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 /*=================================
@@ -227,17 +273,6 @@ CONTACT
 #contact a {
   color: rgba(255,255,255,.7); /* white */
 }
-
-#contact a:hover {
-  color: rgba(213, 11, 84, .9); /* bright pink */
-  text-decoration: none;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-
 
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
