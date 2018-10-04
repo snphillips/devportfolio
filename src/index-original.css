@@ -60,8 +60,6 @@ Navigation
 #navbarNav a:hover {
   color: rgba(213, 11, 84, .9); /*bright pink*/
   text-decoration: none;
-
-
 }
 
 .navbar-toggler {
@@ -91,13 +89,11 @@ h1 {
   text-transform: uppercase;
   line-height: 70%;
   text-align: right;
-
     -webkit-transition: all 0.4s ease-in; /*for a smooth mouse away effect*/
     -moz-transition: all 0.4s ease-in;
     -ms-transition: all 0.4s ease-in;
     -o-transition: all 0.4s ease-in;
     transition: all 0.4s ease-in;
-
   position: sticky;
   top: 15px;
 
