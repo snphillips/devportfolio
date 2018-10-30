@@ -19,6 +19,7 @@ export default function Skills(props) {
                 <li>HTML/CSS</li>
                 <li>Node/Express</li>
                 <li>React</li>
+                <li>REST API</li>
                 <li>Ruby on Rails</li>
               </ul>
             </div>

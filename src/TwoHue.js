@@ -4,7 +4,6 @@ export default class Twohue extends Component {
   render() {
     return (
 
-
       <div className="card">
 
         <img className="card-img-top" src="https://i.imgur.com/6TvUx8j.png" alt="" />

@@ -184,6 +184,21 @@ PROJECTS (cards)
   border: none;
 }
 
+/*Smaller screens, pop to 2 columns*/
+@media (min-width: 576px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+
+/*Medium screens, pop to 2 columns*/
+@media (min-width: 768px) {
+    .card-columns {
+        column-count: 3;
+    }
+}
+
+
 /* project card titles */
 h3 {
  font-family: 'Oswald', sans-serif;
