@@ -1,8 +1,9 @@
 
+## Project Description
 This is a portfolio website to display the web development work of Sarah Phillips.
 - View the site here: https://sarahphillipsdev.surge.sh/
 ***
-# Featured Projects
+## Featured Projects
 
 ### About a Blue Bike
 About a Blue Bike is a tool to look up statistics on individual bicycles in New York City's Citibike bike share system.
@@ -39,6 +40,11 @@ twohue is a front-end game created with React.
 
 - View twohue here: https://twohue.surge.sh/ 
 ***
+
+## Made With
+- React
+- some bootstrap
+- hosted with surge
 
 
 
