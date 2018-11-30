@@ -2,6 +2,12 @@
 ## Project Description
 This is a portfolio website to display the web development work of Sarah Phillips.
 - View the site here: https://sarahphillipsdev.surge.sh/
+
+https://i.imgur.com/XSqjlCZ.png
+## Made With
+- React
+- Some Bootstrap
+
 ***
 ## Featured Projects
 
