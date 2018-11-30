@@ -3,7 +3,10 @@
 This is a portfolio website to display the web development work of Sarah Phillips.
 - View the site here: https://sarahphillipsdev.surge.sh/
 
-https://i.imgur.com/XSqjlCZ.png
+<img src="https://i.imgur.com/XSqjlCZ.png"
+     width="500"
+     alt="screengrab of app">
+     
 ## Made With
 - React
 - Some Bootstrap
