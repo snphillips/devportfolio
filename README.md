@@ -47,10 +47,4 @@ twohue is a front-end game created with React.
 - View twohue here: https://twohue.surge.sh/ 
 ***
 
-## Made With
-- React
-- some bootstrap
-- hosted with surge
-
-
 
