@@ -13,7 +13,7 @@ export default class SoTrashy extends Component {
           <h3 className="card-title">So Trashy</h3>
           <p className="card-text">So Trashy uses data visualization to represent New York City's Department of Sanitation's yearly collection of refuse & recycling.</p>
           <p className="project-tech">D3.js</p>
-          <div className="button visit-site"><a href="http://sotrashy.surge.sh/">visit site</a></div>
+          <div className="button visit-site"><a href="https://sotrashy.surge.sh/">visit site</a></div>
           <span className="github-logo"><a href="https://github.com/snphillips/sotrashy"><i  className="fab fa-github"></i></a></span>
 
         </div>
