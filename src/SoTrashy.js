@@ -6,15 +6,15 @@ export default class SoTrashy extends Component {
 
       <div className="card">
 
-        <img className="card-img-top" src="https://i.imgur.com/s14l5ob.png" alt="" />
+        <img className="card-img-top" src="https://i.imgur.com/Zf8LOkR.png" alt="website screen grab" />
 
         <div className="card-body">
 
-          <h3 className="card-title">So Trashy</h3>
+          <h3 className="card-title"><a className="title-link" href="https://so-trashy-react.surge.sh/">So Trashy</a></h3>
           <p className="card-text">So Trashy uses data visualization to represent New York City's Department of Sanitation's yearly collection of refuse & recycling.</p>
-          <p className="project-tech">D3.js</p>
-          <div className="button visit-site"><a href="https://sotrashy.surge.sh/">visit site</a></div>
-          <span className="github-logo"><a href="https://github.com/snphillips/sotrashy"><i  className="fab fa-github"></i></a></span>
+          <p className="project-tech">D3.js/React.js/nyc.gov APIs</p>
+          <div className="button visit-site"><a href="https://so-trashy-react.surge.sh/">visit site</a></div>
+          <span className="github-logo"><a href="https://github.com/snphillips/So-Trashy-React"><i  className="fab fa-github"></i></a></span>
 
         </div>
 
@@ -22,4 +22,4 @@ export default class SoTrashy extends Component {
     );
   }
 }
-          // <button className="visit-site"><a href="http://sotrashy.surge.sh/">visit site</a></button>
+

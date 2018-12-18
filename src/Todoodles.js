@@ -6,11 +6,11 @@ export default class Todoodles extends Component {
 
       <div className="card">
 
-        <img className="card-img-top" src="https://i.imgur.com/DNmSSeE.png" alt="" />
+        <img className="card-img-top" src="https://i.imgur.com/DNmSSeE.png" alt="screen capture of app" />
 
         <div className="card-body">
 
-          <h3 className="card-title">Todoodles</h3>
+          <h3 className="card-title"><a className="title-link" href="https://todoodles.surge.sh/">Todoodles</a></h3>
           <p className="card-text">Todoodles is a CRUD TODO app that allows users to create & delete todo items, as well as cross out completed tasks.</p>
           <p className="project-tech">Node/Express/React/Postgres</p>
           <div className="button visit-site"><a href="https://todoodles.surge.sh/">visit site</a></div>

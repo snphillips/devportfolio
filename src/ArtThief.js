@@ -10,7 +10,7 @@ export default class ArtThief extends Component {
 
         <div className="card-body">
 
-          <h3 className="card-title">Art Thief</h3>
+          <h3 className="card-title"><a className="title-link" href="https://art-thief.surge.sh/">Art Thief</a></h3>
           <p className="card-text">Art Thief allows users to view random images from the Cooper Hewitt Museum's collection, based on selected keywords such as angular, art deco, modernism etc.</p>
           <p className="project-tech">Node/Express/React/Cooper Hewitt Museum API</p>
           <div className="button visit-site"><a href="https://art-thief.surge.sh/">visit site</a></div>

@@ -6,11 +6,11 @@ export default class Twohue extends Component {
 
       <div className="card">
 
-        <img className="card-img-top" src="https://i.imgur.com/6TvUx8j.png" alt="" />
+        <img className="card-img-top" src="https://i.imgur.com/6TvUx8j.png" alt="screen capture of app" />
 
         <div className="card-body">
 
-          <h3 className="card-title">twohue</h3>
+          <h3 className="card-title"><a className="title-link" href="https://github.com/snphillips/twohue-react">twohue</a></h3>
           <p className="card-text">Twohue is a one-player color mixing game. Players are presented with a color sample that they must recreate using two transparent color swatches.</p>
           <p className="project-tech">React</p>
           <div className="button visit-site"><a href="https://twohue.surge.sh/">visit site</a></div>

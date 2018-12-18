@@ -10,7 +10,7 @@ export default class AboutABlueBike extends Component {
 
         <div className="card-body">
 
-          <h3 className="card-title">About A Blue Bike</h3>
+          <h3 className="card-title"><a className="title-link" href="https://aboutabluebike.surge.sh/">About A Blue Bike</a></h3>
           <p className="card-text"><i>About a Blue Bike</i> is a tool to look up trip statistics about individual bicycles in New York City's Citi Bike bike share system.</p>
           <p className="project-tech">Node/Express/Postgres/React</p>
           <div className="button visit-site"><a href="https://aboutabluebike.surge.sh/">visit site</a></div>

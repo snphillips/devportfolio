@@ -18,8 +18,8 @@ export default function Skills(props) {
                 <li>Javascript</li>
                 <li>HTML/CSS</li>
                 <li>Node/Express</li>
-                <li>React</li>
-                <li>REST API</li>
+                <li>React.js</li>
+                <li>REST APIs</li>
                 <li>Ruby on Rails</li>
               </ul>
             </div>
@@ -29,7 +29,7 @@ export default function Skills(props) {
                 <li>Git</li>
                 <li>Sublime</li>
                 <li>JQuery</li>
-                <li>D3</li>
+                <li>D3.js</li>
                 <li>Heroku</li>
               </ul>
             </div>

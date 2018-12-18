@@ -17,8 +17,8 @@ export default class Projects extends Component {
         <div className="card-columns">
 
           <AboutABlueBike />
-          <SoTrashy />
           <TwoHue />
+          <SoTrashy />
           <WeatherGIF />
           <ArtThief />
           <Todoodles />

@@ -58,7 +58,7 @@ a:before {
   left: 0; /* the position of the line */
   width: 100%; /* width of the line */
   height: 2px;  /* thickness of the line */
-  bottom: -5px;  /* the space between the text and the line */
+  bottom: -2px;   /*the space between the text and the line*/
   background-color: rgba(213, 11, 84, .9); /*color:pink underline*/
   visibility: hidden; /* by default the underline is hidden*/
 
@@ -206,6 +206,10 @@ h3 {
  text-transform: uppercase;
  font-size: 1.4em;
  font-weight: 500;
+}
+
+a.title-link {
+  color: rgba(5, 11, 56, .9); /*navy blue*/
 }
 
 .card-text, .project-tech {
