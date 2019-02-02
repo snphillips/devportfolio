@@ -16,11 +16,10 @@ export default function Skills(props) {
             <div className="col-sm">
               <ul>
                 <li>Javascript</li>
-                <li>HTML/CSS</li>
+                <li>HTML5/CSS3</li>
                 <li>Node/Express</li>
                 <li>React.js</li>
-                <li>REST APIs</li>
-                <li>Ruby on Rails</li>
+                <li>RESTful APIs</li>
               </ul>
             </div>
 

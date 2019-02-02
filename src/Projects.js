@@ -5,6 +5,7 @@ import TwoHue from './TwoHue';
 import WeatherGIF from './WeatherGIF';
 import ArtThief from './ArtThief';
 import Todoodles from './Todoodles';
+import FiveYearsFood from './FiveYearsFood';
 
 export default class Projects extends Component {
   render() {
@@ -18,10 +19,13 @@ export default class Projects extends Component {
 
           <AboutABlueBike />
           <TwoHue />
+          <Todoodles />
+
           <SoTrashy />
           <WeatherGIF />
+
           <ArtThief />
-          <Todoodles />
+          <FiveYearsFood />
 
         </div>
 

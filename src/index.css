@@ -2,7 +2,8 @@
 General Styling
 =================================*/
 body {
-  max-width: 800px;
+  /*max-width: 800px;*/
+  max-width: 50rem;
   color: rgba(255,255,255,.7); /*white*/
   margin: 0 auto;
   padding: 0;
@@ -109,7 +110,7 @@ Header
 /*SARAH PHILLIPS*/
 h1 {
   font-family: 'Oswald', sans-serif;
-  font-size: 7.5em;
+  font-size: 7.5rem;
   font-weight: 500;
   color: rgba(255,255,255,.7);
   -webkit-text-fill-color: rgba(255,255,255,.7); /*so transparency works on safari*/
@@ -154,8 +155,9 @@ Statement
   font-size: 1.5em;
   font-weight: 400;
   font-style: italic;
-  margin-left: 2em;
+  margin-left: 3rem;
   color: rgba(245, 208, 200,.8); /*dusty pink*/
+  z-index: -1;
 }
 
 #highlight {
