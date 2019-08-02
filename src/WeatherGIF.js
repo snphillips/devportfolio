@@ -12,7 +12,7 @@ export default class WeatherGIF extends Component {
 
           <h3 className="card-title"><a className="title-link" href="https://github.com/snphillips/weatherGIF">WeatherGIF</a></h3>
           <p className="card-text">WeatherGIF is a silly little weather app that displays current weather conditions based on ZIP, accompanied by an animated GIF that illustrates the weather.</p>
-          <p className="project-tech">Javascript/Jquery/Open Weather API</p>
+          <p className="project-tech">Javascript/Open Weather API</p>
           <div className="button visit-site"><a href="https://weathergif.surge.sh/">visit site</a></div>
           <span className="github-logo"><a href="https://github.com/snphillips/weatherGIF"><i  className="fab fa-github"></i></a></span>
 
