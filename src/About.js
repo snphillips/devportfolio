@@ -11,8 +11,8 @@ export default class About extends Component {
         with a background in municipal service delivery. My experiences in community outreach
         and engagement have helped me learn to communicate with individuals from diverse backgrounds.
         I strive to create visually interesting solutions that are broadly appealing.  I believe tech
-        should be intuitive, welcoming and delightful to interact with. In my current position as a
-        Junior Interaction Engineer at Triplelift, I create bespoke, consumer-centric ad templates.</p>
+        should be intuitive, welcoming and delightful to interact with. In my current position as an
+        Interaction Engineer at Triplelift, I create bespoke, consumer-centric ad templates.</p>
       </div>
     );
   }
