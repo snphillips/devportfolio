@@ -3,7 +3,6 @@ import './App.css';
 import Header from './Header';
 import Navigation from './Navigation';
 import Statement from './Statement';
-import Projects from './Projects';
 import Skills from './Skills';
 import About from './About';
 import Contact from './Contact';
@@ -33,8 +32,8 @@ export default class App extends Component {
 
 
 // ==================================
-//  only display images from .json
-//  1) if includeingallery === true, return it...meaning keep it
+//  only display projects from .json if
+//  1) includeingallery === true, return it...meaning keep it
 //  2) apply the above function as a filter to the states
 //  ==================================
   includeInGalleryTrue(item){
@@ -67,7 +66,6 @@ export default class App extends Component {
         <About />
         <Skills />
         <Contact />
-        <Projects />
       </div>
     );
   }
