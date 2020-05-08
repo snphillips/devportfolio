@@ -2,62 +2,37 @@ import React, { Component } from 'react';
 
 
 
-export default function Skills(props) {
+export default class SkillsNew extends Component {
+    render() {
+      return(
 
-    return (
+        <section className="contentblock" id="skills">
+            <hr />
 
-    <div className="contentblock" id="skills">
-        <hr />
-        <h2 className="section-header">Skills</h2>
+            <h2 className="section-header">Skills</h2>
 
+            <div className="row">
+              <div className="col-sm">
 
-        <div className="row">
+               <ul>
 
-            <div className="col-sm">
-              <ul>
-                <li>Javascript</li>
-                <li>HTML5/CSS3</li>
-                <li>Node/Express</li>
-                <li>React.js</li>
-                <li>RESTful APIs</li>
-              </ul>
+                {this.props.skillsDev.map( skill => {
+                  console.log("skill is:", skill)
+
+                  return(
+                    <li>{skill}</li>
+                  )
+
+                })}
+
+                </ul>
+              </div>
             </div>
 
-            <div className="col-sm">
-              <ul>
-                <li>Git</li>
-                <li>Sublime</li>
-                <li>JQuery</li>
-                <li>D3.js</li>
-                <li>Heroku</li>
-              </ul>
-            </div>
+        </section>
 
-            <div className="col-sm">
-              <ul>
-                <li>Photoshop</li>
-                <li>Indesign</li>
-                <li>Illustrator</li>
-                <li>Acrobat</li>
-                <li>Microsoft Office Suite</li>
-              </ul>
-            </div>
+      )
 
-           <div className="col-sm">
-              <ul>
-                <li>ACT! & Filemaker Pro</li>
-                <li>Wordpress</li>
-                <li>Teamsite (nyc.gov)</li>
-                <li>Constant Contact</li>
-                <li>Mailchimp</li>
-              </ul>
-            </div>
-
-        </div>
-
-
-    </div>
-
-    );
+    }
 
 }
