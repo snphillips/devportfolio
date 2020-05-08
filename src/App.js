@@ -4,6 +4,7 @@ import Header from './Header';
 import Navigation from './Navigation';
 import Statement from './Statement';
 import Skills from './Skills';
+import SkillsNew from './SkillsNew';
 import About from './About';
 import Contact from './Contact';
 import ProjectGallery from './ProjectGallery';
@@ -24,6 +25,11 @@ export default class App extends Component {
 
     this.state = {
       filteredProjects: [],
+      skillsDev: ['Javascript', 'HTML5/CSS3', 'Node/Express', 'React.js', 'RESTful APIs', 'JQuery', 'D3.js', 'Git', 'Postgres'],
+      skillsDevOther: ['Heroku', 'Sublime', 'Jira', 'Salesforce'],
+      skillsOther: [],
+      skillsDesign: ['Photoshop', 'Indesign', 'Illustrator', 'Acrobat'],
+      skillsNotUsing: ['ACT!', 'Filemaker Pro', 'Wordpress', 'Teamsite (nyc.gov)', 'Constant Contact', 'Mailchimp', 'Microsoft Office Suite', 'Slack']
     };
   }
 
@@ -65,6 +71,10 @@ export default class App extends Component {
                         filteredProjects={this.state.filteredProjects}/>
         <About />
         <Skills />
+        <SkillsNew parentState={this.state}
+                   skillsDev={this.state.skillsDev}
+                   skillsDevOther={this.state.skillsDevOther}
+                   />
         <Contact />
       </div>
     );
