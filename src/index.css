@@ -271,17 +271,15 @@ ABOUT
   column-count: 2;
 }
 
-/*=================================
-SKILLS
-=================================*/
 #skills ul {
   list-style: none; /* removes bullet points */
   padding-left: 0; /* removes space where bullet points used to be */
 }
 
-/*=================================
-CONTACT
-=================================*/
+.skills-list {
+  column-count: 4;
+}
+
 #contact {
   padding-bottom: 3em;
 }
@@ -300,31 +298,27 @@ CONTACT
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-/*Very Small devices (350px and smaller) media query*/
-@media (max-width: 350px) {
-/*SARAH PHILLIPS*/
-    body {
-    width: 95%;
-    margin: 0 auto;
-    padding: 0;
-  }
-
-  h1 {
-    font-size: 5em;
-    line-height: 70%;
-    text-align: left;
-    opacity: .7; /*to make header transluscent on mobile*/
+/*=================================*/
+/*Large devices (900px and smaller) media query*/
+/*=================================*/
+@media (max-width: 900px) {
+  #navbarNav ul {
+    position: static; /*so the navigation doesn't interfere with content*/
   }
 }
 
+
+
+/*=================================*/
 /*Small & Medium devices (768px and smaller) media query*/
+/*=================================*/
 @media (max-width: 768px) {
 
   body {
     width: 95%;
     margin: 0 auto;
     padding: 0;
-    font-size: 120%;
+    font-size: 110%;
   }
 
   /*SARAH PHILLIPS*/
@@ -370,17 +364,44 @@ CONTACT
               column-count: 1;
   }
 
+  .skills-list {
+    column-count: 3;
+  }
+
 }
 
-/*Large devices (900px and smaller) media query*/
-@media (max-width: 900px) {
-/*=================================
-Navigation
-=================================*/
-  #navbarNav ul {
-    position: static; /*so the navigation doesn't interfere with content*/
+
+
+/*=================================*/
+/*Very Small devices (500px and smaller) media query*/
+/*=================================*/
+@media (max-width: 500px) {
+/*SARAH PHILLIPS*/
+    body {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
   }
+
+  h1 {
+    font-size: 4em;
+    line-height: 70%;
+    text-align: left;
+    opacity: .7; /*to make header transluscent on mobile*/
+  }
+
+  #statement {
+    font-size: 1.2em;
+  }
+
+  .skills-list {
+    column-count: 1;
+  }
+
+
 }
+
+
 
 
 

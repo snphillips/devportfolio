@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+// We're mapping over two skills lists: web dev & web dev other-- ancillary dev skills like
+// git & sublime.
 
 
 export default class SkillsNew extends Component {
@@ -7,32 +9,29 @@ export default class SkillsNew extends Component {
       return(
 
         <section className="contentblock" id="skills">
-            <hr />
+          <hr />
+          <h2 className="section-header">Skills</h2>
 
-            <h2 className="section-header">Skills</h2>
+          <div className="skills-list">
 
-            <div className="row">
-              <div className="col-sm">
-
-               <ul>
-
+            <div>
+              <ul>
                 {this.props.skillsDev.map( skill => {
-                  console.log("skill is:", skill)
-
                   return(
                     <li>{skill}</li>
                   )
+              })}
 
-                })}
-
-                </ul>
-              </div>
+                {this.props.skillsDevOther.map( skill => {
+                  return(
+                    <li>{skill}</li>
+                  )
+              })}
+              </ul>
             </div>
+          </div>
 
         </section>
-
       )
-
     }
-
 }

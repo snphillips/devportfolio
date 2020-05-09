@@ -15,7 +15,7 @@ export default class ProjectGallery extends Component {
 
             {this.props.filteredProjects.map( item => {
 
-                    let itemIndex = this.props.filteredProjects.indexOf(item)
+                    // let itemIndex = this.props.filteredProjects.indexOf(item)
 
                       return(
 
@@ -36,7 +36,7 @@ export default class ProjectGallery extends Component {
                             <p className="card-text">{item.techused}</p>
                             <div className="button visit-site"><a href={item.url}>visit site</a></div>
 
-                            <span className="github-logo"><a href={item.githuburl}><i class="fab fa-github"></i></a></span>
+                            <span className="github-logo"><a href={item.githuburl}><i className="fab fa-github"></i></a></span>
 
                           </div>
 

@@ -25,8 +25,8 @@ export default class App extends Component {
 
     this.state = {
       filteredProjects: [],
-      skillsDev: ['Javascript', 'HTML5/CSS3', 'Node/Express', 'React.js', 'RESTful APIs', 'JQuery', 'D3.js', 'Git', 'Postgres', 'Heroku', 'Sublime', 'Jira', 'Salesforce'],
-      skillsDevOther: [],
+      skillsDev: ['Javascript', 'HTML5/CSS3', 'Node/Express', 'React.js', 'RESTful APIs', 'JQuery', 'D3.js'],
+      skillsDevOther: ['Heroku', 'Sublime', 'Jira', 'Salesforce', 'Git', 'Postgres', 'SQL'],
       skillsOther: [],
       skillsDesign: ['Photoshop', 'Indesign', 'Illustrator', 'Acrobat'],
       skillsNotUsing: ['ACT!', 'Filemaker Pro', 'Wordpress', 'Teamsite (nyc.gov)', 'Constant Contact', 'Mailchimp', 'Microsoft Office Suite', 'Slack']
