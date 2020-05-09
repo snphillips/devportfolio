@@ -10,7 +10,7 @@ export default function Contact(props) {
       <hr />
       <h2>Contact</h2>
       <ul>
-        <li>snphillips@gmail.com</li>
+        <li>snphillips [at] gmail [dot] com</li>
         <li>
           <a href="https://www.linkedin.com/in/sarah-n-phillips/"
                target="_blank"

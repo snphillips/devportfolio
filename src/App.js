@@ -4,7 +4,6 @@ import Header from './Header';
 import Navigation from './Navigation';
 import Statement from './Statement';
 import Skills from './Skills';
-// import SkillsNew from './SkillsNew';
 import About from './About';
 import Contact from './Contact';
 import ProjectGallery from './ProjectGallery';
@@ -56,24 +55,23 @@ export default class App extends Component {
   };
 
 
-
-
   render() {
     return (
 
       <div>
         <div className="row align-items-center" id="header-statement">
-          <div className="col-sm-12 col-md-5 col-lg-5 col-xl-5"><Header /></div>
-          <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6"><Statement /></div>
-          <div className="col-sm-0 col-md-1 col-lg-1 col-xl-1"><Navigation /></div>
+          <div className="col-sm-12 col-md-5 col-lg-6 col-xl-6"><Header /></div>
+          <div className="col-sm-12 col-md-5 col-lg-5 col-xl-5"><Statement /></div>
+          <div className="col-sm-0 col-md-2 col-lg-1 col-xl-1"><Navigation /></div>
         </div>
         <ProjectGallery parentState={this.state}
-                        filteredProjects={this.state.filteredProjects}/>
+                        filteredProjects={this.state.filteredProjects}
+                        />
         <About />
         <Skills parentState={this.state}
-                   skillsDev={this.state.skillsDev}
-                   skillsDevOther={this.state.skillsDevOther}
-                   />
+                skillsDev={this.state.skillsDev}
+                skillsDevOther={this.state.skillsDevOther}
+                />
         <Contact />
       </div>
     );

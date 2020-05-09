@@ -69,6 +69,16 @@ const projectList = [
   "year": "2018",
   "includeingallery": true,
 },
+{
+  "title": "NYCHA Outage Scraper",
+  "imageurl": "https://i.imgur.com/3CmQKwE.png",
+  "statement": "The New York City Housing Authority (NYCHA) maintains a page on their site that lists services outages in thier developments for heat, hot water, water, elevators, electricity & gas. The outage site is updated regularly, however there is no easy way for stakeholders to download the data. This scraper extracts the data from the NYCHA website and saves the results in csv tables, within a folder named with the date and time of the scrape.",
+  "techused": "Python/Beautiful Soup/Pandas",
+  "url": "https://github.com/snphillips/nycha-outage-scraper",
+  "githuburl": "https://github.com/snphillips/nycha-outage-scraper",
+  "year": "2020",
+  "includeingallery": true,
+},
 ]
 
 export default projectList
