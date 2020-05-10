@@ -1,5 +1,25 @@
 const projectList = [
 {
+  "title": "NYCHA Outage Scraper",
+  "imageurl": "https://i.imgur.com/3CmQKwE.png",
+  "statement": "The New York City Housing Authority (NYCHA) maintains a page on their site that lists services outages in thier developments for heat, hot water, water, elevators, electricity & gas. The outage site is updated regularly, however there is no easy way for stakeholders to download the data. This scraper extracts the data from the NYCHA website and saves the results in csv tables, within a folder named with the date and time of the scrape.",
+  "techused": "Python/Beautiful Soup/Pandas",
+  "url": "https://github.com/snphillips/nycha-outage-scraper",
+  "githuburl": "https://github.com/snphillips/nycha-outage-scraper",
+  "year": "2020",
+  "includeingallery": true,
+},
+{
+  "title": "Artist Portfolio",
+  "imageurl": "https://i.imgur.com/pP8Ne6d.png",
+  "statement": "A portfolio website for my visual art. The site includes a gallery and image modals.",
+  "techused": "React",
+  "url": "https://sarahnicolephillipsart.surge.sh/",
+  "githuburl": "https://github.com/snphillips/artportfolio",
+  "year": "2020",
+  "includeingallery": true,
+},
+{
   "title": "About a Blue Bike",
   "imageurl": "https://i.imgur.com/A1J5MxP.jpg",
   "statement": "About a Blue Bike is a tool to look up trip statistics about individual bicycles in New York City's Citi Bike bike share system.",
@@ -67,17 +87,7 @@ const projectList = [
   "url": "https://todoodles.surge.sh/",
   "githuburl": "https://github.com/snphillips/todoodles",
   "year": "2018",
-  "includeingallery": true,
-},
-{
-  "title": "NYCHA Outage Scraper",
-  "imageurl": "https://i.imgur.com/3CmQKwE.png",
-  "statement": "The New York City Housing Authority (NYCHA) maintains a page on their site that lists services outages in thier developments for heat, hot water, water, elevators, electricity & gas. The outage site is updated regularly, however there is no easy way for stakeholders to download the data. This scraper extracts the data from the NYCHA website and saves the results in csv tables, within a folder named with the date and time of the scrape.",
-  "techused": "Python/Beautiful Soup/Pandas",
-  "url": "https://github.com/snphillips/nycha-outage-scraper",
-  "githuburl": "https://github.com/snphillips/nycha-outage-scraper",
-  "year": "2020",
-  "includeingallery": true,
+  "includeingallery": false,
 },
 ]
 
