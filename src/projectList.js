@@ -20,6 +20,16 @@ const projectList = [
   "includeingallery": true,
 },
 {
+  "title": "No Frillz Tweets",
+  "imageurl": "https://i.imgur.com/dofkpVD.png",
+  "statement": "no frillz twitter is a simple twitter client that returns recent tweets based on the user's search query.",
+  "techused": "Node/Express/Javascript/Twit API",
+  "url": "https://nofrillztweets.surge.sh/",
+  "githuburl": "https://github.com/snphillips/nofrillztwitter",
+  "year": "2020",
+  "includeingallery": true,
+},
+{
   "title": "About a Blue Bike",
   "imageurl": "https://i.imgur.com/A1J5MxP.jpg",
   "statement": "About a Blue Bike is a tool to look up trip statistics about individual bicycles in New York City's Citi Bike bike share system.",
@@ -87,8 +97,8 @@ const projectList = [
   "url": "https://todoodles.surge.sh/",
   "githuburl": "https://github.com/snphillips/todoodles",
   "year": "2018",
-  "includeingallery": false,
-},
+  "includeingallery": true,
+}
 ]
 
 export default projectList
