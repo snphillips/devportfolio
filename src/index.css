@@ -16,7 +16,7 @@ body {
 h2 {
  font-family: 'Oswald', sans-serif;
  font-weight: 400;
- color: rgba(245, 208, 200,.8); /*dusty pink text*/
+ color: rgba(245, 208, 200, 0.8); /*dusty pink text*/
  text-transform: uppercase;
  font-size: 3em;
  letter-spacing: -.3vw;
@@ -30,7 +30,7 @@ h2 {
 /*All section headers have a pink line on top*/
 hr {
   display: block;
-  background-color: rgba(245, 208, 200,.5); /*dusty pink*/
+  background-color: rgba(245, 208, 200, 0.5); /*dusty pink*/
   height: 1px;
   border: 0;
   margin-bottom: -4px;
@@ -42,13 +42,13 @@ Links
 a {
   position: relative;
   text-decoration: none; /* This removes the default underline */
-  color: rgba(255,255,255,.7); /* This changes the default color */
+  color: rgba(255,255,255, 0.7); /* This changes the default color */
 }
 
 /* if you want to syle the nav items on hover, do it here */
 a:hover {
   text-decoration: none; /* This removes the default underline */
-  color: rgba(255,255,255,.7); /* This changes the default color */
+  color: rgba(255,255,255, 0.7); /* This changes the default color */
 }
 
 /* The underline animation */
@@ -60,7 +60,7 @@ a:before {
   width: 100%; /* width of the line */
   height: 2px;  /* thickness of the line */
   bottom: -2px;   /*the space between the text and the line*/
-  background-color: rgba(213, 11, 84, .9); /*color:pink underline*/
+  background-color: rgba(213, 11, 84, 0.9); /*color:pink underline*/
   visibility: hidden; /* by default the underline is hidden*/
 
 /*   The scaleX() CSS function defines a transformation that resizes an element along the x-axis (horizontally).
@@ -112,8 +112,8 @@ h1 {
   font-family: 'Oswald', sans-serif;
   font-size: 7.5rem;
   font-weight: 500;
-  color: rgba(255,255,255,.7);
-  -webkit-text-fill-color: rgba(255,255,255,.7); /*so transparency works on safari*/
+  color: rgba(255,255,255, 0.7);
+  -webkit-text-fill-color: rgba(255,255,255, 0.7); /*so transparency works on safari*/
   font-style: italic;
   letter-spacing: -.07em;
   text-transform: uppercase;
@@ -130,7 +130,7 @@ h1 {
 
 h1:hover {
   cursor: pointer;
-  color: rgba(255,255,255,.1);
+  color: rgba(255,255,255,0.1);
   /*line-height: 64%;*/
   opacity: .8;
   -webkit-transition: all 0.4s ease-out;
@@ -157,7 +157,7 @@ Statement
   font-weight: 400;
   font-style: italic;
   margin-left: 3rem;
-  color: rgba(245, 208, 200,.8); /*dusty pink*/
+  color: rgba(245, 208, 200, 0.8); /*dusty pink*/
   z-index: -1;
 }
 
@@ -172,7 +172,7 @@ Statement
 
 #highlight:hover {
   cursor: pointer;
-  color: rgba(213, 11, 84, .9);
+  color: rgba(213, 11, 84, 0.9);
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
@@ -212,17 +212,17 @@ h3 {
 }
 
 a.title-link {
-  color: rgba(5, 11, 56, .9); /*navy blue*/
+  color: rgba(5, 11, 56, 0.9); /*navy blue*/
 }
 
 .card-text, .project-tech {
-  color: rgba(5, 11, 56, .8);
+  color: rgba(5, 11, 56, 0.8);
   font-size: .9em;
 }
 
 /* visit site button*/
 .button {
-  background-color: rgba(5, 11, 56, .9); /*navy blue*/
+  background-color: rgba(5, 11, 56, 0.9); /*navy blue*/
   border-radius: 6px;
   padding: 5px 15px;
   text-align: center;
@@ -237,7 +237,7 @@ a.title-link {
 }
 
 .button:hover, .visit-site:hover {
-  background-color: rgba(213, 11, 84, .9); /*bright pink*/
+  background-color: rgba(213, 11, 84, 0.9); /*bright pink*/
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
@@ -247,12 +247,12 @@ a.title-link {
 
 /*TODO: drop it down a few px*/
 .github-logo a {
-  color: rgba(5, 11, 56, .9); /*navy blue*/
+  color: rgba(5, 11, 56, 0.9); /*navy blue*/
   font-size: 1.9em;
 }
 
 .github-logo a:hover {
-  color: rgba(213, 11, 84, .9); /*bright pink*/
+  color: rgba(213, 11, 84, 0.9); /*bright pink*/
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
@@ -291,7 +291,7 @@ ABOUT
 }
 
 #contact a {
-  color: rgba(255,255,255,.7); /* white */
+  color: rgba(255,255,255, 0.7); /* white */
 }
 
 

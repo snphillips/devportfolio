@@ -37,7 +37,7 @@ const projectList = [
   "url": "https://aboutabluebike.surge.sh/",
   "githuburl": "https://github.com/snphillips/About-a-Blue-Bike",
   "year": "2018",
-  "includeingallery": true,
+  "includeingallery": false,
 },
 {
   "title": "So Trashy",
@@ -61,12 +61,12 @@ const projectList = [
 },
 {
   "title": "TwoHue",
-  "imageurl": "https://i.imgur.com/6TvUx8j.png",
-  "statement": "Twohue is a one-player color mixing game. Players are presented with a color sample that they must recreate using two transparent color swatches.",
-  "techused": "React",
-  "url": "https://twohue.surge.sh/",
-  "githuburl": "https://github.com/snphillips/twohue-react",
-  "year": "2018",
+  "imageurl": "https://i.imgur.com/i91exEK.png",
+  "statement": "Twohue is a one-player color mixing game. Players are presented with a color sample that they must recreate using two transparent color swatches. I use a state-machine to manage user flow.",
+  "techused": "React/React-Automata (for state machine)/Chroma.js",
+  "url": "https://twohue-state-machine.surge.sh/",
+  "githuburl": "https://github.com/snphillips/twohue-state-chart",
+  "year": "2020",
   "includeingallery": true,
 },
 {
