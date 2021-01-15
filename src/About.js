@@ -8,12 +8,12 @@ export default class About extends Component {
         <hr />
         <h2 className="section-header">About</h2>
         <p className="about-columns">I am a software engineer and designer formally trained in art
-        with a background in municipal service delivery. My experiences in community outreach
-        and engagement have helped me learn to communicate with individuals from diverse backgrounds.
-        I strive to create visually interesting solutions that are broadly appealing.  I believe tech
-        should be intuitive, welcoming and delightful to interact with. In my current position as an
-        Interaction Engineer at Triplelift, I create bespoke, consumer-centric ad templates and help to
-        develop the tools to create those templates.</p>
+        with a background in municipal service delivery. My job working for the City of New York could
+        have taken place on the set of the show Parks & Recreation.  I strive to create visually interesting
+        solutions that are broadly appealing.  I believe tech should be intuitive, welcoming and delightful
+        to interact with. In my current position as an Interaction Engineer at Triplelift, I create bespoke,
+        consumer-centric ad templates and develop the in-house React application we used to create
+        those templates.</p>
       </div>
     );
   }
