@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 // We're mapping over two skills lists: web dev & web dev other-- ancillary dev skills like
 // git & sublime.
+// Find the skills arrays as "state" in App.js
 
 
 export default class SkillsNew extends Component {
