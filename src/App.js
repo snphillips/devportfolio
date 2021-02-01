@@ -37,20 +37,28 @@ export default class App extends Component {
 
 
 // ==================================
-//  only display projects from .json if
+//  Only display projects from projectList.js if
 //  1) includeingallery === true, return it...meaning keep it
 //  2) apply the above function as a filter to the states
+//
 //  ==================================
   includeInGalleryTrue(item){
     return item.includeingallery === true;
   };
 
   filterIncludeInGallery(){
+  // 1) To start filteredProjects is an empty array.
+  // 2) Then we take projectList which is an array that contains all the projects, some of which
+  // I don't want on my portfolio right now.
+  // 3) Use filter() method to create a new array with all elements
+  // that pass the test implemented by the provided function.
+  // In this case, the test is, only return items that have the key includeingallery set to true
     this.setState({filteredProjects: projectList.filter(this.includeInGalleryTrue)})
   };
 
   componentDidMount(){
     // This determines which images from the art json are shown
+    // There's a key in the projectList.js array called includeingallery that can be true or false
     this.filterIncludeInGallery()
   };
 
