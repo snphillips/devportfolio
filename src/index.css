@@ -39,21 +39,27 @@ hr {
 /*=================================
 Links
 =================================*/
-a {
+.title-link,
+.nav-item {
   position: relative;
+  text-decoration: none; /* This removes the default underline */
+  color: rgba(255,255,255, 0.7);  /*This changes the default color*/
+}
+
+/* if you want to syle the nav items on hover, do it here */
+.nav-item:hover {
   text-decoration: none; /* This removes the default underline */
   color: rgba(255,255,255, 0.7); /* This changes the default color */
 }
 
-/* if you want to syle the nav items on hover, do it here */
-a:hover {
+.title-link:hover{
   text-decoration: none; /* This removes the default underline */
-  color: rgba(255,255,255, 0.7); /* This changes the default color */
 }
 
 /* The underline animation */
 /* READ MORE: https://css-tricks.com/almanac/selectors/a/after-and-before/ */
-a:before {
+.title-link:before,
+.nav-item:before {
   content: ""; /* If you put a string here, it will show up */
   position: absolute;
   left: 0; /* the position of the line */
@@ -71,7 +77,8 @@ a:before {
   transition: all 0.3s ease-in-out 0s;
 }
 
-a:hover:before {
+.title-link:hover:before,
+.nav-item:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1); /* width of the line. 1 = 100% */
   transform: scaleX(1); /* width of the line. 1 = 100% */

@@ -26,7 +26,12 @@ export default class ProjectGallery extends Component {
 
                         <div className="card">
 
-                        <a href={item.url}>
+                        <a href={item.url}
+                           style={{
+                            backgroundColor: "none",
+                            width: 0
+                          }}
+                           >
                           <img className="card-img-top"
                                src={item.imageurl}
                                alt={item.title}
