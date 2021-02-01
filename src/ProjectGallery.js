@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 
+// ===============================
+// The project "cards" are dynamically created
+// by mapping over the filteredProjects array.
+// ===============================
+
 
 
 export default class ProjectGallery extends Component {
@@ -21,10 +26,12 @@ export default class ProjectGallery extends Component {
 
                         <div className="card">
 
+                        <a href={item.url}>
                           <img className="card-img-top"
                                src={item.imageurl}
                                alt={item.title}
                                />
+                        </a>
 
                           <div className="card-body">
 
