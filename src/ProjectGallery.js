@@ -20,11 +20,11 @@ export default class ProjectGallery extends Component {
 
             {this.props.filteredProjects.map( item => {
 
-                    // let itemIndex = this.props.filteredProjects.indexOf(item)
+                    let itemIndex = this.props.filteredProjects.indexOf(item)
 
                       return(
 
-                        <div className="card">
+                        <div className="card" key={itemIndex}>
 
                         <a href={item.url}
                            style={{
