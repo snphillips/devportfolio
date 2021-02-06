@@ -19,7 +19,7 @@ export default class ProjectDeepDive extends Component {
 
               return(
 
-                <div className="deep-dives-section" key={itemIndex}>
+                <article className="deep-dives-section" key={itemIndex}>
                 <hr />
                 <h2 className="section-header">{item.title}</h2>
 
@@ -49,17 +49,21 @@ export default class ProjectDeepDive extends Component {
 
                     <p className="deep-dives-text">{item.statement}</p>
 
+                    <br/>
+
                     <h4 className="deep-dives-tech-heading">Tech Used</h4>
 
                     <p className="deep-dives-text">{item.techused}</p>
-                    <div className="deep-dives-button visit-site"><a href={item.url}>visit site</a></div>
 
-                    <span className="deep-dives-github-logo"><a href={item.githuburl}><i className="fab fa-github"></i></a></span>
+                    <footer className="deep-dives-links-footer">
+                      <div><a className="deep-dives-button" href={item.url}>visit site</a></div>
+                      <div><a className="deep-dives-button" href={item.githuburl}>vist github page <i className="fab fa-github"></i></a></div>
+                    </footer>
 
                   </section>
 
                 </div>
-                </div>
+                </article>
 
               )
 
