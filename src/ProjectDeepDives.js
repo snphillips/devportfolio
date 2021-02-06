@@ -27,17 +27,22 @@ export default class ProjectDeepDive extends Component {
                 <div className="deep-dives-container">
 
                 <section className="deep-dives-image-container">
-                <a href={item.url}
-                   style={{
-                    backgroundColor: "none",
-                    width: 0
-                  }}
-                   >
-                  <img className="card-img-top"
+
+                  <img className="deep-dives-image"
                        src={item.imageurl}
                        alt={item.title}
                        />
-                </a>
+
+                  <img className="deep-dives-image"
+                       src={item.imageurl}
+                       alt={item.title}
+                       />
+
+                  <img className="deep-dives-image"
+                       src={item.imageurl}
+                       alt={item.title}
+                       />
+
                 </section>
 
                   <section className="deep-dives-text-container">

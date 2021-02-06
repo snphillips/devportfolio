@@ -311,6 +311,16 @@ PROJECTS sections
   flex-direction: row;
 }
 
+.deep-dives-image-container {
+  width: 40%;
+  max-width: 400px;
+}
+
+.deep-dives-image {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
 
 
 
