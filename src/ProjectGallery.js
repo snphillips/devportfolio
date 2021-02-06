@@ -33,7 +33,7 @@ export default class ProjectGallery extends Component {
                           }}
                            >
                           <img className="card-img-top"
-                               src={item.imageurl}
+                               src={item.imageurl01}
                                alt={item.title}
                                />
                         </a>

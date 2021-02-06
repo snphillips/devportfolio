@@ -29,17 +29,17 @@ export default class ProjectDeepDive extends Component {
                 <section className="deep-dives-image-container">
 
                   <img className="deep-dives-image"
-                       src={item.imageurl}
+                       src={item.imageurl01}
                        alt={item.title}
                        />
 
                   <img className="deep-dives-image"
-                       src={item.imageurl}
+                       src={item.imageurl02}
                        alt={item.title}
                        />
 
                   <img className="deep-dives-image"
-                       src={item.imageurl}
+                       src={item.imageurl03}
                        alt={item.title}
                        />
 
@@ -48,15 +48,15 @@ export default class ProjectDeepDive extends Component {
                   <section className="deep-dives-text-container">
 
 
-                    <h3 className="card-title">
+                    <h3 className="deep-dives-title">
                       <a className="title-link" href={item.url}>{item.title}</a>
                     </h3>
 
-                    <p className="card-text">{item.statement}</p>
-                    <p className="card-text">{item.techused}</p>
-                    <div className="button visit-site"><a href={item.url}>visit site</a></div>
+                    <p className="deep-dives-text">{item.statement}</p>
+                    <p className="deep-dives-text">{item.techused}</p>
+                    <div className="deep-dives-button visit-site"><a href={item.url}>visit site</a></div>
 
-                    <span className="github-logo"><a href={item.githuburl}><i className="fab fa-github"></i></a></span>
+                    <span className="deep-dives-github-logo"><a href={item.githuburl}><i className="fab fa-github"></i></a></span>
 
                   </section>
 

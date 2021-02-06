@@ -312,13 +312,17 @@ PROJECTS sections
 }
 
 .deep-dives-image-container {
-  width: 40%;
   max-width: 400px;
+  margin-right: 1rem;
 }
 
 .deep-dives-image {
   width: 100%;
   margin-bottom: 1rem;
+}
+
+.deep-dives-text-container {
+  color: rgba(255,255,255, 0.7);
 }
 
 
