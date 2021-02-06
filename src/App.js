@@ -8,6 +8,7 @@ import About from './About';
 import Contact from './Contact';
 import ProjectGallery from './ProjectGallery';
 import projectList from './projectList';
+import ProjectDeepDives from './ProjectDeepDives';
 
 
 
@@ -78,15 +79,20 @@ export default class App extends Component {
             <Navigation />
           </div>
         </div>
-        <ProjectGallery parentState={this.state}
-                        filteredProjects={this.state.filteredProjects}
-                        />
+        <ProjectGallery
+          parentState={this.state}
+          filteredProjects={this.state.filteredProjects}
+        />
         <About />
-        <Skills parentState={this.state}
-                skillsDev={this.state.skillsDev}
-                skillsDevOther={this.state.skillsDevOther}
-                />
+        <Skills
+          parentState={this.state}
+          skillsDev={this.state.skillsDev}
+          skillsDevOther={this.state.skillsDevOther}
+        />
         <Contact />
+        <ProjectDeepDives
+          filteredProjects={this.state.filteredProjects}
+        />
       </div>
     );
   }

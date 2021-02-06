@@ -227,7 +227,7 @@ a.title-link {
   font-size: .9em;
 }
 
-/* visit site button*/
+/* visit site button */
 .button {
   background-color: rgba(5, 11, 56, 0.9); /*navy blue*/
   border-radius: 6px;
@@ -300,6 +300,38 @@ ABOUT
 #contact a {
   color: rgba(255,255,255, 0.7); /* white */
 }
+
+
+/*=================================
+PROJECTS sections
+=================================*/
+
+.deep-dives-container {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
