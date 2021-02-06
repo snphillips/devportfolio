@@ -325,6 +325,15 @@ PROJECTS sections
   color: rgba(255,255,255, 0.7);
 }
 
+/* tech used heading */
+h4 {
+ font-family: 'Oswald', sans-serif;
+ color: rgba(245, 208, 200, 0.8); /*dusty pink text*/
+ text-transform: uppercase;
+ font-size: 1.25em;
+ font-weight: 500;
+}
+
 
 
 

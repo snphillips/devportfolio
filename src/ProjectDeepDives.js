@@ -21,7 +21,7 @@ export default class ProjectDeepDive extends Component {
 
                 <div className="deep-dives-section" key={itemIndex}>
                 <hr />
-                <h2>{item.title}</h2>
+                <h2 className="section-header">{item.title}</h2>
 
 
                 <div className="deep-dives-container">
@@ -47,12 +47,10 @@ export default class ProjectDeepDive extends Component {
 
                   <section className="deep-dives-text-container">
 
-
-                    <h3 className="deep-dives-title">
-                      <a className="title-link" href={item.url}>{item.title}</a>
-                    </h3>
-
                     <p className="deep-dives-text">{item.statement}</p>
+
+                    <h4 className="deep-dives-tech-heading">Tech Used</h4>
+
                     <p className="deep-dives-text">{item.techused}</p>
                     <div className="deep-dives-button visit-site"><a href={item.url}>visit site</a></div>
 
