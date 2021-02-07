@@ -17,9 +17,22 @@ export default class ProjectDeepDive extends Component {
 
             let itemIndex = this.props.filteredProjects.indexOf(item)
 
-            let techUsedArray = item.techused.map( item => {
-              console.log(itemIndex, item)
-              return(<li>{item}</li>)
+
+            let techUsedList = item.techUsed.map( techItem => {
+              return(
+                <li>{techItem}</li>
+              )
+            })
+
+
+            let imageUrlList = item.imageUrl.map( linkItem => {
+
+              return(
+                <img className="deep-dives-image"
+                     src={linkItem}
+                     alt={item.title}
+                       />
+                )
             })
 
               return(
@@ -33,20 +46,8 @@ export default class ProjectDeepDive extends Component {
 
                 <section className="deep-dives-image-container">
 
-                  <img className="deep-dives-image"
-                       src={item.imageurl01}
-                       alt={item.title}
-                       />
+                {imageUrlList}
 
-                  <img className="deep-dives-image"
-                       src={item.imageurl02}
-                       alt={item.title}
-                       />
-
-                  <img className="deep-dives-image"
-                       src={item.imageurl03}
-                       alt={item.title}
-                       />
 
                 </section>
 
@@ -58,7 +59,7 @@ export default class ProjectDeepDive extends Component {
 
                     <h4 className="deep-dives-tech-heading">Tech Used</h4>
 
-                    <ul className="deep-dives-tech-list">{techUsedArray}</ul>
+                    <ul className="deep-dives-tech-list">{techUsedList}</ul>
 
                     <footer className="deep-dives-links-footer">
                       <div><a className="deep-dives-button" href={item.url}>visit site</a></div>
@@ -81,3 +82,18 @@ export default class ProjectDeepDive extends Component {
   }
 }
 
+
+                  // <img className="deep-dives-image"
+                  //      src={item.imageurl01}
+                  //      alt={item.title}
+                  //      />
+
+                  // <img className="deep-dives-image"
+                  //      src={item.imageurl02}
+                  //      alt={item.title}
+                  //      />
+
+                  // <img className="deep-dives-image"
+                  //      src={item.imageurl03}
+                  //      alt={item.title}
+                  //      />

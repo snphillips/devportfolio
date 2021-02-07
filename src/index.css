@@ -201,6 +201,10 @@ PROJECTS (cards)
   border: none;
 }
 
+.card-body {
+  background-color: #fafafa;
+}
+
 /*Smaller screens, pop to 2 columns*/
 @media (min-width: 576px) {
     .card-columns {
@@ -252,11 +256,11 @@ a.title-link {
 
 .button:hover, .visit-site:hover {
   background-color: rgba(213, 11, 84, 0.9); /*bright pink*/
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 /*TODO: drop it down a few px*/
@@ -267,11 +271,11 @@ a.title-link {
 
 .github-logo a:hover {
   color: rgba(213, 11, 84, 0.9); /*bright pink*/
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 /*=================================
 ABOUT
@@ -326,8 +330,11 @@ PROJECTS sections
 }
 
 .deep-dives-image {
-  width: 100%;
+  width: auto;
+  height: auto;
   margin-bottom: 1rem;
+  max-width: 350px;
+  max-height: 400px;
 }
 
 .deep-dives-text-container {
