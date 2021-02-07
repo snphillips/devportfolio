@@ -1,6 +1,13 @@
 /*=================================
 General Styling
 =================================*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
 body {
   /*max-width: 800px;*/
   max-width: 50rem;
@@ -309,11 +316,13 @@ PROJECTS sections
 .deep-dives-container {
   display: flex;
   flex-direction: row;
+  margin-top: 2rem;
 }
 
 .deep-dives-image-container {
   max-width: 400px;
   margin-right: 2rem;
+  /*margin-top: 1rem;*/
 }
 
 .deep-dives-image {
@@ -338,6 +347,7 @@ h4 {
 .deep-dives-links-footer {
   display: flex;
   flex-direction: column;
+  /*flex-direction: row;*/
   /*justify-content: space-between;*/
 }
 
@@ -346,7 +356,9 @@ h4 {
   display: inline-block;
   margin: .5rem 0;
   color: rgba(5, 11, 56, 0.8) !important; /*navy blue*/
-  background-color: rgba(245, 208, 200, 0.8); /* dusty pink text */
+  color: rgba(255,255,255, 0.9) !important;
+  color: rgba(245, 208, 200, 0.8) !important; /* dusty pink text */
+  background-color: rgba(213, 11, 84, 0.9); /*bright pink*/
   border-radius: 6px;
   padding: 5px 15px;
   text-align: center;
@@ -355,8 +367,6 @@ h4 {
 
 .deep-dives-button:hover {
   text-decoration: none !important;
-  color: rgba(255,255,255, 0.9) !important;
-  background-color: rgba(213, 11, 84, 0.9); /*bright pink*/
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;

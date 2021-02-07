@@ -11,11 +11,16 @@ export default class ProjectDeepDive extends Component {
   render() {
     return (
 
-        <section className="contentblock">
+        <div className="contentblock">
 
           {this.props.filteredProjects.map( item => {
 
             let itemIndex = this.props.filteredProjects.indexOf(item)
+
+            let techUsedArray = item.techused.map( item => {
+              console.log(itemIndex, item)
+              return(<li>{item}</li>)
+            })
 
               return(
 
@@ -53,11 +58,11 @@ export default class ProjectDeepDive extends Component {
 
                     <h4 className="deep-dives-tech-heading">Tech Used</h4>
 
-                    <p className="deep-dives-text">{item.techused}</p>
+                    <ul className="deep-dives-text">{techUsedArray}</ul>
 
                     <footer className="deep-dives-links-footer">
                       <div><a className="deep-dives-button" href={item.url}>visit site</a></div>
-                      <div><a className="deep-dives-button" href={item.githuburl}>vist github page <i className="fab fa-github"></i></a></div>
+                      <div><a className="deep-dives-button" href={item.githuburl}>vist project on github <i className="fab fa-github"></i></a></div>
                     </footer>
 
                   </section>
@@ -69,9 +74,7 @@ export default class ProjectDeepDive extends Component {
 
             })}
 
-
-
-        </section>
+        </div>
 
 
     );
