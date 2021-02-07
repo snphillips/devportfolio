@@ -14,16 +14,6 @@ This is a portfolio website to display the web development work of Sarah Phillip
 ***
 ## Featured Projects
 
-### About a Blue Bike
-About a Blue Bike is a tool to look up statistics on individual bicycles in New York City's Citibike bike share system.
-
-Statistics about every Citi Bike ride is tracked and recorded. Users of About a Blue Bike input a bike id into a field and are presented with a narrative that includes the length of time that bike has been on the road, how many miles the bike had travelled and which docking stations it has visited.
-
-- View the website here: https://aboutabluebike.surge.sh/
-- View the project repo here: https://github.com/snphillips/aboutabluebike
-***
-
-
 ### So Trashy
 
 So Trashy uses D3.js to create data visualization to represent New York City's Department of Sanitation's (DSNY) monthly collection of refuse and recycling from 2014 to 2018.
