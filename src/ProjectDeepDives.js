@@ -58,7 +58,7 @@ export default class ProjectDeepDive extends Component {
 
                     <h4 className="deep-dives-tech-heading">Tech Used</h4>
 
-                    <ul className="deep-dives-text">{techUsedArray}</ul>
+                    <ul className="deep-dives-tech-list">{techUsedArray}</ul>
 
                     <footer className="deep-dives-links-footer">
                       <div><a className="deep-dives-button" href={item.url}>visit site</a></div>
