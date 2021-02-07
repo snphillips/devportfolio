@@ -20,41 +20,51 @@ export default class ProjectGallery extends Component {
 
             {this.props.filteredProjects.map( item => {
 
-                    let itemIndex = this.props.filteredProjects.indexOf(item)
+              let itemIndex = this.props.filteredProjects.indexOf(item)
 
-                      return(
+              // map over the array of tech and display them all as span items
+              // we insert this variable within a paragraph below.
+              // The result is a nice little comma-separated list.
+             let techUsedList = item.techUsed.map( techItem => {
 
-                        <div className="card" key={itemIndex}>
+              return(
+                <li>- {techItem}</li>
+              )
+            })
 
-                        <a href={item.url}
-                           style={{
-                            backgroundColor: "none",
-                            width: 0
-                          }}
-                           >
-                          <img className="card-img-top"
-                               src={item.imageUrl[0]}
-                               alt={item.title}
-                               />
-                        </a>
+            return(
 
-                          <div className="card-body">
+              <div className="card" key={itemIndex}>
 
-                            <h3 className="card-title">
-                              <a className="title-link" href={item.url}>{item.title}</a>
-                            </h3>
+              <a href={"project-" + itemIndex}
+                 style={{
+                  // gets rid of the hover effect on links
+                  backgroundColor: "none",
+                  // width: 0
+                }}
+                 >
+                <img className="card-img-top"
+                     src={item.imageUrl[0]}
+                     alt={item.title}
+                     />
+              </a>
 
-                            <p className="card-text">{item.briefStatement}</p>
-                            <p className="card-text">{item.techUsed}</p>
-                            <div className="button visit-site"><a href={item.url}>visit site</a></div>
+                <div className="card-body">
 
-                            <span className="github-logo"><a href={item.githuburl}><i className="fab fa-github"></i></a></span>
+                  <h3 className="card-title">
+                    <a className="title-link" href={item.url}>{item.title}</a>
+                  </h3>
 
-                          </div>
+                  <p className="card-text">{item.briefStatement}</p>
+                  <ul className="card-text">{techUsedList}</ul>
+                  <div className="button visit-site"><a href={item.url}>visit site</a></div>
 
-                        </div>
+                  <span className="github-logo"><a href={item.githuburl}><i className="fab fa-github"></i></a></span>
 
-                      )
+                </div>
+
+              </div>
+            )
 
             })}
 
