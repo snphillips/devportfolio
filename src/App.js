@@ -44,7 +44,7 @@ export default class App extends Component {
 //
 //  ==================================
   includeInGalleryTrue(item){
-    return item.includeingallery === true;
+    return item.includeInGallery === true;
   };
 
   filterIncludeInGallery(){

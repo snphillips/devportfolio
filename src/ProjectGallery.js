@@ -44,8 +44,8 @@ export default class ProjectGallery extends Component {
                               <a className="title-link" href={item.url}>{item.title}</a>
                             </h3>
 
-                            <p className="card-text">{item.briefstatement}</p>
-                            <p className="card-text">{item.techused}</p>
+                            <p className="card-text">{item.briefStatement}</p>
+                            <p className="card-text">{item.techUsed}</p>
                             <div className="button visit-site"><a href={item.url}>visit site</a></div>
 
                             <span className="github-logo"><a href={item.githuburl}><i className="fab fa-github"></i></a></span>
