@@ -205,7 +205,7 @@ Statement
   line-height: 1.2;
   font-weight: 400;
   font-style: italic;
-  margin-left: 4rem;
+  margin-left: 3.5rem;
   color: rgba(245, 208, 200, 0.8); /* dusty pink */
   z-index: -1;
 }
@@ -508,17 +508,16 @@ ul {
   }
 
   h2 {
-   font-size: 8vw;
+   font-size: 6vw;
   }
 
   .contentblock {
-    padding-top: 1.5em;
+    padding-top: 1.25em;
   }
 
   hr {
     margin-bottom: 5px;
   }
-
 
   #header-statement {
     margin-bottom: -2em;

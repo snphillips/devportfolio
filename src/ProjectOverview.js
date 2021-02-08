@@ -59,7 +59,11 @@ export default class ProjectOverview extends Component {
                   <ul className="card-tech-used">{techUsedList}</ul>
                   <div className="button visit-site"><a href={item.url}>visit site</a></div>
 
-                  <span className="github-logo"><a href={item.githuburl}><i className="fab fa-github"></i></a></span>
+                  <span className="github-logo">
+                    <a href={item.githuburl}>
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </span>
 
                 </div>
 

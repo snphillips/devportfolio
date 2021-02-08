@@ -29,7 +29,6 @@ const projectList = [
     "https://i.imgur.com/jUiKQQy.png",
    ],
   mobileImageUrl: [
-    "https://i.imgur.com/fsyAACQ.png",
     "https://i.imgur.com/fsyAACQ.png"
   ],
   briefStatement: `A portfolio website for my visual art. The site includes a gallery and image modals.`,
