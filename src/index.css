@@ -7,6 +7,7 @@ General Styling
 =================================*/
 * {
   box-sizing: border-box;
+  /*overflow: hidden;*/
   /*margin: 0;*/
   /*padding: 0;*/
 }
@@ -370,10 +371,15 @@ PROJECTS sections
   /*margin-top: 1rem;*/
 }
 
+.deep-dives-mobile-image-list {
+  display: flex;
+}
+
 .deep-dives-image {
   width: auto;
   height: auto;
   margin-bottom: 1rem;
+  /*margin-right: 1rem;*/
   max-width: 450px;
   max-height: 400px;
 }
@@ -412,10 +418,10 @@ ul {
 .deep-dives-button  {
   display: inline-block;
   margin: .5rem 0;
-  color: rgba(5, 11, 56, 0.8) !important; /*navy blue*/
   color: rgba(255,255,255, 0.9) !important;
   color: rgba(245, 208, 200, 0.8) !important; /* dusty pink text */
-  background-color: rgba(213, 11, 84, 0.9); /*bright pink*/
+  color: rgba(5, 11, 56, 0.8) !important; /*navy blue*/
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 6px;
   padding: 5px 15px;
   text-align: center;

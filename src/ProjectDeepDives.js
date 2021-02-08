@@ -18,14 +18,6 @@ export default class ProjectDeepDive extends Component {
             let itemIndex = this.props.filteredProjects.indexOf(item)
 
 
-            // map over the array of tech used and display them each as list items
-            let techUsedList = item.techUsed.map( techItem => {
-
-              return(
-                <li>{techItem}</li>
-              )
-            })
-
             // map over the array of images and display them all as img
             let imageUrlList = item.imageUrl.map( linkItem => {
 
@@ -39,6 +31,30 @@ export default class ProjectDeepDive extends Component {
                 />
               )
             })
+
+            // map over the array of mobile images and display them all as img
+            let mobileImageUrlList = item.imageUrl.map( linkItem => {
+
+              return(
+
+                <img
+                  className="deep-dives-image"
+                  src={linkItem}
+                  alt={item.title}
+                  key={"imageKey-" + linkItem}
+                />
+              )
+            })
+
+
+            // map over the array of tech used and display them each as list items
+            let techUsedList = item.techUsed.map( techItem => {
+
+              return(
+                <li>-{techItem}</li>
+              )
+            })
+
 
               return(
 
@@ -57,10 +73,16 @@ export default class ProjectDeepDive extends Component {
 
                 <section className="deep-dives-image-container">
 
-                {imageUrlList}
+                  <div className="deep-dives-image-list">
+                    {imageUrlList}
+                  </div>
 
+                  <div className="deep-dives-mobile-image-list">
+                    {mobileImageUrlList}
+                  </div>
 
                 </section>
+
 
                   <section className="deep-dives-text-container">
 
@@ -74,7 +96,7 @@ export default class ProjectDeepDive extends Component {
 
                     <footer className="deep-dives-links-footer">
                       <div><a className="deep-dives-button" href={item.url}>visit site</a></div>
-                      <div><a className="deep-dives-button" href={item.githuburl}>github <i className="fab fa-github"></i></a></div>
+                      <div><a className="deep-dives-button" href={item.githuburl}>github repo<i className="fab fa-github"></i></a></div>
                     </footer>
 
                   </section>
