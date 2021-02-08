@@ -13,7 +13,7 @@ export default class ProjectGallery extends Component {
 
       <div id="projects" className="contentblock">
         <hr />
-        <h2>Projects</h2>
+        <h2>Projects Overview</h2>
 
         <section className="card-columns">
 
@@ -56,7 +56,7 @@ export default class ProjectGallery extends Component {
                   </h3>
 
                   <p className="card-text">{item.briefStatement}</p>
-                  <ul className="card-text">{techUsedList}</ul>
+                  <ul className="card-tech-used">{techUsedList}</ul>
                   <div className="button visit-site"><a href={item.url}>visit site</a></div>
 
                   <span className="github-logo"><a href={item.githuburl}><i className="fab fa-github"></i></a></span>

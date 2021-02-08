@@ -4,7 +4,6 @@ export default class Navigation extends Component {
   render() {
     return (
 
-      // <div id="nav">
         <nav className="nav navbar navbar-expand-md navbar-dark mb-3">
 
           <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
@@ -23,7 +22,6 @@ export default class Navigation extends Component {
           </div>
 
         </nav>
-      // </div>
 
     );
   }

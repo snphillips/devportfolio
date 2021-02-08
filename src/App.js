@@ -67,34 +67,50 @@ export default class App extends Component {
   render() {
     return (
 
-      <div>
-        <div className="row align-items-center" id="header-statement">
-          <div className="col-sm-12 col-md-5 col-lg-6 col-xl-6">
-            <Header />
+      <div id="dev-portfolio">
+
+        <main id="content-container">
+          <div
+            id="header-statement"
+            className="row align-items-center"
+            >
+
+            <div className="col-sm-12 col-md-5 col-lg-6 col-xl-6">
+              <Header />
+            </div>
+
+            <div className="col-sm-12 col-md-5 col-lg-5 col-xl-5">
+              <Statement />
+            </div>
+
+
           </div>
-          <div className="col-sm-12 col-md-5 col-lg-5 col-xl-5">
-            <Statement />
-          </div>
-          <div className="col-sm-0 col-md-2 col-lg-1 col-xl-1">
-            <Navigation />
-          </div>
+          <ProjectGallery
+            parentState={this.state}
+            filteredProjects={this.state.filteredProjects}
+          />
+          <About />
+          <Skills
+            parentState={this.state}
+            skillsDev={this.state.skillsDev}
+            skillsDevOther={this.state.skillsDevOther}
+          />
+          <Contact />
+          <ProjectDeepDives
+            filteredProjects={this.state.filteredProjects}
+          />
+        </main>
+
+        <div id="nav-container">
+          <Navigation />
         </div>
-        <ProjectGallery
-          parentState={this.state}
-          filteredProjects={this.state.filteredProjects}
-        />
-        <About />
-        <Skills
-          parentState={this.state}
-          skillsDev={this.state.skillsDev}
-          skillsDevOther={this.state.skillsDevOther}
-        />
-        <Contact />
-        <ProjectDeepDives
-          filteredProjects={this.state.filteredProjects}
-        />
+
       </div>
     );
   }
 }
 
+
+//        <nav className="col-sm-0 col-md-2 col-lg-1 col-xl-1">
+//          <Navigation />
+//        </nav>

@@ -47,8 +47,7 @@ const projectList = [
   title: `No Frillz Tweets`,
   imageUrl: [
     "https://i.imgur.com/dofkpVD.png",
-     "https://i.imgur.com/ZQAZZob.png",
-     "https://i.imgur.com/dofkpVD.png"
+     "https://i.imgur.com/ZQAZZob.png"
   ],
   briefStatement: `no frillz twitter is a simple twitter client that returns recent tweets based on the user's search query.`,
   statement: `no frillz twitter is a simple twitter client that returns recent tweets based on the user's search query. But Why? Q: Isn't this just a worse Twitter client that does less than real twitter? A: Yes.`,
@@ -164,7 +163,6 @@ const projectList = [
   title: `Five Years of Food Spending`,
   imageUrl: [
     "https://i.imgur.com/pXdIzAO.png",
-    "https://i.imgur.com/pXdIzAO.png",
     "https://i.imgur.com/pXdIzAO.png"
   ],
   briefStatement: `Five Years of Food Spending uses data visualization to represent my spending on groceries and eating out.`,
@@ -185,7 +183,6 @@ const projectList = [
 {
   title: `Todoodles`,
   imageUrl: [
-    "https://i.imgur.com/DNmSSeE.png",
     "https://i.imgur.com/DNmSSeE.png",
     "https://i.imgur.com/DNmSSeE.png"
   ],
@@ -208,7 +205,6 @@ const projectList = [
 {
   title: `About a Blue Bike`,
   imageUrl: [
-    "https://i.imgur.com/A1J5MxP.jpg",
     "https://i.imgur.com/A1J5MxP.jpg",
     "https://i.imgur.com/A1J5MxP.jpg"
   ],
