@@ -33,12 +33,12 @@ export default class ProjectDeepDive extends Component {
             })
 
             // map over the array of mobile images and display them all as img
-            let mobileImageUrlList = item.imageUrl.map( linkItem => {
+            let mobileImageUrlList = item.mobileImageUrl.map( linkItem => {
 
               return(
 
                 <img
-                  className="deep-dives-image"
+                  className="deep-dives-image-mobile"
                   src={linkItem}
                   alt={item.title}
                   key={"imageKey-" + linkItem}

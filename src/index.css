@@ -373,19 +373,31 @@ PROJECTS sections
 
 .deep-dives-mobile-image-list {
   display: flex;
+
 }
 
 .deep-dives-image {
   width: auto;
   height: auto;
   margin-bottom: 1rem;
-  /*margin-right: 1rem;*/
-  max-width: 450px;
-  max-height: 400px;
+  margin-right: 1rem;
+  max-width: 466px;
+  /*max-height: 400px;*/
+}
+
+.deep-dives-image-mobile {
+  width: auto;
+  height: auto;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  max-width: 225px;
+  /*max-height: 400px;*/
 }
 
 .deep-dives-text-container {
+  display: block;
   color: rgba(255,255,255, 0.7);
+  margin-left: 1rem;
 }
 
 /* tech used heading */
