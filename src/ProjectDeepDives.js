@@ -18,11 +18,11 @@ export default class ProjectDeepDive extends Component {
             let itemIndex = this.props.filteredProjects.indexOf(item)
 
 
-            // map over the array of images and display them all as img
+            // map over the array of images
+            // and display them all as img
             let imageUrlList = item.imageUrl.map( linkItem => {
 
               return(
-
                 <img
                   className="deep-dives-image"
                   src={linkItem}
@@ -32,11 +32,11 @@ export default class ProjectDeepDive extends Component {
               )
             })
 
-            // map over the array of mobile images and display them all as img
+            // map over the array of mobile images
+            // and display them all as img
             let mobileImageUrlList = item.mobileImageUrl.map( linkItem => {
 
               return(
-
                 <img
                   className="deep-dives-image-mobile"
                   src={linkItem}
@@ -47,7 +47,18 @@ export default class ProjectDeepDive extends Component {
             })
 
 
-            // map over the array of tech used and display them each as list items
+            // map over the array of features
+            // and display them each as list items
+            let featuresList = item.features.map( featuresItem => {
+
+              return(
+                <li>-{featuresItem}</li>
+              )
+            })
+
+
+            // map over the array of tech used
+            // and display them each as list items
             let techUsedList = item.techUsed.map( techItem => {
 
               return(

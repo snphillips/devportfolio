@@ -62,7 +62,7 @@ h2 {
 
 /*All sections get some breathing room on top*/
 .contentblock {
-  padding-top: 3.4em;
+  padding-top: 3rem;
 }
 
 /*All section headers have a pink line on top*/
@@ -520,6 +520,10 @@ ul {
     margin-bottom: -2em;
   }
 
+  .deep-dives-image {
+    width: 100%;
+  }
+
   #statement {
     padding-top: 1em;
     margin-bottom: 0em;
@@ -616,6 +620,10 @@ ul {
     line-height: 70%;
     text-align: left;
     opacity: .7; /*to make header transluscent on mobile*/
+  }
+
+  .deep-dives-container {
+    flex-direction: column;
   }
 
   #statement {
