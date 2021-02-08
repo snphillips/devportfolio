@@ -52,7 +52,7 @@ export default class ProjectDeepDive extends Component {
             let featuresList = item.features.map( featuresItem => {
 
               return(
-                <li>-{featuresItem}</li>
+                <li>- {featuresItem}</li>
               )
             })
 
@@ -62,7 +62,7 @@ export default class ProjectDeepDive extends Component {
             let techUsedList = item.techUsed.map( techItem => {
 
               return(
-                <li>-{techItem}</li>
+                <li>- {techItem}</li>
               )
             })
 
@@ -101,13 +101,15 @@ export default class ProjectDeepDive extends Component {
 
                     <br/>
 
-                    <h4 className="deep-dives-tech-heading">Tech Used</h4>
+                    <h4 className="deep-dives-tech-heading">features</h4>
+                    <ul className="deep-dives-features-list">{featuresList}</ul>
 
+                    <h4 className="deep-dives-tech-heading">Tech Used</h4>
                     <ul className="deep-dives-tech-list">{techUsedList}</ul>
 
                     <footer className="deep-dives-links-footer">
                       <div><a className="deep-dives-button" href={item.url}>visit site</a></div>
-                      <div><a className="deep-dives-button" href={item.githuburl}>github repo<i className="fab fa-github"></i></a></div>
+                      <div><a className="deep-dives-button" href={item.githuburl}>github repo <i className="fab fa-github"></i></a></div>
                     </footer>
 
                   </section>

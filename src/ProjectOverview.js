@@ -7,7 +7,7 @@ import React, { Component } from 'react';
 
 
 
-export default class ProjectGallery extends Component {
+export default class ProjectOverview extends Component {
   render() {
     return (
 
@@ -52,7 +52,7 @@ export default class ProjectGallery extends Component {
                 <div className="card-body">
 
                   <h3 className="card-title">
-                    <a className="title-link" href={item.url}>{item.title}</a>
+                    <a className="title-link" href={`#project-`+ itemIndex}>{item.title}</a>
                   </h3>
 
                   <p className="card-text">{item.briefStatement}</p>

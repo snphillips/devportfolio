@@ -217,7 +217,7 @@ const projectList = [
   url: "https://todoodles.surge.sh/",
   githuburl: "https://github.com/snphillips/todoodles",
   year: `2018`,
-  includeInGallery: true,
+  includeInGallery: false,
 },
 {
   title: `About a Blue Bike`,
@@ -243,7 +243,7 @@ const projectList = [
   url: "https://aboutabluebike.surge.sh/",
   githuburl: "https://github.com/snphillips/About-a-Blue-Bike",
   year: `2018`,
-  includeInGallery: true,
+  includeInGallery: false,
 }
 ]
 

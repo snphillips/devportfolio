@@ -205,8 +205,8 @@ Statement
   line-height: 1.2;
   font-weight: 400;
   font-style: italic;
-  margin-left: 3rem;
-  color: rgba(245, 208, 200, 0.8); /*dusty pink*/
+  margin-left: 4rem;
+  color: rgba(245, 208, 200, 0.8); /* dusty pink */
   z-index: -1;
 }
 
@@ -433,7 +433,8 @@ ul {
   color: rgba(255,255,255, 0.9) !important;
   color: rgba(245, 208, 200, 0.8) !important; /* dusty pink text */
   color: rgba(5, 11, 56, 0.8) !important; /*navy blue*/
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 6px;
   padding: 5px 15px;
   text-align: center;
@@ -441,6 +442,9 @@ ul {
 }
 
 .deep-dives-button:hover {
+  background-color: rgba(5, 11, 56, 0.8) !important; /*navy blue*/
+  color: rgba(255, 255, 255, 0.6) !important;
+  border: 1px solid rgba(255, 255, 255, 0.8);
   text-decoration: none !important;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;

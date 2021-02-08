@@ -6,7 +6,7 @@ import Statement from './Statement';
 import Skills from './Skills';
 import About from './About';
 import Contact from './Contact';
-import ProjectGallery from './ProjectGallery';
+import ProjectOverview from './ProjectOverview';
 import projectList from './projectList';
 import ProjectDeepDives from './ProjectDeepDives';
 
@@ -85,7 +85,7 @@ export default class App extends Component {
 
 
           </div>
-          <ProjectGallery
+          <ProjectOverview
             parentState={this.state}
             filteredProjects={this.state.filteredProjects}
           />
