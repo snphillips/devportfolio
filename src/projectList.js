@@ -29,6 +29,7 @@ const projectList = [
     "https://i.imgur.com/jUiKQQy.png",
    ],
   mobileImageUrl: [
+    "https://i.imgur.com/6fvEgOl.png",
     "https://i.imgur.com/fsyAACQ.png"
   ],
   briefStatement: `A portfolio website for my visual art. The site includes a gallery and image modals.`,
@@ -74,12 +75,18 @@ const projectList = [
 {
   title: `So Trashy`,
   imageUrl: [
-    "https://i.imgur.com/Zf8LOkR.png"
+    "https://i.imgur.com/PMqmkdE.png",
+    "https://i.imgur.com/WSJMO84.png"
   ],
   mobileImageUrl: [
+   "https://i.imgur.com/Z767urK.png",
+   "https://i.imgur.com/uzOaJum.png"
   ],
   briefStatement: `So Trashy uses data visualization to represent New York City's Department of Sanitation's yearly collection of refuse & recycling.`,
-  statement: `So Trashy uses data visualization to represent New York City's Department of Sanitation's yearly collection of refuse & recycling.`,
+  statement: `So Trashy uses data visualization to represent New York City's Department of Sanitation's yearly collection of refuse & recycling.
+  DSNY collects residential and public school refuse and recycling, empties street litter baskets, cleans up abandoned property such as cars, tires and bicycles and collects other types of refuse, such as the detritus left in public spaces after Superstorm Sandy. DSNY does not pick up commercial refuse from offices, shops, business, institutions or construction sites.
+DSNY publishes monthly reports detailing how many tons of refuse, paper/cardboard and metal/glass/plastic/drink carton has been collected, categorized by borough and further categorized into Community District (CD).
+`,
   techUsed: [
     "D3.js",
     "React.js",
@@ -101,7 +108,8 @@ const projectList = [
     "https://i.imgur.com/O3KKdaX.png"
   ],
   mobileImageUrl: [
-   "https://i.imgur.com/bj13WpG.png"
+   "https://i.imgur.com/bj13WpG.png",
+   "https://i.imgur.com/qBkmOSD.png"
   ],
   briefStatement: `Art Thief allows users to view random imageurls from the Cooper Hewitt Museum's collection, based on selected keywords such as angular, art deco, modernism etc.`,
   statement: `Art Thief allows users to view random imageurls from the Cooper Hewitt Museum's collection, based on selected keywords such as angular, art deco, modernism etc.`,
@@ -123,23 +131,28 @@ const projectList = [
 {
   title: `TwoHue`,
   imageUrl: [
-    "https://i.imgur.com/i91exEK.png",
-    "https://i.imgur.com/iaWzlC8.png",
-    "https://i.imgur.com/dDYHfb6.png"
+    "https://i.imgur.com/7XNK4lO.png",
+    "https://i.imgur.com/I3VWwAE.png",
+    "https://i.imgur.com/zIltcWs.png"
   ],
   mobileImageUrl: [
-
+    "https://i.imgur.com/aAVsvgk.png",
+    "https://i.imgur.com/5OUjYp4.png"
   ],
   briefStatement: `Twohue is a one-player color mixing game. Players are presented with a color sample that they must recreate using two transparent color swatches. I use a state-machine to manage user flow.`,
   statement: `Twohue is a one-player color mixing game. Players are presented with a color sample that they must recreate using two transparent color swatches. I use a state-machine to manage user flow.`,
   techUsed: [
     "React.js",
     "React-Automata (for state machine)",
-    "Chroma.js"
+    "Chroma.js (a color library)"
   ],
   features: [
+    "game intro css animation",
+    "game rounds randomly generated",
+    "rounds become more challenging",
+    "confetti animation",
     "leaderboard",
-    "responsive design",
+    "responsive design"
   ],
   url: "https://twohue-state-machine.surge.sh/",
   githuburl: "https://github.com/snphillips/twohue-state-chart",
