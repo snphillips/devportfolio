@@ -12,7 +12,7 @@ export default class Navigation extends Component {
 
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="ml-auto">
-              <li><a className="nav-item" href="#projects">projects</a></li>
+              <li><a className="nav-item" href="#projects">all projects</a></li>
               <li><a className="nav-item" href="#about">about</a></li>
               <li><a className="nav-item" href="#skills">skills</a></li>
               <li><a className="nav-item" href="#contact">contact</a></li>

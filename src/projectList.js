@@ -5,7 +5,8 @@ const projectList = [
     "https://i.imgur.com/3CmQKwE.png",
      "https://i.imgur.com/1y4g93S.png"
   ],
-  mobileImageUrl: [],
+  mobileImageUrl: [
+  ],
   briefStatement: `The New York City Housing Authority (NYCHA) maintains a page on their site that lists services outages in thier developments for heat, hot water, water, elevators, electricity & gas. This scraper extracts the data from the NYCHA website and saves the results in csv tables.`,
   statement: `The New York City Housing Authority (NYCHA) maintains a page on their site that lists services outages in thier developments for heat, hot water, water, elevators, electricity & gas.
   The outage site is updated regularly, however there is no easy way for stakeholders to download the data. This scraper extracts the data from the NYCHA website and saves the results in csv tables, within a folder named with the date and time of the scrape.`,
@@ -19,8 +20,8 @@ const projectList = [
   ],
   url: "https://github.com/snphillips/nycha-outage-scraper",
   githuburl: "https://github.com/snphillips/nycha-outage-scraper",
-  year: `I0G0`,
-  includeingallery: true,
+  year: `2019`,
+  includeInGallery: true,
 },
 {
   title: `Artist Portfolio`,
