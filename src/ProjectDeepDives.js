@@ -128,18 +128,3 @@ export default class ProjectDeepDive extends Component {
   }
 }
 
-
-                  // <img className="deep-dives-image"
-                  //      src={item.imageurl01}
-                  //      alt={item.title}
-                  //      />
-
-                  // <img className="deep-dives-image"
-                  //      src={item.imageurl02}
-                  //      alt={item.title}
-                  //      />
-
-                  // <img className="deep-dives-image"
-                  //      src={item.imageurl03}
-                  //      alt={item.title}
-                  //      />

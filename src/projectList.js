@@ -8,8 +8,8 @@ const projectList = [
   mobileImageUrl: [
   ],
   briefStatement: `The New York City Housing Authority (NYCHA) maintains a page on their site that lists services outages in thier developments for heat, hot water, water, elevators, electricity & gas. This scraper extracts the data from the NYCHA website and saves the results in csv tables.`,
-  statement: `The New York City Housing Authority (NYCHA) maintains a page on their site that lists services outages in thier developments for heat, hot water, water, elevators, electricity & gas.
-  The outage site is updated regularly, however there is no easy way for stakeholders to download the data. This scraper extracts the data from the NYCHA website and saves the results in csv tables, within a folder named with the date and time of the scrape.`,
+  statement: `Hello The New York City Housing Authority (NYCHA) maintains a page on their site that lists services outages in thier developments for heat, hot water, water, elevators, electricity & gas.
+  The outage site is updated regularly, however there is no easy way for stakeholders to download the data.<br/> This scraper extracts the data from the NYCHA website and saves the results in csv tables, within a folder named with the date and time of the scrape.</p>`,
   techUsed: [
     "Python",
     "Beautiful Soup",
@@ -141,15 +141,16 @@ DSNY publishes monthly reports detailing how many tons of refuse, paper/cardboar
     "https://i.imgur.com/5OUjYp4.png"
   ],
   briefStatement: `Twohue is a one-player color mixing game. Players are presented with a color sample that they must recreate using two transparent color swatches. I use a state-machine to manage user flow.`,
-  statement: `Twohue is a one-player color mixing game. Players are presented with a color sample that they must recreate using two transparent color swatches. I use a state-machine to manage user flow.`,
+  statement: `Twohue is a one-player color mixing game. Players are presented with a color sample that they must recreate using two transparent color swatches. I use an X state-machine (React-Automata) to manage user flow. I use the color library chroma.js to dynamically create unlimmited game rounds.`,
   techUsed: [
     "React.js",
     "React-Automata (for state machine)",
     "Chroma.js (a color library)"
   ],
   features: [
+    "sound on/off toggle",
     "game intro css animation",
-    "game rounds randomly generated",
+    "randomly generated game rounds",
     "rounds become more challenging",
     "confetti animation",
     "leaderboard",
