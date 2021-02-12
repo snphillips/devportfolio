@@ -13,35 +13,35 @@ export default class ProjectDeepDive extends Component {
 
         <div className="contentblock">
 
-          {this.props.filteredProjects.map( item => {
+          {this.props.filteredProjects.map( (item, key) => {
 
             let itemIndex = this.props.filteredProjects.indexOf(item)
 
 
             // map over the array of images
             // and display them all as img
-            let imageUrlList = item.imageUrl.map( linkItem => {
+            let imageUrlList = item.imageUrl.map( (linkItem, key) => {
 
               return(
                 <img
                   className="deep-dives-image"
                   src={linkItem}
                   alt={item.title}
-                  key={"imageKey-" + linkItem}
+                  key={key}
                 />
               )
             })
 
             // map over the array of mobile images
             // and display them all as img
-            let mobileImageUrlList = item.mobileImageUrl.map( linkItem => {
+            let mobileImageUrlList = item.mobileImageUrl.map( (linkItem, key) => {
 
               return(
                 <img
                   className="deep-dives-image-mobile"
                   src={linkItem}
                   alt={item.title}
-                  key={"imageKey-" + linkItem}
+                  key={key}
                 />
               )
             })
@@ -49,72 +49,72 @@ export default class ProjectDeepDive extends Component {
 
             // map over the array of features
             // and display them each as list items
-            let featuresList = item.features.map( featuresItem => {
+            let featuresList = item.features.map( (featuresItem, key) => {
 
               return(
-                <li>- {featuresItem}</li>
+                <li key={key}>- {featuresItem}</li>
               )
             })
 
 
             // map over the array of tech used
             // and display them each as list items
-            let techUsedList = item.techUsed.map( techItem => {
+            let techUsedList = item.techUsed.map( (techItem, key) => {
 
               return(
-                <li>- {techItem}</li>
+                <li key={key}>- {techItem}</li>
               )
             })
 
 
               return(
 
-                <article className="deep-dives-section" key={itemIndex}>
-                <hr />
+                <article className="deep-dives-section" key={key}>
+                  <hr />
 
 
-                <h2
-                  id={"project-" + itemIndex}
-                  className="section-header"
-                  >
-                    {item.title}
-                </h2>
+                  <h2
+                    id={"project-" + itemIndex}
+                    className="section-header"
+                    >
+                      {item.title}
+                  </h2>
 
-                <div className="deep-dives-container">
+                  <div className="deep-dives-container">
 
-                <section className="deep-dives-image-container">
+                  <section className="deep-dives-image-container">
 
-                  <div className="deep-dives-image-list">
-                    {imageUrlList}
-                  </div>
+                    <div className="deep-dives-image-list">
+                      {imageUrlList}
+                    </div>
 
-                  <div className="deep-dives-mobile-image-list">
-                    {mobileImageUrlList}
-                  </div>
-
-                </section>
-
-
-                  <section className="deep-dives-text-container">
-
-                    <p className="deep-dives-text">{item.statement}</p>
-
-                    <br/>
-
-                    <h4 className="deep-dives-tech-heading">features</h4>
-                    <ul className="deep-dives-features-list">{featuresList}</ul>
-
-                    <h4 className="deep-dives-tech-heading">Tech Used</h4>
-                    <ul className="deep-dives-tech-list">{techUsedList}</ul>
-
-                    <footer className="deep-dives-links-footer">
-                      <div><a className="deep-dives-button" href={item.url}>visit site</a></div>
-                      <div><a className="deep-dives-button" href={item.githuburl}>github repo <i className="fab fa-github"></i></a></div>
-                    </footer>
+                    <div className="deep-dives-mobile-image-list">
+                      {mobileImageUrlList}
+                    </div>
 
                   </section>
 
-                </div>
+
+                    <section className="deep-dives-text-container">
+
+                      <p className="deep-dives-text">{item.statement}</p>
+
+                      <br/>
+
+                      <h4 className="deep-dives-tech-heading">features</h4>
+                      <ul className="deep-dives-features-list">{featuresList}</ul>
+
+                      <h4 className="deep-dives-tech-heading">Tech Used</h4>
+                      <ul className="deep-dives-tech-list">{techUsedList}</ul>
+
+                      <footer className="deep-dives-links-footer">
+                        <div><a className="deep-dives-button" href={item.url}>visit site</a></div>
+                        <div><a className="deep-dives-button" href={item.githuburl}>github repo <i className="fab fa-github"></i></a></div>
+                      </footer>
+
+                    </section>
+
+                  </div>
                 </article>
 
               )
