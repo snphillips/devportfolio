@@ -56,8 +56,8 @@ const projectList = [
   mobileImageUrl: [
     "https://i.imgur.com/ZQAZZob.png"
   ],
-  briefStatement: `no frillz twitter is a simple twitter client that returns recent tweets based on the user's search query.`,
-  statement: `no frillz twitter is a simple twitter client that returns recent tweets based on the user's search query. But Why? Q: Isn't this just a worse Twitter client that does less than real twitter? A: Yes.`,
+  briefStatement: `No frillz twitter is a simple twitter client that returns recent tweets based on the user's search query.`,
+  statement: `No frillz twitter is a simple twitter client that returns recent tweets based on the user's search query. But Why? Isn't this just a worse Twitter client that does less than real twitter? Yes. I created this app as a challenge to work with the Twitter API. In the end, I chose to work with the Twit API.`,
   techUsed: [
     "Node.js",
     "Express.js",
@@ -141,7 +141,7 @@ DSNY publishes monthly reports detailing how many tons of refuse, paper/cardboar
     "https://i.imgur.com/5OUjYp4.png"
   ],
   briefStatement: `Twohue is a one-player color mixing game. Players are presented with a color sample that they must recreate using two transparent color swatches. I use a state-machine to manage user flow.`,
-  statement: `Twohue is a one-player color mixing game. Players are presented with a color sample that they must recreate using two transparent color swatches. I use an X state-machine (React-Automata) to manage user flow. I use the color library chroma.js to dynamically create unlimmited game rounds.`,
+  statement: `Twohue is a one-player color mixing game. Players are presented with a color sample that they must recreate using two transparent color swatches. I use an X state-machine (React-Automata) to manage user flow. I use the color library chroma.js to dynamically create unlimited game rounds.`,
   techUsed: [
     "React.js",
     "React-Automata (for state machine)",
