@@ -97,7 +97,7 @@ export default class ProjectDeepDive extends Component {
 
                     <section className="deep-dives-text-container">
 
-                      <p className="deep-dives-text">{item.statement}</p>
+                    <article className="deep-dives-text" dangerouslySetInnerHTML={{__html: item.statement }} />
 
                       <br/>
 

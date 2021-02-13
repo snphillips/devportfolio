@@ -29,7 +29,6 @@ body {
   margin-top: 1rem;
 }
 
-
 /*=================================
 Two containers
 content & nav
@@ -122,6 +121,10 @@ Links
   transform: scaleX(1); /* width of the line. 1 = 100% */
 }
 
+.content-link {
+  color: rgba(255,255,255, 0.7) !important;
+  border-bottom: 2px solid rgba(213, 11, 84, 0.9);
+}
 
 
 /*=================================

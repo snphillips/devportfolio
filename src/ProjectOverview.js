@@ -56,7 +56,7 @@ export default class ProjectOverview extends Component {
                       <a className="title-link" href={`#project-`+ itemIndex}>{item.title}</a>
                     </h3>
 
-                    <p className="card-text">{item.briefStatement}</p>
+                    <summary className="card-text" dangerouslySetInnerHTML={{__html: item.briefStatement }} />;
                     <ul className="card-tech-used">{techUsedList}</ul>
                     <div className="button visit-site"><a href={item.url}>visit site</a></div>
 

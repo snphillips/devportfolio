@@ -7,9 +7,8 @@ const projectList = [
   ],
   mobileImageUrl: [
   ],
-  briefStatement: `The New York City Housing Authority (NYCHA) maintains a page on their site that lists services outages in thier developments for heat, hot water, water, elevators, electricity & gas. This scraper extracts the data from the NYCHA website and saves the results in csv tables.`,
-  statement: `Hello The New York City Housing Authority (NYCHA) maintains a page on their site that lists services outages in thier developments for heat, hot water, water, elevators, electricity & gas.
-  The outage site is updated regularly, however there is no easy way for stakeholders to download the data.<br/> This scraper extracts the data from the NYCHA website and saves the results in csv tables, within a folder named with the date and time of the scrape.</p>`,
+  briefStatement: "<p>The New York City Housing Authority (NYCHA) maintains a page on their site that lists services outages in their developments for heat, hot water, water, elevators, electricity & gas.</p> <p>This scraper extracts the data from the NYCHA website and saves the results in csv tables.</p>",
+  statement: "<p>The New York City Housing Authority (NYCHA) maintains a <a class=\"content-link\" href=\"https://my.nycha.info/Outages/Outages.aspx\">page on their website</a> that lists services outages in their developments for heat, hot water, water, elevators, electricity & gas. The outage site is updated daily, however there is no easy way for stakeholders to download the data.</p><p>This scraper extracts the data from the NYCHA website and saves the results in csv tables, within a folder named with the date and time of the scrape.</p>",
   techUsed: [
     "Python",
     "Beautiful Soup",
@@ -20,11 +19,11 @@ const projectList = [
   ],
   url: "https://github.com/snphillips/nycha-outage-scraper",
   githuburl: "https://github.com/snphillips/nycha-outage-scraper",
-  year: `2019`,
+  year: "2019",
   includeInGallery: true,
 },
 {
-  title: `Artist Portfolio`,
+  title: "Artist Portfolio",
   imageUrl: [
     "https://i.imgur.com/pP8Ne6d.png",
     "https://i.imgur.com/jUiKQQy.png",
@@ -33,8 +32,8 @@ const projectList = [
     "https://i.imgur.com/6fvEgOl.png",
     "https://i.imgur.com/fsyAACQ.png"
   ],
-  briefStatement: `A portfolio website for my visual art. The site includes a gallery and image modals.`,
-  statement: `A portfolio website for my visual art. The site includes a gallery and image modals.`,
+  briefStatement: "<p>A portfolio website for my visual art. The site includes a gallery and image modals.</p>",
+  statement: "<p>I used to use Wordpress for my artist portfolio site but I became disenchanted with the constant malware attacks and hosting fees.</p><p>This react site includes a gallery and image modals, which I painstakingly created without the use of a library.</p>",
   techUsed: [
     "React.js"
   ],
@@ -45,7 +44,7 @@ const projectList = [
   ],
   url: "https://sarahnicolephillipsart.surge.sh/",
   githuburl: "https://github.com/snphillips/artportfolio",
-  year: `2020`,
+  year: "2020",
   includeInGallery: true,
 },
 {
@@ -56,8 +55,8 @@ const projectList = [
   mobileImageUrl: [
     "https://i.imgur.com/ZQAZZob.png"
   ],
-  briefStatement: `No frillz twitter is a simple twitter client that returns recent tweets based on the user's search query.`,
-  statement: `No frillz twitter is a simple twitter client that returns recent tweets based on the user's search query. But Why? Isn't this just a worse Twitter client that does less than real twitter? Yes. I created this app as a challenge to work with the Twitter API. In the end, I chose to work with the Twit API.`,
+  briefStatement: "<p>No frillz twitter is a simple twitter client that returns recent tweets based on the user's search query.</p>",
+  statement: "<p><strong>No frillz twitter</strong> is a simple twitter client that returns recent tweets based on the user\'s search query.</p><p>You may be asking yourself, \"But why? Isn't this just a worse Twitter client that does less than real twitter?\" The answer is yes.</p><p>I created this app as a challenge to work with the Twitter API. In the end, I chose to work with the Twit API.</p>",
   techUsed: [
     "Node.js",
     "Express.js",
@@ -66,6 +65,7 @@ const projectList = [
   ],
   features: [
     "search form",
+    "loading spinner",
     "responsive design",
   ],
   url: "https://nofrillztweets.surge.sh/",
@@ -83,11 +83,8 @@ const projectList = [
    "https://i.imgur.com/Z767urK.png",
    "https://i.imgur.com/uzOaJum.png"
   ],
-  briefStatement: `So Trashy uses data visualization to represent New York City's Department of Sanitation's yearly collection of refuse & recycling.`,
-  statement: `So Trashy uses data visualization to represent New York City's Department of Sanitation's yearly collection of refuse & recycling.
-  DSNY collects residential and public school refuse and recycling, empties street litter baskets, cleans up abandoned property such as cars, tires and bicycles and collects other types of refuse, such as the detritus left in public spaces after Superstorm Sandy. DSNY does not pick up commercial refuse from offices, shops, business, institutions or construction sites.
-DSNY publishes monthly reports detailing how many tons of refuse, paper/cardboard and metal/glass/plastic/drink carton has been collected, categorized by borough and further categorized into Community District (CD).
-`,
+  briefStatement: "<p><strong><i>So Trashy</i></strong> uses data visualization to represent New York City's Department of Sanitation\'s yearly collection of refuse & recycling.</p>",
+  statement: "<p><strong>So Trashy</strong> uses data visualization to represent New York City\'s Department of Sanitation\'s (DSNY) yearly collection of refuse & recycling.</p></p>DSNY collects residential and public school refuse and recycling, empties street litter baskets, cleans up abandoned property such as cars, tires and bicycles and collects other types of refuse, such as the detritus left in public spaces after Superstorm Sandy. DSNY does not pick up commercial refuse from offices, shops, business, institutions or construction sites.</p><p>The agency publishes monthly reports detailing how many tons of refuse, paper/cardboard and metal/glass/plastic/drink carton has been collected, categorized by borough and further categorized into Community District (CD).</p><p>I cross-reference two data sets to match the CD with the population of each distict.  Additionaly I match the CD with neighborhood names which aren\'t official city designations (as neighborhood boundaries evolve over time)</p>",
   techUsed: [
     "D3.js",
     "React.js",
@@ -95,6 +92,7 @@ DSNY publishes monthly reports detailing how many tons of refuse, paper/cardboar
   ],
   features: [
     "sorting radio buttons",
+    "hover interaction",
     "responsive design",
   ],
   url: "https://so-trashy-react.surge.sh/",
@@ -112,8 +110,8 @@ DSNY publishes monthly reports detailing how many tons of refuse, paper/cardboar
    "https://i.imgur.com/bj13WpG.png",
    "https://i.imgur.com/qBkmOSD.png"
   ],
-  briefStatement: `Art Thief allows users to view random imageurls from the Cooper Hewitt Museum's collection, based on selected keywords such as angular, art deco, modernism etc.`,
-  statement: `Art Thief allows users to view random imageurls from the Cooper Hewitt Museum's collection, based on selected keywords such as angular, art deco, modernism etc.`,
+  briefStatement: "<p>Art Thief allows users to view random images from the Cooper Hewitt Museum's collection, based on selected keywords such as angular, art deco, modernism etc.</p>",
+  statement: "<p><strong>Art Thief</strong> allows users to view random images from the Cooper Hewitt Museum's collection, based on selected keywords such as angular, art deco, modernism etc.</p>",
   techUsed: [
     "Node.js",
     "Express.js",
@@ -140,8 +138,8 @@ DSNY publishes monthly reports detailing how many tons of refuse, paper/cardboar
     "https://i.imgur.com/aAVsvgk.png",
     "https://i.imgur.com/5OUjYp4.png"
   ],
-  briefStatement: `Twohue is a one-player color mixing game. Players are presented with a color sample that they must recreate using two transparent color swatches. I use a state-machine to manage user flow.`,
-  statement: `Twohue is a one-player color mixing game. Players are presented with a color sample that they must recreate using two transparent color swatches. I use an X state-machine (React-Automata) to manage user flow. I use the color library chroma.js to dynamically create unlimited game rounds.`,
+  briefStatement: "<p>Twohue is a one-player color mixing game. Players are presented with a color sample that they must recreate using two transparent color swatches. I use a state-machine to manage user flow.</p>",
+  statement: "<p><strong>Twohue</strong> is a one-player color mixing game. Players are presented with a color sample that they must recreate using two transparent color swatches. I use an X state-machine (React-Automata) to manage user flow. I use the color library chroma.js to dynamically create unlimited game rounds.</p>",
   techUsed: [
     "React.js",
     "React-Automata (for state machine)",
@@ -171,8 +169,8 @@ DSNY publishes monthly reports detailing how many tons of refuse, paper/cardboar
   mobileImageUrl: [
 
   ],
-  briefStatement: `WeatherGIF is a silly little weather app that displays current weather conditions based on ZIP, accompanied by an animated GIF that illustrates the weather.`,
-  statement: `WeatherGIF is a silly little weather app that displays current weather conditions based on ZIP, accompanied by an animated GIF that illustrates the weather.`,
+  briefStatement: "<p>WeatherGIF is a silly little weather app that displays current weather conditions based on ZIP, accompanied by an animated GIF that illustrates the weather.</p>",
+  statement: "<p><strong>WeatherGIF</strong> is a silly little weather app that displays current weather conditions based on ZIP, accompanied by an animated GIF that illustrates the weather.</p>",
   techUsed: [
     "Javascript",
     "Open Weather API"
@@ -194,8 +192,8 @@ DSNY publishes monthly reports detailing how many tons of refuse, paper/cardboar
   mobileImageUrl: [
 
   ],
-  briefStatement: `Five Years of Food Spending uses data visualization to represent my spending on groceries and eating out.`,
-  statement: `Five Years of Food Spending uses data visualization to represent my spending on groceries and eating out.`,
+  briefStatement: `<p><strong>Five Years of Food Spending</strong> uses data visualization to represent my spending on groceries and eating out.</p>`,
+  statement: `<p>Five Years of Food Spending uses data visualization to represent my spending on groceries and eating out.</p>`,
   techUsed: [
     "D3.js",
     "React.js"
@@ -217,8 +215,8 @@ DSNY publishes monthly reports detailing how many tons of refuse, paper/cardboar
   mobileImageUrl: [
 
   ],
-  briefStatement: `Todoodles is a CRUD TODO app that allows users to create & delete todo items, as well as cross out completed tasks.`,
-  statement: `Todoodles is a CRUD TODO app that allows users to create & delete todo items, as well as cross out completed tasks.`,
+  briefStatement: "<p>Todoodles is a CRUD TODO app that allows users to create & delete todo items, as well as cross out completed tasks.</p>",
+  statement: "<p><strong>Todoodles</strong> is a CRUD TODO app that allows users to create & delete todo items, as well as cross out completed tasks.</p>",
   techUsed: [
     "Node.js",
     "Express.js",
@@ -241,8 +239,8 @@ DSNY publishes monthly reports detailing how many tons of refuse, paper/cardboar
   mobileImageUrl: [
 
   ],
-  briefStatement: "About a Blue Bike is a tool to look up trip statistics about individual bicycles in New York City's Citi Bike bike share system.",
-  statement: "About a Blue Bike is a tool to look up trip statistics about individual bicycles in New York City's Citi Bike bike share system.",
+  briefStatement: "<p>About a Blue Bike is a tool to look up trip statistics about individual bicycles in New York City's Citi Bike bike share system.</p>",
+  statement: "<p><strong>About a Blue Bike</strong> is a tool to look up trip statistics about individual bicycles in New York City's Citi Bike bike share system.</p>",
   techUsed: [
     "Node.js",
     "Express.js",
@@ -251,7 +249,7 @@ DSNY publishes monthly reports detailing how many tons of refuse, paper/cardboar
   ],
   features: [
    "search form",
-   "radomizer button",
+   "randomizer button",
     "responsive design",
   ],
   url: "https://aboutabluebike.surge.sh/",
