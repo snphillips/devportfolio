@@ -37,7 +37,7 @@ export default class ProjectOverview extends Component {
 
               <div className="card" key={key}>
 
-                <a href={"project-" + itemIndex}
+                <a href={"#project-" + itemIndex}
                    style={{
                     // gets rid of the hover effect on links
                     backgroundColor: "none",
