@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
+import Button from "./user-interface-styles/Buttons.js"
 
 // ===============================
 // The project "cards" are dynamically created
 // by mapping over the filteredProjects array.
 // ===============================
 
-
-
 export default class ProjectOverview extends Component {
   render() {
+
     return (
 
       <div id="projects" className="contentblock">
@@ -58,7 +58,7 @@ export default class ProjectOverview extends Component {
 
                     <summary className="card-text" dangerouslySetInnerHTML={{__html: item.briefStatement }} />;
                     <ul className="card-tech-used">{techUsedList}</ul>
-                    <div className="button visit-site"><a href={item.url}>visit site</a></div>
+                    <Button className="button visit-site"><a href={item.url}>visit site</a></Button>
 
                     <span className="github-logo">
                       <a href={item.githuburl}>
