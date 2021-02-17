@@ -301,14 +301,14 @@ background-color: rgba(5, 11, 56, 0.9);
   text-decoration: none;
 }*/
 
-.button:hover, .visit-site:hover {
-  background-color: rgba(213, 11, 84, 0.9); /*bright pink*/
+/*.button:hover, .visit-site:hover {
+  background-color: rgba(213, 11, 84, 0.9);
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-}
+}*/
 
 /*TODO: drop it down a few px*/
 .github-logo a {
@@ -372,7 +372,6 @@ PROJECTS sections
 .deep-dives-image-container {
   max-width: 450px;
   margin-right: 1rem;
-  /*margin-top: 1rem;*/
 }
 
 .deep-dives-mobile-image-list {
@@ -386,7 +385,6 @@ PROJECTS sections
   margin-bottom: 1rem;
   margin-right: 1rem;
   max-width: 466px;
-  /*max-height: 400px;*/
 }
 
 .deep-dives-image-mobile {
@@ -395,7 +393,6 @@ PROJECTS sections
   margin-bottom: 1rem;
   margin-right: 1rem;
   max-width: 225px;
-  /*max-height: 400px;*/
 }
 
 .deep-dives-text-container {
@@ -414,10 +411,7 @@ h4 {
 }
 
 .deep-dives-links-footer {
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  /*flex-direction: row;*/
-  /*justify-content: space-between;*/
+
 }
 
 ul {
@@ -445,8 +439,8 @@ ul {
   text-decoration: none;
 }
 */
-.deep-dives-button:hover {
-  background-color: rgba(5, 11, 56, 0.8) !important; /*navy blue*/
+/*.deep-dives-button:hover {
+  background-color: rgba(5, 11, 56, 0.8) !important;
   color: rgba(255, 255, 255, 0.6) !important;
   border: 1px solid rgba(255, 255, 255, 0.8);
   text-decoration: none !important;
@@ -455,7 +449,7 @@ ul {
   -ms-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-}
+}*/
 
 
 
