@@ -285,20 +285,21 @@ a.title-link {
 
 
 /* visit site button */
-.button {
-  background-color: rgba(5, 11, 56, 0.9); /*navy blue*/
+/*.button {
+navy blue
+background-color: rgba(5, 11, 56, 0.9);
   border-radius: 6px;
   padding: 5px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   margin-right: 10px;
-}
+}*/
 
-.button a {
+/*.button a {
   color: white;
   text-decoration: none;
-}
+}*/
 
 .button:hover, .visit-site:hover {
   background-color: rgba(213, 11, 84, 0.9); /*bright pink*/
@@ -413,8 +414,8 @@ h4 {
 }
 
 .deep-dives-links-footer {
-  display: flex;
-  flex-direction: column;
+  /*display: flex;*/
+  /*flex-direction: column;*/
   /*flex-direction: row;*/
   /*justify-content: space-between;*/
 }
@@ -429,13 +430,13 @@ ul {
   padding-inline-start: 0px;
 }
 
-
+/*
 .deep-dives-button  {
   display: inline-block;
   margin: .5rem 0;
   color: rgba(255,255,255, 0.9) !important;
-  color: rgba(245, 208, 200, 0.8) !important; /* dusty pink text */
-  color: rgba(5, 11, 56, 0.8) !important; /*navy blue*/
+  color: rgba(245, 208, 200, 0.8) !important;
+  color: rgba(5, 11, 56, 0.8) !important;
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 6px;
@@ -443,7 +444,7 @@ ul {
   text-align: center;
   text-decoration: none;
 }
-
+*/
 .deep-dives-button:hover {
   background-color: rgba(5, 11, 56, 0.8) !important; /*navy blue*/
   color: rgba(255, 255, 255, 0.6) !important;

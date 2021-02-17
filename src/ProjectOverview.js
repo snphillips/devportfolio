@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Button from "./user-interface-styles/Buttons.js"
+import { ButtonDark }  from "./user-interface-styles/Buttons.js"
 
 // ===============================
 // The project "cards" are dynamically created
@@ -58,7 +58,7 @@ export default class ProjectOverview extends Component {
 
                     <summary className="card-text" dangerouslySetInnerHTML={{__html: item.briefStatement }} />;
                     <ul className="card-tech-used">{techUsedList}</ul>
-                    <Button className="button visit-site"><a href={item.url}>visit site</a></Button>
+                    <ButtonDark as="a" href={item.url}>visit site</ButtonDark>
 
                     <span className="github-logo">
                       <a href={item.githuburl}>

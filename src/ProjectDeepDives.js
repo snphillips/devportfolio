@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { ButtonLight } from "./user-interface-styles/Buttons.js"
 
 // ===============================
 // The project section are dynamically created
@@ -108,8 +109,10 @@ export default class ProjectDeepDive extends Component {
                       <ul className="deep-dives-tech-list">{techUsedList}</ul>
 
                       <footer className="deep-dives-links-footer">
-                        <div><a className="deep-dives-button" href={item.url}>visit site</a></div>
-                        <div><a className="deep-dives-button" href={item.githuburl}>github repo <i className="fab fa-github"></i></a></div>
+                        <ButtonLight as="a" href={item.url}>visit site</ButtonLight>
+                        <br/>
+                        <br/>
+                        <ButtonLight as="a" href={item.githuburl}>github repo <i className="fab fa-github"></i></ButtonLight>
                       </footer>
 
                     </section>
