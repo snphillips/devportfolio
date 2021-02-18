@@ -15,7 +15,7 @@ const projectList = [
     "Pandas"
   ],
   features: [
-    "responsive design",
+    "scrapes data into csv tables",
   ],
   url: "https://github.com/snphillips/nycha-outage-scraper",
   githuburl: "https://github.com/snphillips/nycha-outage-scraper",

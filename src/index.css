@@ -1,19 +1,27 @@
 
 /* #050c38; */
 
+/* white */
+/* rgba(255,255,255,.7); */
+
+/* navy blue */
+/* rgba(5, 11, 56, 1);  */
+
+/* dusty pink */
+/* rgba(245, 208, 200, 0.5); */
+
+/* bright pink */
+/* rgba(213, 11, 84, 0.9); */
+
 
 /*=================================
 General Styling
 =================================*/
 * {
   box-sizing: border-box;
-  /*overflow: hidden;*/
-  /*margin: 0;*/
-  /*padding: 0;*/
 }
 
 body {
-  /*max-width: 800px;*/
   max-width: 50rem;
   color: rgba(255,255,255,.7); /*white*/
   margin: 0 auto;
@@ -39,24 +47,8 @@ content & nav
 }
 
 #nav-container {
-  /*top: 0;*/
-  /*position: fixed;*/
   display: block;
   width: 5%;
-}
-
-
-
-/*=================================
-Section Headers
-=================================*/
-h2 {
-/* font-family: 'Oswald', sans-serif;
- font-weight: 400;
- color: rgba(245, 208, 200, 0.8);
- text-transform: uppercase;
- font-size: 3em;
- letter-spacing: -.3vw;*/
 }
 
 /*All sections get some breathing room on top*/
@@ -124,6 +116,12 @@ Links
 .content-link {
   color: rgba(255,255,255, 0.7) !important;
   border-bottom: 2px solid rgba(213, 11, 84, 0.9);
+  transition: all 0.3s
+}
+
+.content-link:hover {
+  text-decoration: none;
+  border-bottom: 2px solid rgba(245, 208, 200, 1); /* dusty pink */
 }
 
 
@@ -194,7 +192,7 @@ h1:hover {
 
 .sticky {
   /*Trying to get the header to be sticky*/
-  /* Not currenly using */
+  /* Not currently using */
   position: sticky;
   top: 15px;
 }
@@ -258,15 +256,6 @@ PROJECTS (cards)
 }
 
 
-/* project card titles */
-/*h3 {
- font-family: 'Oswald', sans-serif;
- color: rgba(5, 11, 56, .9);
- text-transform: uppercase;
- font-size: 1.4em;
- font-weight: 500;
-}*/
-
 a.title-link {
   color: rgba(5, 11, 56, 0.9); /*navy blue*/
 }
@@ -283,32 +272,6 @@ a.title-link {
   margin: .25rem 0;
 }
 
-
-/* visit site button */
-/*.button {
-navy blue
-background-color: rgba(5, 11, 56, 0.9);
-  border-radius: 6px;
-  padding: 5px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin-right: 10px;
-}*/
-
-/*.button a {
-  color: white;
-  text-decoration: none;
-}*/
-
-/*.button:hover, .visit-site:hover {
-  background-color: rgba(213, 11, 84, 0.9);
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}*/
 
 /*TODO: drop it down a few px*/
 .github-logo a {
@@ -401,14 +364,6 @@ PROJECTS sections
   margin-left: 1rem;
 }
 
-/* tech used heading */
-/*h4 {
- font-family: 'Oswald', sans-serif;
- color: rgba(245, 208, 200, 0.8);
- text-transform: uppercase;
- font-size: 1.25em;
- font-weight: 500;
-}*/
 
 .deep-dives-links-footer {
 
@@ -423,47 +378,6 @@ ul {
   margin-inline-end: 0px;
   padding-inline-start: 0px;
 }
-
-/*
-.deep-dives-button  {
-  display: inline-block;
-  margin: .5rem 0;
-  color: rgba(255,255,255, 0.9) !important;
-  color: rgba(245, 208, 200, 0.8) !important;
-  color: rgba(5, 11, 56, 0.8) !important;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 6px;
-  padding: 5px 15px;
-  text-align: center;
-  text-decoration: none;
-}
-*/
-/*.deep-dives-button:hover {
-  background-color: rgba(5, 11, 56, 0.8) !important;
-  color: rgba(255, 255, 255, 0.6) !important;
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  text-decoration: none !important;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -620,7 +534,7 @@ ul {
     font-size: 4em;
     line-height: 70%;
     text-align: left;
-    opacity: .7; /*to make header transluscent on mobile*/
+    opacity: .7; /*to make header translucent on mobile*/
   }
 
   .deep-dives-container {

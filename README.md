@@ -1,6 +1,6 @@
 
 ## Project Description
-This is a portfolio website to display the web development work of Sarah Phillips.
+This is a portfolio website to display the software development work of Sarah Phillips.
 - View the site here: https://sarahphillipsdev.surge.sh/
 
 <img src="https://i.imgur.com/XSqjlCZ.png"
@@ -9,7 +9,8 @@ This is a portfolio website to display the web development work of Sarah Phillip
      
 ## Made With
 - React
-- Some Bootstrap
+- styled-components.js
+- Some Bootstrap (for the hamburger menu)
 
 ***
 ## Featured Projects
@@ -35,7 +36,7 @@ twohue is a one-player color mixing game. Players are presented with a color sam
 
 twohue is a skilled "guessing" game, where players must choose the two correct answers out of larger set of potential answers.
 
-twohue is a front-end game created with React. 
+twohue is a front-end game created with React and Node/Express.
 
 - View twohue here: https://twohue.surge.sh/ 
 ***

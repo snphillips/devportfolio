@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavItem } from "./user-interface-styles/Navigation.js"
 
 export default class Navigation extends Component {
   render() {
@@ -12,12 +13,12 @@ export default class Navigation extends Component {
 
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="ml-auto">
-              <li><a className="nav-item" href="#projects">all projects</a></li>
-              <li><a className="nav-item" href="#about">about</a></li>
-              <li><a className="nav-item" href="#skills">skills</a></li>
-              <li><a className="nav-item" href="#contact">contact</a></li>
-              <li><a className="nav-item" href="https://www.linkedin.com/in/sarah-n-phillips/"><i className="fab fa-linkedin"></i></a></li>
-              <li><a className="nav-item" href="https://github.com/snphillips"><i className="fab fa-github"></i></a></li>
+              <li><NavItem href="#projects">all projects</NavItem></li>
+              <li><NavItem href="#about">about</NavItem></li>
+              <li><NavItem href="#skills">skills</NavItem></li>
+              <li><NavItem href="#contact">contact</NavItem></li>
+              <li><NavItem href="https://www.linkedin.com/in/sarah-n-phillips/"><i className="fab fa-linkedin"></i></NavItem></li>
+              <li><NavItem href="https://github.com/snphillips"><i className="fab fa-github"></i></NavItem></li>
             </ul>
           </div>
 

@@ -5,6 +5,8 @@ import { Heading, SubHeading }  from "./user-interface-styles/Headings.js"
 // ===============================
 // The project section are dynamically created
 // by mapping over the filteredProjects array.
+
+// We're using Styled Components for some elements
 // ===============================
 
 
@@ -100,10 +102,10 @@ export default class ProjectDeepDive extends Component {
 
                       <br/>
 
-                      <SubHeading>features</SubHeading>
+                      <SubHeading as="h3">features</SubHeading>
                       <ul className="deep-dives-features-list">{featuresList}</ul>
 
-                      <SubHeading>Tech Used</SubHeading>
+                      <SubHeading as="h3">Tech Used</SubHeading>
                       <ul className="deep-dives-tech-list">{techUsedList}</ul>
 
                       <footer className="deep-dives-links-footer">
