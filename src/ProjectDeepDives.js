@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { ButtonLight } from "./user-interface-styles/Buttons.js"
+import { Heading, SubHeading }  from "./user-interface-styles/Headings.js"
 
 // ===============================
 // The project section are dynamically created
@@ -74,12 +75,9 @@ export default class ProjectDeepDive extends Component {
                   <hr />
 
 
-                  <h2
-                    id={"project-" + itemIndex}
-                    className="section-header"
-                    >
-                      {item.title}
-                  </h2>
+                  <Heading id={"project-" + itemIndex}>
+                    {item.title}
+                  </Heading>
 
                   <div className="deep-dives-container">
 
@@ -102,10 +100,10 @@ export default class ProjectDeepDive extends Component {
 
                       <br/>
 
-                      <h4 className="deep-dives-tech-heading">features</h4>
+                      <SubHeading>features</SubHeading>
                       <ul className="deep-dives-features-list">{featuresList}</ul>
 
-                      <h4 className="deep-dives-tech-heading">Tech Used</h4>
+                      <SubHeading>Tech Used</SubHeading>
                       <ul className="deep-dives-tech-list">{techUsedList}</ul>
 
                       <footer className="deep-dives-links-footer">

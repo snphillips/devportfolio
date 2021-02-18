@@ -1,4 +1,5 @@
 import React from 'react';
+import { Heading }  from "./user-interface-styles/Headings.js"
 
 
 
@@ -8,7 +9,7 @@ export default function Contact(props) {
 
     <div className="contentblock" id="contact">
       <hr />
-      <h2>Contact</h2>
+      <Heading>Contact</Heading>
       <ul>
         <li>snphillips [at] gmail [dot] com</li>
         <li>

@@ -51,12 +51,12 @@ content & nav
 Section Headers
 =================================*/
 h2 {
- font-family: 'Oswald', sans-serif;
+/* font-family: 'Oswald', sans-serif;
  font-weight: 400;
- color: rgba(245, 208, 200, 0.8); /*dusty pink text*/
+ color: rgba(245, 208, 200, 0.8);
  text-transform: uppercase;
  font-size: 3em;
- letter-spacing: -.3vw;
+ letter-spacing: -.3vw;*/
 }
 
 /*All sections get some breathing room on top*/
@@ -259,13 +259,13 @@ PROJECTS (cards)
 
 
 /* project card titles */
-h3 {
+/*h3 {
  font-family: 'Oswald', sans-serif;
- color: rgba(5, 11, 56, .9); /*navy blue*/
+ color: rgba(5, 11, 56, .9);
  text-transform: uppercase;
  font-size: 1.4em;
  font-weight: 500;
-}
+}*/
 
 a.title-link {
   color: rgba(5, 11, 56, 0.9); /*navy blue*/
@@ -402,13 +402,13 @@ PROJECTS sections
 }
 
 /* tech used heading */
-h4 {
+/*h4 {
  font-family: 'Oswald', sans-serif;
- color: rgba(245, 208, 200, 0.8); /* dusty pink text */
+ color: rgba(245, 208, 200, 0.8);
  text-transform: uppercase;
  font-size: 1.25em;
  font-weight: 500;
-}
+}*/
 
 .deep-dives-links-footer {
 

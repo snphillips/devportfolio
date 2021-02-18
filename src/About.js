@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Heading }  from "./user-interface-styles/Headings.js"
 
 export default class About extends Component {
   render() {
@@ -6,7 +7,7 @@ export default class About extends Component {
 
       <div className="contentblock" id="about">
         <hr />
-        <h2 className="section-header">About</h2>
+         <Heading>About</Heading>
         <p className="about-columns">I am a software developer and designer formally trained in art
         with a background in municipal service delivery (My former position working for the City of New York could
         have taken place on the set of the show Parks & Recreation).  In my current position as an Interaction Engineer at Triplelift, I create bespoke,

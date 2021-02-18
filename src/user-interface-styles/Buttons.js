@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 
+//
 const ButtonDark = styled.div`
   display: inline-block;
   background-color: rgba(5, 11, 56, 0.9); /*navy blue*/
@@ -20,7 +21,6 @@ const ButtonDark = styled.div`
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
-
   }
 `;
 

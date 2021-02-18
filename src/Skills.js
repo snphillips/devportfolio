@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Heading }  from "./user-interface-styles/Headings.js"
 
 // We're mapping over two skills lists: web dev & web dev other-- ancillary dev skills like
 // git & sublime.
@@ -11,7 +12,7 @@ export default class Skills extends Component {
 
         <section className="contentblock" id="skills">
           <hr />
-          <h2 className="section-header">Skills</h2>
+          <Heading>Skills</Heading>
 
           <div className="skills-list">
 

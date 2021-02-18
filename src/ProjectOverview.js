@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { ButtonDark }  from "./user-interface-styles/Buttons.js"
+import { Heading, SubHeadingBlue }  from "./user-interface-styles/Headings.js"
 
 // ===============================
 // The project "cards" are dynamically created
@@ -13,7 +14,7 @@ export default class ProjectOverview extends Component {
 
       <div id="projects" className="contentblock">
         <hr />
-        <h2>Projects Overview</h2>
+        <Heading>Projects Overview</Heading>
 
         <section className="card-columns">
 
@@ -52,9 +53,9 @@ export default class ProjectOverview extends Component {
 
                   <div className="card-body">
 
-                    <h3 className="card-title">
-                      <a className="title-link" href={`#project-`+ itemIndex}>{item.title}</a>
-                    </h3>
+                    <SubHeadingBlue as="a"href={`#project-`+ itemIndex}>
+                      {item.title}
+                    </SubHeadingBlue>
 
                     <summary className="card-text" dangerouslySetInnerHTML={{__html: item.briefStatement }} />;
                     <ul className="card-tech-used">{techUsedList}</ul>
