@@ -48,15 +48,15 @@ const projectList = [
   includeInGallery: true,
 },
 {
-  title: `No Frillz Tweets`,
+  title: `No Frillz Tweetz`,
   imageUrl: [
     "https://i.imgur.com/dofkpVD.png"
   ],
   mobileImageUrl: [
     "https://i.imgur.com/ZQAZZob.png"
   ],
-  briefStatement: "<p>No frillz twitter is a simple twitter client that returns recent tweets based on the user's search query.</p>",
-  statement: "<p><strong>No frillz twitter</strong> is a simple twitter client that returns recent tweets based on the user\'s search query.</p><p>You may be asking yourself, \"But why? Isn't this just a worse Twitter client that does less than real twitter?\" The answer is yes.</p><p>I created this app as a challenge to work with the Twitter API. In the end, I chose to work with the Twit API.</p>",
+  briefStatement: "<p>No frillz tweetz is a simple twitter client that returns recent tweets based on the user's search query.</p>",
+  statement: "<p><strong>No frillz tweetz</strong> is a simple twitter client that returns recent tweets based on the user\'s search query.</p><p>You may be asking yourself, \"But why? Isn't this just a worse Twitter client that does less than real twitter?\" The answer is yes.</p><p>I created this app as a challenge to work with the Twitter API. In the end, I chose to work with the Twit API.</p>",
   techUsed: [
     "Node.js",
     "Express.js",
@@ -83,8 +83,8 @@ const projectList = [
    "https://i.imgur.com/Z767urK.png",
    "https://i.imgur.com/uzOaJum.png"
   ],
-  briefStatement: "So Trashy uses data visualization to represent New York City's Department of Sanitation\'s yearly collection of refuse & recycling.</p>",
-  statement: "<p><strong>So Trashy</strong> uses data visualization to represent New York City\'s Department of Sanitation\'s (DSNY) yearly collection of refuse & recycling.</p></p>DSNY collects residential and public school refuse and recycling, empties street litter baskets, cleans up abandoned property such as cars, tires and bicycles and collects other types of refuse, such as the detritus left in public spaces after Superstorm Sandy. DSNY does not pick up commercial refuse from offices, shops, business, institutions or construction sites.</p><p>The agency publishes monthly reports detailing how many tons of refuse, paper/cardboard and metal/glass/plastic/drink carton has been collected, categorized by borough and further categorized into Community District (CD).</p><p>I cross-reference two data sets to match the CD with the population of each distict.  Additionaly I match the CD with neighborhood names which aren\'t official city designations (as neighborhood boundaries evolve over time)</p>",
+  briefStatement: "So Trashy uses the data visualization library d3 to represent New York City's Department of Sanitation\'s yearly collection of refuse & recycling, per person.</p>",
+  statement: "<p><strong>So Trashy</strong> uses the data visualization library d3 to represent New York City\'s Department of Sanitation\'s (DSNY) yearly collection of refuse & recycling, per person.</p></p>DSNY collects residential and public school refuse and recycling, empties street litter baskets, cleans up abandoned property such as cars, tires and bicycles and collects other types of refuse, such as the detritus left in public spaces after Superstorm Sandy.</p> <p>DSNY does not pick up commercial refuse from offices, shops, business, institutions or construction sites.</p><p>The agency publishes monthly reports detailing how many tons of refuse, paper/cardboard and metal/glass/plastic/drink carton has been collected, categorized by borough and further categorized into Community District (CD).</p><p>I cross-reference two data sets to match the community district with the population of each district.  Additionally I match the community district with neighborhood names which aren\'t official city designations (as neighborhood boundaries evolve over time)</p>",
   techUsed: [
     "D3.js",
     "React.js",
@@ -185,15 +185,15 @@ const projectList = [
   includeInGallery: true,
 },
 {
-  title: `Five Years of Food Spending`,
+  title: "Five Years of Food Spending",
   imageUrl: [
-    "https://i.imgur.com/pXdIzAO.png",
+    "https://i.imgur.com/pXdIzAO.png", "https://i.imgur.com/cOhOvfe.png", "https://i.imgur.com/p9k62Xa.png"
   ],
   mobileImageUrl: [
-
+    "https://i.imgur.com/Ka2NyaX.png",
   ],
-  briefStatement: `<p><strong>Five Years of Food Spending</strong> uses data visualization to represent my spending on groceries and eating out.</p>`,
-  statement: `<p>Five Years of Food Spending uses data visualization to represent my spending on groceries and eating out.</p>`,
+  briefStatement: "<p>Five Years of Food Spending uses the data visualization library D3 to represent my spending on groceries and eating out.</p>",
+  statement: "<p><strong>Five Years of Food Spending</strong> uses the data visualization library D3  to represent my spending on groceries and eating out.</p><p>There was a time in my life when I was on a strict budget. I recorded and cataloged every cent I spent, including what I spent on food. This resulted in a large dataset that I though might be interesting to visualize to see if any patterns emerged.</p><p>Once I visualized the data, I didn't detect any patterns, beyond spending more on meals out while traveling or during times of high stress, for instance during a software development bootcamp.</p><p>While no insights about my food spending emerged, I did begin to recall food-related memories as I manipulated the data.</p><p>I decided to add those memories in an attempt to add color to this otherwise dry data.</p> ",
   techUsed: [
     "D3.js",
     "React.js"
@@ -213,6 +213,7 @@ const projectList = [
     "https://i.imgur.com/DNmSSeE.png",
   ],
   mobileImageUrl: [
+    "https://i.imgur.com/Ka2NyaX.png",
 
   ],
   briefStatement: "<p>Todoodles is a CRUD TODO app that allows users to create & delete todo items, as well as cross out completed tasks.</p>",
@@ -232,7 +233,7 @@ const projectList = [
   includeInGallery: false,
 },
 {
-  title: `About a Blue Bike`,
+  title: "About a Blue Bike",
   imageUrl: [
     "https://i.imgur.com/A1J5MxP.jpg",
   ],

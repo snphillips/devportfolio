@@ -3,7 +3,7 @@ import { ButtonLight } from "./user-interface-styles/Buttons.js"
 import { Heading, SubHeading }  from "./user-interface-styles/Headings.js"
 
 // ===============================
-// The project section are dynamically created
+// The projectDeepDives sections are dynamically created
 // by mapping over the filteredProjects array.
 
 // We're using Styled Components for some elements
