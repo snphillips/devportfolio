@@ -16,7 +16,6 @@ export default class Skills extends Component {
 
           <div className="skills-list">
 
-            <div>
               <ul>
                 {this.props.skillsDev.map( skillItem => {
 
@@ -38,7 +37,6 @@ export default class Skills extends Component {
                   )
               })}
               </ul>
-            </div>
           </div>
 
         </section>

@@ -50,10 +50,10 @@ const projectList = [
 {
   title: `No Frillz Tweetz`,
   imageUrl: [
-    "https://i.imgur.com/dofkpVD.png"
+    "https://i.imgur.com/fFSxLsQ.png", "https://i.imgur.com/ROXGHH1.png"
   ],
   mobileImageUrl: [
-    "https://i.imgur.com/ZQAZZob.png"
+    "https://i.imgur.com/m4is2WU.png"
   ],
   briefStatement: "<p>No frillz tweetz is a simple twitter client that returns recent tweets based on the user's search query.</p>",
   statement: "<p><strong>No frillz tweetz</strong> is a simple twitter client that returns recent tweets based on the user\'s search query.</p><p>You may be asking yourself, \"But why? Isn't this just a worse Twitter client that does less than real twitter?\" The answer is yes.</p><p>I created this app as a challenge to work with the Twitter API. In the end, I chose to work with the Twit API.</p>",
@@ -193,7 +193,7 @@ const projectList = [
     "https://i.imgur.com/Ka2NyaX.png",
   ],
   briefStatement: "<p>Five Years of Food Spending uses the data visualization library D3 to represent my spending on groceries and eating out.</p>",
-  statement: "<p><strong>Five Years of Food Spending</strong> uses the data visualization library D3  to represent my spending on groceries and eating out.</p><p>There was a time in my life when I was on a strict budget. I recorded and cataloged every cent I spent, including what I spent on food. This resulted in a large dataset that I though might be interesting to visualize to see if any patterns emerged.</p><p>Once I visualized the data, I didn't detect any patterns, beyond spending more on meals out while traveling or during times of high stress, for instance during a software development bootcamp.</p><p>While no insights about my food spending emerged, I did begin to recall food-related memories as I manipulated the data.</p><p>I decided to add those memories in an attempt to add color to this otherwise dry data.</p> ",
+  statement: "<p><strong>Five Years of Food Spending</strong> uses the data visualization library D3  to represent my spending on groceries and eating out.</p><p>There was a time in my life when I was on a strict budget. I recorded and cataloged every cent I spent, including what I spent on food. This resulted in a large dataset that I though might be interesting to visualize to see if any patterns emerged.</p><p>Once I visualized the data, I didn't detect any patterns, beyond spending more on meals out while traveling or during times of high stress, for instance during a software development bootcamp.</p><p>While no insights about my food spending emerged, I did begin to recall food-related memories as I manipulated the data.</p><p>I added those memories in an attempt to add color to this otherwise dry data.</p> ",
   techUsed: [
     "D3.js",
     "React.js"
