@@ -53,7 +53,7 @@ export default class ProjectOverview extends Component {
 
                   <div className="card-body">
 
-                    <SubHeadingBlue as="a"href={`#project-`+ itemIndex}>
+                    <SubHeadingBlue as="a" href={`#project-`+ itemIndex}>
                       {item.title}
                     </SubHeadingBlue>
 

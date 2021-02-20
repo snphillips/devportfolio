@@ -53,17 +53,17 @@ content & nav
 
 /*All sections get some breathing room on top*/
 .contentblock {
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 /*All section headers have a pink line on top*/
-hr {
+/*hr {
   display: block;
-  background-color: rgba(245, 208, 200, 0.5); /*dusty pink*/
+  background-color: rgba(245, 208, 200, 0.5);
   height: 1px;
   border: 0;
   margin-bottom: -4px;
-}
+}*/
 
 /*=================================
 Links
@@ -158,58 +158,54 @@ Header
 }
 
 /* SARAH PHILLIPS */
-h1 {
+/*h1 {
   font-family: 'Oswald', sans-serif;
   font-size: 7.5rem;
   font-weight: 500;
   color: rgba(255,255,255, 0.7);
-  -webkit-text-fill-color: rgba(255,255,255, 0.7); /*so transparency works on safari*/
+
+  -webkit-text-fill-color: rgba(255,255,255, 0.7);
   font-style: italic;
   letter-spacing: -.07em;
   text-transform: uppercase;
   line-height: 70%;
   text-align: right;
-  -webkit-transition: all 0.4s ease-in; /*for a smooth mouse away effect*/
+
+  -webkit-transition: all 0.4s ease-in;
   -moz-transition: all 0.4s ease-in;
   -ms-transition: all 0.4s ease-in;
   -o-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
   position: sticky;
   top: 15px;
-}
+}*/
 
-h1:hover {
+/*h1:hover {
   cursor: pointer;
   color: rgba(255,255,255,0.1);
-  /*line-height: 64%;*/
   opacity: .8;
   -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
   -ms-transition: all 0.4s ease-out;
   -o-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
-}
+}*/
 
-.sticky {
-  /*Trying to get the header to be sticky*/
-  /* Not currently using */
-  position: sticky;
-  top: 15px;
-}
+
 
 /*=================================
 Statement
 =================================*/
-#statement {
+/*#statement {
   font-family: 'Crimson Text', serif;
   font-size: 1.5em;
   line-height: 1.2;
   font-weight: 400;
   font-style: italic;
   margin-left: 3.5rem;
-  color: rgba(245, 208, 200, 0.8); /* dusty pink */
+  color: rgba(245, 208, 200, 0.8);
   z-index: -1;
-}
+}*/
 
 #highlight {
   cursor: pointer;
@@ -411,18 +407,6 @@ ul {
     font-size: 110%;
   }
 
-  /*SARAH PHILLIPS*/
-  h1 {
-    font-size: 5em;
-    line-height: 70%;
-    text-align: left;
-    opacity: .7; /*to make header transluscent on mobile*/
-  }
-
-  h2 {
-   font-size: 6vw;
-  }
-
   .contentblock {
     padding-top: 1.25em;
   }
@@ -440,11 +424,11 @@ ul {
   }
 
   #statement {
-    padding-top: 1em;
+/*    padding-top: 1em;
     margin-bottom: 0em;
     font-size: 1.3em;
     margin-left: .2em;
-    line-height: 1.1em;
+    line-height: 1.1em;*/
   }
 
   /*Getting rid of two columns for small screens*/
@@ -530,20 +514,14 @@ ul {
     margin-bottom: 0;
   }
 
-  h1 {
-    font-size: 4em;
-    line-height: 70%;
-    text-align: left;
-    opacity: .7; /*to make header translucent on mobile*/
-  }
 
   .deep-dives-container {
     flex-direction: column;
   }
 
-  #statement {
+/*  #statement {
     font-size: 1.2em;
-  }
+  }*/
 
   .skills-list {
     column-count: 1;
