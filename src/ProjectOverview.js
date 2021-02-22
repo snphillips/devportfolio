@@ -57,7 +57,7 @@ export default class ProjectOverview extends Component {
                       {item.title}
                     </SubHeadingBlue>
 
-                    <summary className="card-text" dangerouslySetInnerHTML={{__html: item.briefStatement }} />;
+                    <summary className="card-text" dangerouslySetInnerHTML={{__html: item.briefStatement }} />
                     <ul className="card-tech-used">{techUsedList}</ul>
                     <ButtonDark as="a" href={item.url}>visit site</ButtonDark>
 
