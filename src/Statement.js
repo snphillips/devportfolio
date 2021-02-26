@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 
-const StatementStyled = styled.p`
+const StatementStyled = styled.div`
   font-family: 'Crimson Text', serif;
   font-size: 1.5em;
   line-height: 1.2;
@@ -13,7 +13,6 @@ const StatementStyled = styled.p`
   z-index: -1;
 
     @media (max-width: 768px) {
-      padding-top: 1em;
       margin-bottom: 0em;
       font-size: 1.3em;
       margin-left: .2em;
@@ -33,8 +32,8 @@ const StatementStyled = styled.p`
 export default function Statement() {
     return (
 
-    <StatementStyled>
-      <p id="statement">Software Developer: I create solutions that are <span id="highlight">welcoming, intuitive & delightful</span> to interact with.</p>
+    <StatementStyled id="statement">
+      Software Developer: I create solutions that are <span id="statement-highlight">welcoming, intuitive & delightful</span> to interact with.
     </StatementStyled>
 
     );

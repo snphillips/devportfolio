@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { ContentContainer, NavContainer, HeaderAndStatementContainer, HeaderContainer, StatementContainer }  from "./user-interface-styles/layout.js"
 import './App.css';
 import Header from './Header';
 import Navigation from './Navigation';
@@ -69,48 +70,58 @@ export default class App extends Component {
 
       <div id="dev-portfolio">
 
-        <main id="content-container">
-          <div
-            id="header-statement"
-            className="row align-items-center"
-            >
+        <ContentContainer>
 
-            <div className="col-sm-12 col-md-5 col-lg-6 col-xl-6">
-              <Header />
-            </div>
+            <HeaderAndStatementContainer
+              // className="row align-items-center"
+              >
 
-            <div className="col-sm-12 col-md-5 col-lg-5 col-xl-5">
-              <Statement />
-            </div>
+              <HeaderContainer>
+                <Header />
+              </HeaderContainer>
+
+              <StatementContainer>
+                <Statement />
+              </StatementContainer>
+
+            </HeaderAndStatementContainer>
+
+            <ProjectOverview
+              parentState={this.state}
+              filteredProjects={this.state.filteredProjects} />
+
+            <About />
+
+            <Skills
+              parentState={this.state}
+              skillsDev={this.state.skillsDev}
+              skillsDevOther={this.state.skillsDevOther} />
+
+            <Contact />
+
+            <ProjectDeepDives
+              filteredProjects={this.state.filteredProjects} />
+          </ContentContainer>
 
 
-          </div>
-          <ProjectOverview
-            parentState={this.state}
-            filteredProjects={this.state.filteredProjects}
-          />
-          <About />
-          <Skills
-            parentState={this.state}
-            skillsDev={this.state.skillsDev}
-            skillsDevOther={this.state.skillsDevOther}
-          />
-          <Contact />
-          <ProjectDeepDives
-            filteredProjects={this.state.filteredProjects}
-          />
-        </main>
-
-        <div id="nav-container">
+        <NavContainer>
           <Navigation />
-        </div>
+        </NavContainer>
 
       </div>
     );
   }
-}
+};
+
+              // <div className="col-sm-12 col-md-5 col-lg-6 col-xl-6">
+              //   <Header />
+              // </div>
+
+              // <div className="col-sm-12 col-md-5 col-lg-5 col-xl-5">
+              //   <Statement />
+              // </div>
 
 
-//        <nav className="col-sm-0 col-md-2 col-lg-1 col-xl-1">
-//          <Navigation />
-//        </nav>
+       // <nav className="col-sm-0 col-md-2 col-lg-1 col-xl-1">
+       //   <Navigation />
+       // </nav>

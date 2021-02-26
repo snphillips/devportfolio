@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { ButtonDark }  from "./user-interface-styles/Buttons.js"
-import { Heading, SubHeadingBlue }  from "./user-interface-styles/Headings.js"
+import { ButtonDark }  from "./user-interface-styles/buttons.js"
+import { Heading, SubHeadingBlue }  from "./user-interface-styles/headings.js"
 
 // ===============================
 // The project "cards" are dynamically created
@@ -48,6 +48,8 @@ export default class ProjectOverview extends Component {
                   <img className="card-img-top"
                        src={item.imageUrl[0]}
                        alt={item.title}
+                       width="auto"
+                       height="auto"
                        />
                 </a>
 

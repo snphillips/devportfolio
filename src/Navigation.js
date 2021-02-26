@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavItem } from "./user-interface-styles/Navigation.js"
+import { NavItem } from "./user-interface-styles/navigation.js"
 
 export default class Navigation extends Component {
   render() {

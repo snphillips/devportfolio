@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Heading }  from "./user-interface-styles/Headings.js"
+import { Heading }  from "./user-interface-styles/headings.js"
 
 // We're mapping over two skills lists: web dev & web dev other-- ancillary dev skills like
 // git & sublime.

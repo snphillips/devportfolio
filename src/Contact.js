@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heading }  from "./user-interface-styles/Headings.js"
+import { Heading }  from "./user-interface-styles/headings.js"
 
 
 

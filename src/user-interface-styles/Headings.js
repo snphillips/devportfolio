@@ -10,6 +10,8 @@ import styled from 'styled-components';
 
 
 const Heading = styled.h2`
+  display: block;
+  position: relative;
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
   color: rgba(245, 208, 200, 0.8);

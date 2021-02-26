@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { ButtonLight } from "./user-interface-styles/Buttons.js"
-import { Heading, SubHeading }  from "./user-interface-styles/Headings.js"
+import { ButtonLight } from "./user-interface-styles/buttons.js"
+import { Heading, SubHeading }  from "./user-interface-styles/headings.js"
 
 // ===============================
 // The projectDeepDives sections are dynamically created
@@ -32,6 +32,8 @@ export default class ProjectDeepDive extends Component {
                   src={linkItem}
                   alt={item.title}
                   key={key}
+                  width="auto"
+                  height="auto"
                 />
               )
             })
@@ -46,6 +48,8 @@ export default class ProjectDeepDive extends Component {
                   src={linkItem}
                   alt={item.title}
                   key={key}
+                  width="auto"
+                  height="auto"
                 />
               )
             })
