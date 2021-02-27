@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { ButtonLight } from "./user-interface-styles/buttons.js"
 import { Heading, SubHeading }  from "./user-interface-styles/headings.js"
+import { ContentContainer }  from "./user-interface-styles/layout.js"
 
 // ===============================
 // The projectDeepDives sections are dynamically created
@@ -15,7 +16,7 @@ export default class ProjectDeepDive extends Component {
   render() {
     return (
 
-        <div className="contentblock">
+        <ContentContainer>
 
           {this.props.filteredProjects.map( (item, key) => {
 
@@ -128,7 +129,7 @@ export default class ProjectDeepDive extends Component {
 
             })}
 
-        </div>
+        </ContentContainer>
 
 
     );

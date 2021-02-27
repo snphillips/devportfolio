@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { ButtonDark }  from "./user-interface-styles/buttons.js"
 import { Heading, SubHeadingBlue }  from "./user-interface-styles/headings.js"
+import { ContentContainer }  from "./user-interface-styles/layout.js"
 
 // ===============================
 // The project "cards" are dynamically created
@@ -12,7 +13,7 @@ export default class ProjectOverview extends Component {
 
     return (
 
-      <div id="projects" className="contentblock">
+      <ContentContainer id="projects">
         <hr />
         <Heading>Projects Overview</Heading>
 
@@ -80,7 +81,7 @@ export default class ProjectOverview extends Component {
 
         </section>
 
-      </div>
+      </ContentContainer>
 
     );
   }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Heading }  from "./user-interface-styles/headings.js"
+import { ContentContainer }  from "./user-interface-styles/layout.js"
 
 
 
@@ -7,7 +8,7 @@ export default function Contact(props) {
 
     return (
 
-    <div className="contentblock" id="contact">
+    <ContentContainer id="contact">
       <hr />
       <Heading>Contact</Heading>
       <ul>
@@ -35,7 +36,7 @@ export default function Contact(props) {
         </li>
       </ul>
 
-    </div>
+    </ContentContainer>
 
     );
 

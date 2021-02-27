@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Heading }  from "./user-interface-styles/headings.js"
+import { ContentContainer }  from "./user-interface-styles/layout.js"
 
 export default class About extends Component {
   render() {
     return (
 
-      <div className="contentblock" id="about">
+      <ContentContainer id="about">
         <hr />
          <Heading>About</Heading>
           <p className="about-columns">I am a software developer and designer formally trained in art
@@ -14,7 +15,7 @@ export default class About extends Component {
           consumer-centric ad templates and develop the in-house React application we used to create
           those templates. I strive to create visually interesting solutions that are broadly appealing. I believe tech should be intuitive, welcoming and delightful
           to interact with.</p>
-      </div>
+      </ContentContainer>
     );
   }
 }

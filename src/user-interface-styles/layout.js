@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 
 
+const SiteContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+`
+
 const ContentContainer = styled.section`
   width: 100%;
   margin-right: 1rem;
@@ -43,6 +49,7 @@ const StatementContainer = styled.div`
 `
 
 export {
+  SiteContainer,
   ContentContainer,
   NavContainer,
   HeaderAndStatementContainer,

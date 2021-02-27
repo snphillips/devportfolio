@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Heading }  from "./user-interface-styles/headings.js"
+import { ContentContainer }  from "./user-interface-styles/layout.js"
 
 // We're mapping over two skills lists: web dev & web dev other-- ancillary dev skills like
 // git & sublime.
@@ -10,7 +11,7 @@ export default class Skills extends Component {
     render() {
       return(
 
-        <section className="contentblock" id="skills">
+        <ContentContainer id="skills">
           <hr />
           <Heading>Skills</Heading>
 
@@ -39,7 +40,7 @@ export default class Skills extends Component {
               </ul>
           </div>
 
-        </section>
+        </ContentContainer>
       )
     }
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ContentContainer, NavContainer, HeaderAndStatementContainer, HeaderContainer, StatementContainer }  from "./user-interface-styles/layout.js"
+import { SiteContainer, ContentContainer, NavContainer, HeaderAndStatementContainer, HeaderContainer, StatementContainer }  from "./user-interface-styles/layout.js"
 import './App.css';
 import Header from './Header';
 import Navigation from './Navigation';
@@ -68,7 +68,7 @@ export default class App extends Component {
   render() {
     return (
 
-      <div id="dev-portfolio">
+      <SiteContainer>
 
         <ContentContainer>
 
@@ -108,7 +108,7 @@ export default class App extends Component {
           <Navigation />
         </NavContainer>
 
-      </div>
+      </SiteContainer>
     );
   }
 };
