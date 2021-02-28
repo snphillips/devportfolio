@@ -31,6 +31,14 @@ const ButtonLight = styled(ButtonDark)`
   background-color: rgba(255, 255, 255, 0.8);
 `;
 
+const HorizontalRule = styled.hr`
+
+&:hover {
+  margin-bottom: 5px;
+}
+
+
+`
 
 
 
@@ -39,6 +47,7 @@ const ButtonLight = styled(ButtonDark)`
 
 export {
   ButtonDark,
-  ButtonLight
+  ButtonLight,
+  HorizontalRule
 };
 

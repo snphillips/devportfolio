@@ -50,9 +50,11 @@ const SubHeading = styled(Heading)`
 // take Heading and "extend it" by
 // applying further customizations
 const SubHeadingBlue = styled(SubHeading)`
-  color: rgba(5, 11, 56, .8);  /*navy blue*/
+  color: rgba(5, 11, 56, .9);  /*navy blue*/
+  display: inline-block;
   position: relative;
   text-decoration: none; /* This removes the default underline */
+  margin-bottom: .5em;
 
   &:hover {
     text-decoration: none; /* This removes the default underline */

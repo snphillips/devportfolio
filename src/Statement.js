@@ -19,7 +19,7 @@ const StatementStyled = styled.div`
       line-height: 1.1em;
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 527px) {
       font-size: 1.2em;
     }
   `
@@ -52,7 +52,7 @@ export default function Statement() {
     return (
 
     <StatementStyled id="statement">
-      Software Developer: I create solutions that are <StatementHighlight>welcoming, intuitive & delightful</StatementHighlight> to interact with.
+      Software Developer: I create solutions that are <StatementHighlight>welcoming & delightful</StatementHighlight> to interact with.
     </StatementStyled>
 
     );

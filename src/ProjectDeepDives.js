@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { ButtonLight } from "./user-interface-styles/buttons.js"
+import { ButtonLight } from "./user-interface-styles/buttonsAndHr.js"
 import { Heading, SubHeading }  from "./user-interface-styles/headings.js"
 import { ContentContainer }  from "./user-interface-styles/layout.js"
 
@@ -15,6 +15,10 @@ const DeepDivesContent = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 2rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 const DeepDivesImageContainer = styled.div`
@@ -22,8 +26,8 @@ const DeepDivesImageContainer = styled.div`
   margin-right: 1rem;
 
   @media (max-width: 768px) {
-    width: 90%;
-    max-width: 90%;
+    width: 100%;
+    max-width: 100%;
     margin-right: unset;
     margin: 1rem auto;
   }
@@ -70,6 +74,16 @@ const DeepDivesImage = styled.img`
 `
 const DeepDivesImageMobile = styled(DeepDivesImage)`
   max-width: 225px;
+
+  @media (max-width: 768px) {
+    width: 45%;
+    max-width: 45%;
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+    max-width: 100%;
+  }
 `
 
 const ListTechUsedDeepDive = styled.ul`
@@ -161,37 +175,37 @@ export default class ProjectDeepDive extends Component {
 
                   <DeepDivesContent>
 
-                  <DeepDivesImageContainer>
+                    <DeepDivesImageContainer className="deep-dives-image-container">
 
-                    <DeepDivesImageList>
-                      {imageUrlList}
-                    </DeepDivesImageList>
+                      <DeepDivesImageList>
+                        {imageUrlList}
+                      </DeepDivesImageList>
 
-                    <DeepDivesMobileImageList>
-                      {mobileImageUrlList}
-                    </DeepDivesMobileImageList>
+                      <DeepDivesMobileImageList>
+                        {mobileImageUrlList}
+                      </DeepDivesMobileImageList>
 
-                  </DeepDivesImageContainer>
+                    </DeepDivesImageContainer>
 
 
-                  <DeepDivesTextContainer>
+                    <DeepDivesTextContainer className="deep-dives-text-container">
 
-                    <article className="deep-dives-text" dangerouslySetInnerHTML={{__html: item.statement }} />
+                      <article className="deep-dives-text" dangerouslySetInnerHTML={{__html: item.statement }} />
 
-                      <br/>
-
-                      <SubHeading as="h3">features</SubHeading>
-                      <ListFeatures>{featuresList}</ListFeatures>
-
-                      <SubHeading as="h3">Tech Used</SubHeading>
-                      <ListTechUsedDeepDive>{techUsedList}</ListTechUsedDeepDive>
-
-                      <footer className="deep-dives-links-footer">
-                        <ButtonLight as="a" href={item.url}>visit site</ButtonLight>
                         <br/>
-                        <br/>
-                        <ButtonLight as="a" href={item.githuburl}>github repo <i className="fab fa-github"></i></ButtonLight>
-                      </footer>
+
+                        <SubHeading as="h3">features</SubHeading>
+                        <ListFeatures>{featuresList}</ListFeatures>
+
+                        <SubHeading as="h3">Tech Used</SubHeading>
+                        <ListTechUsedDeepDive>{techUsedList}</ListTechUsedDeepDive>
+
+                        <footer className="deep-dives-links-footer">
+                          <ButtonLight as="a" href={item.url}>visit site</ButtonLight>
+                          <br/>
+                          <br/>
+                          <ButtonLight as="a" href={item.githuburl}>github repo <i className="fab fa-github"></i></ButtonLight>
+                        </footer>
 
                     </DeepDivesTextContainer>
 
