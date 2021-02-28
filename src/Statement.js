@@ -22,18 +22,37 @@ const StatementStyled = styled.div`
     @media (max-width: 500px) {
       font-size: 1.2em;
     }
-
-
-
-
   `
+
+// take StatementStyled and apply further customizations
+const StatementHighlight = styled.span`
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+
+    &:hover {
+      cursor: pointer;
+      color: rgba(213, 11, 84, 0.9);
+      -webkit-transition: all 0.5s ease-out;
+      -moz-transition: all 0.5s ease-out;
+      -ms-transition: all 0.5s ease-out;
+      -o-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out;
+  }
+
+
+
+`;
 
 
 export default function Statement() {
     return (
 
     <StatementStyled id="statement">
-      Software Developer: I create solutions that are <span id="statement-highlight">welcoming, intuitive & delightful</span> to interact with.
+      Software Developer: I create solutions that are <StatementHighlight>welcoming, intuitive & delightful</StatementHighlight> to interact with.
     </StatementStyled>
 
     );

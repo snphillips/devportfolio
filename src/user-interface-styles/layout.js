@@ -6,7 +6,6 @@ const SiteContainer = styled.div`
   flex-direction: row;
   margin-top: 1rem;
 `
-
 const ContentContainer = styled.section`
   width: 100%;
   margin-right: 1rem;
@@ -29,7 +28,6 @@ const HeaderAndStatementContainer = styled.section`
     flex-direction: column;
   }
 `
-
 const HeaderContainer = styled.div`
   display: block;
   margin-right: 2rem;
@@ -42,11 +40,15 @@ const HeaderContainer = styled.div`
 
   }
 `
-
 const StatementContainer = styled.div`
   display: block;
   margin-top: 0;
 `
+
+
+
+
+
 
 export {
   SiteContainer,
@@ -54,5 +56,5 @@ export {
   NavContainer,
   HeaderAndStatementContainer,
   HeaderContainer,
-  StatementContainer
+  StatementContainer,
 };

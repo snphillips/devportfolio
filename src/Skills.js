@@ -1,6 +1,31 @@
 import React, { Component } from 'react';
 import { Heading }  from "./user-interface-styles/headings.js"
 import { ContentContainer }  from "./user-interface-styles/layout.js"
+import styled from 'styled-components';
+
+
+const SkillsListContainer = styled.div`
+  column-count: 4;
+
+  @media (max-width: 768px) {
+    column-count: 3;
+  }
+
+  @media (max-width: 500px) {
+    column-count: 1;
+  }
+`
+
+const SkillsUnorderedList = styled.ul`
+  padding-left: 0; /* removes space where bullet points used to be */
+`
+
+
+const SkillListItem = styled.li`
+  list-style: none; /* removes bullet points */
+`
+
+
 
 // We're mapping over two skills lists: web dev & web dev other-- ancillary dev skills like
 // git & sublime.
@@ -15,16 +40,16 @@ export default class Skills extends Component {
           <hr />
           <Heading>Skills</Heading>
 
-          <div className="skills-list">
+          <SkillsListContainer>
 
-              <ul>
+              <SkillsUnorderedList>
                 {this.props.skillsDev.map( skillItem => {
 
                   // to help generate a unique key to each child
                   let index = this.props.skillsDev.indexOf(skillItem)
 
                   return(
-                    <li key={"skill-" + index}>{skillItem}</li>
+                    <SkillListItem key={"skill-" + index}>{skillItem}</SkillListItem>
                   )
               })}
 
@@ -34,11 +59,11 @@ export default class Skills extends Component {
                   let index = this.props.skillsDevOther.indexOf(skillDevItem)
 
                   return(
-                    <li key={"skill-dev-" + index}>{skillDevItem}</li>
+                    <SkillListItem key={"skill-dev-" + index}>{skillDevItem}</SkillListItem>
                   )
               })}
-              </ul>
-          </div>
+              </SkillsUnorderedList>
+          </SkillsListContainer>
 
         </ContentContainer>
       )

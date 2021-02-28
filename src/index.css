@@ -7,6 +7,9 @@
 /* navy blue */
 /* rgba(5, 11, 56, 1);  */
 
+/* navy blue sightly transparent */
+/* rgba(5, 11, 56, .8);*/
+
 /* dusty pink */
 /* rgba(245, 208, 200, 0.5); */
 
@@ -30,40 +33,6 @@ body {
   background-color: rgba(5, 11, 56, 1);  /*navy blue*/
   font-size: 1em;
 }
-
-/*#dev-portfolio {
-  display: flex;
-  flex-direction: row;
-  margin-top: 1rem;
-}*/
-
-/*=================================
-Two containers
-content & nav
-=================================*/
-/*#content-container {
-  width: 100%;
-  margin-right: 1rem;
-}*/
-
-/*#nav-container {
-  display: block;
-  width: 5%;
-}*/
-
-/*All sections get some breathing room on top*/
-/*.contentblock {
-  padding-top: 2rem;
-}*/
-
-/*All section headers have a pink line on top*/
-/*hr {
-  display: block;
-  background-color: rgba(245, 208, 200, 0.5);
-  height: 1px;
-  border: 0;
-  margin-bottom: -4px;
-}*/
 
 /*=================================
 Links
@@ -128,10 +97,6 @@ Links
 /*=================================
 Navigation
 =================================*/
-nav {
-  display: block;
-}
-
 #navbarNav ul {
   font-family: 'Oswald', sans-serif;
   font-size: 1.2em;
@@ -149,108 +114,33 @@ nav {
   border: 3px solid white;
 }
 
-/*=================================
-Header
-=================================*/
-/*#header-and-statement-container {
-  margin-top: 2em;
-  margin-bottom: 1em;
-}*/
-
-/* SARAH PHILLIPS */
-/*h1 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 7.5rem;
-  font-weight: 500;
-  color: rgba(255,255,255, 0.7);
-
-  -webkit-text-fill-color: rgba(255,255,255, 0.7);
-  font-style: italic;
-  letter-spacing: -.07em;
-  text-transform: uppercase;
-  line-height: 70%;
-  text-align: right;
-
-  -webkit-transition: all 0.4s ease-in;
-  -moz-transition: all 0.4s ease-in;
-  -ms-transition: all 0.4s ease-in;
-  -o-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
-  position: sticky;
-  top: 15px;
-}*/
-
-/*h1:hover {
-  cursor: pointer;
-  color: rgba(255,255,255,0.1);
-  opacity: .8;
-  -webkit-transition: all 0.4s ease-out;
-  -moz-transition: all 0.4s ease-out;
-  -ms-transition: all 0.4s ease-out;
-  -o-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
-}*/
-
-
-
-/*=================================
-Statement
-=================================*/
-/*#statement {
-  font-family: 'Crimson Text', serif;
-  font-size: 1.5em;
-  line-height: 1.2;
-  font-weight: 400;
-  font-style: italic;
-  margin-left: 3.5rem;
-  color: rgba(245, 208, 200, 0.8);
-  z-index: -1;
-}*/
-
-#statement-highlight {
-  cursor: pointer;
-  -webkit-transition: all 0.5s ease-in;
-  -moz-transition: all 0.5s ease-in;
-  -ms-transition: all 0.5s ease-in;
-  -o-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
-}
-
-#statement-highlight:hover {
-  cursor: pointer;
-  color: rgba(213, 11, 84, 0.9);
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
 
 /*=================================
 PROJECTS (cards)
 =================================*/
 .card {
+/* bootstrap also adding styles to card */
   border: none;
 }
 
 .card-body {
+/* bootstrap also adding styles to card-body */
   background-color: #fafafa;
 }
 
 /*Smaller screens, pop to 2 columns*/
 @media (min-width: 576px) {
-    .card-columns {
-        column-count: 2;
-    }
+  .card-columns {
+    column-count: 2;
+  }
 }
 
 /*Medium screens, pop to 2 columns*/
 @media (min-width: 768px) {
-    .card-columns {
-        column-count: 3;
-    }
+  .card-columns {
+    column-count: 3;
+  }
 }
-
 
 a.title-link {
   color: rgba(5, 11, 56, 0.9); /*navy blue*/
@@ -268,7 +158,6 @@ a.title-link {
   margin: .25rem 0;
 }
 
-
 /*TODO: drop it down a few px*/
 .github-logo a {
   color: rgba(5, 11, 56, 0.9); /*navy blue*/
@@ -283,32 +172,11 @@ a.title-link {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
+
+
 /*=================================
-ABOUT
+CONTACT
 =================================*/
-/* 2 columns with big screens, 1 with small (see media query)*/
-.about-columns {
-  -webkit-column-gap: 20px;
-  -moz-column-gap: 20px;
-  column-gap: 20px;
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
-}
-
-#skills ul {
-  list-style: none; /* removes bullet points */
-  padding-left: 0; /* removes space where bullet points used to be */
-}
-
-.skills-list {
-  column-count: 4;
-}
-
-#contact {
-  /*padding-bottom: 3em;*/
-}
-
 #contact ul {
   list-style: none;
   padding-left: 0;
@@ -317,63 +185,6 @@ ABOUT
 #contact a {
   color: rgba(255,255,255, 0.7); /* white */
 }
-
-
-/*=================================
-PROJECTS sections
-=================================*/
-.deep-dives-container {
-  display: flex;
-  flex-direction: row;
-  margin-top: 2rem;
-}
-
-.deep-dives-image-container {
-  max-width: 450px;
-  margin-right: 1rem;
-}
-
-.deep-dives-mobile-image-list {
-  display: flex;
-}
-
-.deep-dives-image {
-  width: auto;
-  height: auto;
-  margin-bottom: 1rem;
-  margin-right: 1rem;
-  max-width: 466px;
-}
-
-.deep-dives-image-mobile {
-  width: auto;
-  height: auto;
-  margin-bottom: 1rem;
-  margin-right: 1rem;
-  max-width: 225px;
-}
-
-.deep-dives-text-container {
-  display: block;
-  color: rgba(255,255,255, 0.7);
-  margin-left: 1rem;
-}
-
-
-.deep-dives-links-footer {
-
-}
-
-ul {
-  display: block;
-  list-style-type: none;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 0px;
-}
-
 
 
 
@@ -416,52 +227,6 @@ ul {
 
   #header-statement {
     margin-bottom: -2em;
-  }
-
-  .deep-dives-image-container {
-    width: 90%;
-    max-width: 90%;
-    margin-right: unset;
-    margin: 1rem auto;
-}
-
-  .deep-dives-mobile-image-list {
-    display: unset;
-    width: 100%;
-    max-width: 100%;
-    margin: 1rem auto;
-  }
-
-  .deep-dives-image {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .deep-dives-image-mobile {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  #statement {
-/*    padding-top: 1em;
-    margin-bottom: 0em;
-    font-size: 1.3em;
-    margin-left: .2em;
-    line-height: 1.1em;*/
-  }
-
-  /*Getting rid of two columns for small screens*/
-  .about-columns{
-      -webkit-column-gap: 0px;
-         -moz-column-gap: 0px;
-              column-gap: 0px;
-      -webkit-column-count: 1;
-         -moz-column-count: 1;
-              column-count: 1;
-  }
-
-  .skills-list {
-    column-count: 3;
   }
 
 }
@@ -536,14 +301,6 @@ ul {
 
   .deep-dives-container {
     flex-direction: column;
-  }
-
-/*  #statement {
-    font-size: 1.2em;
-  }*/
-
-  .skills-list {
-    column-count: 1;
   }
 
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import { ButtonLight } from "./user-interface-styles/buttons.js"
 import { Heading, SubHeading }  from "./user-interface-styles/headings.js"
 import { ContentContainer }  from "./user-interface-styles/layout.js"
@@ -9,6 +10,80 @@ import { ContentContainer }  from "./user-interface-styles/layout.js"
 
 // We're using Styled Components for some elements
 // ===============================
+
+const DeepDivesContent = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+`
+
+const DeepDivesImageContainer = styled.div`
+  max-width: 450px;
+  margin-right: 1rem;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    max-width: 90%;
+    margin-right: unset;
+    margin: 1rem auto;
+  }
+
+  @media (max-width: 500px) {
+
+  }
+`
+
+const DeepDivesTextContainer = styled.section`
+  display: block;
+  color: rgba(255,255,255, 0.7);
+  margin-left: 1rem;
+`
+
+const DeepDivesImageList = styled.div``
+
+
+const DeepDivesMobileImageList = styled.div`
+  display: flex;
+
+  @media (max-width: 768px) {
+    display: unset;
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem auto;
+  }
+
+  @media (max-width: 500px) {
+
+  }
+`
+const DeepDivesImage = styled.img`
+  width: auto;
+  height: auto;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  max-width: 466px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 100%;
+  }
+`
+const DeepDivesImageMobile = styled(DeepDivesImage)`
+  max-width: 225px;
+`
+
+const ListTechUsedDeepDive = styled.ul`
+  display: block;
+  list-style-type: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+`;
+
+const ListFeatures = styled(ListTechUsedDeepDive)``
+
 
 
 
@@ -28,8 +103,7 @@ export default class ProjectDeepDive extends Component {
             let imageUrlList = item.imageUrl.map( (linkItem, key) => {
 
               return(
-                <img
-                  className="deep-dives-image"
+                <DeepDivesImage
                   src={linkItem}
                   alt={item.title}
                   key={key}
@@ -44,8 +118,7 @@ export default class ProjectDeepDive extends Component {
             let mobileImageUrlList = item.mobileImageUrl.map( (linkItem, key) => {
 
               return(
-                <img
-                  className="deep-dives-image-mobile"
+                <DeepDivesImageMobile
                   src={linkItem}
                   alt={item.title}
                   key={key}
@@ -86,32 +159,32 @@ export default class ProjectDeepDive extends Component {
                     {item.title}
                   </Heading>
 
-                  <div className="deep-dives-container">
+                  <DeepDivesContent>
 
-                  <section className="deep-dives-image-container">
+                  <DeepDivesImageContainer>
 
-                    <div className="deep-dives-image-list">
+                    <DeepDivesImageList>
                       {imageUrlList}
-                    </div>
+                    </DeepDivesImageList>
 
-                    <div className="deep-dives-mobile-image-list">
+                    <DeepDivesMobileImageList>
                       {mobileImageUrlList}
-                    </div>
+                    </DeepDivesMobileImageList>
 
-                  </section>
+                  </DeepDivesImageContainer>
 
 
-                    <section className="deep-dives-text-container">
+                  <DeepDivesTextContainer>
 
                     <article className="deep-dives-text" dangerouslySetInnerHTML={{__html: item.statement }} />
 
                       <br/>
 
                       <SubHeading as="h3">features</SubHeading>
-                      <ul className="deep-dives-features-list">{featuresList}</ul>
+                      <ListFeatures>{featuresList}</ListFeatures>
 
                       <SubHeading as="h3">Tech Used</SubHeading>
-                      <ul className="deep-dives-tech-list">{techUsedList}</ul>
+                      <ListTechUsedDeepDive>{techUsedList}</ListTechUsedDeepDive>
 
                       <footer className="deep-dives-links-footer">
                         <ButtonLight as="a" href={item.url}>visit site</ButtonLight>
@@ -120,9 +193,9 @@ export default class ProjectDeepDive extends Component {
                         <ButtonLight as="a" href={item.githuburl}>github repo <i className="fab fa-github"></i></ButtonLight>
                       </footer>
 
-                    </section>
+                    </DeepDivesTextContainer>
 
-                  </div>
+                  </DeepDivesContent>
                 </article>
 
               )

@@ -8,7 +8,6 @@ import styled from 'styled-components';
 // To make a new component that inherits the styling of another,
 // wrap it in the styled() constructor to "extend it".
 
-
 const Heading = styled.h2`
   display: block;
   position: relative;
@@ -28,7 +27,6 @@ const Heading = styled.h2`
   @media (max-width: 500px) {
     font-size: 1.25em;
   }
-
 `;
 
 // take Heading and "extend it" by
@@ -84,10 +82,6 @@ const SubHeadingBlue = styled(SubHeading)`
     -webkit-transform: scaleX(1); /* width of the line. 1 = 100% */
     transform: scaleX(1); /* width of the line. 1 = 100% */
   }
-
-
-
-
 `;
 
 

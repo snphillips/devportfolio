@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import { ButtonDark }  from "./user-interface-styles/buttons.js"
 import { Heading, SubHeadingBlue }  from "./user-interface-styles/headings.js"
 import { ContentContainer }  from "./user-interface-styles/layout.js"
@@ -7,6 +8,24 @@ import { ContentContainer }  from "./user-interface-styles/layout.js"
 // The project "cards" are dynamically created
 // by mapping over the filteredProjects array.
 // ===============================
+
+
+const ListTechUsed = styled.ul`
+  color: rgba(5, 11, 56, .8);
+  font-size: .95rem;
+  display: block;
+  list-style-type: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+`;
+
+
+
+
+
 
 export default class ProjectOverview extends Component {
   render() {
@@ -18,7 +37,6 @@ export default class ProjectOverview extends Component {
         <Heading>Projects Overview</Heading>
 
         <section className="card-columns">
-
 
             {this.props.filteredProjects.map( (item, key) => {
 
@@ -61,7 +79,7 @@ export default class ProjectOverview extends Component {
                     </SubHeadingBlue>
 
                     <summary className="card-text" dangerouslySetInnerHTML={{__html: item.briefStatement }} />
-                    <ul className="card-tech-used">{techUsedList}</ul>
+                    <ListTechUsed>{techUsedList}</ListTechUsed>
                     <ButtonDark as="a" href={item.url}>visit site</ButtonDark>
 
                     <span className="github-logo">
