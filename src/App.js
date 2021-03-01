@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { SiteContainer, ContentContainer, NavContainer, HeaderAndStatementContainer, HeaderContainer, StatementContainer }  from "./user-interface-styles/layout.js"
+import styled from 'styled-components';
 import './App.css';
 import Header from './Header';
 import Navigation from './Navigation';
@@ -10,6 +10,69 @@ import Contact from './Contact';
 import ProjectOverview from './ProjectOverview';
 import projectList from './projectList';
 import ProjectDeepDives from './ProjectDeepDives';
+
+
+const SiteContainer = styled.div`
+  width: 100%;
+  max-width: 1140px;
+  display: flex;
+  flex-direction: row;
+  margin: 2rem auto;
+
+  @media (max-width: 500px) {
+    flex-direction: column-reverse;
+  }
+
+`
+const ContentContainer = styled.section`
+  width: 90%;
+  margin: 0 2rem;
+
+`
+const NavContainer = styled.section`
+  display: block;
+  width: 10%;
+  margin-right: 1rem;
+
+  @media (max-width: 500px) {
+    align-self: flex-end;
+  }
+
+
+`
+const HeaderAndStatementContainer = styled.section`
+  margin-bottom: 1em;
+  display: flex;
+
+  @media (max-width: 768px) {
+
+  }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+`
+const HeaderContainer = styled.div`
+  display: block;
+  margin-right: 2rem;
+
+  @media (max-width: 768px) {
+
+  }
+
+  @media (max-width: 500px) {
+
+  }
+`
+const StatementContainer = styled.div`
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 500px) {
+    margin-top: .5rem;
+  }
+`
 
 
 
@@ -60,7 +123,7 @@ export default class App extends Component {
 
   componentDidMount(){
     // This determines which images from the art json are shown
-    // There's a key in the projectList.js array called includeingallery that can be true or false
+    // There's a key in the projectList.js array called include in gallery that can be true or false
     this.filterIncludeInGallery()
   };
 
@@ -68,19 +131,17 @@ export default class App extends Component {
   render() {
     return (
 
-      <SiteContainer>
+      <SiteContainer className="site-container">
 
-        <ContentContainer>
+        <ContentContainer className="content-container">
 
-            <HeaderAndStatementContainer
-              // className="row align-items-center"
-              >
+            <HeaderAndStatementContainer className="header-statement-container">
 
-              <HeaderContainer>
+              <HeaderContainer className="header-container">
                 <Header />
               </HeaderContainer>
 
-              <StatementContainer>
+              <StatementContainer className="statement-container">
                 <Statement />
               </StatementContainer>
 
@@ -101,10 +162,11 @@ export default class App extends Component {
 
             <ProjectDeepDives
               filteredProjects={this.state.filteredProjects} />
-          </ContentContainer>
+
+        </ContentContainer>
 
 
-        <NavContainer>
+        <NavContainer className="navigation-container">
           <Navigation />
         </NavContainer>
 

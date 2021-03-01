@@ -29,6 +29,7 @@ const ButtonDark = styled.div`
 const ButtonLight = styled(ButtonDark)`
   color: rgba(5, 11, 56, 0.8) !important; /*navy blue*/
   background-color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1rem;
 `;
 
 const HorizontalRule = styled.hr`

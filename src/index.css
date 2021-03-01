@@ -25,7 +25,9 @@ General Styling
 }
 
 body {
+  width: 100%;
   max-width: 50rem;
+  max-width: 1140px;
   color: rgba(255,255,255,.7); /*white*/
   margin: 0 auto;
   padding: 0;
@@ -37,7 +39,6 @@ body {
 /*=================================
 Links
 =================================*/
-
 .title-link:hover:before,
 .nav-item:hover:before {
   visibility: visible;
@@ -65,9 +66,14 @@ Navigation
   font-size: 1.2em;
   font-weight: 300;
   list-style: none;
-  position: fixed;
   right: 3%;
-  top: 0;
+  padding-inline-start: 0;
+  /*position: fixed;*/
+  /*top: 0;*/
+}
+
+.narbar {
+  padding: 0 1rem;
 }
 
 .navbar-toggler {
@@ -75,6 +81,10 @@ Navigation
   margin-top: 12px;
   color: rgba(245, 208, 200, 1);
   border: 3px solid white;
+}
+
+ul.ml-auto {
+  margin-left: .5rem;
 }
 
 
@@ -103,7 +113,8 @@ PROJECTS (cards)
 /*=================================*/
 @media (max-width: 900px) {
   #navbarNav ul {
-    position: static; /*so the navigation doesn't interfere with content*/
+    /*so the navigation doesn't interfere with content*/
+    /*position: static; */
   }
 }
 
@@ -115,10 +126,10 @@ PROJECTS (cards)
 @media (max-width: 768px) {
 
   body {
-    width: 95%;
-    margin: 0 auto;
-    padding: 0;
-    font-size: 110%;
+    /*width: 95%;*/
+    /*margin: 0 auto;*/
+    /*padding: 0;*/
+    /*font-size: 110%;*/
   }
 
   .card-columns {
@@ -162,23 +173,24 @@ PROJECTS (cards)
   }
 
   .navbar-collapse {
-/*    -ms-flex-preferred-size: 100%;
+    -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     -ms-flex-positive: 1;
     flex-grow: 1;
     -ms-flex-align: center;
     align-items: center;
     position: absolute;
-    text-align: right;*/
+    text-align: right;
   }
 
   .ml-auto {
     margin-top: .5rem;
-    background-color: rgba(5, 11, 56, 1);  /*navy blue*/
+    /*navy blue*/
+    background-color: rgba(5, 11, 56, 1);
   }
 
   .nav-item {
-    background-color: rgba(5, 11, 56, 1);  /*navy blue*/
+    /*background-color: rgba(5, 11, 56, 1);  /*navy blue*/
     /*display: block;*/
   }
 

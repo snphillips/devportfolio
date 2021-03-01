@@ -39,7 +39,7 @@ const SubHeading = styled(Heading)`
   border-top: none;
 
   @media (max-width: 768px) {
-    font-size: 1em;
+    /* font-size: 1em; */
   }
 
   @media (max-width: 500px) {

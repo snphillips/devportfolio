@@ -203,7 +203,6 @@ export default class ProjectDeepDive extends Component {
                         <footer className="deep-dives-links-footer">
                           <ButtonLight as="a" href={item.url}>visit site</ButtonLight>
                           <br/>
-                          <br/>
                           <ButtonLight as="a" href={item.githuburl}>github repo <i className="fab fa-github"></i></ButtonLight>
                         </footer>
 
