@@ -40,10 +40,8 @@ const StyledHeader = styled.h1`
   }
 
   @media (max-width: 500px) {
-    font-size: 4em;
+    font-size: 3em;
   }
-
-
 
 }
 `;

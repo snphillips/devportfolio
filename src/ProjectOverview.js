@@ -7,6 +7,8 @@ import { ContentContainer }  from "./user-interface-styles/layout.js"
 // ===============================
 // The project "cards" are dynamically created
 // by mapping over the filteredProjects array.
+// NOTE: currently using Bootstrap "cards"
+// TODO: replace bootstrap cards with grid?
 // ===============================
 
 

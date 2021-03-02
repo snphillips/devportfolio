@@ -25,8 +25,9 @@ const projectList = [
 {
   title: "Artist Portfolio",
   imageUrl: [
-    "https://i.imgur.com/pP8Ne6d.png",
-    "https://i.imgur.com/jUiKQQy.png",
+    "https://i.imgur.com/UH3TJtJ.png",
+    "https://i.imgur.com/VCJfInw.png",
+    "https://i.imgur.com/yjSyUc2.png"
    ],
   mobileImageUrl: [
     "https://i.imgur.com/6fvEgOl.png",
@@ -103,12 +104,15 @@ const projectList = [
 {
   title: `Art Thief`,
   imageUrl: [
-    "https://i.imgur.com/CKtB3Sl.png",
-    "https://i.imgur.com/O3KKdaX.png"
+    "https://i.imgur.com/k7gW7tS.png",
+    "https://i.imgur.com/Q3fKAYM.png",
+    "https://i.imgur.com/FhKmX8f.png",
+    "https://i.imgur.com/o0OUo86.png"
+
   ],
   mobileImageUrl: [
-   "https://i.imgur.com/bj13WpG.png",
-   "https://i.imgur.com/qBkmOSD.png"
+   "https://i.imgur.com/rnJ6ONM.png",
+   "https://i.imgur.com/7Ah2tkm.png"
   ],
   briefStatement: "<p>Art Thief allows users to view random images from the Cooper Hewitt Museum's collection, based on selected keywords such as angular, art deco, modernism etc.</p>",
   statement: "<p><strong>Art Thief</strong> allows users to view random images from the Cooper Hewitt Museum's collection, based on selected keywords such as angular, art deco, modernism etc.</p>",
@@ -162,9 +166,9 @@ const projectList = [
 {
   title: `Weather GIF`,
   imageUrl: [
-    "https://i.imgur.com/ruPKEqn.png",
-    "https://i.imgur.com/G6PItKP.png",
-    "https://i.imgur.com/Nyh8XL6.png"
+    "https://i.imgur.com/CWDkO5g.png",
+    "https://i.imgur.com/xbwBUyb.png",
+    "https://i.imgur.com/0BLPU3Z.png"
   ],
   mobileImageUrl: [
 
@@ -193,7 +197,7 @@ const projectList = [
     "https://i.imgur.com/Ka2NyaX.png",
   ],
   briefStatement: "<p>Five Years of Food Spending uses the data visualization library D3 to represent my spending on groceries and eating out.</p>",
-  statement: "<p><strong>Five Years of Food Spending</strong> uses the data visualization library D3  to represent my spending on groceries and eating out.</p><p>There was a time in my life when I was on a strict budget. I recorded and cataloged every cent I spent, including what I spent on food. This resulted in a large dataset that I though might be interesting to visualize to see if any patterns emerged.</p><p>Once I visualized the data, I didn't detect any patterns, beyond spending more on meals out while traveling or during times of high stress, for instance during a software development bootcamp.</p><p>While no insights about my food spending emerged, I did begin to recall food-related memories as I manipulated the data.</p><p>I added those memories in an attempt to add color to this otherwise dry data.</p> ",
+  statement: "<p><strong>Five Years of Food Spending</strong> uses the data visualization library D3  to represent my spending on groceries and eating out.</p><p>There was a time in my life when I was on a strict budget. I recorded and cataloged every cent I spent, including what I spent on food. This resulted in a large dataset that I though might be interesting to visualize to see if any patterns emerged.</p><p>Once I visualized the data, I didn't detect any patterns, beyond spending more on meals out while traveling or during times of high stress, for instance during a software development bootcamp.</p><p>While no insights about my food spending emerged, I did recall food-related memories as I manipulated the data.</p><p>I added those memories in an attempt to add color to this otherwise dry data.</p> ",
   techUsed: [
     "D3.js",
     "React.js"

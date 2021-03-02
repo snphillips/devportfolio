@@ -28,6 +28,10 @@ const ContentContainer = styled.section`
   width: 90%;
   margin: 0 2rem;
 
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+
 `
 const NavContainer = styled.section`
   display: block;
