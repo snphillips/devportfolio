@@ -120,6 +120,10 @@ PROJECTS (cards)
 /* bootstrap also adding styles to card-body */
 }
 
+summary {
+  display: unset;
+}
+
 
 
 
