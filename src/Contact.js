@@ -13,9 +13,7 @@ const ContactListItemLink = styled.a`
   color: rgba(255,255,255, 0.7); /* white */
 `
 
-
 // note: Heading & ContentContainer are "styled-components"
-
 
 export default function Contact(props) {
 

@@ -3,6 +3,8 @@ import { Heading }  from "./user-interface-styles/headings.js"
 import { ContentContainer }  from "./user-interface-styles/layout.js"
 import { AboutColumns }  from "./user-interface-styles/paragraphs.js"
 
+// note: Heading, ContentContainer & AboutColumns are "styled-components"
+
 export default class About extends Component {
   render() {
     return (
