@@ -14,7 +14,7 @@ const ContactListItemLink = styled.a`
 `
 
 
-
+// note: Heading & ContentContainer are "styled-components"
 
 
 export default function Contact(props) {

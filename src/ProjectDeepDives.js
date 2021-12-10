@@ -4,12 +4,12 @@ import { ButtonLight } from "./user-interface-styles/buttonsAndHr.js"
 import { Heading, SubHeading }  from "./user-interface-styles/headings.js"
 import { ContentContainer }  from "./user-interface-styles/layout.js"
 
-// ===============================
-// The projectDeepDives sections are dynamically created
-// by mapping over the filteredProjects array.
+/* ===============================
+The projectDeepDives sections are dynamically created
+by mapping over the filteredProjects array.
 
-// We're using Styled Components for some elements
-// ===============================
+We're using Styled Components for Heading, SubHeading & ContentContainer
+=============================== */
 
 const DeepDivesContent = styled.div`
   display: flex;

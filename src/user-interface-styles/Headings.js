@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-// Note: SubHeading & SubheadingBlue are supposed to be h3
-// We use the "as" polymorphic prop to dynamically swap out
-// the element that receives the styles where we implement them
-// I.e. <Subheading as="h3">Features</Subheading>
+/* Note: SubHeading & SubheadingBlue are supposed to be h3
+We use the "as" polymorphic prop to dynamically swap out
+the element that receives the styles where we implement them
+I.e. <Subheading as="h3">Features</Subheading>
 
-// To make a new component that inherits the styling of another,
-// wrap it in the styled() constructor to "extend it".
+To make a new component that inherits the styling of another,
+wrap it in the styled() constructor to "extend it". */
 
 const Heading = styled.h2`
   display: block;
@@ -29,8 +29,8 @@ const Heading = styled.h2`
   }
 `;
 
-// take Heading and "extend it" by
-// applying further customizations
+/* take Heading and "extend it" by
+applying further customizations */
 const SubHeading = styled(Heading)`
   font-size: 1.25em;
   letter-spacing: unset;
@@ -47,8 +47,8 @@ const SubHeading = styled(Heading)`
   }
 `;
 
-// take Heading and "extend it" by
-// applying further customizations
+/* take Heading and "extend it" by
+applying further customizations */
 const SubHeadingBlue = styled(SubHeading)`
   color: rgba(5, 11, 56, .9);  /*navy blue*/
   display: inline-block;

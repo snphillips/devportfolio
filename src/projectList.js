@@ -34,7 +34,7 @@ const projectList = [
     "https://i.imgur.com/fsyAACQ.png"
   ],
   briefStatement: "<p>A portfolio website for my visual art. The site includes a gallery and image modals.</p>",
-  statement: "<p>I used to use Wordpress for my artist portfolio site but I became disenchanted with the constant malware attacks and hosting fees.</p><p>This react site includes a gallery and image modals, which I painstakingly created without the use of a library.</p>",
+  statement: "<p>I used to use Wordpress for my artist portfolio site but I became disenchanted with the constant malware attacks and hosting fees.</p><p>This React.js site includes a gallery and image modals, which I painstakingly created without the use of a library.</p>",
   techUsed: [
     "React.js"
   ],
@@ -57,7 +57,7 @@ const projectList = [
     "https://i.imgur.com/m4is2WU.png"
   ],
   briefStatement: "<p>No frillz tweetz is a simple twitter client that returns recent tweets based on the user's search query.</p>",
-  statement: "<p><strong>No frillz tweetz</strong> is a simple twitter client that returns recent tweets based on the user\'s search query.</p><p>You may be asking yourself, \"But why? Isn't this just a worse Twitter client that does less than real twitter?\" The answer is yes.</p><p>I created this app as a challenge to work with the Twitter API. In the end, I chose to work with the Twit API.</p>",
+  statement: "<p><strong>No frillz tweetz</strong> is a simple twitter client that returns recent tweets based on the user\'s search query.</p><p>You may be asking yourself, <i>\"But why? Isn't this just a worse Twitter client that does less than real twitter?\"</i> The answer is yes.</p><p>I created this app as a challenge to work with the Twit API.</p>",
   techUsed: [
     "Node.js",
     "Express.js",
