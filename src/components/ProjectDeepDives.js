@@ -101,19 +101,19 @@ const ListFeatures = styled(ListTechUsedDeepDive)``
 
 
 
-export default class ProjectDeepDive extends Component {
-  render() {
+export default function ProjectDeepDive(props) {
+
     return (
 
         <ContentContainer>
 
-          {this.props.filteredProjects.map( (item, key) => {
+          {props.filteredProjects.map( (item, key) => {
 
-            let itemIndex = this.props.filteredProjects.indexOf(item)
+            let itemIndex = props.filteredProjects.indexOf(item)
 
 
-            // map over the array of images
-            // and display them all as img
+            /* Map over the array of images
+            and display them all as img */
             let imageUrlList = item.imageUrl.map( (linkItem, key) => {
 
               return(
@@ -127,8 +127,8 @@ export default class ProjectDeepDive extends Component {
               )
             })
 
-            // map over the array of mobile images
-            // and display them all as img
+            /* Map over the array of mobile images
+            and display them all as img */
             let mobileImageUrlList = item.mobileImageUrl.map( (linkItem, key) => {
 
               return(
@@ -143,8 +143,8 @@ export default class ProjectDeepDive extends Component {
             })
 
 
-            // map over the array of features
-            // and display them each as list items
+            /* map over the array of features
+            and display them each as list items */
             let featuresList = item.features.map( (featuresItem, key) => {
 
               return(
@@ -219,6 +219,6 @@ export default class ProjectDeepDive extends Component {
 
 
     );
-  }
+
 }
 

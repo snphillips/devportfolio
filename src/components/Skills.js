@@ -32,8 +32,7 @@ const SkillListItem = styled.li`
 // Find the skills arrays as "state" in App.js
 
 
-export default class Skills extends Component {
-    render() {
+export default function Skills(props) {
       return(
 
         <ContentContainer id="skills">
@@ -43,20 +42,20 @@ export default class Skills extends Component {
           <SkillsListContainer>
 
               <SkillsUnorderedList>
-                {this.props.skillsDev.map( skillItem => {
+                {props.skillsDev.map( skillItem => {
 
                   // to help generate a unique key to each child
-                  let index = this.props.skillsDev.indexOf(skillItem)
+                  let index = props.skillsDev.indexOf(skillItem)
 
                   return(
                     <SkillListItem key={"skill-" + index}>{skillItem}</SkillListItem>
                   )
               })}
 
-                {this.props.skillsDevOther.map( skillDevItem => {
+                {props.skillsDevOther.map( skillDevItem => {
 
                   // to help generate a unique key to each child
-                  let index = this.props.skillsDevOther.indexOf(skillDevItem)
+                  let index = props.skillsDevOther.indexOf(skillDevItem)
 
                   return(
                     <SkillListItem key={"skill-dev-" + index}>{skillDevItem}</SkillListItem>
@@ -67,5 +66,4 @@ export default class Skills extends Component {
 
         </ContentContainer>
       )
-    }
 }

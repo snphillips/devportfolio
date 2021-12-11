@@ -44,12 +44,10 @@ const NavItem = styled.a`
 `;
 
 
-export default class Navigation extends Component {
-  render() {
-    return (
+export default function Navigation(props) {
 
+  return(
         <NavContainer className="navbar navbar-expand-md navbar-dark mb-3">
-
           <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -65,9 +63,7 @@ export default class Navigation extends Component {
           </div>
 
         </NavContainer>
-
-    );
-  }
-}
+  )
+};
 
 

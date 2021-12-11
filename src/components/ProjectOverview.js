@@ -4,13 +4,15 @@ import { ButtonDark }  from "../user-interface-styles/buttonsAndHr.js"
 import { Heading, SubHeadingBlue }  from "../user-interface-styles/headings.js"
 import { ContentContainer }  from "../user-interface-styles/layout.js"
 
-/* ===============================
+/* 
+===============================
 The project "cards" are dynamically created
 by mapping over the filteredProjects array 
 (which is generated from the projectList array)
 NOTE: currently using Bootstrap "cards"
 TODO: replace bootstrap cards with grid?
-=============================== */
+=============================== 
+*/
 
 
 const ListTechUsed = styled.ul`
@@ -47,8 +49,7 @@ const GithubLogoLink = styled.a`
 
 
 
-export default class ProjectOverview extends Component {
-  render() {
+export default function ProjectOverview(props) {
 
     return (
 
@@ -58,9 +59,9 @@ export default class ProjectOverview extends Component {
 
         <section className="card-columns">
 
-            {this.props.filteredProjects.map( (item, key) => {
+            {props.filteredProjects.map( (item, key) => {
 
-              let itemIndex = this.props.filteredProjects.indexOf(item)
+              let itemIndex = props.filteredProjects.indexOf(item)
 
               /* 
               Map over the array of tech and display them all as span items
@@ -126,6 +127,5 @@ export default class ProjectOverview extends Component {
       </ContentContainer>
 
     );
-  }
 }
 
