@@ -26,14 +26,16 @@ export default function Contact(props) {
         <li>snphillips [at] gmail [dot] com</li>
         <li>
           <ContactListItemLink
-            href="https://www.linkedin.com/in/sarah-n-phillips/"
-            target="_blank"
-            rel="noopener noreferrer">
+          className="content-link"
+          href="https://www.linkedin.com/in/sarah-n-phillips/"
+          target="_blank"
+          rel="noopener noreferrer">
               LinkedIn
           </ContactListItemLink>
         </li>
         <li>
           <ContactListItemLink
+            className="content-link"
             href="https://github.com/snphillips"
             target="_blank"
             rel="noopener noreferrer">
@@ -42,6 +44,7 @@ export default function Contact(props) {
         </li>
         <li>
           <ContactListItemLink
+            className="content-link"
             href="https://resume.creddle.io/resume/41xrld5p268"
             target="_blank"
             rel="noopener noreferrer">
