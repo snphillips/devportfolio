@@ -14,13 +14,12 @@ export default class About extends Component {
          <Heading>About</Heading>
           <AboutColumns>
             I am a Toronto-born, Brooklyn-based software developer formally trained in art
-            with a background in municipal service delivery (My former position working for the City of New York could
-            have taken place on the set of the show Parks & Recreation).  <br /><br /> 
+            with a background in municipal service delivery.  <br /><br /> 
             
-            Most recently, I worked for 2.5 years as an
+            Most recently, I worked for two and a half years as an
             Interaction Engineer at the ad tech startup TripleLift where I created bespoke,
-            consumer-centric templates for programatic ads and developed the in-house React application we used to create
-            those templates.<br /><br /> 
+            consumer-centric templates for programatic ads and developed the in-house React
+            application our team used to create those templates.<br /><br /> 
             
             I strive to create visually interesting solutions that are broadly appealing. 
             I believe tech should be intuitive, welcoming and delightful to interact with.
