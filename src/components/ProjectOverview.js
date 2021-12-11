@@ -6,7 +6,8 @@ import { ContentContainer }  from "../user-interface-styles/layout.js"
 
 /* ===============================
 The project "cards" are dynamically created
-by mapping over the filteredProjects array.
+by mapping over the filteredProjects array 
+(which is generated from the projectList array)
 NOTE: currently using Bootstrap "cards"
 TODO: replace bootstrap cards with grid?
 =============================== */
@@ -61,13 +62,15 @@ export default class ProjectOverview extends Component {
 
               let itemIndex = this.props.filteredProjects.indexOf(item)
 
-              // map over the array of tech and display them all as span items
-              // we insert this variable within a paragraph below.
-              // The result is a nice little comma-separated list.
+              /* 
+              Map over the array of tech and display them all as span items
+              we insert this variable within a paragraph below.
+              The result is a nice little comma-separated list. 
+              */
              let techUsedList = item.techUsed.map( (techItem, index) => {
 
               return(
-                <li key={index}>- {techItem}</li>
+                <li key={index}>+ {techItem}</li>
               )
             })
 
@@ -100,6 +103,7 @@ export default class ProjectOverview extends Component {
                     <CardText dangerouslySetInnerHTML={{__html: item.briefStatement }} />
 
                     <ListTechUsed>{techUsedList}</ListTechUsed>
+                    <ButtonDark as="a" href={`#project-`+ itemIndex}>learn more</ButtonDark>
                     <ButtonDark as="a" href={item.url}>visit site</ButtonDark>
 
                     <span className="github-logo">

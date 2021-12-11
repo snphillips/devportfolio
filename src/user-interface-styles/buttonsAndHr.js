@@ -11,6 +11,7 @@ const ButtonDark = styled.div`
   padding: 5px 15px;
   text-align: center;
   text-decoration: none;
+  font-size: .9rem;
 
   &:hover {
     color: white;
