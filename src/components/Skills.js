@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Heading }  from "./user-interface-styles/headings.js"
-import { ContentContainer }  from "./user-interface-styles/layout.js"
+import { Heading }  from "../user-interface-styles/headings.js"
+import { ContentContainer }  from "../user-interface-styles/layout.js"
 import styled from 'styled-components';
 
 

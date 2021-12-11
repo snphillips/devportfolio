@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import './App.css';
-import Header from './Header';
-import Navigation from './Navigation';
-import Statement from './Statement';
-import Skills from './Skills';
-import About from './About';
-import Contact from './Contact';
-import ProjectOverview from './ProjectOverview';
-import projectList from './projectList';
-import ProjectDeepDives from './ProjectDeepDives';
+import Header from './components/Header';
+import Navigation from './components/Navigation';
+import Statement from './components/Statement';
+import Skills from './components/Skills';
+import About from './components/About';
+import Contact from './components/Contact';
+import ProjectOverview from './components/ProjectOverview';
+import projectList from './components/projectList';
+import ProjectDeepDives from './components/ProjectDeepDives';
 
 
 const SiteContainer = styled.div`
