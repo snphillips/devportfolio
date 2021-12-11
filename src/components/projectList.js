@@ -42,6 +42,7 @@ const projectList = [
     "image gallery",
     "image modal",
     "responsive design",
+    "dark mode that responds to user setting preference"
   ],
   url: "https://sarahnicolephillipsart.surge.sh/",
   githuburl: "https://github.com/snphillips/artportfolio",
@@ -209,7 +210,7 @@ const projectList = [
   url: "https://5yearsfood.surge.sh/",
   githuburl: "https://github.com/snphillips/food-spending",
   year: `2018`,
-  includeInGallery: true,
+  includeInGallery: false,
 },
 {
   title: `Todoodles`,
