@@ -115,9 +115,10 @@ export default class App extends Component {
   };
 
   filterIncludeInGallery(){
-/*   1) To start filteredProjects is an empty array.
-  2) Then we take projectList which is an array that contains all the projects, some of which
-  I don't want on my portfolio right now.
+  /* 
+  1) To start filteredProjects is an empty array.
+  2) Then we take projectList which is an array that contains all the projects,
+  some of which I don't want on my portfolio right now.
   3) Use filter() method to create a new array with all elements
   that pass the test implemented by the provided function.
   In this case, the test is, only return items that have the key includeingallery set to true */
@@ -125,8 +126,11 @@ export default class App extends Component {
   };
 
   componentDidMount(){
-/*     This determines which images from the art json are shown
-    There's a key in the projectList.js array called include in gallery that can be true or false */
+    /*
+    This determines which images from the art json are shown
+    There's a key in the projectList.js array called include in
+    gallery that can be true or false 
+    */
     this.filterIncludeInGallery()
   };
 

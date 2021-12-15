@@ -148,7 +148,7 @@ export default function ProjectDeepDive(props) {
             let featuresList = item.features.map( (featuresItem, key) => {
 
               return(
-                <li key={key}>- {featuresItem}</li>
+                <li key={key}>+ {featuresItem}</li>
               )
             })
 
@@ -158,7 +158,7 @@ export default function ProjectDeepDive(props) {
             let techUsedList = item.techUsed.map( (techItem, key) => {
 
               return(
-                <li key={key}>- {techItem}</li>
+                <li key={key}>+ {techItem}</li>
               )
             })
 
@@ -197,7 +197,7 @@ export default function ProjectDeepDive(props) {
                         <SubHeading as="h3">features</SubHeading>
                         <ListFeatures>{featuresList}</ListFeatures>
 
-                        <SubHeading as="h3">Tech Used</SubHeading>
+                        <SubHeading as="h3">Tech</SubHeading>
                         <ListTechUsedDeepDive>{techUsedList}</ListTechUsedDeepDive>
 
                         <footer className="deep-dives-links-footer">
