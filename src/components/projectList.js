@@ -143,12 +143,13 @@ const projectList = [
     "https://i.imgur.com/aAVsvgk.png",
     "https://i.imgur.com/5OUjYp4.png"
   ],
-  briefStatement: "<p>Twohue is a one-player color mixing game. Players are presented with a color sample that they must recreate using two transparent color swatches. I use a state-machine to manage user flow.</p>",
-  statement: "<p><strong>Twohue</strong> is a one-player color mixing game. Players are presented with a color sample that they must recreate using two transparent color swatches. I use an X state-machine (React-Automata) to manage user flow. I use the color library chroma.js to dynamically create unlimited game rounds.</p>",
+  briefStatement: "<p>Twohue is a one-player color mixing game. Players are presented with a color sample that they must recreate using two transparent color swatches.</p>",
+  statement: "<p><strong>Twohue</strong> is a one-player color mixing game. Players are presented with a color sample that they must recreate using two transparent color swatches. I use the color library chroma.js to dynamically create unlimited game rounds.</p>",
   techUsed: [
     "React.js",
-    "React-Automata (for state machine)",
-    "Chroma.js (a color library)"
+    "Chroma.js (a color library)",
+    "Node/Express (for leaderboard)",
+    "Postgres (for leaderboard)"
   ],
   features: [
     "sound on/off toggle",
@@ -159,8 +160,8 @@ const projectList = [
     "leaderboard",
     "responsive design"
   ],
-  url: "https://twohue-state-machine.surge.sh/",
-  githuburl: "https://github.com/snphillips/twohue-state-chart",
+  url: "https://twohue.surge.sh/",
+  githuburl: "https://github.com/snphillips/twohue",
   year: `2020`,
   includeInGallery: true,
 },
