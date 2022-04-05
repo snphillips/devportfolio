@@ -1,5 +1,39 @@
 const projectList = [
-{
+  {
+    title: `Meeting Background Maker`,
+    imageUrl: [
+      "https://i.imgur.com/4mN13AS.png",
+      "https://i.imgur.com/zePmX1v.png",
+      "https://i.imgur.com/zIvwMoR.png"
+    ],
+    mobileImageUrl: [
+    ],
+    briefStatement: `<p>IN PRODUCTION.</p> <p>This web app allows users to select images of items from the Cooper Hewitt Design Museum's collection to be used as backgrounds for online meetings. The user may browse through the museum's collection using keywords such as "bauhaus" or "modernism", or the user may download existing sets curated by me.</p>`,
+    statement: `<p>This web app allows users to select images of items from the Cooper Hewitt Design Museum's collection to be used as backgrounds for online meetings. The user may browse through the museum's collection using keywords such as "bauhaus" or "modernism", or the user may download existing sets curated by me.</p>`,
+    techUsed: [
+      "React",
+      "Node/Express",
+      "Cooper-Hewitt API",
+      "Axios",
+      "React-Spinners",
+      "react-masonry-css",
+      "AWS S3 bucket",
+      "Jimp",
+      "s3-zip"
+    ],
+    features: [
+      "user adds images to their collecton",
+      "user removes images from their collection",
+      "user downloads collection as zip file",
+      "selected images are resized, text overlay added",
+      "user downloads pre-curated sets of images"
+    ],
+    url: "https://meeting-background-maker.surge.sh/",
+    githuburl: "https://github.com/snphillips/meeting-background-maker-client",
+    year: "2022",
+    includeInGallery: true,
+  },
+  {
   title: `NYCHA Outage Scraper`,
   imageUrl: [
     "https://i.imgur.com/3CmQKwE.png",
@@ -36,7 +70,9 @@ const projectList = [
   briefStatement: "<p>A portfolio website for my visual art. The site includes a gallery and image modals.</p>",
   statement: "<p>I used to use Wordpress for my artist portfolio site but I became disenchanted with the constant malware attacks and hosting fees.</p><p>This React.js site includes a gallery and image modals, which I painstakingly created without the use of a library.</p>",
   techUsed: [
-    "React.js"
+    "React.js",
+    "Styled Components"
+
   ],
   features: [
     "image gallery",
