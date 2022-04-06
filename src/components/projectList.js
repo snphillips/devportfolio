@@ -166,7 +166,7 @@ const projectList = [
   url: "https://art-thief.surge.sh/",
   githuburl: "https://github.com/snphillips/art-thief",
   year: `2018`,
-  includeInGallery: true,
+  includeInGallery: false,
 },
 {
   title: `TwoHue`,
@@ -224,7 +224,7 @@ const projectList = [
   url: "https://weathergif.surge.sh/",
   githuburl: "https://github.com/snphillips/weatherGIF",
   year: `2018`,
-  includeInGallery: true,
+  includeInGallery: false,
 },
 {
   title: "Five Years of Food Spending",
