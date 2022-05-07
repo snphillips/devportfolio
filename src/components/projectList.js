@@ -4,7 +4,7 @@ const projectList = [
     imageUrl: [
       "https://i.imgur.com/4mN13AS.png",
       "https://i.imgur.com/zePmX1v.png",
-      "https://i.imgur.com/zIvwMoR.png"
+      "https://i.imgur.com/S78VCSY.png"
     ],
     mobileImageUrl: [
     ],
