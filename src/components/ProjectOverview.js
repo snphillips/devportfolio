@@ -51,6 +51,8 @@ const GithubLogoLink = styled.a`
 
 export default function ProjectOverview(props) {
 
+  console.log(props.filteredProjects)
+
     return (
 
       <ContentContainer id="projects">

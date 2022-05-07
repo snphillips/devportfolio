@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect, useRef } from "react";
 import styled from 'styled-components';
 import './App.css';
 import Header from './components/Header';
@@ -80,62 +80,46 @@ const StatementContainer = styled.div`
 
 
 
-export default class App extends Component {
-
-  constructor(props) {
-    super(props);
-
-    // This binding
-    this.includeInGalleryTrue = this.includeInGalleryTrue.bind(this);
-    this.filterIncludeInGallery = this.filterIncludeInGallery.bind(this);
+export default function App() {
 
 
+  const [filteredProjects, setFilteredProjects] = useState([]);
+  const [skillsDev, setskillsDev] = useState(['Javascript', 'HTML5/CSS3', 'Node/Express', 'React.js', 'RESTful APIs', 'JQuery', 'D3.js']);
+  const [skillsDevOther, setskillsDevOther] = useState(['Heroku', 'Sublime', 'VS Code', 'Jira', "Agile/Scrum", 'Salesforce', 'Git', 'Postgres', 'SQL']);
+  const [skillsOther, setSkillsOther] = useState([])
+  const [skillsDesign, setDesignOther] = useState(['Photoshop', 'Indesign', 'Illustrator', 'Acrobat'])
+  const [skillsNotUsing, setSkillsNotUsing] = useState(['ACT!', 'Filemaker Pro', 'Wordpress', 'Teamsite (nyc.gov)', 'Constant Contact', 'Mailchimp', 'Microsoft Office Suite', 'Slack'])
 
-    this.state = {
-      filteredProjects: [],
-      skillsDev: ['Javascript', 'HTML5/CSS3', 'Node/Express', 'React.js', 'RESTful APIs', 'JQuery', 'D3.js'],
-      skillsDevOther: ['Heroku', 'Sublime', 'VS Code', 'Jira', "Agile/Scrum", 'Salesforce', 'Git', 'Postgres', 'SQL'],
-      skillsOther: [],
-      skillsDesign: ['Photoshop', 'Indesign', 'Illustrator', 'Acrobat'],
-      skillsNotUsing: ['ACT!', 'Filemaker Pro', 'Wordpress', 'Teamsite (nyc.gov)', 'Constant Contact', 'Mailchimp', 'Microsoft Office Suite', 'Slack']
+  /* ==================================
+   Only display projects from projectList.js if
+   1) includeingallery === true, return it...meaning keep it
+   2) apply the above function as a filter to the states
+   ================================== */
+    // function includeInGalleryTrue(item){
+    //   return item.includeInGallery === true;
+    // };
+
+    // function filterIncludeInGallery(){
+    //   setFilteredProjects( projectList.filter( includeInGalleryTrue )  )
+    // };
+
+    function filterIncludeInGallery(){
+      let newList = projectList.filter( project => project.includeInGallery === true) 
+      setFilteredProjects( newList )  
     };
-  }
+
+    // run on first render
+    useEffect(() => {
+      filterIncludeInGallery();
+      console.log("filteredProjects:", filteredProjects)
+    }, []);
+
+    
 
 
 
 
 
-/* ==================================
- Only display projects from projectList.js if
- 1) includeingallery === true, return it...meaning keep it
- 2) apply the above function as a filter to the states
- ================================== */
-  includeInGalleryTrue(item){
-    return item.includeInGallery === true;
-  };
-
-  filterIncludeInGallery(){
-  /* 
-  1) To start filteredProjects is an empty array.
-  2) Then we take projectList which is an array that contains all the projects,
-  some of which I don't want on my portfolio right now.
-  3) Use filter() method to create a new array with all elements
-  that pass the test implemented by the provided function.
-  In this case, the test is, only return items that have the key includeingallery set to true */
-    this.setState({filteredProjects: projectList.filter(this.includeInGalleryTrue)})
-  };
-
-  componentDidMount(){
-    /*
-    This determines which images from the art json are shown
-    There's a key in the projectList.js array called include in
-    gallery that can be true or false 
-    */
-    this.filterIncludeInGallery()
-  };
-
-
-  render() {
     return (
 
       <SiteContainer className="site-container">
@@ -155,20 +139,18 @@ export default class App extends Component {
             </HeaderAndStatementContainer>
 
             <ProjectOverview
-              parentState={this.state}
-              filteredProjects={this.state.filteredProjects} />
+              filteredProjects={filteredProjects} />
 
             <About />
 
             <Skills
-              parentState={this.state}
-              skillsDev={this.state.skillsDev}
-              skillsDevOther={this.state.skillsDevOther} />
+              skillsDev={skillsDev}
+              skillsDevOther={skillsDevOther} />
 
             <Contact />
 
             <ProjectDeepDives
-              filteredProjects={this.state.filteredProjects} />
+              filteredProjects={filteredProjects} />
 
         </ContentContainer>
 
@@ -179,6 +161,6 @@ export default class App extends Component {
 
       </SiteContainer>
     );
-  }
+
 };
 
