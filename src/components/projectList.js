@@ -8,8 +8,16 @@ const projectList = [
     ],
     mobileImageUrl: [
     ],
-    briefStatement: `<p>IN PRODUCTION.</p> <p>This web app allows users to select images of items from the Cooper Hewitt Design Museum's collection to be used as backgrounds for online meetings. The user may browse through the museum's collection using keywords such as "bauhaus" or "modernism", or the user may download existing sets curated by me.</p>`,
-    statement: `<p>This web app allows users to select images of items from the Cooper Hewitt Design Museum's collection to be used as backgrounds for online meetings. The user may browse through the museum's collection using keywords such as "bauhaus" or "modernism", or the user may download existing sets curated by me.</p>`,
+    briefStatement: `<p>This web app allows users to select images of \n
+    items from the Cooper Hewitt Design Museum's collection to be used as backgrounds for online \n
+    meetings. The user may browse through the museum's collection using keywords such as \n
+    "bauhaus" or "modernism", or they may download existing sets curated by me.</p>`,
+    statement: `<p>This web app allows users to select images of \n
+    items from the Cooper Hewitt Design Museum's collection to be used as backgrounds for online \n
+    meetings. The user may browse through the museum's collection using keywords such as \n
+    "bauhaus" or "modernism", or they may download existing sets curated by me.</p> \n
+    <p>The background images are pre-processed, server-side using the image library Jimp. \n
+    </p>`,
     techUsed: [
       "React",
       "Node/Express",

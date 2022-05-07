@@ -15,10 +15,9 @@ export default function About(props) {
             I am a Toronto-born, Brooklyn-based software developer formally trained in art
             with a background in municipal service delivery.  <br /><br /> 
             
-            Most recently, I worked for two and a half years as an
-            Interaction Engineer at the ad tech startup TripleLift where I created bespoke,
-            consumer-centric templates for programatic ads and developed the in-house React
-            application our team used to create those templates.<br /><br /> 
+            Most recently, I worked for as an Interaction Engineer at the ad tech startup
+            TripleLift where I created bespoke, consumer-centric templates for programatic
+            ads and developed the in-house React application our team used to create those templates.<br /><br /> 
             
             I strive to create visually interesting solutions that are broadly appealing. 
             I believe tech should be intuitive, welcoming and delightful to interact with.
