@@ -28,7 +28,7 @@ const StatementStyled = styled.div`
 export default function Statement() {
     return (
 
-    <StatementStyled id="statement">Software Engineer</StatementStyled>
+    <StatementStyled id="statement">Front End Software Engineer</StatementStyled>
 
     );
 
