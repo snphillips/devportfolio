@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import { ButtonLight } from "../user-interface-styles/buttonsAndHr.js"
-import { Heading, SubHeading }  from "../user-interface-styles/headings.js"
-import { ContentContainer }  from "../user-interface-styles/layout.js"
+import React from "react";
+import styled from "styled-components";
+import { ButtonLight } from "../user-interface-styles/buttonsAndHr.js";
+import { Heading, SubHeading } from "../user-interface-styles/headings.js";
+import { ContentContainer } from "../user-interface-styles/layout.js";
 
 /* ===============================
 The projectDeepDives sections are dynamically created
@@ -19,7 +19,7 @@ const DeepDivesContent = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
   }
-`
+`;
 
 const DeepDivesImageContainer = styled.div`
   max-width: 450px;
@@ -33,18 +33,16 @@ const DeepDivesImageContainer = styled.div`
   }
 
   @media (max-width: 500px) {
-
   }
-`
+`;
 
 const DeepDivesTextContainer = styled.section`
   display: block;
-  color: rgba(255,255,255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
   margin-left: 1rem;
-`
+`;
 
-const DeepDivesImageList = styled.div``
-
+const DeepDivesImageList = styled.div``;
 
 const DeepDivesMobileImageList = styled.div`
   display: flex;
@@ -57,9 +55,8 @@ const DeepDivesMobileImageList = styled.div`
   }
 
   @media (max-width: 500px) {
-
   }
-`
+`;
 const DeepDivesImage = styled.img`
   width: auto;
   height: auto;
@@ -71,7 +68,7 @@ const DeepDivesImage = styled.img`
     width: 100%;
     max-width: 100%;
   }
-`
+`;
 const DeepDivesImageMobile = styled(DeepDivesImage)`
   max-width: 225px;
 
@@ -84,7 +81,7 @@ const DeepDivesImageMobile = styled(DeepDivesImage)`
     width: 100%;
     max-width: 100%;
   }
-`
+`;
 
 const ListTechUsedDeepDive = styled.ul`
   display: block;
@@ -96,129 +93,97 @@ const ListTechUsedDeepDive = styled.ul`
   padding-inline-start: 0px;
 `;
 
-const ListFeatures = styled(ListTechUsedDeepDive)``
-
-
-
+const ListFeatures = styled(ListTechUsedDeepDive)``;
 
 export default function ProjectDeepDive(props) {
+  return (
+    <ContentContainer>
+      {props.filteredProjects.map((item, key) => {
+        let itemIndex = props.filteredProjects.indexOf(item);
 
-    return (
-
-        <ContentContainer>
-
-          {props.filteredProjects.map( (item, key) => {
-
-            let itemIndex = props.filteredProjects.indexOf(item)
-
-
-            /* Map over the array of images
+        /* Map over the array of images
             and display them all as img */
-            let imageUrlList = item.imageUrl.map( (linkItem, key) => {
+        let imageUrlList = item.imageUrl.map((linkItem, key) => {
+          return (
+            <DeepDivesImage
+              src={linkItem}
+              alt={item.title}
+              key={key}
+              width="auto"
+              height="auto"
+            />
+          );
+        });
 
-              return(
-                <DeepDivesImage
-                  src={linkItem}
-                  alt={item.title}
-                  key={key}
-                  width="auto"
-                  height="auto"
-                />
-              )
-            })
-
-            /* Map over the array of mobile images
+        /* Map over the array of mobile images
             and display them all as img */
-            let mobileImageUrlList = item.mobileImageUrl.map( (linkItem, key) => {
+        let mobileImageUrlList = item.mobileImageUrl.map((linkItem, key) => {
+          return (
+            <DeepDivesImageMobile
+              src={linkItem}
+              alt={item.title}
+              key={key}
+              width="auto"
+              height="auto"
+            />
+          );
+        });
 
-              return(
-                <DeepDivesImageMobile
-                  src={linkItem}
-                  alt={item.title}
-                  key={key}
-                  width="auto"
-                  height="auto"
-                />
-              )
-            })
-
-
-            /* map over the array of features
+        /* map over the array of features
             and display them each as list items */
-            let featuresList = item.features.map( (featuresItem, key) => {
+        let featuresList = item.features.map((featuresItem, key) => {
+          return <li key={key}>+ {featuresItem}</li>;
+        });
 
-              return(
-                <li key={key}>+ {featuresItem}</li>
-              )
-            })
+        // map over the array of tech used
+        // and display them each as list items
+        let techUsedList = item.techUsed.map((techItem, key) => {
+          return <li key={key}>+ {techItem}</li>;
+        });
 
+        return (
+          <article className="deep-dives-section" key={key}>
+            <hr />
 
-            // map over the array of tech used
-            // and display them each as list items
-            let techUsedList = item.techUsed.map( (techItem, key) => {
+            <Heading id={"project-" + itemIndex}>{item.title}</Heading>
 
-              return(
-                <li key={key}>+ {techItem}</li>
-              )
-            })
+            <DeepDivesContent>
+              <DeepDivesImageContainer className="deep-dives-image-container">
+                <DeepDivesImageList>{imageUrlList}</DeepDivesImageList>
 
+                <DeepDivesMobileImageList>
+                  {mobileImageUrlList}
+                </DeepDivesMobileImageList>
+              </DeepDivesImageContainer>
 
-              return(
+              <DeepDivesTextContainer className="deep-dives-text-container">
+                <article
+                  className="deep-dives-text"
+                  dangerouslySetInnerHTML={{ __html: item.statement }}
+                />
 
-                <article className="deep-dives-section" key={key}>
-                  <hr />
+                <br />
 
+                <SubHeading as="h3">features</SubHeading>
+                <ListFeatures>{featuresList}</ListFeatures>
 
-                  <Heading id={"project-" + itemIndex}>
-                    {item.title}
-                  </Heading>
+                <SubHeading as="h3">Tech</SubHeading>
+                <ListTechUsedDeepDive>{techUsedList}</ListTechUsedDeepDive>
 
-                  <DeepDivesContent>
-
-                    <DeepDivesImageContainer className="deep-dives-image-container">
-
-                      <DeepDivesImageList>
-                        {imageUrlList}
-                      </DeepDivesImageList>
-
-                      <DeepDivesMobileImageList>
-                        {mobileImageUrlList}
-                      </DeepDivesMobileImageList>
-
-                    </DeepDivesImageContainer>
-
-
-                    <DeepDivesTextContainer className="deep-dives-text-container">
-
-                      <article className="deep-dives-text" dangerouslySetInnerHTML={{__html: item.statement }} />
-
-                        <br/>
-
-                        <SubHeading as="h3">features</SubHeading>
-                        <ListFeatures>{featuresList}</ListFeatures>
-
-                        <SubHeading as="h3">Tech</SubHeading>
-                        <ListTechUsedDeepDive>{techUsedList}</ListTechUsedDeepDive>
-
-                        <footer className="deep-dives-links-footer">
-                          <ButtonLight as="a" href={item.url}>visit site</ButtonLight>
-                          <br/>
-                          <ButtonLight as="a" href={item.githuburl}>github repo <i className="fab fa-github"></i></ButtonLight>
-                        </footer>
-
-                    </DeepDivesTextContainer>
-
-                  </DeepDivesContent>
-                </article>
-
-              )
-
-            })}
-
-        </ContentContainer>
-
-
-    );
-
+                <footer className="deep-dives-links-footer">
+                  <ButtonLight as="a" href={item.url}>
+                    visit site
+                  </ButtonLight>
+                  <br />
+                  <ButtonLight as="a" href={item.githuburl}>
+                    github repo <i className="fab fa-github"></i>
+                  </ButtonLight>
+                </footer>
+              </DeepDivesTextContainer>
+            </DeepDivesContent>
+          </article>
+        );
+      })}
+    </ContentContainer>
+  );
 }
-

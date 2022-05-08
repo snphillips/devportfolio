@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const StyledHeader = styled.h1`
   font-family: 'Oswald', sans-serif;
@@ -46,16 +46,10 @@ const StyledHeader = styled.h1`
 }
 `;
 
-
 export default function Header() {
-
-    return (
-      <div>
-        <StyledHeader>
-          Sarah
-          Phillips
-        </StyledHeader>
-      </div>
-    );
-
+  return (
+    <div>
+      <StyledHeader>Sarah Phillips</StyledHeader>
+    </div>
+  );
 }

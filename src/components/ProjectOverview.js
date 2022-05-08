@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import { ButtonDark }  from "../user-interface-styles/buttonsAndHr.js"
-import { Heading, SubHeadingBlue }  from "../user-interface-styles/headings.js"
-import { ContentContainer }  from "../user-interface-styles/layout.js"
+import React from "react";
+import styled from "styled-components";
+import { ButtonDark } from "../user-interface-styles/buttonsAndHr.js";
+import { Heading, SubHeadingBlue } from "../user-interface-styles/headings.js";
+import { ContentContainer } from "../user-interface-styles/layout.js";
 
 /* 
 ===============================
@@ -14,10 +14,9 @@ TODO: replace bootstrap cards with grid?
 =============================== 
 */
 
-
 const ListTechUsed = styled.ul`
-  color: rgba(5, 11, 56, .8);
-  font-size: .95rem;
+  color: rgba(5, 11, 56, 0.8);
+  font-size: 0.95rem;
   display: block;
   list-style-type: none;
   margin-block-start: 1em;
@@ -29,8 +28,8 @@ const ListTechUsed = styled.ul`
 
 const CardText = styled.summary`
   color: rgba(5, 11, 56, 0.85);
-  font-size: .9em;
-`
+  font-size: 0.9em;
+`;
 
 const GithubLogoLink = styled.a`
   color: rgba(5, 11, 56, 0.9); /*navy blue*/
@@ -45,87 +44,75 @@ const GithubLogoLink = styled.a`
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
   }
-`
-
-
+`;
 
 export default function ProjectOverview(props) {
+  console.log(props.filteredProjects);
 
-    return (
+  return (
+    <ContentContainer id="projects">
+      <hr />
+      <Heading>Projects Overview</Heading>
 
-      <ContentContainer id="projects">
-        <hr />
-        <Heading>Projects Overview</Heading>
+      <section className="card-columns">
+        {props.filteredProjects.map((item, key) => {
+          let itemIndex = props.filteredProjects.indexOf(item);
 
-        <section className="card-columns">
-
-            {props.filteredProjects.map( (item, key) => {
-
-              let itemIndex = props.filteredProjects.indexOf(item)
-
-              /* 
+          /* 
               Map over the array of tech and display them all as span items
               we insert this variable within a paragraph below.
               The result is a nice little comma-separated list. 
               */
-             let techUsedList = item.techUsed.map( (techItem, index) => {
+          let techUsedList = item.techUsed.map((techItem, index) => {
+            return <li key={index}>+ {techItem}</li>;
+          });
 
-              return(
-                <li key={index}>+ {techItem}</li>
-              )
-            })
+          return (
+            <div className="card" key={key}>
+              <a
+                href={"#project-" + itemIndex}
+                style={{
+                  // gets rid of the hover effect on links
+                  backgroundColor: "none",
+                  // width: 0
+                }}
+              >
+                <img
+                  className="card-img-top"
+                  src={item.imageUrl[0]}
+                  alt={item.title}
+                  width="auto"
+                  height="auto"
+                />
+              </a>
 
+              <div className="card-body">
+                <SubHeadingBlue as="a" href={`#project-` + itemIndex}>
+                  {item.title}
+                </SubHeadingBlue>
 
-            return(
+                <CardText
+                  dangerouslySetInnerHTML={{ __html: item.briefStatement }}
+                />
 
-              <div className="card" key={key}>
+                <ListTechUsed>{techUsedList}</ListTechUsed>
+                <ButtonDark as="a" href={`#project-` + itemIndex}>
+                  learn more
+                </ButtonDark>
+                <ButtonDark as="a" href={item.url}>
+                  visit site
+                </ButtonDark>
 
-                <a href={"#project-" + itemIndex}
-                   style={{
-                    // gets rid of the hover effect on links
-                    backgroundColor: "none",
-                    // width: 0
-                  }}
-                   >
-                  <img className="card-img-top"
-                       src={item.imageUrl[0]}
-                       alt={item.title}
-                       width="auto"
-                       height="auto"
-                       />
-                </a>
-
-                  <div className="card-body">
-
-                    <SubHeadingBlue as="a" href={`#project-`+ itemIndex}>
-                      {item.title}
-                    </SubHeadingBlue>
-
-                    <CardText dangerouslySetInnerHTML={{__html: item.briefStatement }} />
-
-                    <ListTechUsed>{techUsedList}</ListTechUsed>
-                    <ButtonDark as="a" href={`#project-`+ itemIndex}>learn more</ButtonDark>
-                    <ButtonDark as="a" href={item.url}>visit site</ButtonDark>
-
-                    <span className="github-logo">
-                      <GithubLogoLink href={item.githuburl}>
-                        <i className="fab fa-github"></i>
-                      </GithubLogoLink>
-                    </span>
-
-                  </div>
-
+                <span className="github-logo">
+                  <GithubLogoLink href={item.githuburl}>
+                    <i className="fab fa-github"></i>
+                  </GithubLogoLink>
+                </span>
               </div>
-            )
-
-            })}
-
-
-
-        </section>
-
-      </ContentContainer>
-
-    );
+            </div>
+          );
+        })}
+      </section>
+    </ContentContainer>
+  );
 }
-
