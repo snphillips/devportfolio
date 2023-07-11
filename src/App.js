@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from "react";
-import styled from "styled-components";
-import "./App.css";
-import Header from "./components/Header";
-import Navigation from "./components/Navigation";
-import Statement from "./components/Statement";
-import Skills from "./components/Skills";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import ProjectOverview from "./components/ProjectOverview";
-import projectList from "./components/projectList";
-import ProjectDeepDives from "./components/ProjectDeepDives";
+import React, { useState, useEffect } from 'react';
+import styled from 'styled-components';
+import './App.css';
+import Header from './components/Header';
+import Navigation from './components/Navigation';
+import Statement from './components/Statement';
+import Skills from './components/Skills';
+import About from './components/About';
+import Contact from './components/Contact';
+import ProjectOverview from './components/ProjectOverview';
+import projectList from './components/projectList';
+import ProjectDeepDives from './components/ProjectDeepDives';
 
 const SiteContainer = styled.div`
   width: 100%;
@@ -73,28 +73,29 @@ const StatementContainer = styled.div`
 export default function App() {
   const [filteredProjects, setFilteredProjects] = useState([]);
   const [skillsDev, setskillsDev] = useState([
-    "Javascript",
-    "HTML5/CSS3",
-    "Node/Express",
-    "React.js",
-    "RESTful APIs",
-    "JQuery",
-    "D3.js",
+    'Javascript',
+    'Typescript',
+    'HTML5/CSS3',
+    'Node/Express',
+    'React.js',
+    'RESTful APIs',
+    'JQuery',
+    'D3.js',
+    'Jest/React Testing Library',
+    'Playwright',
+    'Postgres',
+    'SQL',
   ]);
   const [skillsDevOther, setskillsDevOther] = useState([
-    "Heroku",
-    "Sublime",
-    "VS Code",
-    "Jira",
-    "Agile/Scrum",
-    "Salesforce",
-    "Git",
-    "Postgres",
-    "SQL",
+    'Heroku',
+    'AWS',
+    'Sublime',
+    'VS Code',
+    'Jira',
+    'Agile/Scrum',
+    'Salesforce',
+    'Git',
   ]);
-  // const [skillsOther, setSkillsOther] = useState([])
-  // const [skillsDesign, setDesignOther] = useState(['Photoshop', 'Indesign', 'Illustrator', 'Acrobat'])
-  // const [skillsNotUsing, setSkillsNotUsing] = useState(['ACT!', 'Filemaker Pro', 'Wordpress', 'Teamsite (nyc.gov)', 'Constant Contact', 'Mailchimp', 'Microsoft Office Suite', 'Slack'])
 
   /* ==================================
    Only display projects from projectList.js if
@@ -102,27 +103,24 @@ export default function App() {
    2) apply the above function as a filter to the states
    ================================== */
   function filterIncludeInGallery() {
-    let newList = projectList.filter(
-      (project) => project.includeInGallery === true
-    );
+    let newList = projectList.filter((project) => project.includeInGallery === true);
     setFilteredProjects(newList);
   }
 
   // run on first render
   useEffect(() => {
     filterIncludeInGallery();
-    console.log("filteredProjects:", filteredProjects);
   }, []);
 
   return (
-    <SiteContainer className="site-container">
-      <ContentContainer className="content-container">
-        <HeaderAndStatementContainer className="header-statement-container">
-          <HeaderContainer className="header-container">
+    <SiteContainer className='site-container'>
+      <ContentContainer className='content-container'>
+        <HeaderAndStatementContainer className='header-statement-container'>
+          <HeaderContainer className='header-container'>
             <Header />
           </HeaderContainer>
 
-          <StatementContainer className="statement-container">
+          <StatementContainer className='statement-container'>
             <Statement />
           </StatementContainer>
         </HeaderAndStatementContainer>
@@ -138,7 +136,7 @@ export default function App() {
         <ProjectDeepDives filteredProjects={filteredProjects} />
       </ContentContainer>
 
-      <NavContainer className="navigation-container">
+      <NavContainer className='navigation-container'>
         <Navigation />
       </NavContainer>
     </SiteContainer>
