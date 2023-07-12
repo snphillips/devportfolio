@@ -1,16 +1,14 @@
-import React from "react";
-import styled from "styled-components";
-import { ButtonDark } from "../user-interface-styles/buttonsAndHr.js";
-import { Heading, SubHeadingBlue } from "../user-interface-styles/headings.js";
-import { ContentContainer } from "../user-interface-styles/layout.js";
+import React from 'react';
+import styled from 'styled-components';
+import { ButtonDark } from '../user-interface-styles/buttonsAndHr.js';
+import { Heading, SubHeadingBlue } from '../user-interface-styles/headings.js';
+import { ContentContainer } from '../user-interface-styles/layout.js';
 
 /* 
 ===============================
 The project "cards" are dynamically created
 by mapping over the filteredProjects array 
 (which is generated from the projectList array)
-NOTE: currently using Bootstrap "cards"
-TODO: replace bootstrap cards with grid?
 =============================== 
 */
 
@@ -47,14 +45,12 @@ const GithubLogoLink = styled.a`
 `;
 
 export default function ProjectOverview(props) {
-  console.log(props.filteredProjects);
-
   return (
-    <ContentContainer id="projects">
+    <ContentContainer id='projects'>
       <hr />
       <Heading>Projects Overview</Heading>
 
-      <section className="card-columns">
+      <section className='card-columns'>
         {props.filteredProjects.map((item, key) => {
           let itemIndex = props.filteredProjects.indexOf(item);
 
@@ -68,44 +64,41 @@ export default function ProjectOverview(props) {
           });
 
           return (
-            <div className="card" key={key}>
+            <div className='card' key={key}>
               <a
-                href={"#project-" + itemIndex}
+                href={'#project-' + itemIndex}
                 style={{
                   // gets rid of the hover effect on links
-                  backgroundColor: "none",
-                  // width: 0
+                  backgroundColor: 'none',
                 }}
               >
                 <img
-                  className="card-img-top"
+                  className='card-img-top'
                   src={item.imageUrl[0]}
                   alt={item.title}
-                  width="auto"
-                  height="auto"
+                  width='auto'
+                  height='auto'
                 />
               </a>
 
-              <div className="card-body">
-                <SubHeadingBlue as="a" href={`#project-` + itemIndex}>
+              <div className='card-body'>
+                <SubHeadingBlue as='a' href={`#project-` + itemIndex}>
                   {item.title}
                 </SubHeadingBlue>
 
-                <CardText
-                  dangerouslySetInnerHTML={{ __html: item.briefStatement }}
-                />
+                <CardText dangerouslySetInnerHTML={{ __html: item.briefStatement }} />
 
                 <ListTechUsed>{techUsedList}</ListTechUsed>
-                <ButtonDark as="a" href={`#project-` + itemIndex}>
+                <ButtonDark as='a' href={`#project-` + itemIndex}>
                   learn more
                 </ButtonDark>
-                <ButtonDark as="a" href={item.url}>
+                <ButtonDark as='a' href={item.url}>
                   visit site
                 </ButtonDark>
 
-                <span className="github-logo">
+                <span className='github-logo'>
                   <GithubLogoLink href={item.githuburl}>
-                    <i className="fab fa-github"></i>
+                    <i className='fab fa-github'></i>
                   </GithubLogoLink>
                 </span>
               </div>
