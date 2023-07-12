@@ -6,7 +6,7 @@ import { ContentContainer } from '../user-interface-styles/layout.js';
 
 /* 
 ===============================
-The project "cards" are dynamically created
+Project cards are dynamically created
 by mapping over the filteredProjects array 
 (which is generated from the projectList array)
 =============================== 
@@ -55,10 +55,10 @@ export default function ProjectOverview(props) {
           let itemIndex = props.filteredProjects.indexOf(item);
 
           /* 
-              Map over the array of tech and display them all as span items
-              we insert this variable within a paragraph below.
-              The result is a nice little comma-separated list. 
-              */
+          Map over the array of tech and display them all as span items
+          we insert this variable within a paragraph below.
+          The result is a nice little comma-separated list. 
+          */
           let techUsedList = item.techUsed.map((techItem, index) => {
             return <li key={index}>+ {techItem}</li>;
           });
