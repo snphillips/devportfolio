@@ -229,6 +229,19 @@ const projectList = [
     year: `2018`,
     includeInGallery: false,
   },
+  {
+    title: 'TBA',
+    imageUrl: ['TBA'],
+    mobileImageUrl: [],
+    briefStatement: '<p>TBA</p>',
+    statement: '<p><strong>TBA</strong>TBA</p>',
+    techUsed: [TBA, TBA],
+    features: ['search form', 'randomizer button', 'responsive design'],
+    url: 'TBA',
+    githuburl: 'TBA',
+    year: `2018`,
+    includeInGallery: false,
+  },
 ];
 
 export default projectList;
