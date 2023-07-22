@@ -66,7 +66,7 @@ const projectList = [
     briefStatement:
       '<p>A portfolio website for my visual art. The site includes a gallery and image modals.</p>',
     statement:
-      '<p>I used to use Wordpress for my artist portfolio site but I became disenchanted with the constant malware attacks and hosting fees.</p><p>This React.js site includes a gallery and image modals, which I painstakingly created without the use of a library.</p>',
+      '<p>I used to use Wordpress for my artist portfolio site but I became disenchanted with the constant malware attacks and hosting fees.</p><p>This React.js site includes a gallery and image modals, which I created without the use of a library.</p>',
     techUsed: ['React.js', 'Styled Components'],
     features: [
       'image gallery',
@@ -101,7 +101,7 @@ const projectList = [
     briefStatement:
       "So Trashy uses the data visualization library d3 to represent New York City's Department of Sanitation's yearly collection of refuse & recycling, per person.</p>",
     statement:
-      "<p><strong>So Trashy</strong> uses the data visualization library d3 to represent New York City's Department of Sanitation's (DSNY) yearly collection of refuse & recycling, per person.</p></p>DSNY collects residential and public school refuse and recycling, empties street litter baskets, cleans up abandoned property such as cars, tires and bicycles and collects other types of refuse, such as the detritus left in public spaces after Superstorm Sandy.</p> <p>DSNY does not pick up commercial refuse from offices, shops, business, institutions or construction sites.</p><p>The agency publishes monthly reports detailing how many tons of refuse, paper/cardboard and metal/glass/plastic/drink carton has been collected, categorized by borough and further categorized into Community District (CD).</p><p>I cross-reference two data sets to match the community district with the population of each district.  Additionally I match the community district with neighborhood names which aren't official city designations (as neighborhood boundaries evolve over time)</p>",
+      "<p><strong>So Trashy</strong> uses the data visualization library d3 to represent New York City's Department of Sanitation's (DSNY) yearly collection of refuse & recycling, per person.</p></p>DSNY collects residential and public school refuse and recycling, empties street litter baskets, cleans up abandoned property such as cars, tires and bicycles and collects other types of refuse, such as the detritus left in public spaces after Superstorm Sandy.</p> <p>DSNY does not pick up commercial refuse from offices, shops, business, institutions or construction sites.</p><p>The agency publishes monthly reports detailing how many tons of refuse, paper/cardboard and metal/glass/plastic/drink carton has been collected, categorized by borough and further categorized into Community District (CD).</p><p>I cross-reference two data sets to match the community district with the population of each district.  Additionally I match the community district with neighborhood names which aren't official city designations as neighborhood boundaries evolve over time.</p>",
     techUsed: ['D3.js', 'React.js', 'nyc.gov API'],
     features: ['sorting radio buttons', 'hover interaction', 'responsive design'],
     url: 'https://so-trashy-react.surge.sh/',
@@ -229,19 +229,19 @@ const projectList = [
     year: `2018`,
     includeInGallery: false,
   },
-  {
-    title: 'TBA',
-    imageUrl: ['TBA'],
-    mobileImageUrl: [],
-    briefStatement: '<p>TBA</p>',
-    statement: '<p><strong>TBA</strong>TBA</p>',
-    techUsed: [TBA, TBA],
-    features: ['search form', 'randomizer button', 'responsive design'],
-    url: 'TBA',
-    githuburl: 'TBA',
-    year: `2018`,
-    includeInGallery: false,
-  },
+  // {
+  //   title: 'TBA',
+  //   imageUrl: ['TBA'],
+  //   mobileImageUrl: [],
+  //   briefStatement: '<p>TBA</p>',
+  //   statement: '<p><strong>TBA</strong>TBA</p>',
+  //   techUsed: [TBA, TBA],
+  //   features: ['search form', 'randomizer button', 'responsive design'],
+  //   url: 'TBA',
+  //   githuburl: 'TBA',
+  //   year: `2023`,
+  //   includeInGallery: false,
+  // },
 ];
 
 export default projectList;
