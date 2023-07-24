@@ -10,6 +10,7 @@ import Contact from './components/Contact';
 import ProjectOverview from './components/ProjectOverview';
 import projectList from './components/projectList';
 import ProjectDeepDives from './components/ProjectDeepDives';
+import Resume from './components/Resume';
 
 const SiteContainer = styled.div`
   width: 100%;
@@ -126,14 +127,11 @@ export default function App() {
         </HeaderAndStatementContainer>
 
         <ProjectOverview filteredProjects={filteredProjects} />
-
         <About />
-
         <Skills skillsDev={skillsDev} skillsDevOther={skillsDevOther} />
-
         <Contact />
-
         <ProjectDeepDives filteredProjects={filteredProjects} />
+        <Resume />
       </ContentContainer>
 
       <NavContainer className='navigation-container'>

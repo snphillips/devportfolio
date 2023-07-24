@@ -60,9 +60,7 @@ export default function Navigation(props) {
             <NavItem href='#contact'>contact</NavItem>
           </li>
           <li>
-            <NavItem href='https://sarahphillipsdev.surge.sh/2023-resume-phillips.pdf'>
-              resume
-            </NavItem>
+            <NavItem href='#resume'>resume</NavItem>
           </li>
           <li>
             <NavItem href='https://www.linkedin.com/in/sarah-n-phillips/'>

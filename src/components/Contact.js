@@ -42,13 +42,8 @@ export default function Contact(props) {
           </ContactListItemLink>
         </li>
         <li>
-          <ContactListItemLink
-            className='content-link'
-            href='https://sarahphillipsdev.surge.sh/2023-resume-phillips.pdf'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            View my resume here
+          <ContactListItemLink className='content-link' href='#resume'>
+            View resume
           </ContactListItemLink>
         </li>
       </ContactUList>
