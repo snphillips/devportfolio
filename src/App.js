@@ -96,6 +96,7 @@ export default function App() {
     'Agile/Scrum',
     'Salesforce',
     'Git',
+    'Agile Methodologies',
   ]);
 
   /* ==================================
