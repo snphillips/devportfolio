@@ -18,7 +18,7 @@ export default function Resume(props) {
       <Heading>Resume</Heading>
       <ContentContainer id='resume'>
         <embed
-          src='https://sarahphillipsdev.surge.sh/2023-resume-phillips.pdf'
+          src='https://sarahphillipsdev.surge.sh/Sarah-Phillips-resume.pdf'
           width='800'
           height='1080'
           type='application/pdf'

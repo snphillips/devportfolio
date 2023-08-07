@@ -1,7 +1,7 @@
-import React from "react";
-import { Heading } from "../user-interface-styles/headings.js";
-import { ContentContainer } from "../user-interface-styles/layout.js";
-import styled from "styled-components";
+import React from 'react';
+import { Heading } from '../user-interface-styles/headings.js';
+import { ContentContainer } from '../user-interface-styles/layout.js';
+import styled from 'styled-components';
 
 const SkillsListContainer = styled.div`
   column-count: 4;
@@ -23,13 +23,14 @@ const SkillListItem = styled.li`
   list-style: none; /* removes bullet points */
 `;
 
-// We're mapping over two skills lists: web dev & web dev other-- ancillary dev skills like
+// We're mapping over two skills lists: web dev &
+// web dev other-- ancillary dev skills like
 // git & sublime.
 // Find the skills arrays as "state" in App.js
 
 export default function Skills(props) {
   return (
-    <ContentContainer id="skills">
+    <ContentContainer id='skills'>
       <hr />
       <Heading>Skills</Heading>
 
@@ -39,20 +40,14 @@ export default function Skills(props) {
             // to help generate a unique key to each child
             let index = props.skillsDev.indexOf(skillItem);
 
-            return (
-              <SkillListItem key={"skill-" + index}>{skillItem}</SkillListItem>
-            );
+            return <SkillListItem key={'skill-' + index}>{skillItem}</SkillListItem>;
           })}
 
           {props.skillsDevOther.map((skillDevItem) => {
             // to help generate a unique key to each child
             let index = props.skillsDevOther.indexOf(skillDevItem);
 
-            return (
-              <SkillListItem key={"skill-dev-" + index}>
-                {skillDevItem}
-              </SkillListItem>
-            );
+            return <SkillListItem key={'skill-dev-' + index}>{skillDevItem}</SkillListItem>;
           })}
         </SkillsUnorderedList>
       </SkillsListContainer>
