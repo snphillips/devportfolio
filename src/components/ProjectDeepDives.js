@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import { ButtonLight } from "../user-interface-styles/buttonsAndHr.js";
-import { Heading, SubHeading } from "../user-interface-styles/headings.js";
-import { ContentContainer } from "../user-interface-styles/layout.js";
+import React from 'react';
+import styled from 'styled-components';
+import { ButtonLight } from '../user-interface-styles/buttonsAndHr.js';
+import { Heading, SubHeading } from '../user-interface-styles/headings.js';
+import { ContentContainer } from '../user-interface-styles/layout.js';
 
 /* ===============================
 The projectDeepDives sections are dynamically created
@@ -95,23 +95,17 @@ const ListTechUsedDeepDive = styled.ul`
 
 const ListFeatures = styled(ListTechUsedDeepDive)``;
 
-export default function ProjectDeepDive(props) {
+export default function ProjectDeepDive({ filteredProjects }) {
   return (
     <ContentContainer>
-      {props.filteredProjects.map((item, key) => {
-        let itemIndex = props.filteredProjects.indexOf(item);
+      {filteredProjects.map((item, key) => {
+        let itemIndex = filteredProjects.indexOf(item);
 
         /* Map over the array of images
             and display them all as img */
         let imageUrlList = item.imageUrl.map((linkItem, key) => {
           return (
-            <DeepDivesImage
-              src={linkItem}
-              alt={item.title}
-              key={key}
-              width="auto"
-              height="auto"
-            />
+            <DeepDivesImage src={linkItem} alt={item.title} key={key} width='auto' height='auto' />
           );
         });
 
@@ -123,8 +117,8 @@ export default function ProjectDeepDive(props) {
               src={linkItem}
               alt={item.title}
               key={key}
-              width="auto"
-              height="auto"
+              width='auto'
+              height='auto'
             />
           );
         });
@@ -142,41 +136,39 @@ export default function ProjectDeepDive(props) {
         });
 
         return (
-          <article className="deep-dives-section" key={key}>
+          <article className='deep-dives-section' key={key}>
             <hr />
 
-            <Heading id={"project-" + itemIndex}>{item.title}</Heading>
+            <Heading id={'project-' + itemIndex}>{item.title}</Heading>
 
             <DeepDivesContent>
-              <DeepDivesImageContainer className="deep-dives-image-container">
+              <DeepDivesImageContainer className='deep-dives-image-container'>
                 <DeepDivesImageList>{imageUrlList}</DeepDivesImageList>
 
-                <DeepDivesMobileImageList>
-                  {mobileImageUrlList}
-                </DeepDivesMobileImageList>
+                <DeepDivesMobileImageList>{mobileImageUrlList}</DeepDivesMobileImageList>
               </DeepDivesImageContainer>
 
-              <DeepDivesTextContainer className="deep-dives-text-container">
+              <DeepDivesTextContainer className='deep-dives-text-container'>
                 <article
-                  className="deep-dives-text"
+                  className='deep-dives-text'
                   dangerouslySetInnerHTML={{ __html: item.statement }}
                 />
 
                 <br />
 
-                <SubHeading as="h3">features</SubHeading>
+                <SubHeading as='h3'>features</SubHeading>
                 <ListFeatures>{featuresList}</ListFeatures>
 
-                <SubHeading as="h3">Tech</SubHeading>
+                <SubHeading as='h3'>Tech</SubHeading>
                 <ListTechUsedDeepDive>{techUsedList}</ListTechUsedDeepDive>
 
-                <footer className="deep-dives-links-footer">
-                  <ButtonLight as="a" href={item.url}>
+                <footer className='deep-dives-links-footer'>
+                  <ButtonLight as='a' href={item.url}>
                     visit site
                   </ButtonLight>
                   <br />
-                  <ButtonLight as="a" href={item.githuburl}>
-                    github repo <i className="fab fa-github"></i>
+                  <ButtonLight as='a' href={item.githuburl}>
+                    github repo <i className='fab fa-github'></i>
                   </ButtonLight>
                 </footer>
               </DeepDivesTextContainer>

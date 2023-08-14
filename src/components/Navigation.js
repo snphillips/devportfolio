@@ -41,7 +41,7 @@ const NavItem = styled.a`
   }
 `;
 
-export default function Navigation(props) {
+export default function Navigation() {
   return (
     <NavContainer className='navbar navbar-expand-md navbar-dark mb-3'>
       <button className='navbar-toggler' data-toggle='collapse' data-target='#navbarNav'>

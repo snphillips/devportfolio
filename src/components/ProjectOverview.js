@@ -44,15 +44,15 @@ const GithubLogoLink = styled.a`
   }
 `;
 
-export default function ProjectOverview(props) {
+export default function ProjectOverview({ filteredProjects }) {
   return (
     <ContentContainer id='projects'>
       <hr />
       <Heading>Projects Overview</Heading>
 
       <section className='card-columns'>
-        {props.filteredProjects.map((item, key) => {
-          let itemIndex = props.filteredProjects.indexOf(item);
+        {filteredProjects.map((item, key) => {
+          let itemIndex = filteredProjects.indexOf(item);
 
           /* 
           Map over the array of tech and display them all as span items

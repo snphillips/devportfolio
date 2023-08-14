@@ -12,7 +12,7 @@ const ContactListItemLink = styled.a`
   color: rgba(255, 255, 255, 0.7); /* white */
 `;
 
-export default function Resume(props) {
+export default function Resume() {
   return (
     <>
       <Heading>Resume</Heading>

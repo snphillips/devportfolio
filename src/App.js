@@ -111,7 +111,13 @@ export default function App() {
 
   // run on first render
   useEffect(() => {
-    filterIncludeInGallery();
+    // Only runs once per app load
+    let didInit = false;
+    if (!didInit) {
+      didInit = true;
+
+      filterIncludeInGallery();
+    }
   }, []);
 
   return (

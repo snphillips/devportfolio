@@ -28,7 +28,7 @@ const SkillListItem = styled.li`
 // git & sublime.
 // Find the skills arrays as "state" in App.js
 
-export default function Skills(props) {
+export default function Skills({ skillsDev, skillsDevOther }) {
   return (
     <ContentContainer id='skills'>
       <hr />
@@ -36,16 +36,16 @@ export default function Skills(props) {
 
       <SkillsListContainer>
         <SkillsUnorderedList>
-          {props.skillsDev.map((skillItem) => {
+          {skillsDev.map((skillItem) => {
             // to help generate a unique key to each child
-            let index = props.skillsDev.indexOf(skillItem);
+            let index = skillsDev.indexOf(skillItem);
 
             return <SkillListItem key={'skill-' + index}>{skillItem}</SkillListItem>;
           })}
 
-          {props.skillsDevOther.map((skillDevItem) => {
+          {skillsDevOther.map((skillDevItem) => {
             // to help generate a unique key to each child
-            let index = props.skillsDevOther.indexOf(skillDevItem);
+            let index = skillsDevOther.indexOf(skillDevItem);
 
             return <SkillListItem key={'skill-dev-' + index}>{skillDevItem}</SkillListItem>;
           })}
