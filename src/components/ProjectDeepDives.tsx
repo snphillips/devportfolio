@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ButtonLight } from '../user-interface-styles/buttonsAndHr.js';
-import { Heading, SubHeading } from '../user-interface-styles/headings.js';
-import { ContentContainer } from '../user-interface-styles/layout.js';
+import { ButtonLight } from '../UI-styles/buttonsAndHr.js';
+import { Heading, SubHeading } from '../UI-styles/headings.js';
+import { ContentContainer } from '../UI-styles/layout.js';
 import ProjectObject from '../interfaces';
 
 /* ===============================
