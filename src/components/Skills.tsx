@@ -1,6 +1,6 @@
 import React from 'react';
-import { Heading } from '../user-interface-styles/headings.js';
-import { ContentContainer } from '../user-interface-styles/layout.js';
+import { Heading } from '../UI-styles/headings.js';
+import { ContentContainer } from '../UI-styles/layout.js';
 import styled from 'styled-components';
 
 const SkillsListContainer = styled.div`
@@ -28,7 +28,13 @@ const SkillListItem = styled.li`
 // git & sublime.
 // Find the skills arrays as "state" in App.js
 
-export default function Skills({ skillsDev, skillsDevOther }) {
+type Props = {
+  skillsDev: String[],
+  skillsDevOther: String[],
+}
+
+
+export default function Skills({ skillsDev, skillsDevOther }: Props) {
   return (
     <ContentContainer id='skills'>
       <hr />
