@@ -28,7 +28,13 @@ const SkillListItem = styled.li`
 // git & sublime.
 // Find the skills arrays as "state" in App.js
 
-export default function Skills({ skillsDev, skillsDevOther }) {
+type Props = {
+  skillsDev: String[],
+  skillsDevOther: String[],
+}
+
+
+export default function Skills({ skillsDev, skillsDevOther }: Props) {
   return (
     <ContentContainer id='skills'>
       <hr />
