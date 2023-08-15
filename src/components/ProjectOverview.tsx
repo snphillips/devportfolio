@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { ButtonDark } from '../user-interface-styles/buttonsAndHr.js';
 import { Heading, SubHeadingBlue } from '../user-interface-styles/headings.js';
 import { ContentContainer } from '../user-interface-styles/layout.js';
-import ProjectObject from "../interfaces";
+import ProjectObject from '../interfaces';
 
 /* 
 ===============================

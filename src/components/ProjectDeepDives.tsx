@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { ButtonLight } from '../user-interface-styles/buttonsAndHr.js';
 import { Heading, SubHeading } from '../user-interface-styles/headings.js';
 import { ContentContainer } from '../user-interface-styles/layout.js';
+import ProjectObject from '../interfaces';
 
 /* ===============================
 The projectDeepDives sections are dynamically created
@@ -95,7 +96,11 @@ const ListTechUsedDeepDive = styled.ul`
 
 const ListFeatures = styled(ListTechUsedDeepDive)``;
 
-export default function ProjectDeepDive({ filteredProjects }) {
+type Props = {
+  filteredProjects: ProjectObject[],
+};
+
+export default function ProjectDeepDive({ filteredProjects }: Props) {
   return (
     <ContentContainer>
       {filteredProjects.map((item, key) => {
