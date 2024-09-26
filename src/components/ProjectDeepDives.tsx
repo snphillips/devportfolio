@@ -106,16 +106,12 @@ export default function ProjectDeepDive({ filteredProjects }: Props) {
       {filteredProjects.map((item, key) => {
         let itemIndex = filteredProjects.indexOf(item);
 
-        /* Map over the array of images
-            and display them all as img */
         let imageUrlList = item.imageUrl.map((linkItem, key) => {
           return (
             <DeepDivesImage src={linkItem} alt={item.title} key={key} width='auto' height='auto' />
           );
         });
 
-        /* Map over the array of mobile images
-            and display them all as img */
         let mobileImageUrlList = item.mobileImageUrl.map((linkItem, key) => {
           return (
             <DeepDivesImageMobile
@@ -128,14 +124,10 @@ export default function ProjectDeepDive({ filteredProjects }: Props) {
           );
         });
 
-        /* map over the array of features
-            and display them each as list items */
         let featuresList = item.features.map((featuresItem, key) => {
           return <li key={key}>+ {featuresItem}</li>;
         });
 
-        // map over the array of tech used
-        // and display them each as list items
         let techUsedList = item.techUsed.map((techItem, key) => {
           return <li key={key}>+ {techItem}</li>;
         });

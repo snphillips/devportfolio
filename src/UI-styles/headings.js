@@ -16,7 +16,7 @@ const Heading = styled.h2`
   color: rgba(245, 208, 200, 0.8);
   text-transform: uppercase;
   font-size: 3em;
-  letter-spacing: -.3vw;
+  letter-spacing: -.1vw;
   -webkit-font-smoothing: auto;
   border-top: 2px solid rgba(245, 208, 200, 0.5); /*dusty pink*/
 
