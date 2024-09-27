@@ -1,5 +1,39 @@
 const projectList = [
   {
+    title: `TOLLS-LOL`,
+    imageUrl: [
+      'https://i.imgur.com/hQ9N9bI.png',
+    ],
+    mobileImageUrl: [],
+    briefStatement: `<p>This React web app uses Mapbox to visualize 2024's 311 complaints about
+    obscured license plates in New York City. It fetches data from the City of New York's
+    Open Data API and displays the complaints on an interactive map. The application caches 
+    the data to optimize performance, fetching new data only if the cached data is older than 12 hours.</p>`,
+    statement: `<p>This React web app uses Mapbox to visualize 2024's 311 complaints about
+    obscured license plates in New York City. It fetches data from the City of New York's
+    Open Data API and displays the complaints on an interactive map. The application caches 
+    the data to optimize performance, fetching new data only if the cached data is older than 12 hours.</p>
+    <p>Obscuring motor vehicle licenses plate is illegal in New York City. Those with obscured
+    plates cost New York state money in lost toll revenue and removes the incentive not to
+    speed where red light cameras are in operation. Obscured plates also hinder the ability of
+    law enforcement to investigate crimes. Citizens may make 311 complaints online or by phone
+    to report an obscured plate.</p>`,
+    techUsed: [
+      'React',
+      'Mapbox',
+      `NYC Open Data API`
+    ],
+    features: [
+      'map fetches and displays 311 complaint data',
+      'interactive filter buttons',
+      'interactive slider',
+    ],
+    url: 'https://tolls-lol.surge.sh/',
+    githuburl: 'https://github.com/snphillips/obscured-license-plate-visualizer',
+    year: '2024',
+    includeInGallery: true,
+  },
+  {
     title: `Meeting Background Maker`,
     imageUrl: [
       'https://i.imgur.com/4mN13AS.png',
@@ -29,7 +63,7 @@ const projectList = [
       's3-zip',
     ],
     features: [
-      'user adds images to their collecton',
+      'user adds images to their collection',
       'user removes images from their collection',
       'user downloads collection as zip file',
       'selected images are resized, text overlay added',
