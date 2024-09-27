@@ -1,7 +1,7 @@
 import React from 'react';
-import { Heading } from '../user-interface-styles/Headings';
-import { ContentContainer } from '../user-interface-styles/layout.js';
-import { AboutColumns } from '../user-interface-styles/paragraphs.js';
+import { Heading } from '../UI-styles/headings';
+import { ContentContainer } from '../UI-styles/layout';
+import { AboutColumns } from '../UI-styles/paragraphs';
 
 // note: Heading, ContentContainer & AboutColumns are "styled-components"
 

@@ -1,12 +1,12 @@
 import React from 'react';
-import { Heading } from '../user-interface-styles/Headings';
-import { ContentContainer } from '../user-interface-styles/layout.js';
+import { Heading } from '../UI-styles/headings';
+import { ContentContainer } from '../UI-styles/layout';
 
 import styled from 'styled-components';
 
 const SkillsListContainer = styled.div`
   column-count: 4;
-
+UI-styles
   @media (max-width: 768px) {
     column-count: 3;
   }

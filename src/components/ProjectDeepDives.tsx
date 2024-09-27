@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ButtonLight } from '../UI-styles/buttonsAndHr.js';
-import { Heading, SubHeading } from '../UI-styles/Headings';
+import { Heading, SubHeading } from '../UI-styles/headings';
 import { ContentContainer } from '../UI-styles/layout';
 import ProjectObject from '../interfaces';
 
