@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heading } from '../user-interface-styles/headings.js';
+import { Heading } from '../user-interface-styles/Headings';
 import { ContentContainer } from '../user-interface-styles/layout.js';
 import { AboutColumns } from '../user-interface-styles/paragraphs.js';
 

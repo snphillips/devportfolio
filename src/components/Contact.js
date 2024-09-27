@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Heading } from '../user-interface-styles/headings.js';
-import { ContentContainer } from '../user-interface-styles/layout.js';
+import { Heading } from '../user-interface-styles/Headings';
+import { ContentContainer } from '../user-interface-styles/layout';
 
 const ContactUList = styled.ul`
   list-style: none;
