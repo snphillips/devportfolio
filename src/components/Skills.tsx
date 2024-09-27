@@ -1,6 +1,7 @@
 import React from 'react';
-import { Heading } from '../UI-styles/Headings';
-import { ContentContainer } from '../UI-styles/Layout';
+import { Heading } from '../user-interface-styles/Headings';
+import { ContentContainer } from '../user-interface-styles/layout.js';
+
 import styled from 'styled-components';
 
 const SkillsListContainer = styled.div`
