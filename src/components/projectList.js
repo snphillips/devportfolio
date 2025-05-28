@@ -5,14 +5,14 @@ const projectList = [
       'https://i.imgur.com/hQ9N9bI.png',
     ],
     mobileImageUrl: [],
-    briefStatement: `<p>This React web app uses Mapbox to visualize 2024's 311 complaints about
-    obscured license plates in New York City. It fetches data from the City of New York's
-    Open Data API and displays the complaints on an interactive map. The application caches 
-    the data to optimize performance, fetching new data only if the cached data is older than 12 hours.</p>`,
-    statement: `<p>This React web app uses Mapbox to visualize 2024's 311 complaints about
-    obscured license plates in New York City. It fetches data from the City of New York's
-    Open Data API and displays the complaints on an interactive map. The application caches 
-    the data to optimize performance, fetching new data only if the cached data is older than 12 hours.</p>
+    briefStatement: `<p>This web app uses Mapbox to visualize 2024's 311 complaints about
+    obscured license plates in New York City.</p>
+    <p>It fetches data from the City of New York's Open Data API and displays the complaints
+    on an interactive map.</p>`,
+    statement: `<p>This web app uses Mapbox to visualize 2024's 311 complaints about
+    obscured license plates in New York City. It fetches data from the City of New York's Open Data API and displays the complaints
+    on an interactive map.</p>The application caches the data to optimize performance,
+    fetching new data only if the cached data is older than 12 hours.</p>
     <p>Obscuring motor vehicle licenses plate is illegal in New York City. Those with obscured
     plates cost New York state money in lost toll revenue and removes the incentive not to
     speed where red light cameras are in operation. Obscured plates also hinder the ability of
@@ -136,7 +136,7 @@ const projectList = [
       "So Trashy uses the data visualization library d3 to represent New York City's Department of Sanitation's yearly collection of refuse & recycling, per person.</p>",
     statement:
       "<p><strong>So Trashy</strong> uses the data visualization library d3 to represent New York City's Department of Sanitation's (DSNY) yearly collection of refuse & recycling, per person.</p></p>DSNY collects residential and public school refuse and recycling, empties street litter baskets, cleans up abandoned property such as cars, tires and bicycles and collects other types of refuse, such as the detritus left in public spaces after Superstorm Sandy.</p> <p>DSNY does not pick up commercial refuse from offices, shops, business, institutions or construction sites.</p><p>The agency publishes monthly reports detailing how many tons of refuse, paper/cardboard and metal/glass/plastic/drink carton has been collected, categorized by borough and further categorized into Community District (CD).</p><p>I cross-reference two data sets to match the community district with the population of each district.  Additionally I match the community district with neighborhood names which aren't official city designations as neighborhood boundaries evolve over time.</p>",
-    techUsed: ['D3.js', 'React.js', 'nyc.gov API'],
+    techUsed: ['D3.js', 'React.js', 'NYC Open Data API'],
     features: ['sorting radio buttons', 'hover interaction', 'responsive design'],
     url: 'https://so-trashy-react.surge.sh/',
     githuburl: 'https://github.com/snphillips/So-Trashy-React',
@@ -178,8 +178,8 @@ const projectList = [
     techUsed: [
       'React.js',
       'Chroma.js (a color library)',
-      'Node/Express (for leaderboard)',
-      'Postgres (for leaderboard)',
+      'Node/Express',
+      'Postgres',
     ],
     features: [
       'sound on/off toggle',
