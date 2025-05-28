@@ -76,13 +76,16 @@ export default function App() {
   const [skillsDev, setskillsDev] = useState([
     'Javascript',
     'Typescript',
-    'HTML5/CSS3',
-    'Node/Express',
+    'HTML',
+    'CSS',
+    'Node', 
+    'Express',
     'React.js',
     'RESTful APIs',
     'JQuery',
     'D3.js',
-    'Jest/React Testing Library',
+    'Jest',
+    'React Testing Library',
     'Playwright',
     'Postgres',
     'SQL',
@@ -90,13 +93,15 @@ export default function App() {
   const [skillsDevOther, setskillsDevOther] = useState([
     'Heroku',
     'AWS',
-    'Sublime',
     'VS Code',
     'Jira',
-    'Agile/Scrum',
+    'Agile',
+    'Scrum',
     'Salesforce',
     'Git',
     'Agile Methodologies',
+    'Civic Tech',
+    'Data Visualization'
   ]);
 
   /* ==================================
