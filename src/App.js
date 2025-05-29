@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import './App.css';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
-import Statement from './components/Statement';
 import Skills from './components/Skills';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -38,36 +37,6 @@ const NavContainer = styled.section`
 
   @media (max-width: 500px) {
     align-self: flex-end;
-  }
-`;
-const HeaderAndStatementContainer = styled.section`
-  margin-bottom: 1em;
-  display: flex;
-
-  @media (max-width: 768px) {
-  }
-
-  @media (max-width: 500px) {
-    flex-direction: column;
-  }
-`;
-const HeaderContainer = styled.div`
-  display: block;
-  margin-right: 2rem;
-
-  @media (max-width: 768px) {
-  }
-
-  @media (max-width: 500px) {
-  }
-`;
-const StatementContainer = styled.div`
-  margin-top: 0;
-  display: flex;
-  align-items: center;
-
-  @media (max-width: 500px) {
-    margin-top: 0.5rem;
   }
 `;
 
@@ -128,16 +97,7 @@ export default function App() {
   return (
     <SiteContainer className='site-container'>
       <ContentContainer className='content-container'>
-        <HeaderAndStatementContainer className='header-statement-container'>
-          <HeaderContainer className='header-container'>
-            <Header />
-          </HeaderContainer>
-
-          <StatementContainer className='statement-container'>
-            <Statement />
-          </StatementContainer>
-        </HeaderAndStatementContainer>
-
+        <Header />
         <ProjectOverview filteredProjects={filteredProjects} />
         <About />
         <Skills skillsDev={skillsDev} skillsDevOther={skillsDevOther} />

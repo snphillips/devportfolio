@@ -133,7 +133,7 @@ const projectList = [
     imageUrl: ['https://i.imgur.com/PMqmkdE.png', 'https://i.imgur.com/WSJMO84.png'],
     mobileImageUrl: ['https://i.imgur.com/Z767urK.png', 'https://i.imgur.com/uzOaJum.png'],
     briefStatement:
-      "So Trashy uses the data visualization library d3 to represent New York City's Department of Sanitation's yearly collection of refuse & recycling, per person.</p>",
+      "<p>So Trashy uses the data visualization library d3 to represent New York City's Department of Sanitation's yearly collection of refuse & recycling, per person.</p>",
     statement:
       "<p><strong>So Trashy</strong> uses the data visualization library d3 to represent New York City's Department of Sanitation's (DSNY) yearly collection of refuse & recycling, per person.</p></p>DSNY collects residential and public school refuse and recycling, empties street litter baskets, cleans up abandoned property such as cars, tires and bicycles and collects other types of refuse, such as the detritus left in public spaces after Superstorm Sandy.</p> <p>DSNY does not pick up commercial refuse from offices, shops, business, institutions or construction sites.</p><p>The agency publishes monthly reports detailing how many tons of refuse, paper/cardboard and metal/glass/plastic/drink carton has been collected, categorized by borough and further categorized into Community District (CD).</p><p>I cross-reference two data sets to match the community district with the population of each district.  Additionally I match the community district with neighborhood names which aren't official city designations as neighborhood boundaries evolve over time.</p>",
     techUsed: ['D3.js', 'React.js', 'NYC Open Data API'],

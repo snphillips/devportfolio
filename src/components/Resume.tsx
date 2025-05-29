@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import { Heading } from '../UI-styles/headings.js';
 import { ContentContainer } from '../UI-styles/layout.js';

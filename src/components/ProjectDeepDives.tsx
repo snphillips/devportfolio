@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import { ButtonLight } from '../UI-styles/buttonsAndHr.js';
 import { Heading, SubHeading } from '../UI-styles/headings';

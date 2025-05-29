@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import { ButtonDark } from '../UI-styles/buttonsAndHr.js';
 import { Heading, SubHeadingBlue } from '../UI-styles/headings.js';
