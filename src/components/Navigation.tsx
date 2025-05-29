@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const NavContainer = styled.div`
@@ -41,39 +40,61 @@ const NavItem = styled.a`
   }
 `;
 
+const MAIN_LINKS = [
+  { href: '#about', label: 'About' },
+  { href: '#skills', label: 'Skills' },
+  { href: '#contact', label: 'Contact' },
+  { href: '#resume', label: 'Resume' },
+];
+
+const SOCIAL_LINKS = [
+  { href: 'https://www.linkedin.com/in/sarah-n-phillips/', 
+    iconClass: 'fab fa-linkedin', 
+    label: 'LinkedIn'
+  },
+  { href: 'https://github.com/snphillips',
+    iconClass: 'fab fa-github',
+    label: 'GitHub'
+  },
+];
+
 export default function Navigation() {
   return (
-    <NavContainer className='navbar navbar-expand-md navbar-dark mb-3'>
-      <button className='navbar-toggler' data-toggle='collapse' data-target='#navbarNav'>
-        <span className='navbar-toggler-icon'></span>
-      </button>
+    <NavContainer className="navbar navbar-expand-md navbar-dark mb-3">
+      <nav className="container">
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon" />
+        </button>
 
-      <div className='collapse navbar-collapse' id='navbarNav'>
-        <ul className='ml-auto'>
-          <li>
-            <NavItem href='#about'>about</NavItem>
-          </li>
-          <li>
-            <NavItem href='#skills'>skills</NavItem>
-          </li>
-          <li>
-            <NavItem href='#contact'>contact</NavItem>
-          </li>
-          <li>
-            <NavItem href='#resume'>resume</NavItem>
-          </li>
-          <li>
-            <NavItem href='https://www.linkedin.com/in/sarah-n-phillips/'>
-              <i className='fab fa-linkedin'></i>
-            </NavItem>
-          </li>
-          <li>
-            <NavItem href='https://github.com/snphillips'>
-              <i className='fab fa-github'></i>
-            </NavItem>
-          </li>
-        </ul>
-      </div>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ml-auto flex-column">
+            {MAIN_LINKS.map(({ href, label }) => (
+              <li className="nav-item" key={href}>
+                <NavItem href={href}>
+                  {label}
+                </NavItem>
+              </li>
+            ))}
+
+            {SOCIAL_LINKS.map(({ href, iconClass, label }) => (
+              <li className="nav-item" key={href}>
+                <NavItem href={href} aria-label={label}>
+                  <i className={iconClass} />
+                </NavItem>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
     </NavContainer>
   );
 }
+

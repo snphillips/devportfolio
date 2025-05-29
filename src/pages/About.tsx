@@ -1,4 +1,3 @@
-import React from 'react';
 import { Heading } from '../UI-styles/headings';
 import { ContentContainer } from '../UI-styles/layout';
 import { AboutColumns } from '../UI-styles/paragraphs';
