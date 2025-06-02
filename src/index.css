@@ -97,12 +97,33 @@ a {
   transition: color 0.3s ease;
 }
 
+a:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 .content-link {
-  border-bottom: 2px solid var(--color-pink-bright);
+  border-bottom: 3px solid var(--color-pink-bright);
 }
 
 .content-link:hover {
   border-bottom-color: var(--color-pink-dusty);
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+
+
+
+/*=================================
+Navigation
+=================================*/
+
+li.nav-item a {
+  font-family: var(--font-family-sans);
 }
 
 /* Underline effect for nav & title links */
@@ -131,9 +152,6 @@ a {
   transform: scaleX(1);
 }
 
-/*=================================
-Navigation (Bootstrap overrides + utilities)
-=================================*/
 .navbar-nav {
   list-style: none;
   padding: 0;
@@ -144,7 +162,7 @@ Navigation (Bootstrap overrides + utilities)
 }
 
 .nav-item {
-  margin: 0.3rem 0;
+  margin: 0.25rem 0;
 }
 
 .nav-item .nav-link {
@@ -170,6 +188,7 @@ Project Cards
 summary {
     display: unset;
 }
+
 
 /*=================================
 Responsive Breakpoints

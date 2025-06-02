@@ -9,7 +9,7 @@ import Contact from './pages/Contact';
 import ProjectOverview from './components/ProjectOverview';
 import projectList from './components/projectList';
 import ProjectDeepDives from './components/ProjectDeepDives';
-import Resume from './components/Resume';
+import Resume from './pages/Resume';
 
 const SiteContainer = styled.div`
   width: 100%;
