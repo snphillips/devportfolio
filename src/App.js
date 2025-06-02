@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import './App.css';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
-import Skills from './components/Skills';
+import Skills from './pages/Skills';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import ProjectOverview from './components/ProjectOverview';

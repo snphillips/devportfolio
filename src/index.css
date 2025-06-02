@@ -115,7 +115,32 @@ ul {
   padding-left: 0;
 }
 
+/*=================================
+Skills
+=================================*/
+.skills-list {
+  padding-left: 0; /* removes space where bullet points used to be */
+}
 
+.skill-item {
+  list-style: none; /* removes bullet points */
+}
+
+div.list-columns {
+    column-count: 4;
+}
+
+@media (max-width: 500px) {
+  div.list-columns {
+    column-count: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  div.list-columns {
+    column-count: 3;
+  }
+}
 
 
 /*=================================
