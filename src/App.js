@@ -6,7 +6,7 @@ import Navigation from './components/Navigation';
 import Skills from './pages/Skills';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import ProjectOverview from './components/ProjectOverview';
+import ProjectOverview from './pages/ProjectOverview';
 import projectList from './components/projectList';
 import ProjectDeepDives from './components/ProjectDeepDives';
 import Resume from './pages/Resume';
@@ -43,10 +43,10 @@ const NavContainer = styled.section`
 export default function App() {
   const [filteredProjects, setFilteredProjects] = useState([]);
   const [skillsDev, setskillsDev] = useState([
-    'Javascript',
-    'Typescript',
     'HTML',
     'CSS',
+    'Javascript',
+    'Typescript',
     'Node', 
     'Express',
     'React.js',
@@ -56,10 +56,9 @@ export default function App() {
     'Jest',
     'React Testing Library',
     'Playwright',
+    'Cypress',
     'Postgres',
     'SQL',
-  ]);
-  const [skillsDevOther, setskillsDevOther] = useState([
     'Heroku',
     'AWS',
     'VS Code',
@@ -100,7 +99,7 @@ export default function App() {
         <Header />
         <ProjectOverview filteredProjects={filteredProjects} />
         <About />
-        <Skills skillsDev={skillsDev} skillsDevOther={skillsDevOther} />
+        <Skills skillsDev={skillsDev} />
         <Contact />
         <ProjectDeepDives filteredProjects={filteredProjects} />
         <Resume />

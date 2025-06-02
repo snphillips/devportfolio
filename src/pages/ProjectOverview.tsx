@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { ButtonDark } from '../UI-styles/buttonsAndHr.js';
 import { Heading, SubHeadingBlue } from '../UI-styles/headings.js';
 import { ContentContainer } from '../UI-styles/layout.js';
-import ProjectObject from '../interfaces';
+import ProjectObject from '../interfaces.js';
 
 /* 
 ===============================
