@@ -11,7 +11,8 @@ const projectList = [
     on an interactive map.</p>`,
     statement: `<p>This web app uses Mapbox to visualize 2024's 311 complaints about
     obscured license plates in New York City. It fetches data from the City of New York's Open Data API and displays the complaints
-    on an interactive map.</p>The application caches the data to optimize performance,
+    on an interactive map.</p>
+    <p>The application caches the data to optimize performance,
     fetching new data only if the cached data is older than 12 hours.</p>
     <p>Obscuring motor vehicle licenses plate is illegal in New York City. Those with obscured
     plates cost New York state money in lost toll revenue and removes the incentive not to

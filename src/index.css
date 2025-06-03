@@ -296,3 +296,101 @@ Responsive Breakpoints
     background-color: var(--color-navy);
   }
 }
+
+
+/* Container holding the image and text side by side */
+.deep-dives-content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .deep-dives-content {
+    flex-direction: column;
+  }
+}
+
+/* Image container inside the deep dive section */
+.deep-dives-image-container {
+  max-width: 450px;
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .deep-dives-image-container {
+    width: 100%;
+    max-width: 100%;
+    margin-right: unset;
+    margin: 1rem auto;
+  }
+}
+
+/* Text container beside the images */
+.deep-dives-text-container {
+  display: block;
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 1rem;
+}
+
+/* Wrapper for mobile‐only image list */
+.deep-dives-mobile-image-list {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .deep-dives-mobile-image-list {
+    display: unset;
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem auto;
+  }
+}
+
+/* Regular image styling */
+.deep-dives-image {
+  width: auto;
+  height: auto;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  max-width: 466px;
+}
+
+@media (max-width: 768px) {
+  .deep-dives-image {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Mobile‐specific image styling */
+.deep-dives-image-mobile {
+  max-width: 225px;
+}
+
+@media (max-width: 768px) {
+  .deep-dives-image-mobile {
+    width: 45%;
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 500px) {
+  .deep-dives-image-mobile {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* List of technologies used */
+.list-tech-used-deep-dive,
+.list-features {
+  display: block;
+  list-style-type: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
+
