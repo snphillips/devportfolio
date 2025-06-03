@@ -1,13 +1,12 @@
 import { Heading } from '../UI-styles/headings';
 import { ContentContainer } from '../UI-styles/layout';
-import { AboutColumns } from '../UI-styles/paragraphs';
 
 export default function About() {
   return (
     <ContentContainer id='about'>
       <hr />
       <Heading>About</Heading>
-      <AboutColumns>
+      <div className='about-columns'>
 
         <p>
         I am a Brooklyn-based developer formally trained in art with a background in municipal
@@ -24,7 +23,7 @@ export default function About() {
         I strive to create visually interesting solutions that are broadly appealing. I
         believe tech should be intuitive, welcoming and delightful to interact with.
         </p>
-      </AboutColumns>
+      </div>
     </ContentContainer>
   );
 }
