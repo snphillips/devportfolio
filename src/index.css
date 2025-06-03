@@ -394,3 +394,36 @@ Responsive Breakpoints
   padding-inline-start: 0;
 }
 
+
+/* Unstyled list of technologies */
+.list-tech-used {
+  color: rgba(5, 11, 56, 0.8);
+  font-size: 0.95rem;
+  display: block;
+  list-style-type: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
+
+/* Summary text under project title */
+.card-text {
+  color: rgba(5, 11, 56, 0.85);
+  font-size: 0.9em;
+}
+
+/* GitHub link styling */
+.github-logo-link {
+  color: rgba(5, 11, 56, 0.9);
+  font-size: 1.9em;
+  vertical-align: sub;
+  transition: all 0.3s ease-out;
+}
+
+.github-logo-link:hover {
+  color: rgba(213, 11, 84, 0.9);
+}
+
+

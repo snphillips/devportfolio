@@ -2,8 +2,6 @@ import { Heading } from '../UI-styles/headings';
 import { ContentContainer } from '../UI-styles/layout';
 import { AboutColumns } from '../UI-styles/paragraphs';
 
-// note: Heading, ContentContainer & AboutColumns are "styled-components"
-
 export default function About() {
   return (
     <ContentContainer id='about'>
