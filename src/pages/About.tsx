@@ -1,11 +1,9 @@
-import { Heading } from '../UI-styles/headings';
-import { ContentContainer } from '../UI-styles/layout';
 
 export default function About() {
   return (
-    <ContentContainer id='about'>
+    <section id='about'>
       <hr />
-      <Heading>About</Heading>
+      <h2>About</h2>
       <div className='about-columns'>
 
         <p>
@@ -24,6 +22,6 @@ export default function About() {
         believe tech should be intuitive, welcoming and delightful to interact with.
         </p>
       </div>
-    </ContentContainer>
+    </section>
   );
 }

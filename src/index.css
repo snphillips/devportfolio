@@ -61,11 +61,6 @@ li {
   }
 }
 
-/* Main content area */
-.content-container {
-  width: 90%;
-  margin: 0 2rem;
-}
 
 @media (max-width: 500px) {
   .content-container {
@@ -558,8 +553,8 @@ Responsive Breakpoints
   margin-bottom: 5px;
 }
 
-/* Base heading styles */
-.heading {
+
+h2 {
   display: block;
   position: relative;
   font-family: 'Oswald', sans-serif;
@@ -573,18 +568,17 @@ Responsive Breakpoints
 }
 
 @media (max-width: 768px) {
-  .heading {
+  h2 {
     font-size: 1.5em;
   }
 }
 
 @media (max-width: 500px) {
-  .heading {
+  h2 {
     font-size: 1.25em;
   }
 }
 
-/* Subheading (inherits from .heading with overrides) */
 .sub-heading {
   display: block;
   position: relative;
@@ -599,7 +593,6 @@ Responsive Breakpoints
   border-top: none;
 }
 
-/* Subheading Blue (inherits from .sub-heading with additional styles) */
 .sub-heading-blue {
   display: inline-block;
   position: relative;
@@ -650,8 +643,9 @@ Layout
 }
 
 .content-container {
-  width: 100%;
+  width: 90%;
   margin-right: 1rem;
+  margin: 0 2rem;
 }
 
 .nav-container {

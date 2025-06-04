@@ -1,5 +1,5 @@
 import { ButtonDark } from '../UI-styles/buttonsAndHr.js';
-import { Heading, SubHeadingBlue } from '../UI-styles/headings.js';
+import { SubHeadingBlue } from '../UI-styles/headings.js';
 import { ContentContainer } from '../UI-styles/layout.js';
 import ProjectObject from '../interfaces.js';
 
@@ -11,7 +11,7 @@ export default function ProjectOverview({ filteredProjects }: Props) {
   return (
     <ContentContainer id="projects">
       <hr />
-      <Heading>Projects Overview</Heading>
+      <h2>Projects Overview</h2>
 
       <section className="card-columns">
         {filteredProjects.map((item, key) => {
