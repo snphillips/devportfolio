@@ -21,42 +21,38 @@ const SOCIAL_LINKS = [
 
 export default function Navigation() {
   return (
-    // <div className="nav-container navbar navbar-expand-md navbar-dark mb-3">
-      // <nav className="nav-container navbar-expand-md">
-      <>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+    <>
+      <button
+        className='navbar-toggler'
+        type='button'
+        data-toggle='collapse'
+        data-target='#navbarNav'
+        aria-controls='navbarNav'
+        aria-expanded='false'
+        aria-label='Toggle navigation'
           >
-          <span className="navbar-toggler-icon" />
-        </button>
+        <span className='navbar-toggler-icon' />
+      </button>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ml-auto flex-column">
-            {MAIN_LINKS.map(({ href, label }) => (
-              <li className="nav-item" key={href}>
-                <a href={href} className="nav-item-link">
-                  {label}
-                </a>
-              </li>
-            ))}
+      <div className='collapse navbar-collapse' id='navbarNav'>
+        <ul className='navbar-nav ml-auto flex-column'>
+          { MAIN_LINKS.map(({ href, label }) => (
+            <li className='nav-item' key={ href }>
+              <a href={ href } className='nav-item-link'>
+                { label }
+              </a>
+            </li>
+            )) }
 
-            {SOCIAL_LINKS.map(({ href, iconClass, label }) => (
-              <li className="nav-item" key={href}>
-                <a href={href} className="nav-item-link" aria-label={label}>
-                  <i className={iconClass} />
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </>
-      // </nav>
-    // </div>
+          { SOCIAL_LINKS.map(({ href, iconClass, label }) => (
+            <li className='nav-item' key={ href }>
+              <a href={ href } className='nav-item-link' aria-label={ label }>
+                <i className={ iconClass } />
+              </a>
+            </li>
+            )) }
+        </ul>
+      </div>
+    </>
   );
 }

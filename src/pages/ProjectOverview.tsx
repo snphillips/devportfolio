@@ -31,7 +31,7 @@ export default function ProjectOverview({ filteredProjects }: Props) {
               >
                 <img
                   className="card-img-top"
-                  src={item.imageUrl[0]}
+                      src={item.imageUrl[0]}
                   alt={item.title}
                   width="auto"
                   height="auto"

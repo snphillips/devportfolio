@@ -1,35 +1,35 @@
 
 export default function Skills() {
 
-    const skillsDev = [
-      'HTML',
-      'CSS',
-      'Javascript',
-      'Typescript',
-      'Node',
-      'Express',
-      'React.js',
-      'RESTful APIs',
-      'JQuery',
-      'D3.js',
-      'Jest',
-      'React Testing Library',
-      'Playwright',
-      'Cypress',
-      'Postgres',
-      'SQL',
-      'Heroku',
-      'AWS',
-      'VS Code',
-      'Jira',
-      'Agile',
-      'Scrum',
-      'Salesforce',
-      'Git',
-      'Agile Methodologies',
-      'Civic Tech',
-      'Data Visualization',
-    ];
+  const skillsDev = [
+    'HTML',
+    'CSS',
+    'Javascript',
+    'Typescript',
+    'Node',
+    'Express',
+    'React.js',
+    'RESTful APIs',
+    'JQuery',
+    'D3.js',
+    'Jest',
+    'React Testing Library',
+    'Playwright',
+    'Cypress',
+    'Postgres',
+    'SQL',
+    'Heroku',
+    'AWS',
+    'VS Code',
+    'Jira',
+    'Agile',
+    'Scrum',
+    'Salesforce',
+    'Git',
+    'Agile Methodologies',
+    'Civic Tech',
+    'Data Visualization',
+  ];
 
 
   return (
@@ -39,19 +39,19 @@ export default function Skills() {
 
       <div className='list-columns'>
         <ul className='skills-list'>
-          {skillsDev.map((skillItem) => {
+          { skillsDev.map((skillItem) => {
 
             // to help generate a unique key to each child
-            let index = skillsDev.indexOf(skillItem);
-            return(
-              <li className="skill-item"
-                  key={'skill-' + index}
+            const index = skillsDev.indexOf(skillItem);
+            return (
+              <li className='skill-item'
+                key={ 'skill-' + index }
                   >
-                {skillItem}
+                { skillItem }
               </li>
             ) ;
-          
-          })}
+
+          }) }
         </ul>
       </div>
     </section>
