@@ -1,13 +1,14 @@
 
 export default function About() {
+            console.log("test")
   return (
     <section id='about'>
       <hr />
       <h2>About</h2>
-      <div className='about-columns'>
+            <div className='about-columns'>
 
         <p>
-        I am a Brooklyn-based developer formally trained in art with a background in municipal
+        I am a Brooklyn-based developer formally trained in art with a background in public service and municipal
         service delivery.
         </p>
         <p>

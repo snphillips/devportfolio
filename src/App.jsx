@@ -57,6 +57,11 @@ export default function App() {
 
   return (
     <div className="site-container">
+      <section className="navigation-container">
+        <nav id="nav-container" className=" navbar-expand-md">
+          <Navigation />
+        </nav>
+      </section>
       <section className="content-container">
         <Header />
         <ProjectOverview filteredProjects={filteredProjects} />
@@ -67,9 +72,6 @@ export default function App() {
         <Resume />
       </section>
 
-      <section className="navigation-container">
-        <Navigation />
-      </section>
     </div>
   );
 }

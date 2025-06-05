@@ -21,8 +21,9 @@ const SOCIAL_LINKS = [
 
 export default function Navigation() {
   return (
-    <div className="nav-container navbar navbar-expand-md navbar-dark mb-3">
-      <nav className="container">
+    // <div className="nav-container navbar navbar-expand-md navbar-dark mb-3">
+      // <nav className="nav-container navbar-expand-md">
+      <>
         <button
           className="navbar-toggler"
           type="button"
@@ -31,7 +32,7 @@ export default function Navigation() {
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
-        >
+          >
           <span className="navbar-toggler-icon" />
         </button>
 
@@ -54,7 +55,8 @@ export default function Navigation() {
             ))}
           </ul>
         </div>
-      </nav>
-    </div>
+      </>
+      // </nav>
+    // </div>
   );
 }

@@ -1,18 +1,41 @@
-import { Heading } from '../UI-styles/headings';
+
+export default function Skills() {
+
+    const skillsDev = [
+      'HTML',
+      'CSS',
+      'Javascript',
+      'Typescript',
+      'Node',
+      'Express',
+      'React.js',
+      'RESTful APIs',
+      'JQuery',
+      'D3.js',
+      'Jest',
+      'React Testing Library',
+      'Playwright',
+      'Cypress',
+      'Postgres',
+      'SQL',
+      'Heroku',
+      'AWS',
+      'VS Code',
+      'Jira',
+      'Agile',
+      'Scrum',
+      'Salesforce',
+      'Git',
+      'Agile Methodologies',
+      'Civic Tech',
+      'Data Visualization',
+    ];
 
 
-// We're mapping over a skills list.
-// Find the skills arrays as "state" in App.js
-
-type Props = {
-  skillsDev: String[],
-}
-
-export default function Skills({ skillsDev }: Props) {
   return (
     <section id='skills'>
       <hr />
-      <Heading>Skills</Heading>
+      <h2>Skills</h2>
 
       <div className='list-columns'>
         <ul className='skills-list'>
