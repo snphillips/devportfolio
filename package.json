@@ -17,7 +17,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "test --env=jsdom",
-    "lint": "eslint src --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
+    "format:css": "prettier --write \"src/**/*.css\""
   },
   "browserslist": [
     ">0.2%",
@@ -36,6 +37,9 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
     "globals": "^16.2.0",
+    "prettier": "^3.5.3",
+    "stylelint": "^16.20.0",
+    "stylelint-config-standard": "^38.0.0",
     "typescript": "^4.9.5",
     "typescript-eslint": "^8.33.1",
     "vite": "^6.3.5"
