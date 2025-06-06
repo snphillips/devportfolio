@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import './App.css';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
 import Skills from './pages/Skills';
@@ -12,38 +11,11 @@ import Resume from './pages/Resume';
 
 export default function App() {
   const [filteredProjects, setFilteredProjects] = useState([]);
-  const [skillsDev, setSkillsDev] = useState([
-    'HTML',
-    'CSS',
-    'Javascript',
-    'Typescript',
-    'Node',
-    'Express',
-    'React.js',
-    'RESTful APIs',
-    'JQuery',
-    'D3.js',
-    'Jest',
-    'React Testing Library',
-    'Playwright',
-    'Cypress',
-    'Postgres',
-    'SQL',
-    'Heroku',
-    'AWS',
-    'VS Code',
-    'Jira',
-    'Agile',
-    'Scrum',
-    'Salesforce',
-    'Git',
-    'Agile Methodologies',
-    'Civic Tech',
-    'Data Visualization',
-  ]);
 
   function filterIncludeInGallery() {
-    const newList = projectList.filter((project) => project.includeInGallery === true);
+    const newList = projectList.filter(
+      (project) => project.includeInGallery === true,
+    );
     setFilteredProjects(newList);
   }
 
@@ -66,12 +38,11 @@ export default function App() {
         <Header />
         <ProjectOverview filteredProjects={filteredProjects} />
         <About />
-        <Skills skillsDev={skillsDev} />
+        <Skills />
         <Contact />
         <ProjectDeepDives filteredProjects={filteredProjects} />
         <Resume />
       </section>
-
     </div>
   );
 }

@@ -5,12 +5,12 @@ export default function Resume() {
   return (
     <>
       <Heading>Resume</Heading>
-      <ContentContainer id='resume'>
+      <ContentContainer id="resume">
         <embed
-          src='https://sarahphillipsdev.surge.sh/Sarah-Phillips-resume.pdf'
-          width='800'
-          height='1080'
-          type='application/pdf'
+          src="https://sarahphillipsdev.surge.sh/Sarah-Phillips-resume.pdf"
+          width="800"
+          height="1080"
+          type="application/pdf"
         />
       </ContentContainer>
     </>

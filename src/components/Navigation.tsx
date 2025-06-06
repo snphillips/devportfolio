@@ -1,4 +1,3 @@
-
 const MAIN_LINKS = [
   { href: '#about', label: 'About' },
   { href: '#skills', label: 'Skills' },
@@ -23,34 +22,34 @@ export default function Navigation() {
   return (
     <>
       <button
-        className='navbar-toggler'
-        type='button'
-        data-toggle='collapse'
-        data-target='#navbarNav'
-        aria-controls='navbarNav'
-        aria-expanded='false'
-        aria-label='Toggle navigation'
-          >
-        <span className='navbar-toggler-icon' />
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span className="navbar-toggler-icon" />
       </button>
 
-      <div className='collapse navbar-collapse' id='navbarNav'>
-        <ul className='navbar-nav ml-auto flex-column'>
-          { MAIN_LINKS.map(({ href, label }) => (
-            <li className='nav-item' key={ href }>
-              <a href={ href } className='nav-item-link'>
-                { label }
+      <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav ml-auto flex-column">
+          {MAIN_LINKS.map(({ href, label }) => (
+            <li className="nav-item" key={href}>
+              <a href={href} className="nav-item-link">
+                {label}
               </a>
             </li>
-            )) }
+          ))}
 
-          { SOCIAL_LINKS.map(({ href, iconClass, label }) => (
-            <li className='nav-item' key={ href }>
-              <a href={ href } className='nav-item-link' aria-label={ label }>
-                <i className={ iconClass } />
+          {SOCIAL_LINKS.map(({ href, iconClass, label }) => (
+            <li className="nav-item" key={href}>
+              <a href={href} className="nav-item-link" aria-label={label}>
+                <i className={iconClass} />
               </a>
             </li>
-            )) }
+          ))}
         </ul>
       </div>
     </>

@@ -4,7 +4,7 @@ import { ContentContainer } from '../UI-styles/layout';
 import ProjectObject from '../interfaces';
 
 type Props = {
-  filteredProjects: ProjectObject[],
+  filteredProjects: ProjectObject[];
 };
 
 export default function ProjectDeepDive({ filteredProjects }: Props) {
@@ -70,9 +70,7 @@ export default function ProjectDeepDive({ filteredProjects }: Props) {
                 <ul className="list-features">{featuresList}</ul>
 
                 <SubHeading as="h3">Tech</SubHeading>
-                <ul className="list-tech-used-deep-dive">
-                  {techUsedList}
-                </ul>
+                <ul className="list-tech-used-deep-dive">{techUsedList}</ul>
 
                 <footer className="deep-dives-links-footer">
                   <ButtonLight as="a" href={item.url}>

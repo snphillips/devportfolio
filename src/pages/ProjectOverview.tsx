@@ -4,7 +4,7 @@ import { ContentContainer } from '../UI-styles/layout.js';
 import ProjectObject from '../interfaces.js';
 
 type Props = {
-  filteredProjects: ProjectObject[],
+  filteredProjects: ProjectObject[];
 };
 
 export default function ProjectOverview({ filteredProjects }: Props) {
@@ -31,7 +31,7 @@ export default function ProjectOverview({ filteredProjects }: Props) {
               >
                 <img
                   className="card-img-top"
-                      src={item.imageUrl[0]}
+                  src={item.imageUrl[0]}
                   alt={item.title}
                   width="auto"
                   height="auto"
@@ -58,10 +58,7 @@ export default function ProjectOverview({ filteredProjects }: Props) {
                 </ButtonDark>
 
                 <span className="github-logo">
-                  <a
-                    href={item.githuburl}
-                    className="github-logo-link"
-                  >
+                  <a href={item.githuburl} className="github-logo-link">
                     <i className="fab fa-github"></i>
                   </a>
                 </span>

@@ -1,9 +1,7 @@
 const projectList = [
   {
     title: `TOLLS-LOL`,
-    imageUrl: [
-      'https://i.imgur.com/hQ9N9bI.png',
-    ],
+    imageUrl: ['https://i.imgur.com/hQ9N9bI.png'],
     mobileImageUrl: [],
     briefStatement: `<p>This web app uses Mapbox to visualize 2024's 311 complaints about
     obscured license plates in New York City.</p>
@@ -19,18 +17,15 @@ const projectList = [
     speed where red light cameras are in operation. Obscured plates also hinder the ability of
     law enforcement to investigate crimes. Citizens may make 311 complaints online or by phone
     to report an obscured plate.</p>`,
-    techUsed: [
-      'React',
-      'Mapbox',
-      `NYC Open Data API`
-    ],
+    techUsed: ['React', 'Mapbox', `NYC Open Data API`],
     features: [
       'map fetches and displays 311 complaint data',
       'interactive filter buttons',
       'interactive slider',
     ],
     url: 'https://tolls-lol.surge.sh/',
-    githuburl: 'https://github.com/snphillips/obscured-license-plate-visualizer',
+    githuburl:
+      'https://github.com/snphillips/obscured-license-plate-visualizer',
     year: '2024',
     includeInGallery: true,
   },
@@ -77,7 +72,10 @@ const projectList = [
   },
   {
     title: `NYCHA Outage Scraper`,
-    imageUrl: ['https://i.imgur.com/3CmQKwE.png', 'https://i.imgur.com/1y4g93S.png'],
+    imageUrl: [
+      'https://i.imgur.com/3CmQKwE.png',
+      'https://i.imgur.com/1y4g93S.png',
+    ],
     mobileImageUrl: [],
     briefStatement:
       '<p>The New York City Housing Authority (NYCHA) maintains a page on their site that lists services outages in their developments for heat, hot water, water, elevators, electricity & gas.</p> <p>This scraper extracts the data from the NYCHA website and saves the results in csv tables.</p>',
@@ -97,7 +95,10 @@ const projectList = [
       'https://i.imgur.com/VCJfInw.png',
       'https://i.imgur.com/yjSyUc2.png',
     ],
-    mobileImageUrl: ['https://i.imgur.com/6fvEgOl.png', 'https://i.imgur.com/fsyAACQ.png'],
+    mobileImageUrl: [
+      'https://i.imgur.com/6fvEgOl.png',
+      'https://i.imgur.com/fsyAACQ.png',
+    ],
     briefStatement:
       '<p>A portfolio website for my visual art. The site includes a gallery and image modals.</p>',
     statement:
@@ -116,7 +117,10 @@ const projectList = [
   },
   {
     title: `No Frillz Tweetz`,
-    imageUrl: ['https://i.imgur.com/fFSxLsQ.png', 'https://i.imgur.com/ROXGHH1.png'],
+    imageUrl: [
+      'https://i.imgur.com/fFSxLsQ.png',
+      'https://i.imgur.com/ROXGHH1.png',
+    ],
     mobileImageUrl: ['https://i.imgur.com/m4is2WU.png'],
     briefStatement:
       "<p>No frillz tweetz is a simple twitter client that returns recent tweets based on the user's search query.</p>",
@@ -131,14 +135,24 @@ const projectList = [
   },
   {
     title: `So Trashy`,
-    imageUrl: ['https://i.imgur.com/PMqmkdE.png', 'https://i.imgur.com/WSJMO84.png'],
-    mobileImageUrl: ['https://i.imgur.com/Z767urK.png', 'https://i.imgur.com/uzOaJum.png'],
+    imageUrl: [
+      'https://i.imgur.com/PMqmkdE.png',
+      'https://i.imgur.com/WSJMO84.png',
+    ],
+    mobileImageUrl: [
+      'https://i.imgur.com/Z767urK.png',
+      'https://i.imgur.com/uzOaJum.png',
+    ],
     briefStatement:
       "<p>So Trashy uses the data visualization library d3 to represent New York City's Department of Sanitation's yearly collection of refuse & recycling, per person.</p>",
     statement:
       "<p><strong>So Trashy</strong> uses the data visualization library d3 to represent New York City's Department of Sanitation's (DSNY) yearly collection of refuse & recycling, per person.</p></p>DSNY collects residential and public school refuse and recycling, empties street litter baskets, cleans up abandoned property such as cars, tires and bicycles and collects other types of refuse, such as the detritus left in public spaces after Superstorm Sandy.</p> <p>DSNY does not pick up commercial refuse from offices, shops, business, institutions or construction sites.</p><p>The agency publishes monthly reports detailing how many tons of refuse, paper/cardboard and metal/glass/plastic/drink carton has been collected, categorized by borough and further categorized into Community District (CD).</p><p>I cross-reference two data sets to match the community district with the population of each district.  Additionally I match the community district with neighborhood names which aren't official city designations as neighborhood boundaries evolve over time.</p>",
     techUsed: ['D3.js', 'React.js', 'NYC Open Data API'],
-    features: ['sorting radio buttons', 'hover interaction', 'responsive design'],
+    features: [
+      'sorting radio buttons',
+      'hover interaction',
+      'responsive design',
+    ],
     url: 'https://so-trashy-react.surge.sh/',
     githuburl: 'https://github.com/snphillips/So-Trashy-React',
     year: `2018`,
@@ -152,7 +166,10 @@ const projectList = [
       'https://i.imgur.com/FhKmX8f.png',
       'https://i.imgur.com/o0OUo86.png',
     ],
-    mobileImageUrl: ['https://i.imgur.com/rnJ6ONM.png', 'https://i.imgur.com/7Ah2tkm.png'],
+    mobileImageUrl: [
+      'https://i.imgur.com/rnJ6ONM.png',
+      'https://i.imgur.com/7Ah2tkm.png',
+    ],
     briefStatement:
       "<p>Art Thief allows users to view random images from the Cooper Hewitt Museum's collection, based on selected keywords such as angular, art deco, modernism etc.</p>",
     statement:
@@ -171,7 +188,10 @@ const projectList = [
       'https://i.imgur.com/I3VWwAE.png',
       'https://i.imgur.com/zIltcWs.png',
     ],
-    mobileImageUrl: ['https://i.imgur.com/aAVsvgk.png', 'https://i.imgur.com/5OUjYp4.png'],
+    mobileImageUrl: [
+      'https://i.imgur.com/aAVsvgk.png',
+      'https://i.imgur.com/5OUjYp4.png',
+    ],
     briefStatement:
       '<p>Twohue is a one-player color mixing game. Players are presented with a color sample that they must recreate using two transparent color swatches.</p>',
     statement:

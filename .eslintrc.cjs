@@ -97,12 +97,7 @@ module.exports = {
       },
     ],
 
-    'object-curly-spacing': ['error', 'always'],
-    'array-bracket-spacing': ['error', 'never'],
-
     'import/newline-after-import': ['error', { count: 1 }],
-
-    'react/jsx-curly-spacing': ['error', { when: 'always', children: true }],
 
     '@typescript-eslint/no-unused-vars': [
       'error',

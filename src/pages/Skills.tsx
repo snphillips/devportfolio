@@ -1,6 +1,4 @@
-
 export default function Skills() {
-
   const skillsDev = [
     'HTML',
     'CSS',
@@ -31,27 +29,22 @@ export default function Skills() {
     'Data Visualization',
   ];
 
-
   return (
-    <section id='skills'>
+    <section id="skills">
       <hr />
       <h2>Skills</h2>
 
-      <div className='list-columns'>
-        <ul className='skills-list'>
-          { skillsDev.map((skillItem) => {
-
+      <div className="list-columns">
+        <ul className="skills-list">
+          {skillsDev.map((skillItem) => {
             // to help generate a unique key to each child
             const index = skillsDev.indexOf(skillItem);
             return (
-              <li className='skill-item'
-                key={ 'skill-' + index }
-                  >
-                { skillItem }
+              <li className="skill-item" key={'skill-' + index}>
+                {skillItem}
               </li>
-            ) ;
-
-          }) }
+            );
+          })}
         </ul>
       </div>
     </section>
