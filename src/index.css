@@ -1,9 +1,12 @@
-:root {
-  /* Breakpoints */
-  --breakpoint-large: 900px;
-  --breakpoint-medium: 768px;
-  --breakpoint-small: 500px;
+/* 
+Breakpoints
 
+large: 900px;
+medium: 768px;
+small: 500px; 
+*/
+
+:root {
   /* Colors */
   --color-navy: rgb(5 11 56 / 100%);
   --color-navy-80: rgb(5 11 56 / 80%);
@@ -13,8 +16,8 @@
   --color-pink-dusty: rgb(245 208 200 / 80%);
 
   /* Typography */
-  --font-family-sans: "Oswald", sans-serif;
-  --font-family-serif: "Crimson Text", serif;
+  --font-family-sans: 'Oswald', sans-serif;
+  --font-family-serif: 'Crimson Text', serif;
 }
 
 /* =================================
@@ -128,7 +131,7 @@ h2 {
 }
 
 .sub-heading-blue::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   width: 100%;
@@ -146,16 +149,17 @@ h2 {
 }
 
 .tagline-container {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
+  flex: 1;
+  min-width: 150px;
+
+  /* padding-left: 2.5rem; */
 }
 
 .tagline {
   font-family: var(--font-family-serif);
   font-size: 2em;
   font-style: italic;
-  margin-left: 2.5rem;
+  margin-left: 0;
   color: var(--color-pink-dusty);
   z-index: -1;
   margin-bottom: unset;
@@ -192,7 +196,7 @@ a:hover {
 
 .title-link::before,
 .nav-item .nav-link::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -2px;
@@ -267,15 +271,15 @@ Layout Containers
 }
 
 .navigation-container {
-  display: block;
-  width: 10%;
+  flex: 0 0 10%;
   min-width: 90px;
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 
 .content-container {
-  width: 90%;
-  margin: 0 2rem;
+  flex: 1; /* grow to fill whatever’s left after navigation-container */
+
+  /* padding: 0 2rem; */
 }
 
 .header-and-statement-container {
@@ -342,6 +346,9 @@ Header
 ================================= */
 .site-header {
   display: flex;
+  flex-wrap: wrap; /* ↪ allow wrapping when it runs out of room */
+  align-items: center; /* vertically centered */
+  gap: 2rem; /* space between the two items */
 }
 
 /* =================================
@@ -359,7 +366,7 @@ Skills Section
   column-count: 4;
 }
 
-@media (max-width: var(--breakpoint-medium)) {
+@media (width <= 768px) {
   .list-columns {
     column-count: 3;
   }
@@ -377,9 +384,35 @@ Project Cards Overview
   column-count: 3; /* default for mid-sized screens */
 }
 
+/* not working */
+@media (width <= 900px) {
+  * {
+    border: 1px solid pink;
+  }
+
+  .card-columns {
+    column-count: 2;
+  }
+}
+
+/* not working */
+@media (width <= 500px) {
+  * {
+    border: 1px solid green;
+  }
+
+  .card-columns {
+    column-count: 1;
+  }
+}
+
 .card-text {
   color: rgb(5 11 56 / 85%);
   font-size: 0.9em;
+}
+
+summary {
+  display: unset;
 }
 
 .list-tech-used {
@@ -461,12 +494,12 @@ Responsive Breakpoints
 ================================= */
 
 /* Large devices (up to 900px) */
-@media (max-width: var(--breakpoint-large)) {
+@media (width <= 900px) {
   /* Placeholder for large-screen adjustments */
 }
 
 /* Medium devices (up to 768px) */
-@media (max-width: var(--breakpoint-medium)) {
+@media (width <= 768px) {
   header {
     flex-direction: column;
   }
@@ -481,10 +514,6 @@ Responsive Breakpoints
     /* margin: 1rem 0 0 0.2rem; */
     font-size: 2em;
     line-height: 1.1;
-  }
-
-  .card-columns {
-    column-count: 2;
   }
 
   .deep-dives-content {
@@ -516,7 +545,7 @@ Responsive Breakpoints
 }
 
 /* Small devices (up to 500px) */
-@media (max-width: var(--breakpoint-small)) {
+@media (width <= 500px) {
   body {
     width: 95%;
   }
@@ -533,19 +562,16 @@ Responsive Breakpoints
     font-size: 1.2em;
   }
 
-  .content-container {
-    width: 100%;
-    margin: 0;
-  }
-
+  /* Sarah need to fix these */
   .navigation-container {
-    align-self: flex-end;
-    width: 100%;
-    margin-right: 0;
+    flex: 0 0 10%;
+    min-width: 90px;
+    margin-right: 1rem;
   }
 
-  .card-columns {
-    column-count: 1;
+  .content-container {
+    flex: 1; /* grow to fill whatever’s left after navigation-container */
+    padding: 0 2rem;
   }
 
   #nav-container {
