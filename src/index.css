@@ -186,6 +186,31 @@ Layout Containers
   flex: 1; /* grow to fill whatever’s left after navigation-container */
 }
 
+/* Small devices (up to 500px) */
+@media (width <= 500px) {
+  .site-container {
+    flex-direction: column;
+  }
+
+  .navigation-container {
+    flex: 0 0 10%;
+    min-width: 90px;
+    margin-right: 1rem;
+  }
+
+  .content-container {
+    flex: 1; /* grow to fill whatever’s left after navigation-container */
+    padding: 0 2rem;
+  }
+
+  #nav-container {
+    text-align: right;
+    position: relative;
+    right: 56px;
+    width: 0;
+  }
+}
+
 /* =================================
 Navigation Bar
 ================================= */
@@ -270,7 +295,7 @@ h1:hover {
   }
 
   .tagline {
-    font-size: 1.2em;
+    font-size: 1.8em;
   }
 }
 
@@ -478,36 +503,6 @@ Responsive Breakpoints
 @media (width <= 500px) {
   body {
     width: 95%;
-  }
-
-  .site-container {
-    flex-direction: column-reverse;
-  }
-
-  h1 {
-    font-size: 3em;
-  }
-
-  .tagline {
-    font-size: 1.2em;
-  }
-
-  .navigation-container {
-    flex: 0 0 10%;
-    min-width: 90px;
-    margin-right: 1rem;
-  }
-
-  .content-container {
-    flex: 1; /* grow to fill whatever’s left after navigation-container */
-    padding: 0 2rem;
-  }
-
-  #nav-container {
-    text-align: right;
-    position: relative;
-    right: 56px;
-    width: 0;
   }
 
   .navbar {
