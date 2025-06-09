@@ -29,6 +29,7 @@ export default function App() {
 
   return (
     <div className="site-container">
+      {/* Sarah fix: why id and class for containers? */}
       <section className="navigation-container">
         <nav id="nav-container" className=" navbar-expand-md">
           <Navigation />

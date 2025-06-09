@@ -1,10 +1,8 @@
 export default function Header() {
   return (
-    <header className="site-header">
+    <header className="header-container">
       <h1>Sarah Phillips</h1>
-      <div className="tagline-container">
-        <p className="tagline">Software Engineer</p>
-      </div>
+      <div className="tagline">Software Engineer</div>
     </header>
   );
 }

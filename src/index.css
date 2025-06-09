@@ -1,9 +1,9 @@
 /* 
 Breakpoints
 
-large: 900px;
+large: >= 900px;
 medium: 768px;
-small: 500px; 
+small: <= 500px; 
 */
 
 :root {
@@ -26,7 +26,6 @@ Base Reset & Global Styles
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  border: 1px solid white;
 }
 
 body {
@@ -57,30 +56,8 @@ ul {
 }
 
 /* =================================
-Typography: Headings & Titles
+Typography
 ================================= */
-h1 {
-  flex: 1;
-  font-family: var(--font-family-sans);
-  font-size: clamp(3rem, 8vw, 7.5rem);
-  font-weight: 500;
-  font-style: italic;
-  text-transform: uppercase;
-  letter-spacing: -0.07em;
-  color: var(--color-white-70);
-  text-align: right;
-  line-height: 0.7;
-  position: sticky;
-  top: 15px;
-  transition: color 0.4s ease;
-}
-
-h1:hover {
-  cursor: pointer;
-  color: var(--color-white-10);
-  opacity: 0.8;
-}
-
 h2 {
   display: block;
   position: relative;
@@ -92,77 +69,6 @@ h2 {
   letter-spacing: -0.1vw;
   -webkit-font-smoothing: auto;
   border-top: 2px solid var(--color-pink-dusty);
-}
-
-.sub-heading {
-  display: block;
-  position: relative;
-  font-family: var(--font-family-sans);
-  font-weight: 500;
-  color: var(--color-pink-dusty);
-  text-transform: uppercase;
-  font-size: 1.25em;
-  letter-spacing: normal;
-  line-height: 1;
-  -webkit-font-smoothing: auto;
-  border-top: none;
-}
-
-.sub-heading-blue {
-  display: inline-block;
-  position: relative;
-  font-family: var(--font-family-sans);
-  font-weight: 500;
-  color: var(--color-navy);
-  text-transform: uppercase;
-  font-size: 1.25em;
-  letter-spacing: normal;
-  line-height: 1;
-  -webkit-font-smoothing: auto;
-  border-top: none;
-  margin-bottom: 0.5em;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-}
-
-.sub-heading-blue:hover {
-  color: var(--color-navy-80);
-  text-decoration: none;
-}
-
-.sub-heading-blue::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  bottom: -2px;
-  background-color: var(--color-pink-bright);
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: transform 0.3s ease-in-out;
-}
-
-.sub-heading-blue:hover::before {
-  visibility: visible;
-  transform: scaleX(1);
-}
-
-.tagline-container {
-  flex: 1;
-  min-width: 150px;
-
-  /* padding-left: 2.5rem; */
-}
-
-.tagline {
-  font-family: var(--font-family-serif);
-  font-size: 2em;
-  font-style: italic;
-  margin-left: 0;
-  color: var(--color-pink-dusty);
-  z-index: -1;
-  margin-bottom: unset;
 }
 
 /* =================================
@@ -278,41 +184,14 @@ Layout Containers
 
 .content-container {
   flex: 1; /* grow to fill whatever’s left after navigation-container */
-
-  /* padding: 0 2rem; */
-}
-
-.header-and-statement-container {
-  margin-top: 2em;
-  margin-bottom: 1em;
-  display: flex;
-}
-
-.header-container {
-  display: block;
-  margin-right: 2rem;
-}
-
-.statement-container {
-  display: block;
-  margin-top: 0;
 }
 
 /* =================================
 Navigation Bar
 ================================= */
 #nav-container {
-  /* display: block; */
   position: fixed;
   margin-left: 1rem;
-
-  /* width: 100%; */
-
-  /* top: 0; */
-
-  /* left: 0; */
-
-  /* z-index: 1000; */
 }
 
 .navbar-nav {
@@ -344,11 +223,75 @@ Navigation Bar
 /* =================================
 Header
 ================================= */
-.site-header {
+header {
   display: flex;
-  flex-wrap: wrap; /* ↪ allow wrapping when it runs out of room */
-  align-items: center; /* vertically centered */
-  gap: 2rem; /* space between the two items */
+  flex-wrap: wrap; /* allow wrapping when it runs out of room */
+  align-items: center;
+  gap: 2rem; /* space between the h1 & tagline */
+}
+
+header h1 {
+  /* Sarah, what does this do? */
+  font-size: clamp(3rem, 8vw, 7.5rem);
+  min-width: 0;
+  font-family: var(--font-family-sans);
+  font-weight: 500;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: -0.07em;
+  color: var(--color-white-70);
+  text-align: right;
+  line-height: 0.7;
+  position: sticky;
+  transition: color 0.4s ease;
+}
+
+h1:hover {
+  cursor: pointer;
+  color: var(--color-white-10);
+  opacity: 0.8;
+}
+
+.tagline {
+  flex: 0 1 auto;
+  min-width: 0;
+  font-family: var(--font-family-serif);
+  font-size: 2em;
+  font-style: italic;
+  margin-left: 0;
+  color: var(--color-pink-dusty);
+  z-index: -1;
+  margin-bottom: unset;
+}
+
+@media (width <= 500px) {
+  header h1 {
+    font-size: 3em;
+  }
+
+  .tagline {
+    font-size: 1.2em;
+  }
+}
+
+@media (width <= 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start; /* push children to the left edge */
+    gap: 1rem;
+  }
+
+  header h1 {
+    font-size: clamp(2rem, 10vw, 5em);
+    text-align: left;
+    opacity: 0.7;
+  }
+
+  .tagline {
+    text-align: left;
+    font-size: 2em;
+    line-height: 1.1;
+  }
 }
 
 /* =================================
@@ -384,10 +327,8 @@ Project Cards Overview
   column-count: 3; /* default for mid-sized screens */
 }
 
-/* not working */
 @media (width <= 900px) {
   * {
-    border: 1px solid pink;
   }
 
   .card-columns {
@@ -395,10 +336,8 @@ Project Cards Overview
   }
 }
 
-/* not working */
 @media (width <= 500px) {
   * {
-    border: 1px solid green;
   }
 
   .card-columns {
@@ -481,6 +420,13 @@ Deep Dive Sections
   padding-inline-start: 0;
 }
 
+/* Small devices (up to 500px) */
+@media (width <= 500px) {
+  .deep-dives-text-container {
+    margin-left: unset;
+  }
+}
+
 /* =================================
 About Page Columns
 ================================= */
@@ -500,22 +446,6 @@ Responsive Breakpoints
 
 /* Medium devices (up to 768px) */
 @media (width <= 768px) {
-  header {
-    flex-direction: column;
-  }
-
-  h1 {
-    font-size: clamp(2rem, 10vw, 5em);
-    text-align: left;
-    opacity: 0.7;
-  }
-
-  .tagline {
-    /* margin: 1rem 0 0 0.2rem; */
-    font-size: 2em;
-    line-height: 1.1;
-  }
-
   .deep-dives-content {
     flex-direction: column;
   }
@@ -562,7 +492,6 @@ Responsive Breakpoints
     font-size: 1.2em;
   }
 
-  /* Sarah need to fix these */
   .navigation-container {
     flex: 0 0 10%;
     min-width: 90px;
