@@ -29,10 +29,12 @@ export default function Navigation() {
         aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        style={{ border: '1px solid red' }}
       >
         <span className="navbar-toggler-icon" />
       </button>
 
+      {/* <div className="collapse navbar-collapse" id="navbarNav"> */}
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ml-auto flex-column">
           {MAIN_LINKS.map(({ href, label }) => (

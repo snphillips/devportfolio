@@ -1,5 +1,4 @@
 import { ButtonDark } from '../UI-styles/buttonsAndHr.js';
-import { SubHeadingBlue } from '../UI-styles/headings.js';
 import { ContentContainer } from '../UI-styles/layout.js';
 import ProjectObject from '../interfaces.js';
 
@@ -39,9 +38,12 @@ export default function ProjectOverview({ filteredProjects }: Props) {
               </a>
 
               <div className="card-body">
-                <SubHeadingBlue as="a" href={`#project-${itemIndex}`}>
-                  {item.title}
-                </SubHeadingBlue>
+                <a
+                  className="project-overview-heading"
+                  href={`#project-${itemIndex}`}
+                >
+                  <h3 className="project-overview-heading">{item.title}</h3>
+                </a>
 
                 <summary
                   className="card-text"

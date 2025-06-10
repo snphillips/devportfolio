@@ -1,5 +1,4 @@
 import { ButtonLight } from '../UI-styles/buttonsAndHr.js';
-import { Heading, SubHeading } from '../UI-styles/headings';
 import { ContentContainer } from '../UI-styles/layout';
 import ProjectObject from '../interfaces';
 
@@ -47,7 +46,7 @@ export default function ProjectDeepDive({ filteredProjects }: Props) {
           <article className="deep-dives-section" key={key}>
             <hr />
 
-            <Heading id={`project-${itemIndex}`}>{item.title}</Heading>
+            <h2 id={`project-${itemIndex}`}>{item.title}</h2>
 
             <div className="deep-dives-content">
               <div className="deep-dives-image-container">
@@ -66,10 +65,10 @@ export default function ProjectDeepDive({ filteredProjects }: Props) {
 
                 <br />
 
-                <SubHeading as="h3">features</SubHeading>
+                <h3>features</h3>
                 <ul className="list-features">{featuresList}</ul>
 
-                <SubHeading as="h3">Tech</SubHeading>
+                <h3>Tech</h3>
                 <ul className="list-tech-used-deep-dive">{techUsedList}</ul>
 
                 <footer className="deep-dives-links-footer">

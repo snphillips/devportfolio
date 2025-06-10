@@ -1,11 +1,10 @@
-import { Heading } from '../UI-styles/headings';
 import { ContentContainer } from '../UI-styles/layout';
 
 export default function Contact() {
   return (
     <ContentContainer id="contact">
       <hr />
-      <Heading>Contact</Heading>
+      <h2>Contact</h2>
       <ul>
         <li>snphillips [at] gmail [dot] com</li>
         <li>

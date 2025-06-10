@@ -1,10 +1,9 @@
-import { Heading } from '../UI-styles/headings.js';
 import { ContentContainer } from '../UI-styles/layout.js';
 
 export default function Resume() {
   return (
     <>
-      <Heading>Resume</Heading>
+      <h2>Resume</h2>
       <ContentContainer id="resume">
         <embed
           src="https://sarahphillipsdev.surge.sh/Sarah-Phillips-resume.pdf"
