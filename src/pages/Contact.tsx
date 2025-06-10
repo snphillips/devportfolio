@@ -1,8 +1,6 @@
-import { ContentContainer } from '../UI-styles/layout';
-
 export default function Contact() {
   return (
-    <ContentContainer id="contact">
+    <section className="content-section" id="contact">
       <hr />
       <h2>Contact</h2>
       <ul>
@@ -33,6 +31,6 @@ export default function Contact() {
           </a>
         </li>
       </ul>
-    </ContentContainer>
+    </section>
   );
 }

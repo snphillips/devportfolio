@@ -1,13 +1,13 @@
 export default function About() {
   return (
-    <section id="about">
+    <section className="content-section" id="about">
       <hr />
       <h2>About</h2>
       <div className="about-columns">
         <p>
           I am a Brooklyn-based developer formally trained in art. I have a
-          background in public service, having worked as a consultant at a
-          community board for the City of New York for seven years.
+          background in public service, having worked as a consultant at a City
+          of New York community board for seven years.
         </p>
         <p>
           From 2022 to 2023 I was a Software Engineer for ed-tech startup

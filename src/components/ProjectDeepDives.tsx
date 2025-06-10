@@ -1,4 +1,3 @@
-import { ContentContainer } from '../UI-styles/layout';
 import ProjectObject from '../interfaces';
 
 type Props = {
@@ -7,7 +6,7 @@ type Props = {
 
 export default function ProjectDeepDive({ filteredProjects }: Props) {
   return (
-    <ContentContainer>
+    <section className="content-section">
       {filteredProjects.map((item, key) => {
         const itemIndex = filteredProjects.indexOf(item);
 
@@ -85,6 +84,6 @@ export default function ProjectDeepDive({ filteredProjects }: Props) {
           </article>
         );
       })}
-    </ContentContainer>
+    </section>
   );
 }

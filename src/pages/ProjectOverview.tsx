@@ -1,4 +1,3 @@
-import { ContentContainer } from '../UI-styles/layout.js';
 import ProjectObject from '../interfaces.js';
 
 type Props = {
@@ -7,7 +6,7 @@ type Props = {
 
 export default function ProjectOverview({ filteredProjects }: Props) {
   return (
-    <ContentContainer id="projects">
+    <section className="content-section" id="projects">
       <hr />
       <h2>Projects Overview</h2>
 
@@ -68,6 +67,6 @@ export default function ProjectOverview({ filteredProjects }: Props) {
           );
         })}
       </section>
-    </ContentContainer>
+    </section>
   );
 }

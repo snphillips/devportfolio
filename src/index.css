@@ -202,6 +202,11 @@ Layout Containers
   flex: 1; /* grow to fill whatever’s left after navigation-container */
 }
 
+section.content-section {
+  width: 100%;
+  margin-right: 1rem;
+}
+
 /* Small devices (up to 500px) */
 @media (width <= 500px) {
   .site-container {
