@@ -136,6 +136,8 @@ a:hover {
 /* =================================
 Buttons
 ================================= */
+
+/* Base dark button */
 .button-dark {
   display: inline-block;
   background-color: var(--color-navy-80);

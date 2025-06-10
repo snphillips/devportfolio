@@ -1,4 +1,3 @@
-import { ButtonDark } from '../UI-styles/buttonsAndHr.js';
 import { ContentContainer } from '../UI-styles/layout.js';
 import ProjectObject from '../interfaces.js';
 
@@ -52,12 +51,12 @@ export default function ProjectOverview({ filteredProjects }: Props) {
 
                 <ul className="list-tech-used">{techUsedList}</ul>
 
-                <ButtonDark as="a" href={`#project-${itemIndex}`}>
-                  learn more
-                </ButtonDark>
-                <ButtonDark as="a" href={item.url}>
-                  visit site
-                </ButtonDark>
+                <a href={`#project-${itemIndex}`}>
+                  <div className="button-dark">learn more</div>
+                </a>
+                <a href={item.url}>
+                  <div className="button-dark">visit site</div>
+                </a>
 
                 <span className="github-logo">
                   <a href={item.githuburl} className="github-logo-link">

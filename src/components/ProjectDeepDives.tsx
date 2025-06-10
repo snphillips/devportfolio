@@ -1,4 +1,3 @@
-import { ButtonLight } from '../UI-styles/buttonsAndHr.js';
 import { ContentContainer } from '../UI-styles/layout';
 import ProjectObject from '../interfaces';
 
@@ -72,13 +71,14 @@ export default function ProjectDeepDive({ filteredProjects }: Props) {
                 <ul className="list-tech-used-deep-dive">{techUsedList}</ul>
 
                 <footer className="deep-dives-links-footer">
-                  <ButtonLight as="a" href={item.url}>
-                    visit site
-                  </ButtonLight>
+                  <a href={item.url}>
+                    <div className="button-dark button-light">visit site</div>
+                  </a>
                   <br />
-                  <ButtonLight as="a" href={item.githuburl}>
-                    github repo <i className="fab fa-github"></i>
-                  </ButtonLight>
+                  <a href={item.githuburl}>
+                    <div className="button-light">github repo</div>
+                    <i className="fab fa-github"></i>
+                  </a>
                 </footer>
               </section>
             </div>
