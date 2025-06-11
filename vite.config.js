@@ -13,4 +13,12 @@ export default defineConfig({
     outDir: 'dist',
     sourcemap: true,
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        includePaths: ['node_modules'],
+        quietDeps: true, // ← suppress deprecation warnings coming from node_modules
+      },
+    },
+  },
 });

@@ -31,7 +31,6 @@ export default function Skills() {
 
   return (
     <section className="content-section" id="skills">
-      <hr />
       <h2>Skills</h2>
 
       <div className="list-columns">

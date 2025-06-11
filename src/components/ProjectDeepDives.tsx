@@ -42,8 +42,6 @@ export default function ProjectDeepDive({ filteredProjects }: Props) {
 
         return (
           <article className="deep-dives-section" key={key}>
-            <hr />
-
             <h2 id={`project-${itemIndex}`}>{item.title}</h2>
 
             <div className="deep-dives-content">

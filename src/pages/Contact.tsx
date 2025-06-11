@@ -1,7 +1,6 @@
 export default function Contact() {
   return (
     <section className="content-section" id="contact">
-      <hr />
       <h2>Contact</h2>
       <ul>
         <li>snphillips [at] gmail [dot] com</li>

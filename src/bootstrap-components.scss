@@ -1,0 +1,19 @@
+// src/bootstrap-components.scss
+
+// 1) Bootstrap’s Sass functions
+@import 'bootstrap/scss/functions';
+
+// 2) Bootstrap’s default variables (this defines $colors)
+@import 'bootstrap/scss/variables';
+
+// 3) The map utilities
+@import 'bootstrap/scss/maps';
+
+// 4) Bootstrap mixins
+@import 'bootstrap/scss/mixins';
+
+// 5) Now you can safely pull in :root { --bs-… } (it relies on $colors)
+@import 'bootstrap/scss/root';
+
+// 6) Finally, only the Navbar component
+@import 'bootstrap/scss/navbar';

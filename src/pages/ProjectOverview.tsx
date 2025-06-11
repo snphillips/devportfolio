@@ -7,7 +7,6 @@ type Props = {
 export default function ProjectOverview({ filteredProjects }: Props) {
   return (
     <section className="content-section" id="projects">
-      <hr />
       <h2>Projects Overview</h2>
 
       <section className="card-columns">
