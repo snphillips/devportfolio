@@ -290,7 +290,7 @@ header h1 {
   line-height: 0.7;
   position: sticky;
   transition: color 0.4s ease;
-      margin-block: 0.67em;
+  margin-block: 0.67em;
 }
 
 h1:hover {
@@ -323,7 +323,6 @@ h1:hover {
   .tagline {
     font-size: 1.8em;
   }
-
 }
 
 @media (width <= 768px) {
@@ -381,83 +380,85 @@ Skills Section
 Project Cards
 ================================= */
 .card-columns {
-  /* instead of flex, switch to multi-column */
-  column-count: 3;
+  /* the browser will pack as many ≥250px columns as will fit, then drop one */
+  column-width: 250px;
   column-gap: 1rem;
 
-  /* ensure each card wraps inside a column */
-
-  /* (we’ll make .card inline-block below) */
+  /* help control orphans/widows of cards */
+  orphans: 1;
+  widows: 1;
 }
 
-/* make each card behave like a column item */
 .card {
-  display: inline-block; /* shrink-to-fit within a column */
-  width: 100%;           /* fill the column’s width */
-  margin: 0 0 1rem;      /* bottom gutter between cards */
-  vertical-align: top;   /* align cards to the top of each column flow */
-
-  /* your other card styles… */
+  /* absolutely prevent splitting */
+  break-inside: avoid-column;      /* modern */
+  -webkit-column-break-inside: avoid; /* webkit */
+  page-break-inside: avoid;        /* paged media */
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 1rem;
+  vertical-align: top;
   border: none;
   background-color: #f3f3f3;
   border-radius: 4px;
+  overflow: hidden;
 }
+
 
 .card-image {
   display: block;
   width: 100%;
+
+  /* remove max-width if it’s preventing proper shrinking */
+
+  /* max-width: 400px; */
   border-radius: 4px 4px 0 0;
 }
 
-.card-body {
-  padding: 0 1.25rem 1.25rem;
-}
 
-h3.card-heading {
-  color: var(--color-navy-blue-80);
-}
+  .card-body {
+    padding: 0 1.25rem 1.25rem;
+  }
 
-h3.card-heading:hover {
-  text-decoration: none; /* This removes the default underline */
-  color: var(--color-navy-blue-80);
-}
+  h3.card-heading {
+    color: var(--color-navy-blue-80);
+  }
 
-h3.card-heading::before {
-  content: ''; /* If you put a string here, it will show up */
-  position: absolute;
-  left: 0; /* the position of the line */
-  width: 100%; /* width of the line */
-  height: 2px; /* thickness of the line */
-  bottom: -2px; /* the space between the text and the line */
-  background-color: rgb(213 11 84 / 90%); /* color:pink underline */
-  visibility: hidden; /* by default the underline is hidden */
+  h3.card-heading:hover {
+    text-decoration: none; /* This removes the default underline */
+    color: var(--color-navy-blue-80);
+  }
 
-  /*   The scaleX() CSS function defines a transformation that resizes an element along the x-axis (horizontally).
+  h3.card-heading::before {
+    content: ''; /* If you put a string here, it will show up */
+    position: absolute;
+    left: 0; /* the position of the line */
+    width: 100%; /* width of the line */
+    height: 2px; /* thickness of the line */
+    bottom: -2px; /* the space between the text and the line */
+    background-color: rgb(213 11 84 / 90%); /* color:pink underline */
+    visibility: hidden; /* by default the underline is hidden */
+
+    /*   The scaleX() CSS function defines a transformation that resizes an element along the x-axis (horizontally).
   Its result is a <transform-function> data type. */
-  transform: scaleX(0);
-  transition: all 0.3s ease-in-out 0s; /* how fast the animation is */
-}
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s; /* how fast the animation is */
+  }
 
-h3.card-heading:hover::before {
-  visibility: visible;
-  transform: scaleX(1); /* width of the line. 1 = 100% */
-}
+  h3.card-heading:hover::before {
+    visibility: visible;
+    transform: scaleX(1); /* width of the line. 1 = 100% */
+  }
 
   @media (width <= 900px) {
-    * {
-    }
-
     .card-columns {
-      column-count: 2;
+      /* column-count: 2; */
     }
   }
 
   @media (width <= 500px) {
-    * {
-    }
-
     .card-columns {
-      column-count: 1;
+      /* column-count: 1; */
     }
   }
 
