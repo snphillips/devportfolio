@@ -9,7 +9,7 @@ small: <= 500px;
 :root {
   /* Colors */
   --color-navy: rgb(5 11 56 / 100%);
-  --color-navy-80: rgb(5 11 56 / 80%);
+  --color-navy-blue-80: rgb(5 11 56 / 80%);
   --color-white-70: rgb(255 255 255 / 70%);
   --color-white-10: rgb(255 255 255 / 10%);
   --color-pink-bright: rgb(213 11 84 / 90%);
@@ -140,7 +140,7 @@ Buttons
 /* Base dark button */
 .button-dark {
   display: inline-block;
-  background-color: var(--color-navy-80);
+  background-color: var(--color-navy-blue-80);
   border-radius: 6px;
   color: white;
   margin-right: 10px;
@@ -161,7 +161,7 @@ Buttons
   display: inline-block;
   background-color: rgb(255 255 255 / 80%);
   border-radius: 6px;
-  color: var(--color-navy-80) !important;
+  color: var(--color-navy-blue-80) !important;
   margin-right: 10px;
   margin-bottom: 1rem;
   padding: 5px 15px;
@@ -362,36 +362,46 @@ Skills Section
 }
 
 /* =================================
-Project Cards Overview
+Project Cards
 ================================= */
+.card-columns {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+
+/* column-count: 3; default for mid-sized screens */
+
 .card {
+  display: inline-block;
   border: none;
   background-color: #f3f3f3;
+  max-width: 300px;
+  width: auto;
+  height: auto;
+  border-radius: 4px;
 }
 
-.card-columns {
-  column-count: 3; /* default for mid-sized screens */
+.card-image {
+  display: block;
+  width: 100%;
+  border-radius: 4px 4px 0 0;
 }
 
-h3.project-overview-heading {
-  font-size: 1.25em;
-  letter-spacing: unset;
-  font-weight: 500;
-  line-height: 1;
-  border-top: none;
-  display: inline-block;
-  position: relative;
+.card-body {
+  padding: 0 1.25rem 1.25rem;
+}
+
+h3.card-heading {
+  color: var(--color-navy-blue-80);
+}
+
+h3.card-heading:hover {
   text-decoration: none; /* This removes the default underline */
-  margin-bottom: 0.5em;
-  color: rgb(5 11 56 / 90%) !important; /* navy blue */
+  color: var(--color-navy-blue-80);
 }
 
-h3.project-overview-heading:hover {
-  text-decoration: none; /* This removes the default underline */
-  color: rgb(5 11 56 / 80%); /* navy blue */
-}
-
-h3.project-overview-heading::before {
+h3.card-heading::before {
   content: ''; /* If you put a string here, it will show up */
   position: absolute;
   left: 0; /* the position of the line */
@@ -402,203 +412,204 @@ h3.project-overview-heading::before {
   visibility: hidden; /* by default the underline is hidden */
 
   /*   The scaleX() CSS function defines a transformation that resizes an element along the x-axis (horizontally).
-    Its result is a <transform-function> data type. */
+  Its result is a <transform-function> data type. */
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s; /* how fast the animation is */
 }
 
-h3.project-overview-heading:hover::before {
+h3.card-heading:hover::before {
   visibility: visible;
   transform: scaleX(1); /* width of the line. 1 = 100% */
 }
 
-@media (width <= 900px) {
-  * {
+  @media (width <= 900px) {
+    * {
+    }
+
+    .card-columns {
+      column-count: 2;
+    }
   }
 
-  .card-columns {
-    column-count: 2;
+  @media (width <= 500px) {
+    * {
+    }
+
+    .card-columns {
+      column-count: 1;
+    }
   }
-}
 
-@media (width <= 500px) {
-  * {
+  .card-text {
+    color: rgb(5 11 56 / 85%);
+    font-size: 0.9em;
   }
 
-  .card-columns {
-    column-count: 1;
+  summary {
+    display: unset;
   }
-}
 
-.card-text {
-  color: rgb(5 11 56 / 85%);
-  font-size: 0.9em;
-}
+  .list-tech-used {
+    color: rgb(5 11 56 / 80%);
+    font-size: 0.95rem;
+    display: block;
+    list-style-type: none;
+    margin-block: 1em;
+    margin-inline: 0;
+    padding-inline-start: 0;
+  }
 
-summary {
-  display: unset;
-}
+  .github-logo-link {
+    color: rgb(5 11 56 / 90%);
+    font-size: 1.9em;
+    vertical-align: sub;
+    transition: all 0.3s ease-out;
+  }
 
-.list-tech-used {
-  color: rgb(5 11 56 / 80%);
-  font-size: 0.95rem;
-  display: block;
-  list-style-type: none;
-  margin-block: 1em;
-  margin-inline: 0;
-  padding-inline-start: 0;
-}
+  .github-logo-link:hover {
+    color: var(--color-pink-bright);
+  }
 
-.github-logo-link {
-  color: rgb(5 11 56 / 90%);
-  font-size: 1.9em;
-  vertical-align: sub;
-  transition: all 0.3s ease-out;
-}
-
-.github-logo-link:hover {
-  color: var(--color-pink-bright);
-}
-
-/* =================================
+  /* =================================
 Deep Dive Sections
 ================================= */
-.deep-dives-content {
-  display: flex;
-  flex-direction: row;
-  margin-top: 2rem;
-}
-
-.deep-dives-image-container {
-  max-width: 450px;
-  margin-right: 1rem;
-}
-
-.deep-dives-text-container {
-  display: block;
-  color: var(--color-white-70);
-  margin-left: 1rem;
-}
-
-.deep-dives-mobile-image-list {
-  display: flex;
-}
-
-.deep-dives-image {
-  width: auto;
-  height: auto;
-  margin-bottom: 1rem;
-  margin-right: 1rem;
-  max-width: 466px;
-}
-
-.deep-dives-image-mobile {
-  max-width: 225px;
-}
-
-.list-tech-used-deep-dive,
-.list-features {
-  display: block;
-  list-style-type: none;
-  margin-block: 1em;
-  margin-inline: 0;
-  padding-inline-start: 0;
-}
-
-/* Small devices (up to 500px) */
-@media (width <= 500px) {
-  .deep-dives-text-container {
-    margin-left: unset;
-  }
-}
-
-/* =================================
-About Page Columns
-================================= */
-.about-columns {
-  column-count: 2;
-  column-gap: 20px;
-}
-
-/* =================================
-Responsive Breakpoints
-================================= */
-
-/* Large devices (up to 900px) */
-@media (width <= 900px) {
-  /* Placeholder for large-screen adjustments */
-}
-
-/* Medium devices (up to 768px) */
-@media (width <= 768px) {
   .deep-dives-content {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
   }
 
   .deep-dives-image-container {
-    width: 100%;
-    max-width: 100%;
-    margin-right: unset;
-    margin: 1rem auto;
+    max-width: 450px;
+    margin-right: 1rem;
   }
 
-  .deep-dives-image {
-    width: 100%;
-    max-width: 100%;
+  .deep-dives-text-container {
+    display: block;
+    color: var(--color-white-70);
+    margin-left: 1rem;
   }
 
   .deep-dives-mobile-image-list {
-    display: unset;
-    width: 100%;
-    max-width: 100%;
-    margin: 1rem auto;
+    display: flex;
   }
 
-  h2 {
-    font-size: 1.5em;
-  }
-}
-
-/* Small devices (up to 500px) */
-@media (width <= 500px) {
-  body {
-    width: 95%;
-  }
-
-  .navbar {
-    display: block;
-    padding: 0;
-    text-align: right;
-  }
-
-  .navbar-toggler {
-    margin-top: 0;
-  }
-
-  .navbar-collapse {
-    flex-basis: 100%;
-    flex-grow: 1;
-    align-items: center;
-    position: absolute;
-    text-align: right;
-  }
-
-  .navbar-nav.ml-auto {
-    margin-top: 0.5rem;
-    background-color: var(--color-navy);
-  }
-
-  .list-columns {
-    column-count: 1;
-  }
-
-  .about-columns {
-    column-count: 1;
-    column-gap: 0;
+  .deep-dives-image {
+    width: auto;
+    height: auto;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    max-width: 466px;
   }
 
   .deep-dives-image-mobile {
-    width: 100%;
-    max-width: 100%;
+    max-width: 225px;
+  }
+
+  .list-tech-used-deep-dive,
+  .list-features {
+    display: block;
+    list-style-type: none;
+    margin-block: 1em;
+    margin-inline: 0;
+    padding-inline-start: 0;
+  }
+
+  /* Small devices (up to 500px) */
+  @media (width <= 500px) {
+    .deep-dives-text-container {
+      margin-left: unset;
+    }
+  }
+
+  /* =================================
+About Page Columns
+================================= */
+  .about-columns {
+    column-count: 2;
+    column-gap: 20px;
+  }
+
+  /* =================================
+Responsive Breakpoints
+================================= */
+
+  /* Large devices (up to 900px) */
+  @media (width <= 900px) {
+    /* Placeholder for large-screen adjustments */
+  }
+
+  /* Medium devices (up to 768px) */
+  @media (width <= 768px) {
+    .deep-dives-content {
+      flex-direction: column;
+    }
+
+    .deep-dives-image-container {
+      width: 100%;
+      max-width: 100%;
+      margin-right: unset;
+      margin: 1rem auto;
+    }
+
+    .deep-dives-image {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .deep-dives-mobile-image-list {
+      display: unset;
+      width: 100%;
+      max-width: 100%;
+      margin: 1rem auto;
+    }
+
+    h2 {
+      font-size: 1.5em;
+    }
+  }
+
+  /* Small devices (up to 500px) */
+  @media (width <= 500px) {
+    body {
+      width: 95%;
+    }
+
+    .navbar {
+      display: block;
+      padding: 0;
+      text-align: right;
+    }
+
+    .navbar-toggler {
+      margin-top: 0;
+    }
+
+    .navbar-collapse {
+      flex-basis: 100%;
+      flex-grow: 1;
+      align-items: center;
+      position: absolute;
+      text-align: right;
+    }
+
+    .navbar-nav.ml-auto {
+      margin-top: 0.5rem;
+      background-color: var(--color-navy);
+    }
+
+    .list-columns {
+      column-count: 1;
+    }
+
+    .about-columns {
+      column-count: 1;
+      column-gap: 0;
+    }
+
+    .deep-dives-image-mobile {
+      width: 100%;
+      max-width: 100%;
+    }
   }
 }

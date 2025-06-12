@@ -1,7 +1,6 @@
 export default function About() {
   return (
     <section className="content-section" id="about">
-      <hr />
       <h2>About</h2>
       <div className="about-columns">
         <p>

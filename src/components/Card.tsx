@@ -17,7 +17,7 @@ export default function Card({ project, projectIndex }: Props) {
         style={{ backgroundColor: 'transparent' }}
       >
         <img
-          className="card-img-top"
+          className="card-image"
           src={project.imageUrl[0]}
           alt={project.title}
           width="auto"
@@ -26,11 +26,8 @@ export default function Card({ project, projectIndex }: Props) {
       </a>
 
       <div className="card-body">
-        <a
-          className="project-overview-heading"
-          href={`#project-${projectIndex}`}
-        >
-          <h3>{project.title}</h3>
+        <a href={`#project-${projectIndex}`}>
+          <h3 className="card-heading">{project.title}</h3>
         </a>
 
         <p

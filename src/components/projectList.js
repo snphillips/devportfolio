@@ -1,5 +1,6 @@
 const projectList = [
   {
+    id: `tolls-lol`,
     title: `TOLLS-LOL`,
     imageUrl: ['https://i.imgur.com/hQ9N9bI.png'],
     mobileImageUrl: [],
@@ -30,6 +31,7 @@ const projectList = [
     includeInGallery: true,
   },
   {
+    id: `meeting-background-maker`,
     title: `Meeting Background Maker`,
     imageUrl: [
       'https://i.imgur.com/4mN13AS.png',
@@ -71,6 +73,7 @@ const projectList = [
     includeInGallery: true,
   },
   {
+    id: `nycha-outage-scraper`,
     title: `NYCHA Outage Scraper`,
     imageUrl: [
       'https://i.imgur.com/3CmQKwE.png',
@@ -89,6 +92,7 @@ const projectList = [
     includeInGallery: true,
   },
   {
+    id: `artist-portfolio`,
     title: 'Artist Portfolio',
     imageUrl: [
       'https://i.imgur.com/UH3TJtJ.png',
@@ -116,24 +120,7 @@ const projectList = [
     includeInGallery: true,
   },
   {
-    title: `No Frillz Tweetz`,
-    imageUrl: [
-      'https://i.imgur.com/fFSxLsQ.png',
-      'https://i.imgur.com/ROXGHH1.png',
-    ],
-    mobileImageUrl: ['https://i.imgur.com/m4is2WU.png'],
-    briefStatement:
-      "<p>No frillz tweetz is a simple twitter client that returns recent tweets based on the user's search query.</p>",
-    statement:
-      '<p><strong>No frillz tweetz</strong> is a simple twitter client that returns recent tweets based on the user\'s search query.</p><p>You may be asking yourself, <i>"But why? Isn\'t this just a worse Twitter client that does less than real twitter?"</i> The answer is yes.</p><p>I created this app as a challenge to work with the Twit API.</p>',
-    techUsed: ['Node.js', 'Express.js', 'Javascript', 'Twit API'],
-    features: ['search form', 'loading spinner', 'responsive design'],
-    url: 'https://nofrillztweets.surge.sh/',
-    githuburl: 'https://github.com/snphillips/nofrillztwitter',
-    year: `2020`,
-    includeInGallery: false,
-  },
-  {
+    id: `so-trashy`,
     title: `So Trashy`,
     imageUrl: [
       'https://i.imgur.com/PMqmkdE.png',
@@ -159,6 +146,7 @@ const projectList = [
     includeInGallery: true,
   },
   {
+    id: `art-thief`,
     title: `Art Thief`,
     imageUrl: [
       'https://i.imgur.com/k7gW7tS.png',
@@ -182,6 +170,7 @@ const projectList = [
     includeInGallery: false,
   },
   {
+    id: `twohue`,
     title: `TwoHue`,
     imageUrl: [
       'https://i.imgur.com/7XNK4lO.png',
@@ -217,6 +206,7 @@ const projectList = [
     includeInGallery: true,
   },
   {
+    id: `weather-gif`,
     title: `Weather GIF`,
     imageUrl: [
       'https://i.imgur.com/CWDkO5g.png',
@@ -236,6 +226,7 @@ const projectList = [
     includeInGallery: false,
   },
   {
+    id: `five-years-food-spending`,
     title: 'Five Years of Food Spending',
     imageUrl: [
       'https://i.imgur.com/pXdIzAO.png',
@@ -255,6 +246,7 @@ const projectList = [
     includeInGallery: false,
   },
   {
+    id: `todoodles`,
     title: `Todoodles`,
     imageUrl: ['https://i.imgur.com/DNmSSeE.png'],
     mobileImageUrl: ['https://i.imgur.com/Ka2NyaX.png'],
@@ -270,6 +262,7 @@ const projectList = [
     includeInGallery: false,
   },
   {
+    id: `about-blue-bike`,
     title: 'About a Blue Bike',
     imageUrl: ['https://i.imgur.com/A1J5MxP.jpg'],
     mobileImageUrl: [],
@@ -284,19 +277,6 @@ const projectList = [
     year: `2018`,
     includeInGallery: false,
   },
-  // {
-  //   title: 'TBA',
-  //   imageUrl: ['TBA'],
-  //   mobileImageUrl: [],
-  //   briefStatement: '<p>TBA</p>',
-  //   statement: '<p><strong>TBA</strong>TBA</p>',
-  //   techUsed: [TBA, TBA],
-  //   features: ['search form', 'randomizer button', 'responsive design'],
-  //   url: 'TBA',
-  //   githuburl: 'TBA',
-  //   year: `2023`,
-  //   includeInGallery: false,
-  // },
 ];
 
 export default projectList;

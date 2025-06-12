@@ -11,9 +11,13 @@ export default function ProjectsOverview({ filteredProjects }: Props) {
       <h2>Projects Overview</h2>
 
       <section className="card-columns">
-        {filteredProjects.map((project, index) => {
-          return <Card key={index} project={project} projectIndex={index} />;
-        })}
+        {filteredProjects.map((project) => (
+          <Card
+            key={project.id}
+            project={project}
+            projectIndex={filteredProjects.indexOf(project)}
+          />
+        ))}
       </section>
     </section>
   );
