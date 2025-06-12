@@ -290,6 +290,7 @@ header h1 {
   line-height: 0.7;
   position: sticky;
   transition: color 0.4s ease;
+      margin-block: 0.67em;
 }
 
 h1:hover {
@@ -311,6 +312,10 @@ h1:hover {
 }
 
 @media (width <= 500px) {
+  .card-columns {
+    column-count: 1;
+  }
+
   header h1 {
     font-size: 3em;
   }
@@ -318,16 +323,21 @@ h1:hover {
   .tagline {
     font-size: 1.8em;
   }
+
 }
 
 @media (width <= 768px) {
+  .card-columns {
+    column-count: 2;
+  }
+
   header {
     flex-direction: column;
     align-items: flex-start; /* push children to the left edge */
     gap: 1rem;
   }
 
-  header h1 {
+  h1 {
     font-size: clamp(2rem, 10vw, 5em);
     text-align: left;
     opacity: 0.7;
@@ -337,6 +347,12 @@ h1:hover {
     text-align: left;
     font-size: 2em;
     line-height: 1.1;
+  }
+}
+
+@media (width <= 900px) {
+  .card-columns {
+    column-count: 2;
   }
 }
 
@@ -365,20 +381,25 @@ Skills Section
 Project Cards
 ================================= */
 .card-columns {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 1rem;
+  /* instead of flex, switch to multi-column */
+  column-count: 3;
+  column-gap: 1rem;
+
+  /* ensure each card wraps inside a column */
+
+  /* (we’ll make .card inline-block below) */
 }
 
-/* column-count: 3; default for mid-sized screens */
-
+/* make each card behave like a column item */
 .card {
-  display: inline-block;
+  display: inline-block; /* shrink-to-fit within a column */
+  width: 100%;           /* fill the column’s width */
+  margin: 0 0 1rem;      /* bottom gutter between cards */
+  vertical-align: top;   /* align cards to the top of each column flow */
+
+  /* your other card styles… */
   border: none;
   background-color: #f3f3f3;
-  max-width: 300px;
-  width: auto;
-  height: auto;
   border-radius: 4px;
 }
 
