@@ -4,7 +4,7 @@ import Navigation from './components/Navigation';
 import Skills from './pages/Skills';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import ProjectOverview from './pages/ProjectOverview';
+import ProjectsOverview from './pages/ProjectsOverview';
 import projectList from './components/projectList';
 import ProjectDeepDives from './components/ProjectDeepDives';
 import Resume from './pages/Resume';
@@ -37,7 +37,7 @@ export default function App() {
       </section>
       <section className="content-container">
         <Header />
-        <ProjectOverview filteredProjects={filteredProjects} />
+        <ProjectsOverview filteredProjects={filteredProjects} />
         <About />
         <Skills />
         <Contact />
