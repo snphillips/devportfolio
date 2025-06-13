@@ -4,7 +4,7 @@ import Navigation from './components/Navigation';
 import Skills from './pages/Skills';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import ProjectsOverview from './pages/ProjectsOverview';
+import ProjectsOverview2 from './pages/ProjectsOverview2';
 import projectList from './components/projectList';
 import ProjectDeepDives from './components/ProjectDeepDives';
 import Resume from './pages/Resume';
@@ -29,20 +29,19 @@ export default function App() {
 
   return (
     <div className="site-container">
-      {/* Sarah fix: why id and class for containers? */}
-      <section className="navigation-container">
-        <nav id="nav-container" className=" navbar-expand-md">
-          <Navigation />
-        </nav>
-      </section>
       <section className="content-container">
         <Header />
-        <ProjectsOverview filteredProjects={filteredProjects} />
+        <ProjectsOverview2 filteredProjects={filteredProjects} />
         <About />
         <Skills />
         <Contact />
         <ProjectDeepDives filteredProjects={filteredProjects} />
         <Resume />
+      </section>
+      <section className="navigation-container">
+        <nav className="navbar-expand-md">
+          <Navigation />
+        </nav>
       </section>
     </div>
   );
