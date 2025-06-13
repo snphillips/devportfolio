@@ -38,11 +38,9 @@ export default function App() {
         <ProjectDeepDives filteredProjects={filteredProjects} />
         <Resume />
       </section>
-      <section className="navigation-container">
-        <nav className="navbar-expand-md">
-          <Navigation />
-        </nav>
-      </section>
+      <nav className="navigation-container">
+        <Navigation />
+      </nav>
     </div>
   );
 }

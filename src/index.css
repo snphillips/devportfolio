@@ -1,14 +1,15 @@
 /* 
 Breakpoints
 
-large: >= 900px;
+large: 900px;
 medium: 768px;
-small: <= 500px; 
+small: 500px;
 */
 
 :root {
   /* Colors */
-  --color-navy: rgb(5 11 56 / 100%);
+  --color-navy-blue: rgb(5 11 56 / 100%);
+  --color-navy-blue-90: rgb(5 11 56 / 90%);
   --color-navy-blue-80: rgb(5 11 56 / 80%);
   --color-white-70: rgb(255 255 255 / 70%);
   --color-white-10: rgb(255 255 255 / 10%);
@@ -16,13 +17,11 @@ small: <= 500px;
   --color-pink-dusty: rgb(245 208 200 / 80%);
 
   /* Typography */
-  --font-family-sans: 'Oswald', sans-serif;
-  --font-family-serif: 'Crimson Text', serif;
+
+  /* 'Crimson Text', serif: 'Crimson Text', serif; */
 }
 
-/* =================================
-Base Reset & Global Styles
-================================= */
+/* ===== Base Reset & Global Styles ===== */
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -33,35 +32,35 @@ body {
   padding: 0;
   max-width: 1140px;
   width: 100%;
-  background-color: var(--color-navy);
+  background-color: var(--color-navy-blue);
   color: var(--color-white-70);
-  font-family: var(--font-family-sans);
+  font-family: Oswald, sans-serif;
+  font-weight: 300;
   font-size: 1rem;
   line-height: 1.5;
 }
 
-p,
-li {
-  font-family: sans-serif;
-}
-
 ul {
-  list-style-type: none;
+  list-style: none;
   padding-left: 0;
 }
 
 .scroll-section {
   overflow-y: scroll;
-  scroll-behavior: smooth;
 }
 
-/* =================================
-Typography
-================================= */
+/* ===== Typography ===== */
+p {
+  font-family: sans-serif;
+  color: rgb(5 11 56 / 85%);
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
 h2 {
   display: block;
   position: relative;
-  font-family: var(--font-family-sans);
+  font-family: Oswald, sans-serif;
   font-weight: 400;
   color: var(--color-pink-dusty);
   text-transform: uppercase;
@@ -82,12 +81,9 @@ h3 {
   letter-spacing: unset;
   font-weight: 500;
   line-height: 1;
-  border-top: none;
 }
 
-/* =================================
-Links & Hover Underlines
-================================= */
+/* ===== Links & Hover Underlines ===== */
 a {
   color: inherit;
   text-decoration: none;
@@ -109,13 +105,13 @@ a:hover {
 
 /* Underline effect for nav & title links */
 .title-link,
-.nav-item .nav-link {
+.nav-list-item .nav-link {
   position: relative;
   display: inline-block;
 }
 
 .title-link::before,
-.nav-item .nav-link::before {
+.nav-list-item .nav-link::before {
   content: '';
   position: absolute;
   left: 0;
@@ -129,15 +125,11 @@ a:hover {
 }
 
 .title-link:hover::before,
-.nav-item .nav-link:hover::before {
+.nav-list-item .nav-link:hover::before {
   transform: scaleX(1);
 }
 
-/* =================================
-Buttons
-================================= */
-
-/* Base dark button */
+/* ===== Buttons ===== */
 .button-dark {
   display: inline-block;
   background-color: var(--color-navy-blue-80);
@@ -154,7 +146,6 @@ Buttons
 .button-dark:hover {
   background-color: var(--color-pink-bright);
   color: white;
-  text-decoration: none;
 }
 
 .button-light {
@@ -174,16 +165,9 @@ Buttons
 .button-light:hover {
   background-color: var(--color-pink-bright);
   color: white;
-  text-decoration: none;
 }
 
-.horizontal-rule:hover {
-  margin-bottom: 5px;
-}
-
-/* =================================
-Layout Containers
-================================= */
+/* ===== Layout Containers ===== */
 .site-container {
   width: 100%;
   max-width: 1140px;
@@ -193,8 +177,8 @@ Layout Containers
 }
 
 .content-container {
-  flex: 1; /* grow to fill whatever’s left after navigation-container */
-  min-width: 0;  /* allow this column to shrink below its contents’ natural size */
+  flex: 1;
+  min-width: 0;
   padding: 0 2rem;
 }
 
@@ -202,108 +186,43 @@ Layout Containers
   flex: 0 0 10%;
   min-width: 90px;
   margin-right: 2rem;
+  background-color: unset;
+
+  /* background-color: #12194f; */
 }
 
-/* and, if you have other flex children that overflow, do the same for them: */
-.navigation-container,
-.site-container > section {
-  min-width: 0;
-}
-
-/* Small devices (up to 500px) */
-@media (width <= 500px) {
-  .site-container {
-    flex-direction: column;
-  }
-
-  .content-container {
-    padding: 0 1rem;   /* maybe dial back the padding */
-  }
-
-
-  .navigation-container {
-    flex: 0 0 auto;    /* let it size to its contents */
-    width: 100%;       /* full width */
-    margin: 0 0 1rem;  /* space below, not right */
-  }
-
-
-}
-
-/* =================================
-Navigation Bar
-================================= */
-.navbar-expand-lg .navbar-nav {
-    flex-direction: column; /* overrides bootstrap css */
-}
-
+/* ===== Navigation Bar ===== */
 nav {
   margin-left: 1rem;
 }
 
-/* bootstrap */
-.navbar-nav {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-family: var(--font-family-sans);
-  font-size: 1.2em;
-  font-weight: 300;
+.navbar-list {
+  display: flex;
+  flex-direction: column;
 }
 
-.nav-item {
-  font-family: var(--font-family-sans);
+.nav-list-item {
+  font-family: Oswald, sans-serif;
   margin: 0.25rem 0;
 }
 
-.nav-item .nav-link {
+.nav-list-item .nav-link {
   color: var(--color-white-70);
   padding: 0.5rem 1rem;
 }
 
-.navbar-toggler {
-  margin-left: -10px;
-  margin-top: 12px;
-  color: var(--color-pink-dusty);
-  border: 3px solid #fff;
-}
-
-/* small devices (up to 500px) */
-@media screen and (width <= 500px) {
-  .site-container {
-    flex-direction: column;
-  }
-
-  nav {
-    position: static;  /* no longer fixed on small screens */
-    margin-left: 0;
-  }
-}
-
-/* medium devices (up to 768px) */
-@media screen and (width <= 768px) {
-  /* e.g. stack deep-dive sections vertically */
-  .deep-dives-content {
-    flex-direction: column;
-  }
-
-}
-
-/* =================================
-Header
-================================= */
+/* ===== Header ===== */
 header {
   display: flex;
-  flex-wrap: wrap; /* allow wrapping when it runs out of room */
+  flex-wrap: wrap;
   align-items: center;
-  gap: 2rem; /* space between the h1 & tagline */
+  gap: 2rem;
 }
 
 header h1 {
-  /* Sarah, what does this do? */
   font-size: clamp(3rem, 8vw, 5rem);
   min-width: 0;
-  font-family: var(--font-family-sans);
+  font-family: Oswald, sans-serif;
   font-weight: 500;
   font-style: italic;
   text-transform: uppercase;
@@ -316,7 +235,7 @@ header h1 {
   margin-block: 0.5em;
 }
 
-h1:hover {
+header h1:hover {
   cursor: pointer;
   color: var(--color-white-10);
   opacity: 0.8;
@@ -325,52 +244,15 @@ h1:hover {
 .tagline {
   flex: 0 1 auto;
   min-width: 0;
-  font-family: var(--font-family-serif);
+  font-family: 'Crimson Text', serif;
   font-size: 2em;
   font-style: italic;
   margin-left: 0;
   color: var(--color-pink-dusty);
   z-index: -1;
-  margin-bottom: unset;
 }
 
-@media (width <= 500px) {
-  header h1 {
-    font-size: 3em;
-  }
-
-  .tagline {
-    font-size: 1.8em;
-  }
-}
-
-@media (width <= 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start; /* push children to the left edge */
-    gap: 1rem;
-  }
-
-  h1 {
-    font-size: clamp(2rem, 10vw, 5em);
-    text-align: left;
-    opacity: 0.7;
-  }
-
-  .tagline {
-    text-align: left;
-    font-size: 2em;
-    line-height: 1.1;
-  }
-}
-
-@media (width <= 900px) {
-
-}
-
-/* =================================
-Skills Section
-================================= */
+/* ===== Skills Section ===== */
 .skills-list {
   padding-left: 0;
 }
@@ -383,20 +265,11 @@ Skills Section
   column-count: 4;
 }
 
-@media (width <= 768px) {
-  .list-columns {
-    column-count: 3;
-  }
-}
-
-/* =================================
-Project Cards
-================================= */
+/* ===== Project Cards ===== */
 .my-masonry-grid {
-  display: -webkit-box; /* Not needed if autoprefixing */
-  display: flexbox; /* Not needed if autoprefixing */
+  display: -webkit-box;
   display: flex;
-  margin-left: -30px; /* gutter size offset */
+  margin-left: -30px;
   width: auto;
 }
 
@@ -406,10 +279,9 @@ Project Cards
 }
 
 .card {
-  /* absolutely prevent splitting */
-  break-inside: avoid-column;      /* modern */
-  -webkit-column-break-inside: avoid; /* webkit */
-  page-break-inside: avoid;        /* paged media */
+  break-inside: avoid-column;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
   display: inline-block;
   width: 100%;
   margin: 0 0 1rem;
@@ -420,230 +292,250 @@ Project Cards
   overflow: hidden;
 }
 
-
 .card-image {
   display: block;
   width: 100%;
-
-  /* remove max-width if it’s preventing proper shrinking */
-
-  /* max-width: 400px; */
   border-radius: 4px 4px 0 0;
 }
 
+.card-body {
+  padding: 0 1.25rem 1.25rem;
+}
 
-  .card-body {
-    padding: 0 1.25rem 1.25rem;
-  }
+h3.card-heading {
+  position: relative;
+  color: var(--color-navy-blue-80);
+}
 
-  h3.card-heading {
-    color: var(--color-navy-blue-80);
-  }
+h3.card-heading:hover {
+  text-decoration: none;
+}
 
-  h3.card-heading:hover {
-    text-decoration: none; /* This removes the default underline */
-    color: var(--color-navy-blue-80);
-  }
+h3.card-heading::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  background-color: var(--color-pink-bright);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
 
-  h3.card-heading::before {
-    content: ''; /* If you put a string here, it will show up */
-    position: absolute;
-    left: 0; /* the position of the line */
-    width: 100%; /* width of the line */
-    height: 2px; /* thickness of the line */
-    bottom: -2px; /* the space between the text and the line */
-    background-color: rgb(213 11 84 / 90%); /* color:pink underline */
-    visibility: hidden; /* by default the underline is hidden */
+h3.card-heading:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
 
-    /*   The scaleX() CSS function defines a transformation that resizes an element along the x-axis (horizontally).
-  Its result is a <transform-function> data type. */
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s; /* how fast the animation is */
-  }
+.card-text {
+  color: rgb(5 11 56 / 85%);
+  font-size: 0.9em;
+}
 
-  h3.card-heading:hover::before {
-    visibility: visible;
-    transform: scaleX(1); /* width of the line. 1 = 100% */
-  }
+summary {
+  display: initial;
+}
 
-  @media (width <= 900px) {
+.list-tech-used {
+  color: rgb(5 11 56 / 80%);
+  font-size: 0.95rem;
+  display: block;
+  list-style: none;
+  margin-block: 1em;
+  padding-inline-start: 0;
+}
 
-  }
+.github-logo-link {
+  color: rgb(5 11 56 / 90%);
+  font-size: 1.9em;
+  vertical-align: sub;
+  transition: all 0.3s ease-out;
+}
 
-  @media (width <= 500px) {
+.github-logo-link:hover {
+  color: var(--color-pink-bright);
+}
 
-  }
+/* ===== Deep Dive Sections ===== */
+.deep-dives-content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
 
-  .card-text {
-    color: rgb(5 11 56 / 85%);
-    font-size: 0.9em;
-  }
+.deep-dives-image-container {
+  max-width: 450px;
+  margin-right: 1rem;
+}
 
-  summary {
-    display: unset;
-  }
+.deep-dives-text-container {
+  color: var(--color-white-70);
+  margin-left: 1rem;
+}
 
-  .list-tech-used {
-    color: rgb(5 11 56 / 80%);
-    font-size: 0.95rem;
-    display: block;
-    list-style-type: none;
-    margin-block: 1em;
-    margin-inline: 0;
-    padding-inline-start: 0;
-  }
+.deep-dives-mobile-image-list {
+  display: flex;
+}
 
-  .github-logo-link {
-    color: rgb(5 11 56 / 90%);
-    font-size: 1.9em;
-    vertical-align: sub;
-    transition: all 0.3s ease-out;
-  }
+.deep-dives-image {
+  width: auto;
+  height: auto;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  max-width: 466px;
+}
 
-  .github-logo-link:hover {
-    color: var(--color-pink-bright);
-  }
+.deep-dives-image-mobile {
+  max-width: 225px;
+}
 
-  /* =================================
-Deep Dive Sections
-================================= */
+.list-tech-used-deep-dive,
+.list-features {
+  display: block;
+  list-style: none;
+  margin-block: 1em;
+  padding-inline-start: 0;
+}
+
+/* ===== About Page Columns ===== */
+.about-columns {
+  column-count: 2;
+  column-gap: 20px;
+}
+
+/* ================================== */
+
+/* ================================== */
+
+/* ================================== */
+
+/* ================================== */
+
+/* ================================== */
+
+/* ===== Responsive Breakpoints ===== */
+@media (width <= 768px) {
+  /* Medium devices */
   .deep-dives-content {
-    display: flex;
-    flex-direction: row;
-    margin-top: 2rem;
+    flex-direction: column;
+  }
+
+  .list-columns {
+    column-count: 3;
   }
 
   .deep-dives-image-container {
-    max-width: 450px;
-    margin-right: 1rem;
-  }
-
-  .deep-dives-text-container {
-    display: block;
-    color: var(--color-white-70);
-    margin-left: 1rem;
-  }
-
-  .deep-dives-mobile-image-list {
-    display: flex;
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem auto;
   }
 
   .deep-dives-image {
-    width: auto;
-    height: auto;
-    margin-bottom: 1rem;
-    margin-right: 1rem;
-    max-width: 466px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .deep-dives-mobile-image-list {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem auto;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: unset;
+  }
+
+  header h1 {
+    font-size: clamp(2rem, 10vw, 5em);
+    text-align: left;
+    opacity: 0.7;
+  }
+
+  .tagline {
+    text-align: left;
+    font-size: 2em;
+    line-height: 1.1;
+  }
+}
+
+/* ================================== */
+
+/* ================================== */
+
+/* ================================== */
+
+/* ================================== */
+
+/* ================================== */
+@media (width <= 500px) {
+  /* Small devices */
+  .site-container {
+    flex-direction: column-reverse;
+    margin: 0 auto 1rem;
+  }
+
+  .content-container {
+    padding: 0 1rem;
+  }
+
+  .navigation-container {
+    flex: 0 0 auto;
+    width: 100%;
+    margin: 0;
+    background-color: #12194f;
+  }
+
+  nav {
+    position: static;
+    margin: 0;
+  }
+
+  .navbar-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .nav-list-item {
+    margin: 0 0.5rem;
+  }
+
+  body {
+    width: 95%;
+  }
+
+  .list-columns {
+    column-count: 2;
+  }
+
+  .about-columns {
+    column-count: 1;
+    column-gap: 0;
+  }
+
+  .deep-dives-text-container {
+    margin-left: unset;
   }
 
   .deep-dives-image-mobile {
-    max-width: 225px;
+    width: 100%;
+    max-width: 100%;
   }
 
-  .list-tech-used-deep-dive,
-  .list-features {
-    display: block;
-    list-style-type: none;
-    margin-block: 1em;
-    margin-inline: 0;
-    padding-inline-start: 0;
+  header h1 {
+    font-size: 3em;
   }
 
-  /* Small devices (up to 500px) */
-  @media (width <= 500px) {
-    .deep-dives-text-container {
-      margin-left: unset;
-    }
-  }
-
-  /* =================================
-About Page Columns
-================================= */
-  .about-columns {
-    column-count: 2;
-    column-gap: 20px;
-  }
-
-  /* =================================
-Responsive Breakpoints
-================================= */
-
-  /* Large devices (up to 900px) */
-  @media (width <= 900px) {
-    /* Placeholder for large-screen adjustments */
-  }
-
-  /* Medium devices (up to 768px) */
-  @media (width <= 768px) {
-    .deep-dives-content {
-      flex-direction: column;
-    }
-
-    .deep-dives-image-container {
-      width: 100%;
-      max-width: 100%;
-      margin-right: unset;
-      margin: 1rem auto;
-    }
-
-    .deep-dives-image {
-      width: 100%;
-      max-width: 100%;
-    }
-
-    .deep-dives-mobile-image-list {
-      display: unset;
-      width: 100%;
-      max-width: 100%;
-      margin: 1rem auto;
-    }
-
-    h2 {
-      font-size: 1.5em;
-    }
-  }
-
-  /* Small devices (up to 500px) */
-  @media (width <= 500px) {
-    body {
-      width: 95%;
-    }
-
-    .navbar {
-      display: block;
-      padding: 0;
-      text-align: right;
-    }
-
-    .navbar-toggler {
-      margin-top: 0;
-    }
-
-    .navbar-collapse {
-      flex-basis: 100%;
-      flex-grow: 1;
-      align-items: center;
-      position: absolute;
-      text-align: right;
-    }
-
-    .navbar-nav.ml-auto {
-      margin-top: 0.5rem;
-      background-color: var(--color-navy);
-    }
-
-    .list-columns {
-      column-count: 1;
-    }
-
-    .about-columns {
-      column-count: 1;
-      column-gap: 0;
-    }
-
-    .deep-dives-image-mobile {
-      width: 100%;
-      max-width: 100%;
-    }
+  .tagline {
+    font-size: 1.8em;
   }
 }

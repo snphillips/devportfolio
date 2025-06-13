@@ -20,41 +20,22 @@ const SOCIAL_LINKS = [
 
 export default function Navigation() {
   return (
-    <>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-        // remove after debugging
-        style={{ border: '1px solid red' }}
-      >
-        <span className="navbar-toggler-icon" />
-      </button>
+    <ul className="navbar-list">
+      {MAIN_LINKS.map(({ href, label }) => (
+        <li className="nav-list-item" key={href}>
+          <a href={href} className="nav-list-item-link">
+            {label}
+          </a>
+        </li>
+      ))}
 
-      {/* <div className="collapse navbar-collapse" id="navbarNav"> */}
-      <div className="collapse navbar-collapse navbar-expand-lg" id="navbarNav">
-        <ul className="navbar-nav ml-auto flex-column">
-          {MAIN_LINKS.map(({ href, label }) => (
-            <li className="nav-item" key={href}>
-              <a href={href} className="nav-item-link">
-                {label}
-              </a>
-            </li>
-          ))}
-
-          {SOCIAL_LINKS.map(({ href, iconClass, label }) => (
-            <li className="nav-item" key={href}>
-              <a href={href} className="nav-item-link" aria-label={label}>
-                <i className={iconClass} />
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </>
+      {SOCIAL_LINKS.map(({ href, iconClass, label }) => (
+        <li className="nav-list-item" key={href}>
+          <a href={href} className="nav-list-item-link" aria-label={label}>
+            <i className={iconClass} />
+          </a>
+        </li>
+      ))}
+    </ul>
   );
 }
