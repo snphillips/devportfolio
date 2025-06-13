@@ -252,6 +252,16 @@ header h1:hover {
   z-index: -1;
 }
 
+/* ===== About  ===== */
+#about p {
+  color: var(--color-white-70);
+}
+
+.about-columns {
+  column-count: 2;
+  column-gap: 20px;
+}
+
 /* ===== Skills Section ===== */
 .skills-list {
   padding-left: 0;
@@ -340,6 +350,8 @@ summary {
 
 .list-tech-used {
   color: rgb(5 11 56 / 80%);
+  font-family: sans-serif;
+  font-weight: 400;
   font-size: 0.95rem;
   display: block;
   list-style: none;
@@ -375,6 +387,14 @@ summary {
   margin-left: 1rem;
 }
 
+.deep-dives-text p,
+ul.list-features li,
+ul.list-tech-used-deep-dive {
+  color: var(--color-white-70);
+  font-family: sans-serif;
+  font-size: medium;
+}
+
 .deep-dives-mobile-image-list {
   display: flex;
 }
@@ -397,12 +417,6 @@ summary {
   list-style: none;
   margin-block: 1em;
   padding-inline-start: 0;
-}
-
-/* ===== About Page Columns ===== */
-.about-columns {
-  column-count: 2;
-  column-gap: 20px;
 }
 
 /* ================================== */
