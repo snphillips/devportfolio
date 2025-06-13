@@ -28,15 +28,15 @@ small: 500px;
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   max-width: 1140px;
   width: 100%;
   background-color: var(--color-navy-blue);
   color: var(--color-white-70);
-  font-family: Oswald, sans-serif;
+  font-family: sans-serif;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: large;
   line-height: 1.5;
 }
 
@@ -71,7 +71,7 @@ h2 {
 }
 
 h3 {
-  display: block;
+  display: inline-block;
   position: relative;
   font-family: Oswald, sans-serif;
   color: rgb(245 208 200 / 80%);
@@ -104,14 +104,12 @@ a:hover {
 }
 
 /* Underline effect for nav & title links */
-.title-link,
-.nav-list-item .nav-link {
+.nav-list-item .nav-list-item-link {
   position: relative;
   display: inline-block;
 }
 
-.title-link::before,
-.nav-list-item .nav-link::before {
+.nav-list-item .nav-list-item-link::before {
   content: '';
   position: absolute;
   left: 0;
@@ -124,8 +122,7 @@ a:hover {
   transition: transform 0.3s ease;
 }
 
-.title-link:hover::before,
-.nav-list-item .nav-link:hover::before {
+.nav-list-item .nav-list-item-link:hover::before {
   transform: scaleX(1);
 }
 
@@ -173,7 +170,7 @@ a:hover {
   max-width: 1140px;
   display: flex;
   flex-direction: row;
-  margin: 2rem auto;
+  margin: 0;
 }
 
 .content-container {
@@ -187,8 +184,7 @@ a:hover {
   min-width: 90px;
   margin-right: 2rem;
   background-color: unset;
-
-  /* background-color: #12194f; */
+  font-size: large;
 }
 
 /* ===== Navigation Bar ===== */
@@ -206,6 +202,9 @@ nav {
   margin: 0.25rem 0;
 }
 
+.nav-list-item:hover {
+}
+
 .nav-list-item .nav-link {
   color: var(--color-white-70);
   padding: 0.5rem 1rem;
@@ -219,7 +218,7 @@ header {
   gap: 2rem;
 }
 
-header h1 {
+h1 {
   font-size: clamp(3rem, 8vw, 5rem);
   min-width: 0;
   font-family: Oswald, sans-serif;
@@ -235,7 +234,7 @@ header h1 {
   margin-block: 0.5em;
 }
 
-header h1:hover {
+h1:hover {
   cursor: pointer;
   color: var(--color-white-10);
   opacity: 0.8;
@@ -279,11 +278,10 @@ header h1:hover {
 .my-masonry-grid {
   display: -webkit-box;
   display: flex;
-  margin-left: -30px;
   width: auto;
 }
 
-.my-masonry-grid_column {
+.my-masonry-grid-column {
   padding-left: 1rem;
   background-clip: padding-box;
 }
@@ -494,7 +492,8 @@ ul.list-tech-used-deep-dive {
   /* Small devices */
   .site-container {
     flex-direction: column-reverse;
-    margin: 0 auto 1rem;
+
+    /* margin: 0 auto 1rem; */
   }
 
   .content-container {
@@ -502,8 +501,9 @@ ul.list-tech-used-deep-dive {
   }
 
   .navigation-container {
+    display: block;
     flex: 0 0 auto;
-    width: 100%;
+    width: 100vw;
     margin: 0;
     background-color: #12194f;
   }

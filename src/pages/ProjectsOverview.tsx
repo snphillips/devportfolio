@@ -20,7 +20,7 @@ export default function ProjectsOverview({ filteredProjects }: Props) {
       <Masonry
         className="my-masonry-grid"
         breakpointCols={breakpointColumnsObj}
-        columnClassName="my-masonry-grid_column"
+        columnClassName="my-masonry-grid-column"
       >
         {filteredProjects.map((project, index) => (
           <div key={project.id}>
