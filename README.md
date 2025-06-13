@@ -11,6 +11,8 @@ This is a portfolio website to display the software development work of Sarah Ph
 ## Made With
 
 - React
+- Vite/Typescript
+- react-masonry-css for grid layout
 
 
 
