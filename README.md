@@ -17,16 +17,7 @@ My portfolio website to display my dev projects. It features a dynamic projects 
 - **About & Skills**: Sections for personal bio and skill set.
 - **Resume Download**: A link/button to download or view the resume.
 
-## Getting Started
-
-### Prerequisites
-
-Make sure you have the following installed on your machine:
-
-- [Node.js](https://nodejs.org/) (v14 or later)
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
-
-### Installation
+## Installation
 
 Clone the repository
 
