@@ -1,4 +1,4 @@
-# Sarah's Developer Portfolio Site
+# Sarah's Dev Portfolio Site
 
 My portfolio website to display my dev projects. It features a dynamic projects gallery and deep dives into individual projects.
 
