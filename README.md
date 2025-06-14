@@ -1,24 +1,14 @@
-## Project Description
+# Sarah's Developer Portfolio Site
 
-This is a portfolio website to display the software development work of Sarah Phillips. It features a dynamic projects gallery and deep dives into individual projects.
+My portfolio website to display my dev projects. It features a dynamic projects gallery and deep dives into individual projects.
 
 - View the site here: https://sarahphillipsdev.surge.sh/
-
-<img src="https://i.imgur.com/XSqjlCZ.png"
-     width="500"
-     alt="screengrab of app">
 
 ## Made With
 
 - React
 - Vite/Typescript
 - react-masonry-css for grid layout
-
-# Developer Portfolio Site
-
-A personal portfolio website built with React to showcase projects, skills, and contact information. It features a dynamic projects gallery and deep dives into individual projects.
-
----
 
 ## Features
 
@@ -79,4 +69,4 @@ Or using yarn:
 yarn run dev
 ```
 
-The app should now be running at http://localhost:5173/.
+The app should now be running at http://localhost:5173/
