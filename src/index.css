@@ -28,15 +28,15 @@ small: 500px;
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   max-width: 1140px;
   width: 100%;
   background-color: var(--color-navy-blue);
   color: var(--color-white-70);
   font-family: sans-serif;
-  font-weight: 300;
-  font-size: large;
+  font-weight: 400;
+  font-size: medium;
   line-height: 1.5;
 }
 
@@ -130,6 +130,7 @@ a:hover {
 .button-dark {
   display: inline-block;
   background-color: var(--color-navy-blue-80);
+  font-family: Oswald, sans-serif;
   border-radius: 6px;
   color: white;
   margin-right: 10px;
@@ -140,14 +141,10 @@ a:hover {
   transition: all 0.3s ease-out;
 }
 
-.button-dark:hover {
-  background-color: var(--color-pink-bright);
-  color: white;
-}
-
 .button-light {
   display: inline-block;
   background-color: rgb(255 255 255 / 80%);
+  font-family: Oswald, sans-serif;
   border-radius: 6px;
   color: var(--color-navy-blue-80) !important;
   margin-right: 10px;
@@ -159,6 +156,7 @@ a:hover {
   transition: all 0.3s ease-out;
 }
 
+.button-dark:hover,
 .button-light:hover {
   background-color: var(--color-pink-bright);
   color: white;
@@ -286,6 +284,10 @@ h1:hover {
   background-clip: padding-box;
 }
 
+.my-masonry-grid-column:first-of-type {
+  padding-left: unset;
+}
+
 .card {
   break-inside: avoid-column;
   -webkit-column-break-inside: avoid;
@@ -393,6 +395,10 @@ ul.list-tech-used-deep-dive {
   font-size: medium;
 }
 
+.deep-dives-text p:first-of-type {
+  margin-top: unset;
+}
+
 .deep-dives-mobile-image-list {
   display: flex;
 }
@@ -425,11 +431,41 @@ ul.list-tech-used-deep-dive {
 
 /* ================================== */
 
-/* ================================== */
-
 /* ===== Responsive Breakpoints ===== */
+
+/* ====== Medium Devices ============ */
 @media (width <= 768px) {
-  /* Medium devices */
+  .site-container {
+    flex-direction: column-reverse;
+  }
+
+  .navigation-container {
+    display: block;
+    flex: 0 0 auto;
+    width: 100vw;
+    margin: 0;
+    background-color: #12194f;
+  }
+
+  nav {
+    position: static;
+    margin: 0;
+  }
+
+  .navbar-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .nav-list-item {
+    margin: 0 0.5rem;
+  }
+
+  .content-container {
+    padding: 0 2rem;
+  }
+
   .deep-dives-content {
     flex-direction: column;
   }
@@ -477,6 +513,10 @@ ul.list-tech-used-deep-dive {
     font-size: 2em;
     line-height: 1.1;
   }
+
+  h3 {
+    margin-block: 0.5em;
+  }
 }
 
 /* ================================== */
@@ -487,44 +527,10 @@ ul.list-tech-used-deep-dive {
 
 /* ================================== */
 
-/* ================================== */
+/* ========= Small devices =========== */
 @media (width <= 500px) {
-  /* Small devices */
-  .site-container {
-    flex-direction: column-reverse;
-
-    /* margin: 0 auto 1rem; */
-  }
-
-  .content-container {
-    padding: 0 1rem;
-  }
-
-  .navigation-container {
-    display: block;
-    flex: 0 0 auto;
-    width: 100vw;
-    margin: 0;
-    background-color: #12194f;
-  }
-
-  nav {
-    position: static;
-    margin: 0;
-  }
-
-  .navbar-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .nav-list-item {
-    margin: 0 0.5rem;
-  }
-
-  body {
-    width: 95%;
+  .my-masonry-grid-column:first-of-type {
+    padding-left: unset;
   }
 
   .list-columns {
@@ -538,6 +544,15 @@ ul.list-tech-used-deep-dive {
 
   .deep-dives-text-container {
     margin-left: unset;
+  }
+
+  .deep-dives-image-container {
+    margin: unset;
+  }
+
+  .deep-dives-image {
+    margin-bottom: unset;
+    margin-right: unset;
   }
 
   .deep-dives-image-mobile {
