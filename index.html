@@ -109,7 +109,7 @@
 
     <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700"
+      href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap"
       rel="stylesheet"
     />
 
@@ -129,6 +129,11 @@
     <!-- make sure your entry point is at /src/main.jsx (or adjust if different). -->
     <script type="module" src="/src/index.jsx"></script>
     <!-- ———————————————————————————— -->
+
+    <!-- set the root path to the root
+     so that regardless of the subpath, we can always work 
+     with the assets folder located in the root. -->
+    <base href="/" />
   </head>
 
   <body>

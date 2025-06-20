@@ -24,3 +24,5 @@ yarn-error.log*
 # Sarah's additions
 HOWTO.txt
 TODO.txt
+/images
+/images-webp

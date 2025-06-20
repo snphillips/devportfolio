@@ -5,7 +5,7 @@ import Skills from './pages/Skills';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import ProjectsOverview from './pages/ProjectsOverview';
-import projectList from './components/projectList';
+import projectList from './projectList';
 import ProjectDeepDives from './components/ProjectDeepDives';
 import Resume from './pages/Resume';
 

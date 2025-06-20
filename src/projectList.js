@@ -1,8 +1,9 @@
-const projectList = [
+export const projectList = [
   {
-    id: `tolls-lol`,
+    id: `tolls_lol`,
     title: `TOLLS-LOL`,
     imageUrl: ['https://i.imgur.com/hQ9N9bI.png'],
+    imageName: ['tolls_lol-01.webp'],
     mobileImageUrl: [],
     briefStatement: `<p>This web app uses Mapbox to visualize 2024's 311 complaints about
     obscured license plates in New York City.</p>
@@ -31,12 +32,17 @@ const projectList = [
     includeInGallery: true,
   },
   {
-    id: `meeting-background-maker`,
+    id: `meeting_background_maker`,
     title: `Meeting Background Maker`,
     imageUrl: [
       'https://i.imgur.com/4mN13AS.png',
       'https://i.imgur.com/zePmX1v.png',
       'https://i.imgur.com/S78VCSY.png',
+    ],
+    imageName: [
+      'meeting_background_maker-01.webp',
+      'meeting_background_maker-02.webp',
+      'meeting_background_maker-03.webp',
     ],
     mobileImageUrl: [],
     briefStatement: `<p>This web app allows users to select images of \n
@@ -73,31 +79,44 @@ const projectList = [
     includeInGallery: true,
   },
   {
-    id: `nycha-outage-scraper`,
-    title: `NYCHA Outage Scraper`,
+    id: `so_trashy`,
+    title: `So Trashy`,
     imageUrl: [
-      'https://i.imgur.com/3CmQKwE.png',
-      'https://i.imgur.com/1y4g93S.png',
+      'https://i.imgur.com/PMqmkdE.png',
+      'https://i.imgur.com/WSJMO84.png',
     ],
-    mobileImageUrl: [],
+    imageName: ['so_trashy-01.webp', 'so_trashy-02.webp', 'so_trashy-03.webp'],
+    mobileImageUrl: [
+      'https://i.imgur.com/Z767urK.png',
+      'https://i.imgur.com/uzOaJum.png',
+    ],
     briefStatement:
-      '<p>The New York City Housing Authority (NYCHA) maintains a page on their site that lists services outages in their developments for heat, hot water, water, elevators, electricity & gas.</p> <p>This scraper extracts the data from the NYCHA website and saves the results in csv tables.</p>',
+      "<p>So Trashy uses the data visualization library d3 to represent New York City's Department of Sanitation's yearly collection of refuse & recycling, per person.</p>",
     statement:
-      '<p>The New York City Housing Authority (NYCHA) maintains a <a class="content-link" href="https://my.nycha.info/Outages/Outages.aspx">page on their website</a> that lists services outages in their developments for heat, hot water, water, elevators, electricity & gas. The outage site is updated daily, however there is no easy way for stakeholders to download the data.</p><p>This scraper extracts the data from the NYCHA website and saves the results in csv tables, within a folder named with the date and time of the scrape.</p>',
-    techUsed: ['Python', 'Beautiful Soup', 'Pandas'],
-    features: ['scrapes data into csv tables'],
-    url: 'https://github.com/snphillips/nycha-outage-scraper',
-    githuburl: 'https://github.com/snphillips/nycha-outage-scraper',
-    year: '2019',
+      "<p><strong>So Trashy</strong> uses the data visualization library d3 to represent New York City's Department of Sanitation's (DSNY) yearly collection of refuse & recycling, per person.</p></p>DSNY collects residential and public school refuse and recycling, empties street litter baskets, cleans up abandoned property such as cars, tires and bicycles and collects other types of refuse, such as the detritus left in public spaces after Superstorm Sandy.</p> <p>DSNY does not pick up commercial refuse from offices, shops, business, institutions or construction sites.</p><p>The agency publishes monthly reports detailing how many tons of refuse, paper/cardboard and metal/glass/plastic/drink carton has been collected, categorized by borough and further categorized into Community District (CD).</p><p>I cross-reference two data sets to match the community district with the population of each district.  Additionally I match the community district with neighborhood names which aren't official city designations as neighborhood boundaries evolve over time.</p>",
+    techUsed: ['D3.js', 'React.js', 'NYC Open Data API'],
+    features: [
+      'sorting radio buttons',
+      'hover interaction',
+      'responsive design',
+    ],
+    url: 'https://so-trashy-react.surge.sh/',
+    githuburl: 'https://github.com/snphillips/So-Trashy-React',
+    year: `2018`,
     includeInGallery: true,
   },
   {
-    id: `artist-portfolio`,
+    id: `artist_portfolio`,
     title: 'Artist Portfolio',
     imageUrl: [
       'https://i.imgur.com/UH3TJtJ.png',
       'https://i.imgur.com/VCJfInw.png',
       'https://i.imgur.com/yjSyUc2.png',
+    ],
+    imageName: [
+      'artist_portfolio-01.webp',
+      'artist_portfolio-02.webp',
+      'artist_portfolio-03.webp',
     ],
     mobileImageUrl: [
       'https://i.imgur.com/6fvEgOl.png',
@@ -120,58 +139,35 @@ const projectList = [
     includeInGallery: true,
   },
   {
-    id: `so-trashy`,
-    title: `So Trashy`,
+    id: `nycha-outage-scraper`,
+    title: `NYCHA Outage Scraper`,
     imageUrl: [
-      'https://i.imgur.com/PMqmkdE.png',
-      'https://i.imgur.com/WSJMO84.png',
+      'https://i.imgur.com/3CmQKwE.png',
+      'https://i.imgur.com/1y4g93S.png',
     ],
-    mobileImageUrl: [
-      'https://i.imgur.com/Z767urK.png',
-      'https://i.imgur.com/uzOaJum.png',
-    ],
+    imageName: ['nycha_outage_scraper-01.webp', 'nycha_outage_scraper-02.webp'],
+    mobileImageUrl: [],
     briefStatement:
-      "<p>So Trashy uses the data visualization library d3 to represent New York City's Department of Sanitation's yearly collection of refuse & recycling, per person.</p>",
+      '<p>The New York City Housing Authority (NYCHA) maintains a page on their site that lists services outages in their developments for heat, hot water, water, elevators, electricity & gas.</p> <p>This scraper extracts the data from the NYCHA website and saves the results in csv tables.</p>',
     statement:
-      "<p><strong>So Trashy</strong> uses the data visualization library d3 to represent New York City's Department of Sanitation's (DSNY) yearly collection of refuse & recycling, per person.</p></p>DSNY collects residential and public school refuse and recycling, empties street litter baskets, cleans up abandoned property such as cars, tires and bicycles and collects other types of refuse, such as the detritus left in public spaces after Superstorm Sandy.</p> <p>DSNY does not pick up commercial refuse from offices, shops, business, institutions or construction sites.</p><p>The agency publishes monthly reports detailing how many tons of refuse, paper/cardboard and metal/glass/plastic/drink carton has been collected, categorized by borough and further categorized into Community District (CD).</p><p>I cross-reference two data sets to match the community district with the population of each district.  Additionally I match the community district with neighborhood names which aren't official city designations as neighborhood boundaries evolve over time.</p>",
-    techUsed: ['D3.js', 'React.js', 'NYC Open Data API'],
-    features: [
-      'sorting radio buttons',
-      'hover interaction',
-      'responsive design',
-    ],
-    url: 'https://so-trashy-react.surge.sh/',
-    githuburl: 'https://github.com/snphillips/So-Trashy-React',
-    year: `2018`,
+      '<p>The New York City Housing Authority (NYCHA) maintains a <a class="content-link" href="https://my.nycha.info/Outages/Outages.aspx">page on their website</a> that lists services outages in their developments for heat, hot water, water, elevators, electricity & gas. The outage site is updated daily, however there is no easy way for stakeholders to download the data.</p><p>This scraper extracts the data from the NYCHA website and saves the results in csv tables, within a folder named with the date and time of the scrape.</p>',
+    techUsed: ['Python', 'Beautiful Soup', 'Pandas'],
+    features: ['scrapes data into csv tables'],
+    url: 'https://github.com/snphillips/nycha-outage-scraper',
+    githuburl: 'https://github.com/snphillips/nycha-outage-scraper',
+    year: '2019',
     includeInGallery: true,
-  },
-  {
-    id: `art-thief`,
-    title: `Art Thief`,
-    imageUrl: [
-      'https://i.imgur.com/k7gW7tS.png',
-      'https://i.imgur.com/Q3fKAYM.png',
-      'https://i.imgur.com/FhKmX8f.png',
-      'https://i.imgur.com/o0OUo86.png',
-    ],
-    mobileImageUrl: [
-      'https://i.imgur.com/rnJ6ONM.png',
-      'https://i.imgur.com/7Ah2tkm.png',
-    ],
-    briefStatement:
-      "<p>Art Thief allows users to view random images from the Cooper Hewitt Museum's collection, based on selected keywords such as angular, art deco, modernism etc.</p>",
-    statement:
-      "<p><strong>Art Thief</strong> allows users to view random images from the Cooper Hewitt Museum's collection, based on selected keywords such as angular, art deco, modernism etc.</p>",
-    techUsed: ['Node.js', 'Express.js', 'React.js', 'Cooper Hewitt Museum API'],
-    features: ['search form', 'responsive design'],
-    url: 'https://art-thief.surge.sh/',
-    githuburl: 'https://github.com/snphillips/art-thief',
-    year: `2018`,
-    includeInGallery: false,
   },
   {
     id: `twohue`,
     title: `TwoHue`,
+    imageName: [
+      'twohue-01.webp',
+      'twohue-02.webp',
+      'twohue-03.webp',
+      'twohue-04.webp',
+      'twohue-05.webp',
+    ],
     imageUrl: [
       'https://i.imgur.com/7XNK4lO.png',
       'https://i.imgur.com/I3VWwAE.png',
@@ -208,6 +204,11 @@ const projectList = [
   {
     id: `weather-gif`,
     title: `Weather GIF`,
+    imageName: [
+      'weather-gif-01.webp',
+      'weather-gif-02.webp',
+      'weather-gif-03.webp',
+    ],
     imageUrl: [
       'https://i.imgur.com/CWDkO5g.png',
       'https://i.imgur.com/xbwBUyb.png',
@@ -226,29 +227,10 @@ const projectList = [
     includeInGallery: false,
   },
   {
-    id: `five-years-food-spending`,
-    title: 'Five Years of Food Spending',
-    imageUrl: [
-      'https://i.imgur.com/pXdIzAO.png',
-      'https://i.imgur.com/cOhOvfe.png',
-      'https://i.imgur.com/p9k62Xa.png',
-    ],
-    mobileImageUrl: ['https://i.imgur.com/Ka2NyaX.png'],
-    briefStatement:
-      '<p>Five Years of Food Spending uses the data visualization library D3 to represent my spending on groceries and eating out.</p>',
-    statement:
-      "<p><strong>Five Years of Food Spending</strong> uses the data visualization library D3  to represent my spending on groceries and eating out.</p><p>There was a time in my life when I was on a strict budget. I recorded and cataloged every cent I spent, including what I spent on food. This resulted in a large dataset that I though might be interesting to visualize to see if any patterns emerged.</p><p>Once I visualized the data, I didn't detect any patterns, beyond spending more on meals out while traveling or during times of high stress, for instance during a software development bootcamp.</p><p>While no insights about my food spending emerged, I did recall food-related memories as I manipulated the data.</p><p>I added those memories in an attempt to add color to this otherwise dry data.</p> ",
-    techUsed: ['D3.js', 'React.js'],
-    features: ['hover facts', 'responsive design'],
-    url: 'https://5yearsfood.surge.sh/',
-    githuburl: 'https://github.com/snphillips/food-spending',
-    year: `2018`,
-    includeInGallery: false,
-  },
-  {
     id: `todoodles`,
     title: `Todoodles`,
     imageUrl: ['https://i.imgur.com/DNmSSeE.png'],
+    imageName: ['todoodles-01.webp'],
     mobileImageUrl: ['https://i.imgur.com/Ka2NyaX.png'],
     briefStatement:
       '<p>Todoodles is a CRUD TODO app that allows users to create & delete todo items, as well as cross out completed tasks.</p>',
@@ -258,22 +240,6 @@ const projectList = [
     features: ['responsive design'],
     url: 'https://todoodles.surge.sh/',
     githuburl: 'https://github.com/snphillips/todoodles',
-    year: `2018`,
-    includeInGallery: false,
-  },
-  {
-    id: `about-blue-bike`,
-    title: 'About a Blue Bike',
-    imageUrl: ['https://i.imgur.com/A1J5MxP.jpg'],
-    mobileImageUrl: [],
-    briefStatement:
-      "<p>About a Blue Bike is a tool to look up trip statistics about individual bicycles in New York City's Citi Bike bike share system.</p>",
-    statement:
-      "<p><strong>About a Blue Bike</strong> is a tool to look up trip statistics about individual bicycles in New York City's Citi Bike bike share system.</p>",
-    techUsed: ['Node.js', 'Express.js', 'Postgres', 'React.js'],
-    features: ['search form', 'randomizer button', 'responsive design'],
-    url: 'https://aboutabluebike.surge.sh/',
-    githuburl: 'https://github.com/snphillips/About-a-Blue-Bike',
     year: `2018`,
     includeInGallery: false,
   },

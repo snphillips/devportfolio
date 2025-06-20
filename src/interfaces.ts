@@ -2,6 +2,7 @@ interface ProjectObject {
   id: string;
   title: string;
   imageUrl: string[];
+  imageName: string[];
   mobileImageUrl: [];
   briefStatement: string;
   statement: string;
