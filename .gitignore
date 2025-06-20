@@ -25,4 +25,4 @@ yarn-error.log*
 HOWTO.txt
 TODO.txt
 /images
-/images-webp
+**/images-webp/
