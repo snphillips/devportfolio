@@ -15,7 +15,7 @@ const images: Record<string, string> = import.meta.glob(
   },
 );
 
-export default function Card({ project, projectIndex }: Props) {
+export default function ProjectCard({ project, projectIndex }: Props) {
   const imagePath = `../assets/images-webp/${project.imageName[0]}`;
   const imageSrc = images[imagePath];
   const techUsedList = project.techUsed.map((techItem, idx) => (

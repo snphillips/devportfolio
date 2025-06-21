@@ -1,6 +1,5 @@
-// ProjectDeepDives.tsx
 import ProjectObject from '../interfaces';
-import ProjectDeepDive from './ProjectDeepDive';
+import ProjectDeepDive from '../components/ProjectDeepDive';
 
 type Props = {
   filteredProjects: ProjectObject[];

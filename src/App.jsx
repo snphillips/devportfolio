@@ -6,7 +6,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import ProjectsOverview from './pages/ProjectsOverview';
 import projectList from './projectList';
-import ProjectDeepDives from './components/ProjectDeepDives';
+import ProjectDeepDives from './pages/ProjectDeepDives';
 import Resume from './pages/Resume';
 
 export default function App() {

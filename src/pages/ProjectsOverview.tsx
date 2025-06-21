@@ -1,5 +1,5 @@
 import ProjectObject from '../interfaces.js';
-import Card from '../components/Card.js';
+import ProjectCard from '../components/ProjectCard.js';
 import Masonry from 'react-masonry-css';
 
 type Props = {
@@ -24,9 +24,8 @@ export default function ProjectsOverview({ filteredProjects }: Props) {
       >
         {filteredProjects.map((project, index) => (
           <div key={project.id}>
-            <Card
+            <ProjectCard
               key={project.id}
-              // className="grid-item"
               project={project}
               projectIndex={index}
             />
