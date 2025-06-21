@@ -14,8 +14,6 @@ const images: Record<string, string> = import.meta.glob(
     import: 'default',
   },
 );
-// remove after debugging
-console.log(images);
 
 export default function Card({ project, projectIndex }: Props) {
   const imagePath = `../assets/images-webp/${project.imageName[0]}`;

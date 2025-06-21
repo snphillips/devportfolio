@@ -2,8 +2,9 @@ export const projectList = [
   {
     id: `tolls_lol`,
     title: `TOLLS-LOL`,
-    imageUrl: ['https://i.imgur.com/hQ9N9bI.png'],
     imageName: ['tolls_lol-01.webp'],
+    mobileImageName: [],
+    imageUrl: ['https://i.imgur.com/hQ9N9bI.png'],
     mobileImageUrl: [],
     briefStatement: `<p>This web app uses Mapbox to visualize 2024's 311 complaints about
     obscured license plates in New York City.</p>
@@ -34,15 +35,16 @@ export const projectList = [
   {
     id: `meeting_background_maker`,
     title: `Meeting Background Maker`,
-    imageUrl: [
-      'https://i.imgur.com/4mN13AS.png',
-      'https://i.imgur.com/zePmX1v.png',
-      'https://i.imgur.com/S78VCSY.png',
-    ],
     imageName: [
       'meeting_background_maker-01.webp',
       'meeting_background_maker-02.webp',
       'meeting_background_maker-03.webp',
+    ],
+    mobileImageName: [],
+    imageUrl: [
+      'https://i.imgur.com/4mN13AS.png',
+      'https://i.imgur.com/zePmX1v.png',
+      'https://i.imgur.com/S78VCSY.png',
     ],
     mobileImageUrl: [],
     briefStatement: `<p>This web app allows users to select images of \n
@@ -85,11 +87,12 @@ export const projectList = [
       'https://i.imgur.com/PMqmkdE.png',
       'https://i.imgur.com/WSJMO84.png',
     ],
-    imageName: ['so_trashy-01.webp', 'so_trashy-02.webp', 'so_trashy-03.webp'],
     mobileImageUrl: [
       'https://i.imgur.com/Z767urK.png',
       'https://i.imgur.com/uzOaJum.png',
     ],
+    imageName: ['so_trashy-01.webp', 'so_trashy-02.webp', 'so_trashy-03.webp'],
+    momobileImageName: ['so_trashy_mobile-01.webp'],
     briefStatement:
       "<p>So Trashy uses the data visualization library d3 to represent New York City's Department of Sanitation's yearly collection of refuse & recycling, per person.</p>",
     statement:
@@ -108,15 +111,16 @@ export const projectList = [
   {
     id: `artist_portfolio`,
     title: 'Artist Portfolio',
-    imageUrl: [
-      'https://i.imgur.com/UH3TJtJ.png',
-      'https://i.imgur.com/VCJfInw.png',
-      'https://i.imgur.com/yjSyUc2.png',
-    ],
     imageName: [
       'artist_portfolio-01.webp',
       'artist_portfolio-02.webp',
       'artist_portfolio-03.webp',
+    ],
+    mobileImageName: [],
+    imageUrl: [
+      'https://i.imgur.com/UH3TJtJ.png',
+      'https://i.imgur.com/VCJfInw.png',
+      'https://i.imgur.com/yjSyUc2.png',
     ],
     mobileImageUrl: [
       'https://i.imgur.com/6fvEgOl.png',
@@ -146,7 +150,9 @@ export const projectList = [
       'https://i.imgur.com/1y4g93S.png',
     ],
     imageName: ['nycha_outage_scraper-01.webp', 'nycha_outage_scraper-02.webp'],
+    mobileImageName: [],
     mobileImageUrl: [],
+
     briefStatement:
       '<p>The New York City Housing Authority (NYCHA) maintains a page on their site that lists services outages in their developments for heat, hot water, water, elevators, electricity & gas.</p> <p>This scraper extracts the data from the NYCHA website and saves the results in csv tables.</p>',
     statement:
@@ -168,6 +174,7 @@ export const projectList = [
       'twohue-04.webp',
       'twohue-05.webp',
     ],
+    mobileImageName: [],
     imageUrl: [
       'https://i.imgur.com/7XNK4lO.png',
       'https://i.imgur.com/I3VWwAE.png',
@@ -209,6 +216,7 @@ export const projectList = [
       'weather-gif-02.webp',
       'weather-gif-03.webp',
     ],
+    mobileImageName: [],
     imageUrl: [
       'https://i.imgur.com/CWDkO5g.png',
       'https://i.imgur.com/xbwBUyb.png',
@@ -231,6 +239,7 @@ export const projectList = [
     title: `Todoodles`,
     imageUrl: ['https://i.imgur.com/DNmSSeE.png'],
     imageName: ['todoodles-01.webp'],
+    mobileImageName: [],
     mobileImageUrl: ['https://i.imgur.com/Ka2NyaX.png'],
     briefStatement:
       '<p>Todoodles is a CRUD TODO app that allows users to create & delete todo items, as well as cross out completed tasks.</p>',
