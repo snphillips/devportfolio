@@ -77,7 +77,7 @@ h3 {
   color: rgb(245 208 200 / 80%);
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
-  font-size: 1.25em;
+  -size: 1.25em;
   letter-spacing: unset;
   font-weight: 500;
   line-height: 1;
@@ -175,6 +175,11 @@ a:hover {
   flex: 1;
   min-width: 0;
   padding: 0 2rem;
+}
+
+.content-section {
+  min-height: 296px;
+  padding-block: 1rem;
 }
 
 .navigation-container {
@@ -282,6 +287,7 @@ h1:hover {
 .my-masonry-grid-column {
   padding-left: 1rem;
   background-clip: padding-box;
+  min-width: 266px;
 }
 
 .my-masonry-grid-column:first-of-type {
@@ -293,6 +299,8 @@ h1:hover {
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
   display: inline-block;
+
+  /* min-width: 250px; */
   width: 100%;
   margin: 0 0 1rem;
   vertical-align: top;
@@ -304,8 +312,9 @@ h1:hover {
 
 .card-image {
   display: block;
-  width: 100%;
   border-radius: 4px 4px 0 0;
+  width: 100%;
+  object-fit: cover;
 }
 
 .card-body {
