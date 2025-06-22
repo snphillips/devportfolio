@@ -1,4 +1,5 @@
 import ProjectObject from '../interfaces.js';
+import GithubIcon from './GithubIcon';
 
 type Props = {
   project: ProjectObject;
@@ -57,8 +58,8 @@ export default function ProjectCard({ project, projectIndex }: Props) {
         </a>
 
         <span className="github-logo">
-          <a href={project.githuburl} className="github-logo-link">
-            <i className="fab fa-github" />
+          <a className="github-logo-link">
+            <GithubIcon url={project.githuburl} />
           </a>
         </span>
       </div>

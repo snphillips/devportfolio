@@ -1,12 +1,23 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
-export default function SocialIcons() {
+type Props = {
+  url?: string;
+};
+
+export default function GithubIcon({
+  url = 'https://github.com/snphillips',
+}: Props) {
   return (
-    <div className="social-icon">
-      <a href="https://github.com/snphillips" aria-label="GitHub">
+    <span className="social-icon">
+      <a
+        href={url}
+        aria-label="GitHub"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <FontAwesomeIcon icon={faGithub} />
       </a>
-    </div>
+    </span>
   );
 }
