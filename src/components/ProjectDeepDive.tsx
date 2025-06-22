@@ -1,4 +1,5 @@
 import ProjectObject from '../interfaces';
+import GithubIcon from './GithubIcon';
 
 type Props = {
   project: ProjectObject;
@@ -94,8 +95,9 @@ export default function ProjectDeepDive({ project, index }: Props) {
             </a>
             <br />
             <a href={project.githuburl}>
-              <div className="button-light">github repo</div>
-              <i className="fab fa-github"></i>
+              <div className="button-light">
+                <GithubIcon url={project.githuburl} /> github repo
+              </div>
             </a>
           </footer>
         </section>
