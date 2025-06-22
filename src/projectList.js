@@ -91,8 +91,8 @@ export const projectList = [
       'https://i.imgur.com/Z767urK.png',
       'https://i.imgur.com/uzOaJum.png',
     ],
-    imageName: ['so_trashy-01.webp', 'so_trashy-02.webp', 'so_trashy-03.webp'],
-    momobileImageName: ['so_trashy_mobile-01.webp'],
+    imageName: ['so_trashy-01.webp', 'so_trashy-02.webp'],
+    mobileImageName: ['so_trashy_mobile-01.webp'],
     briefStatement:
       "<p>So Trashy uses the data visualization library d3 to represent New York City's Department of Sanitation's yearly collection of refuse & recycling, per person.</p>",
     statement:
@@ -145,14 +145,13 @@ export const projectList = [
   {
     id: `nycha-outage-scraper`,
     title: `NYCHA Outage Scraper`,
+    imageName: ['nycha_outage_scraper-01.webp', 'nycha_outage_scraper-02.webp'],
+    mobileImageName: [],
     imageUrl: [
       'https://i.imgur.com/3CmQKwE.png',
       'https://i.imgur.com/1y4g93S.png',
     ],
-    imageName: ['nycha_outage_scraper-01.webp', 'nycha_outage_scraper-02.webp'],
-    mobileImageName: [],
     mobileImageUrl: [],
-
     briefStatement:
       '<p>The New York City Housing Authority (NYCHA) maintains a page on their site that lists services outages in their developments for heat, hot water, water, elevators, electricity & gas.</p> <p>This scraper extracts the data from the NYCHA website and saves the results in csv tables.</p>',
     statement:
@@ -167,14 +166,8 @@ export const projectList = [
   {
     id: `twohue`,
     title: `TwoHue`,
-    imageName: [
-      'twohue-01.webp',
-      'twohue-02.webp',
-      'twohue-03.webp',
-      'twohue-04.webp',
-      'twohue-05.webp',
-    ],
-    mobileImageName: [],
+    imageName: ['twohue-01.webp', 'twohue-02.webp', 'twohue-03.webp'],
+    mobileImageName: ['twohue_mobile-04.webp', 'twohue_mobile-05.webp'],
     imageUrl: [
       'https://i.imgur.com/7XNK4lO.png',
       'https://i.imgur.com/I3VWwAE.png',

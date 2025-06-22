@@ -5,7 +5,7 @@ type Props = {
   filteredProjects: ProjectObject[];
 };
 
-export default function ProjectDeepDives({ filteredProjects }: Props) {
+export default function ProjectDeepDivesSection({ filteredProjects }: Props) {
   return (
     <section className="content-section">
       {filteredProjects.map((project, index) => (

@@ -1,4 +1,3 @@
-// ProjectDeepDive.tsx
 import ProjectObject from '../interfaces';
 
 type Props = {
@@ -6,28 +5,53 @@ type Props = {
   index: number;
 };
 
-export default function ProjectDeepDive({ project, index }: Props) {
-  const imageUrlList = project.imageUrl.map((linkItem, idx) => (
-    <img
-      src={linkItem}
-      alt={project.title}
-      key={idx}
-      className="deep-dives-image"
-      width="auto"
-      height="auto"
-    />
-  ));
+// Dynamically import all .webp images from assets
+const images: Record<string, string> = import.meta.glob(
+  '../assets/images-webp/*.webp',
+  {
+    eager: true,
+    import: 'default',
+  },
+);
 
-  const mobileImageUrlList = project.mobileImageUrl.map((linkItem, idx) => (
-    <img
-      src={linkItem}
-      alt={project.title}
-      key={idx}
-      className="deep-dives-image-mobile"
-      width="auto"
-      height="auto"
-    />
-  ));
+export default function ProjectDeepDive({ project, index }: Props) {
+  // Resolve main desktop image list
+  const imageUrlList = project.imageName.map((imageFileName, idx) => {
+    const imagePath = `../assets/images-webp/${imageFileName}`;
+    const fallbackSrc = project.imageUrl[idx];
+    const imageSrc = images[imagePath] ?? fallbackSrc;
+
+    return (
+      <img
+        src={imageSrc}
+        alt={project.title}
+        key={idx}
+        className="deep-dives-image"
+        width="auto"
+        height="auto"
+      />
+    );
+  });
+
+  // Load mobile images
+  const mobileImageUrlList = (project.mobileImageName || []).map(
+    (fileName, idx) => {
+      const imagePath = `../assets/images-webp/${fileName}`;
+      const fallbackSrc = project.mobileImageUrl[idx];
+      const imageSrc = images[imagePath] ?? fallbackSrc;
+
+      return (
+        <img
+          src={imageSrc}
+          alt={project.title}
+          key={`mobile-${idx}`}
+          className="deep-dives-image-mobile"
+          width="auto"
+          height="auto"
+        />
+      );
+    },
+  );
 
   const featuresList = project.features.map((featuresItem, idx) => (
     <li key={idx}>+ {featuresItem}</li>

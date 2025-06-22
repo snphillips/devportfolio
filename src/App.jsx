@@ -6,7 +6,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import ProjectsOverview from './pages/ProjectsOverview';
 import projectList from './projectList';
-import ProjectDeepDives from './pages/ProjectDeepDives';
+import ProjectDeepDivesSection from './pages/ProjectDeepDivesSection';
 import Resume from './pages/Resume';
 
 export default function App() {
@@ -35,7 +35,7 @@ export default function App() {
         <About />
         <Skills />
         <Contact />
-        <ProjectDeepDives filteredProjects={filteredProjects} />
+        <ProjectDeepDivesSection filteredProjects={filteredProjects} />
         <Resume />
       </section>
       <nav className="navigation-container">
