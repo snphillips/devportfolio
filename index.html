@@ -99,20 +99,23 @@
     <meta name="theme-color" content="#ffffff" />
     <!-- ———————————————————————————— -->
 
-    <!-- Preconnect for faster font loading -->
+    <!-- Preconnect still helps -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Load Oswald (all needed weights) with display=swap -->
+    <!-- Preload font stylesheet -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      as="style"
+    />
+
+    <!-- Non-blocking load with print trick -->
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
-    />
-
-    <!-- Load Crimson Text (all needed styles) with display=swap -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
-      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
 
     <!-- ———————————————————————————— -->
