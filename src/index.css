@@ -77,10 +77,11 @@ h3 {
   color: rgb(245 208 200 / 80%);
   text-transform: uppercase;
   -webkit-font-smoothing: auto;
-  -size: 1.25em;
+  size: 1.25em;
   letter-spacing: unset;
   font-weight: 500;
   line-height: 1;
+  margin-bottom: 0;
 }
 
 /* ===== Links & Hover Underlines ===== */
