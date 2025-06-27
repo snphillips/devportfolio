@@ -8,18 +8,21 @@ type Props = {
 
 export default function GithubIcon({
   url = 'https://github.com/snphillips',
-  projectTitle = `Sarah's GitHub profile`,
+  projectTitle,
 }: Props) {
+  const label = projectTitle
+    ? `GitHub repository for ${projectTitle}`
+    : `Sarah N. Phillips' GitHub profile`;
+
   return (
-    <span className="social-icon">
-      <a
-        href={url}
-        aria-label={`GitHub repository for ${projectTitle}`}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FontAwesomeIcon icon={faGithub} />
-      </a>
-    </span>
+    <a
+      href={url}
+      aria-label={label}
+      className="github-logo-link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FontAwesomeIcon icon={faGithub} />
+    </a>
   );
 }
