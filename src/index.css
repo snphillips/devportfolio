@@ -368,14 +368,15 @@ summary {
   padding-inline-start: 0;
 }
 
-.github-logo-link {
+.github-logo-icon {
+  display: inline-block;
   color: rgb(5 11 56 / 90%);
-  font-size: 1.9em;
+  font-size: 1.5em;
   vertical-align: sub;
   transition: all 0.3s ease-out;
 }
 
-.github-logo-link:hover {
+.github-logo-icon:hover {
   color: var(--color-pink-bright);
 }
 

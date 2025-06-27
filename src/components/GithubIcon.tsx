@@ -18,7 +18,7 @@ export default function GithubIcon({
     <a
       href={url}
       aria-label={label}
-      className="github-logo-link"
+      className="social-icon"
       target="_blank"
       rel="noopener noreferrer"
     >

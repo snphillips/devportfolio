@@ -57,11 +57,9 @@ export default function ProjectCard({ project, projectIndex }: Props) {
           <div className="button-dark">visit site</div>
         </a>
 
-        <span className="github-logo">
-          <span className="github-logo-link">
-            <GithubIcon url={project.githuburl} projectTitle={project.title} />
-          </span>
-        </span>
+        <div className="github-logo-icon">
+          <GithubIcon url={project.githuburl} projectTitle={project.title} />
+        </div>
       </div>
     </div>
   );
