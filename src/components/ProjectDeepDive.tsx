@@ -6,21 +6,11 @@ type Props = {
   index: number;
 };
 
-// Dynamically import all .webp images from assets
-const images: Record<string, string> = import.meta.glob(
-  '../assets/images-webp/*.webp',
-  {
-    eager: true,
-    import: 'default',
-  },
-);
-
 export default function ProjectDeepDive({ project, index }: Props) {
   // Resolve main desktop image list
   const imageUrlList = project.imageName.map((imageFileName, idx) => {
-    const imagePath = `../assets/images-webp/${imageFileName}`;
+    const imageSrc = `/assets/images-webp/${imageFileName}`;
     const fallbackSrc = project.imageUrl[idx];
-    const imageSrc = images[imagePath] ?? fallbackSrc;
 
     return (
       <img
@@ -30,6 +20,9 @@ export default function ProjectDeepDive({ project, index }: Props) {
         className="deep-dives-image"
         width="auto"
         height="auto"
+        onError={(e) => {
+          e.currentTarget.src = fallbackSrc;
+        }}
       />
     );
   });
@@ -37,9 +30,8 @@ export default function ProjectDeepDive({ project, index }: Props) {
   // Load mobile images
   const mobileImageUrlList = (project.mobileImageName || []).map(
     (fileName, idx) => {
-      const imagePath = `../assets/images-webp/${fileName}`;
+      const imageSrc = `/assets/images-webp/${fileName}`;
       const fallbackSrc = project.mobileImageUrl[idx];
-      const imageSrc = images[imagePath] ?? fallbackSrc;
 
       return (
         <img
@@ -49,6 +41,9 @@ export default function ProjectDeepDive({ project, index }: Props) {
           className="deep-dives-image-mobile"
           width="auto"
           height="auto"
+          onError={(e) => {
+            e.currentTarget.src = fallbackSrc;
+          }}
         />
       );
     },

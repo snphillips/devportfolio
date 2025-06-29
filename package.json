@@ -18,9 +18,11 @@
     "react-sticky": "^6.0.3"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "next dev",
+    "build": "next build",
     "preview": "vite preview",
+    "start": "next start",
+    "export": "next export",
     "test": "test --env=jsdom",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,md,json}\""
@@ -49,7 +51,6 @@
     "stylelint-config-standard": "^38.0.0",
     "stylelint-scss": "^6.12.1",
     "typescript": "^4.9.5",
-    "typescript-eslint": "^8.33.1",
-    "vite": "^6.3.5"
+    "typescript-eslint": "^8.33.1"
   }
 }

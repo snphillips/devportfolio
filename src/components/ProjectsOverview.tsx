@@ -1,5 +1,5 @@
 import ProjectObject from '../interfaces.js';
-import ProjectCard from '../components/ProjectCard.js';
+import ProjectCard from './ProjectCard.tsx';
 import Masonry from 'react-masonry-css';
 
 type Props = {

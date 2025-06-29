@@ -1,13 +1,15 @@
+'use client';
+
 import { useState, useEffect } from 'react';
-import Header from './components/Header';
-import Navigation from './components/Navigation';
-import Skills from './pages/Skills';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import ProjectsOverview from './pages/ProjectsOverview';
-import projectList from './projectList';
-import ProjectDeepDivesSection from './pages/ProjectDeepDivesSection';
-import Resume from './pages/Resume';
+import Header from '../components/Header';
+import Navigation from '../components/Navigation';
+import Skills from '../components/Skills';
+import About from '../components/About';
+import Contact from '../components/Contact';
+import ProjectsOverview from '../components/ProjectsOverview';
+import projectList from '../projectList';
+import ProjectDeepDivesSection from '../components/ProjectDeepDivesSection';
+import Resume from '../components/Resume';
 
 export default function App() {
   const [filteredProjects, setFilteredProjects] = useState([]);

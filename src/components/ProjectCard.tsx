@@ -6,19 +6,9 @@ type Props = {
   projectIndex: number;
 };
 
-// Load all images from assets folder in one call
-// Sarah - describe a glob
-const images: Record<string, string> = import.meta.glob(
-  '../assets/images-webp/*.webp',
-  {
-    eager: true,
-    import: 'default',
-  },
-);
-
 export default function ProjectCard({ project, projectIndex }: Props) {
-  const imagePath = `../assets/images-webp/${project.imageName[0]}`;
-  const imageSrc = images[imagePath];
+  const imageSrc = `/assets/images-webp/${project.imageName[0]}`;
+
   const techUsedList = project.techUsed.map((techItem, idx) => (
     <li key={idx}>+ {techItem}</li>
   ));

@@ -1,5 +1,5 @@
 import ProjectObject from '../interfaces';
-import ProjectDeepDive from '../components/ProjectDeepDive';
+import ProjectDeepDive from './ProjectDeepDive';
 
 type Props = {
   filteredProjects: ProjectObject[];
