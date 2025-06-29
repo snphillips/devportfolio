@@ -51,7 +51,7 @@ ul {
   overflow-y: scroll;
 }
 
-/* ===== Typography ===== */
+/* ===== Typography & Icons ===== */
 p {
   font-family: sans-serif;
   color: rgb(5 11 56 / 85%);
@@ -84,6 +84,20 @@ h3 {
   font-weight: 500;
   line-height: 1;
   margin-bottom: 0;
+}
+
+.icon-sm {
+  font-size: 24px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ===== Links & Hover Underlines ===== */
@@ -206,9 +220,6 @@ nav {
 .nav-list-item {
   font-family: Oswald, sans-serif;
   margin: 0.25rem 0;
-}
-
-.nav-list-item:hover {
 }
 
 .nav-list-item .nav-link {

@@ -22,7 +22,16 @@ export default function GithubIcon({
       target="_blank"
       rel="noopener noreferrer"
     >
-      <FontAwesomeIcon icon={faGithub} />
+      <FontAwesomeIcon
+        icon={faGithub}
+        fixedWidth
+        style={{
+          fontSize: '24px', // immediate text metric
+          width: '24px', // locks SVG width
+          height: '24px', // locks SVG height
+          verticalAlign: 'middle', // prevents baseline bounce
+        }}
+      />
     </a>
   );
 }
