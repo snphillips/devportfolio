@@ -10,7 +10,7 @@ interface ProjectObject {
   techUsed: string[];
   features: string[];
   url: string;
-  githuburl: string;
+  githubUrl: string;
   year: string;
   includeInGallery: boolean;
 }

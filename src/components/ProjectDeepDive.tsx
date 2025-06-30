@@ -91,7 +91,7 @@ export default function ProjectDeepDive({ project, index }: Props) {
             <br />
             <div className="button-light">
               <GithubIcon
-                url={project.githuburl}
+                url={project.githubUrl}
                 projectTitle={project.title}
               />{' '}
               github repo

@@ -48,7 +48,7 @@ export default function ProjectCard({ project, projectIndex }: Props) {
         </a>
 
         <div className="github-logo-icon">
-          <GithubIcon url={project.githuburl} projectTitle={project.title} />
+          <GithubIcon url={project.githubUrl} projectTitle={project.title} />
         </div>
       </div>
     </div>
