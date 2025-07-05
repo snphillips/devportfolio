@@ -4,7 +4,7 @@ interface ProjectObject {
   imageName: string[];
   mobileImageName: [] | string[];
   imageUrl: string[];
-  mobileImageUrl: [];
+  mobileImageUrl: string[];
   briefStatement: string;
   statement: string;
   techUsed: string[];

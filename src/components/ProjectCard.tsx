@@ -33,7 +33,7 @@ export default function ProjectCard({ project, projectIndex }: Props) {
           <h3 className="card-heading">{project.title}</h3>
         </a>
 
-        <p
+        <div
           className="card-text"
           dangerouslySetInnerHTML={{ __html: project.briefStatement }}
         />

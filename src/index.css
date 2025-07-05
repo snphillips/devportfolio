@@ -95,7 +95,7 @@ h3 {
 .social-icon {
   width: 24px;
   height: 24px;
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
 }
@@ -281,6 +281,7 @@ h1:hover {
 /* ===== Skills Section ===== */
 .skills-list {
   padding-left: 0;
+  font-family: sans-serif;
 }
 
 .skill-item {
@@ -293,9 +294,25 @@ h1:hover {
 
 /* ===== Project Cards ===== */
 .my-masonry-grid {
-  display: -webkit-box;
-  display: flex;
-  width: auto;
+  column-width: 280px; /* target column width */
+  column-gap: 1rem; /* spacing between columns */
+}
+
+.my-masonry-grid > * {
+  break-inside: avoid; /* prevent card split */
+  margin-bottom: 1rem; /* vertical gap */
+}
+
+@media (width <= 700px) {
+  .my-masonry-grid {
+    column-width: 240px;
+  }
+}
+
+@media (width <= 500px) {
+  .my-masonry-grid {
+    column-width: 100%;
+  }
 }
 
 .my-masonry-grid-column {
@@ -325,10 +342,15 @@ h1:hover {
 }
 
 .card-image {
-  display: block;
+  /* aspect-ratio: 3 / 2; */
   border-radius: 4px 4px 0 0;
   width: 100%;
   object-fit: cover;
+  display: block;
+
+  /* min-width: 250px; */
+
+  /* min-height: 200px; */
 }
 
 .card-body {
@@ -392,6 +414,12 @@ summary {
 
 .github-logo-icon:hover {
   color: var(--color-pink-bright);
+}
+
+/* ===== Contact ===== */
+
+.contact-info {
+  font-family: sans-serif;
 }
 
 /* ===== Deep Dive Sections ===== */

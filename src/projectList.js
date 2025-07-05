@@ -145,7 +145,7 @@ export const projectList = [
   {
     id: `nycha-outage-scraper`,
     title: `NYCHA Outage Scraper`,
-    imageName: ['nycha_outage_scraper-01.webp', 'nycha_outage_scraper-02.webp'],
+    imageName: ['nycha_outage_scraper-01.webp'],
     mobileImageName: [],
     imageUrl: [
       'https://i.imgur.com/3CmQKwE.png',
