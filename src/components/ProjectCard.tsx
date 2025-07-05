@@ -27,19 +27,15 @@ export default function ProjectCard({ project, projectIndex }: Props) {
           height="auto"
         />
       </a>
-
       <div className="card-body">
         <a href={`#project-${projectIndex}`}>
           <h3 className="card-heading">{project.title}</h3>
         </a>
-
         <div
           className="card-text"
           dangerouslySetInnerHTML={{ __html: project.briefStatement }}
         />
-
         <ul className="list-tech-used">{techUsedList}</ul>
-
         <a href={`#project-${projectIndex}`}>
           <div className="button-dark">learn more</div>
         </a>
