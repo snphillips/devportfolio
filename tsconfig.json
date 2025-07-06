@@ -27,13 +27,14 @@
     ]
   },
   "include": [
+    "./dist/types/**/*.ts",
     "app",
     "components",
     "next-env.d.ts",
     "next.config.mjs",
     "public",
     "types",
-    "./dist/types/**/*.ts"
+    ".next/types/**/*.ts"
   ],
   "exclude": [
     "./node_modules"
