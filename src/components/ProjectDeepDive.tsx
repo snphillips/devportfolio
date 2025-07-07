@@ -46,7 +46,7 @@ export default function ProjectDeepDive({ project, index }: Props) {
           }}
         />
       );
-    },
+    }
   );
 
   const featuresList = project.features.map((featuresItem, idx) => (

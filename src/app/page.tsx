@@ -14,7 +14,7 @@ import Resume from '../components/Resume';
 export default function App() {
   const filteredProjects = useMemo(
     () => projectList.filter((p) => p.includeInGallery),
-    [],
+    []
   );
 
   return (
