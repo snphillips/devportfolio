@@ -1,21 +1,11 @@
+import LinkedinIcon from './LinkedInIcon';
+import GithubIcon from './GithubIcon';
+
 const MAIN_LINKS = [
   { href: '#about', label: 'About' },
   { href: '#skills', label: 'Skills' },
   { href: '#contact', label: 'Contact' },
   { href: '#resume', label: 'Resume' },
-];
-
-const SOCIAL_LINKS = [
-  {
-    href: 'https://www.linkedin.com/in/sarah-n-phillips/',
-    iconClass: 'fab fa-linkedin',
-    label: 'LinkedIn',
-  },
-  {
-    href: 'https://github.com/snphillips',
-    iconClass: 'fab fa-github',
-    label: 'GitHub',
-  },
 ];
 
 export default function Navigation() {
@@ -29,13 +19,16 @@ export default function Navigation() {
         </li>
       ))}
 
-      {SOCIAL_LINKS.map(({ href, iconClass, label }) => (
-        <li className="nav-list-item" key={href}>
-          <a href={href} className="nav-list-item-link" aria-label={label}>
-            <i className={iconClass} />
-          </a>
-        </li>
-      ))}
+      <li
+        className="nav-list-item"
+        key={'https://www.linkedin.com/in/sarah-n-phillips/'}
+      >
+        <LinkedinIcon />
+      </li>
+
+      <li className="nav-list-item" key={'https://github.com/snphillips'}>
+        <GithubIcon />
+      </li>
     </ul>
   );
 }

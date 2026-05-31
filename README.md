@@ -2,7 +2,7 @@
 
 My portfolio website to display my dev projects. It features a dynamic projects gallery and deep dives into individual projects.
 
-- View the site here: https://sarahphillipsdev.surge.sh/
+- View the site here: https://sarahphillipsdev.netlify.app/
 
 ## Made With
 

@@ -1,15 +1,25 @@
 {
-  "short_name": "Blue Bike",
-  "name": "About a Blue Bike",
+  "short_name": "Sarah Phillips",
+  "name": "Sarah Phillips Developer Portfolio",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 60x60 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "/favicon/android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon/apple-icon-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
     }
   ],
-  "start_url": "./index.html",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#050b38",
+  "background_color": "#050b38"
 }

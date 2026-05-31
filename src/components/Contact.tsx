@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <section className="content-section" id="contact">
       <h2>Contact</h2>
-      <ul>
+      <ul className="contact-info">
         <li>snphillips [at] gmail [dot] com</li>
         <li>
           <a

@@ -1,15 +1,16 @@
 interface ProjectObject {
   id: string;
   title: string;
-  imageUrl: string[];
   imageName: string[];
-  mobileImageUrl: [];
+  mobileImageName: [] | string[];
+  imageUrl: string[];
+  mobileImageUrl: string[];
   briefStatement: string;
   statement: string;
   techUsed: string[];
   features: string[];
   url: string;
-  githuburl: string;
+  githubUrl: string;
   year: string;
   includeInGallery: boolean;
 }
