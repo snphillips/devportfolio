@@ -3,13 +3,13 @@ import { Oswald, Crimson_Text } from 'next/font/google';
 
 const oswald = Oswald({
   subsets: ['latin'],
-  weight: ['400', '500', '700'], // only include weights you actually use
+  weight: ['400', '500'], // only include weights you actually use
   display: 'swap',
 });
 
 const crimsonText = Crimson_Text({
   subsets: ['latin'],
-  weight: ['400', '700'],
+  weight: ['400'],
   style: ['normal', 'italic'],
   display: 'swap',
 });
