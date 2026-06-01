@@ -1,9 +1,16 @@
 import '../index.css';
-import { Oswald } from 'next/font/google';
+import { Oswald, Crimson_Text } from 'next/font/google';
 
 const oswald = Oswald({
   subsets: ['latin'],
-  weight: ['200', '300', '400', '500', '600', '700'],
+  weight: ['400', '500', '700'], // only include weights you actually use
+  display: 'swap',
+});
+
+const crimsonText = Crimson_Text({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
   display: 'swap',
 });
 
@@ -19,18 +26,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Fonts */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&display=swap"
-          rel="stylesheet"
-        />
-
         {/* Favicons */}
         <link
           rel="apple-touch-icon"
@@ -58,7 +53,9 @@ export default function RootLayout({
         />
       </head>
 
-      <body className={oswald.className}>{children}</body>
+      <body className={`${oswald.className} ${crimsonText.className}`}>
+        {children}
+      </body>
     </html>
   );
 }
