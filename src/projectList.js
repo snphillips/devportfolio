@@ -1,5 +1,37 @@
 export const projectList = [
   {
+    id: `nyc_gov_job_search`,
+    title: `NYC gov job search`,
+    imageName: ['nyc_gov_jobs-01.webp', 'nyc_gov_jobs-02.webp'],
+    mobileImageName: ['nyc_gov_jobs-03.webp'],
+    imageUrl: ['nyc_gov_jobs-01.webp', 'nyc_gov_jobs-02.webp'],
+    mobileImageUrl: ['nyc_gov_jobs-03.webp'],
+    briefStatement: `<p>A fast, filterable job browser for NYC.gov public job listings, 
+    built for people who are not current city employees
+    and want a better search experience than the official site provides.</p>
+
+    <p>Jobs are pulled from the NYC Open Data API and refreshed automatically
+    every day using a local IndexedDB cache, so the app loads instantly on repeat visits.</p>`,
+    statement: `<p>A fast, filterable job browser for NYC.gov public job listings, 
+    built for people who are not current city employees
+    and want a better search experience than the official site provides.</p>
+
+    <p>Jobs are pulled from the NYC Open Data API and refreshed automatically
+    every day using a local IndexedDB cache, so the app loads instantly on repeat visits.</p>`,
+    techUsed: ['React', 'Typescript', `Vite`, `Tailwind`, `NYC Open Data API`],
+    features: [
+      `Faceted filters — filter by agency, employment type, salary range, exam requirement, civil service title, level, posting age, and salary frequency. Counts update live as you filter.`,
+      `Favorites — save jobs you're interested in, persisted across sessions via localStorage.`,
+      `Hide jobs — hide listings you've already reviewed to keep your list clean.`,
+      `Infinite scroll — jobs load progressively as you scroll, no pagination needed.`,
+      `Local cache — job data is stored in IndexedDB and only re-fetched when it's more than 2 days old.`,
+    ],
+    url: 'https://nyc-gov-better-job-search.netlify.app/',
+    githubUrl: 'https://github.com/snphillips/nycgov-jobs',
+    year: '2026',
+    includeInGallery: true,
+  },
+  {
     id: `tolls_lol`,
     title: `TOLLS-LOL`,
     imageName: ['tolls_lol-01.webp'],
